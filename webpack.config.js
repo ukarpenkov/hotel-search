@@ -8,14 +8,25 @@ if (process.env.NODE_ENV === 'production') {
 
 module.exports = {
     mode: mode,
+    output: {
+        filename: '[name].[contenthash].js',
+        assetModuleFilename: "assets/[hash][ext][query]",
+        clean: true,
+    },
     plugins: [
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: `[name].[contenthash].css`
+        }),
         new HtmlWebpackPlugin({
             template: './src/index.html'
         })
     ],
     module: {
         rules: [
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+            },
             {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
@@ -38,6 +49,15 @@ module.exports = {
                     },
                     "sass-loader",
                 ],
+
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
             },
 
         ]

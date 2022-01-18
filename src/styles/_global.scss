@@ -1,9 +1,17 @@
 $primaryColor: darkcyan;
 $secondaryColor: rgb(79, 47, 74);
 
+html {
+  font-family: generalFont;
+}
 h1 {
   color: $primaryColor;
 }
-h2 {
-  color: $secondaryColor;
+.container {
+  &__subtitle {
+    color: $secondaryColor;
+    display: block;
+    height: 600px;
+    background: url('../img/1.png');
+  }
 }
