@@ -1,4 +1,6 @@
 import './styles/index.scss'
+import $ from "jquery"
+
 
 const userStack = {
     language: 'JavaScript',
@@ -11,5 +13,7 @@ const user = {
     ...userStack
 }
 
+
+$('.block').html('jQuery is working');
 
 console.log(user)
