@@ -1,17 +1,24 @@
-$primaryColor: darkcyan;
+$primaryColor: #ffffff;
+$headerTextColor: #1f2041;
 $secondaryColor: rgb(79, 47, 74);
 
 html {
-  font-family: generalFont;
+  font-size: 10px;
 }
-h1 {
-  color: $primaryColor;
+body {
+  background-color: $primaryColor;
+  font-size: 14px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 144rem;
+  color: $headerTextColor;
 }
 .container {
   &__subtitle {
     color: $secondaryColor;
     display: block;
     height: 600px;
-    background: url('../img/01.png');
   }
 }
