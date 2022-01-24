@@ -1,6 +1,6 @@
+@use './../pug/components/head.scss';
+
 $primaryColor: #ffffff;
-$headerTextColor: #1f2041;
-$secondaryColor: rgb(79, 47, 74);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 html {
@@ -9,34 +9,4 @@ html {
 body {
   background-color: $primaryColor;
   font-size: 14px;
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 144rem;
-  color: $headerTextColor;
-  padding-left: 1.5rem;
-  font-family: 'Montserrat';
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding-left: 0;
-  &-item {
-    margin: 0 1.5rem;
-  }
-  &-link {
-    text-decoration: none;
-  }
-}
-
-.container {
-  &__subtitle {
-    color: $secondaryColor;
-    display: block;
-    height: 600px;
-  }
 }

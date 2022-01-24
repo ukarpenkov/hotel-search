@@ -1,15 +1,6 @@
-$primaryColor: #ffffff;
 $headerTextColor: #1f2041;
 $secondaryColor: rgb(79, 47, 74);
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
-html {
-  font-size: 10px;
-}
-body {
-  background-color: $primaryColor;
-  font-size: 14px;
-}
 .header {
   display: flex;
   justify-content: space-between;
@@ -17,7 +8,13 @@ body {
   max-width: 144rem;
   color: $headerTextColor;
   padding-left: 1.5rem;
-  font-family: 'Montserrat';
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .nav {
@@ -38,5 +35,41 @@ body {
     color: $secondaryColor;
     display: block;
     height: 600px;
+  }
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  &-item {
+    margin-left: 20px;
+    list-style: none;
+  }
+  &-btn {
+    border-radius: 22px;
+    border-width: 3px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+
+    &_singin {
+      border-color: #bc9cff;
+      width: 87px;
+      height: 34px;
+      left: 997px;
+      top: 158px;
+    }
+    &_singup {
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-color: #bc9cff;
+      width: 196px;
+      height: 34px;
+      left: 1104px;
+      top: 158px;
+    }
   }
 }
