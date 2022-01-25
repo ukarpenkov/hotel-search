@@ -1,40 +1,49 @@
-footer 
-    .footer 
-        .footer-item
-            a(href="#")
-                img(src="images/logo.png", alt="Logo")
-            p 
-        .footer-item Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-        ul.footer-list
-            p НАВИГАЦИЯ
-            li.footer-list__item
-                a(href='#').footer-list__link О нас
-            li.footer-list__item
-                a(href='#').footer-list__link Новости
-            li.footer-list__item
-                a(href='#').footer-list__link Служба поддержки
-            li.footer-list__item
-                a(href='#').footer-list__link Услуги
-        ul.footer-list
-            p О НАС
-            li.footer-list__item
-                a(href='#').footer-list__link О сервисе
-            li.footer-list__item
-                a(href='#').footer-list__link Наша команда
-            li.footer-list__item
-                a(href='#').footer-list__link Вакансии
-            li.footer-list__item
-                a(href='#').footer-list__link Инвесторы
-        ul.footer-list
-            p СЛУЖБА ПОДДЕРЖКИ
-            li.footer-list__item
-                a(href='#').footer-list__link Соглашения
-            li.footer-list__item
-                a(href='#').footer-list__link Сообщества
-            li.footer-list__item
-                a(href='#').footer-list__link Связь с нами
-        ul.footer-list
-            p ПОДПИСКА
-            li.footer-list__item
-                p Получайте специальные предложения и новости сервиса
-                input(placeholder='email')
+doctype html
+html
+    head
+        style
+            include footer.scss
+
+    footer 
+        .footer 
+            .footer-item
+                a(href="#")
+                    img(src="images/logo.png", alt="Logo")
+                span Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+            .footer-item
+                ul.footer-list
+                    li.footer-list__item НАВИГАЦИЯ
+                    li.footer-list__item
+                        a(href='#').footer-list__link О нас
+                    li.footer-list__item
+                        a(href='#').footer-list__link Новости
+                    li.footer-list__item
+                        a(href='#').footer-list__link Служба поддержки
+                    li.footer-list__item
+                        a(href='#').footer-list__link Услуги
+            .footer-item
+                ul.footer-list
+                    li.footer-list__item О НАС
+                    li.footer-list__item
+                        a(href='#').footer-list__link О сервисе
+                    li.footer-list__item
+                        a(href='#').footer-list__link Наша команда
+                    li.footer-list__item
+                        a(href='#').footer-list__link Вакансии
+                    li.footer-list__item
+                        a(href='#').footer-list__link Инвесторы
+            .footer-item
+                ul.footer-list
+                    li.footer-list__item СЛУЖБА ПОДДЕРЖКИ
+                    li.footer-list__item
+                            a(href='#').footer-list__link Соглашения
+                    li.footer-list__item
+                            a(href='#').footer-list__link Сообщества
+                    li.footer-list__item
+                            a(href='#').footer-list__link Связь с нами
+            .footer-item
+                ul.footer-list
+                    li.footer-list__item ПОДПИСКА
+                    li.footer-list__item Получайте специальные предложения и новости сервиса
+                        input(placeholder='email')
+                    
