@@ -1,1 +1,148 @@
-<!doctype html><html lang="en"><head><style>.nav{display:flex;align-items:center;list-style:none;padding-left:0}&-link{text-decoration:none}&-btn{border-radius:22px;border-width:3px;font-family:Montserrat;font-size:12px;font-style:normal;font-weight:700;line-height:15px;letter-spacing:0;width:87px;height:34px;left:997px;top:158px}&_singup{background:linear-gradient(180deg,#bc9cff 0,#8ba4f9 100%);border-color:#bc9cff;width:196px;height:34px;left:1104px;top:158px}.footer{padding:2rem;display:flex;justify-content:space-between;align-items:center;max-width:144rem;color:$headerTextColor;padding-left:1.5rem;font-family:Montserrat;font-size:12px;font-style:normal;background-color:#fff;color:#8a2be2;text-decoration:none}</style><script defer="defer" src="755.52307dbfb21fd8529785.js"></script><script defer="defer" src="scripts.60cb200bb096bfffcd61.js"></script><script defer="defer" src="user.468cd42f063739eb6b2f.js"></script><link href="scripts.4a2ad355070196692dc6.css" rel="stylesheet"></head><title>Hotels</title><head><meta charset="UTF-8"><body><div class="header"><a href="#"><img src="assets/2d60e7a4277894705e71.png" alt="Logo"></a><nav><ul class="nav"><li class="nav-item"><a class="nav-link active" href="#">О нас</a></li><li class="nav-item"><a class="nav-link" href="#">Услуги</a></li><li class="nav-item"><a class="nav-link" href="#">Вакансии</a></li><li class="nav-item"><a class="nav-link" href="#">Новости</a></li><li class="nav-item"><a class="nav-link" href="#">Соглашения</a></li></ul></nav><ul class="control"><li class="control-item"><button class="control-btn control-btn_singin">ВОЙТИ</button></li><li class="control-item"><button class="control-btn control-btn_singup">ЗАРЕГИСТРИРОВАТЬСЯ</button></li></ul></div></body></head><footer><div class="footer"><div class="footer-item"><a href="#"><img src="assets/2d60e7a4277894705e71.png" alt="Logo"></a><p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p></div><div class="footer-item"><ul class="footer-list"><p>НАВИГАЦИЯ</p><li class="footer-list__item"><a class="footer-list__link" href="#">О нас</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Новости</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Служба поддержки</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Услуги</a></li></ul></div><div class="footer-item"><ul class="footer-list"><p>О НАС</p><li class="footer-list__item"><a class="footer-list__link" href="#">О сервисе</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Наша команда</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Вакансии</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Инвесторы</a></li></ul></div><div class="footer-item"><ul class="footer-list"><p>СЛУЖБА ПОДДЕРЖКИ</p><li class="footer-list__item"><a class="footer-list__link" href="#">Соглашения</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Сообщества</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Связь с нами</a></li></ul></div><div class="footer-item"><ul class="footer-list"><p>ПОДПИСКА</p><li class="footer-list__item"></li><p>Получайте специальные предложения и новости сервиса</p><input placeholder="email"><p>ff</p></ul></div></div></footer></html>
+<!doctype html><html lang="en"><head><style>$headerTextColor: #1f2041;
+$secondaryColor: rgb(79, 47, 74);
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 144rem;
+  color: $headerTextColor;
+  padding-left: 1.5rem;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  &-item {
+    margin: 0 1.5rem;
+  }
+  &-link {
+    text-decoration: none;
+  }
+}
+
+.container {
+  &__subtitle {
+    color: $secondaryColor;
+    display: block;
+    height: 600px;
+  }
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  &-item {
+    margin-left: 20px;
+    list-style: none;
+  }
+  &-btn {
+    border-radius: 22px;
+    border-width: 3px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+
+    &_singin {
+      border-color: #bc9cff;
+      width: 87px;
+      height: 34px;
+      left: 997px;
+      top: 158px;
+    }
+    &_singup {
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-color: #bc9cff;
+      width: 196px;
+      height: 34px;
+      left: 1104px;
+      top: 158px;
+    }
+  }
+}
+// $footerTextColor: #1f2041;
+
+// footer {
+//   background-color: rgb(233, 14, 14);
+// }
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 144rem;
+  padding-left: 1.5rem;
+  font-family: Montserrat;
+  font-size: 20px;
+  background-color: rgb(42, 96, 112);
+  &-item {
+    background-color: #fff;
+  }
+}
+
+// .footer-list__item {
+//   list-style: none;
+//   text-decoration: none;
+// }</style><script defer="defer" src="755.52307dbfb21fd8529785.js"></script><script defer="defer" src="scripts.60cb200bb096bfffcd61.js"></script><script defer="defer" src="user.468cd42f063739eb6b2f.js"></script><link href="scripts.4a2ad355070196692dc6.css" rel="stylesheet"></head><title>Hotels</title><body><!doctype html><html><head><style>// $footerTextColor: #1f2041;
+
+// footer {
+//   background-color: rgb(233, 14, 14);
+// }
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 144rem;
+  padding-left: 1.5rem;
+  font-family: Montserrat;
+  font-size: 20px;
+  background-color: rgb(42, 96, 112);
+  &-item {
+    background-color: #fff;
+  }
+}
+
+// .footer-list__item {
+//   list-style: none;
+//   text-decoration: none;
+// }</style><div class="header"><a href="#"><img src="images/logo.png" alt="Logo"></a><nav><ul class="nav"><li class="nav-item"><a class="nav-link active" href="#">О нас</a></li><li class="nav-item"><a class="nav-link" href="#">Услуги</a></li><li class="nav-item"><a class="nav-link" href="#">Вакансии</a></li><li class="nav-item"><a class="nav-link" href="#">Новости</a></li><li class="nav-item"><a class="nav-link" href="#">Соглашения</a></li></ul></nav><ul class="control"><li class="control-item"><button class="control-btn control-btn_singin">ВОЙТИ</button></li><li class="control-item"><button class="control-btn control-btn_singup">ЗАРЕГИСТРИРОВАТЬСЯ</button></li></ul></div></head></html><!doctype html><html><head><style>// $footerTextColor: #1f2041;
+
+// footer {
+//   background-color: rgb(233, 14, 14);
+// }
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 144rem;
+  padding-left: 1.5rem;
+  font-family: Montserrat;
+  font-size: 20px;
+  background-color: rgb(42, 96, 112);
+  &-item {
+    background-color: #fff;
+  }
+}
+
+// .footer-list__item {
+//   list-style: none;
+//   text-decoration: none;
+// }</style></head><footer><div class="footer"><div class="footer-item"><a href="#"><img src="images/logo.png" alt="Logo"></a><span>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</span></div><div class="footer-item"><ul class="footer-list"><li class="footer-list__item">НАВИГАЦИЯ</li><li class="footer-list__item"><a class="footer-list__link" href="#">О нас</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Новости</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Служба поддержки</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Услуги</a></li></ul></div><div class="footer-item"><ul class="footer-list"><li class="footer-list__item">О НАС</li><li class="footer-list__item"><a class="footer-list__link" href="#">О сервисе</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Наша команда</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Вакансии</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Инвесторы</a></li></ul></div><div class="footer-item"><ul class="footer-list"><li class="footer-list__item">СЛУЖБА ПОДДЕРЖКИ</li><li class="footer-list__item"><a class="footer-list__link" href="#">Соглашения</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Сообщества</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Связь с нами</a></li></ul></div><div class="footer-item"><ul class="footer-list"><li class="footer-list__item">ПОДПИСКА</li><li class="footer-list__item">Получайте специальные предложения и новости сервиса<input placeholder="email"></li></ul></div></div></footer></html></body></html>

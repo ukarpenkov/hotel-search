@@ -1,10 +1,11 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 let mode = 'development'
 if (process.env.NODE_ENV === 'production') {
     mode = 'production'
 }
+console.log(mode + ' mode')
 
 module.exports = {
     mode: mode,
@@ -25,17 +26,16 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: `[name].[contenthash].css`
+            filename: '[name].[contenthash].css'
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.pug'
-        })
-    ],
+            template: "./src/index.pug"
+        })],
     module: {
         rules: [
             {
-                test: /\.html$/i,
-                loader: "html-loader",
+            test: /\.html$/i,
+            loader: "html-loader",
             },
             {
                 test: /\.(sa|sc|c)ss$/,
@@ -59,7 +59,6 @@ module.exports = {
                     },
                     "sass-loader",
                 ],
-
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -69,23 +68,10 @@ module.exports = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
             },
-            // {
-            //     test: /\.pug$/,
-            //     loader: 'pug-loader',
-            //     exclude: /(node_modules|bower_components)/,
-            // },
             {
                 test: /\.pug$/,
-                use: [{
-                    loader: "html-loader",
-                },
-                {
-                    loader: "pug-html-loader",
-                    options: {
-                        pretty: true,
-                    },
-                },
-                ],
+                loader: 'pug-loader',
+                exclude: /(node_modules|bower_components)/,
             },
             {
                 test: /\.m?js$/,
@@ -96,9 +82,7 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
-            },
-
+            }
         ]
-    }
-
+    },
 }

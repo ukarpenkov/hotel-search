@@ -1,25 +1,30 @@
-// $footerTextColor: #1f2041;
-
-// footer {
-//   background-color: rgb(233, 14, 14);
-// }
+$footerTextColor: #1f2041;
 
 .footer {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 144rem;
+  max-width: 1200px;
+  color: $footerTextColor;
   padding-left: 1.5rem;
   font-family: Montserrat;
-  font-size: 20px;
-  background-color: rgb(112, 42, 42);
-  &-list__item {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  &-item {
+    max-width: 200px;
+  }
+  &-list {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
+    &__link {
+      font-style: 14px;
+      text-decoration: none;
+    }
   }
 }
-
-// .footer-list__item {
-//   list-style: none;
-//   text-decoration: none;
-// }
