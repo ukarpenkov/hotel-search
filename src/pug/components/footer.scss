@@ -4,27 +4,39 @@ $footerTextColor: #1f2041;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1200px;
   color: $footerTextColor;
   padding-left: 1.5rem;
   font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 15px;
+  font-weight: 400;
+  line-height: 14px;
   letter-spacing: 0em;
   text-align: left;
   &-item {
     max-width: 200px;
+    p {
+      width: 240px;
+    }
+    &__head {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: #1f2041;
+    }
   }
   &-list {
     list-style: none;
     padding-left: 0;
-    margin: 0;
+
     &__link {
-      font-style: 14px;
       text-decoration: none;
+      display: block;
+      margin-top: 15px;
     }
   }
 }
