@@ -4,6 +4,21 @@ html
         style
             include room-card.scss
         .room-card
-           img(src="/src/images/room-card-img.png", alt="")
-           svg(xhtml:link='/src/assets/star_black_24dp.svg')
+            .room-card-img
+                img(src="/src/images/room-card-img.png", alt="")
+            .room-card-info 
+                .room-card-info__number 
+                    h3 №840
+                .room-card-info__price 
+                    span <strong>9900P</strong> в сутки
+            .room-card-rating
+                .room-card-rating__stars
+                    img(src='/src/assets/star_black_24dp.svg')
+                    img(src='/src/assets/star_black_24dp.svg')
+                    img(src='/src/assets/star_black_24dp.svg')
+                    img(src='/src/assets/star_black_24dp.svg')
+                    img(src='/src/assets/star_black_24dp.svg')
+                .room-card-rating__comment 
+                    span 145 Отзывов
+                
 
