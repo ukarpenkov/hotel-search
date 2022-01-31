@@ -13,12 +13,22 @@ html
                     span <strong>9900P</strong> в сутки
             .room-card-rating
                 .room-card-rating__stars
-                    img(src='/src/assets/star_black_24dp.svg')
-                    img(src='/src/assets/star_black_24dp.svg')
-                    img(src='/src/assets/star_black_24dp.svg')
-                    img(src='/src/assets/star_black_24dp.svg')
-                    img(src='/src/assets/star_black_24dp.svg')
-                .room-card-rating__comment 
-                    span 145 Отзывов
+                    //- img(src='/src/assets/star_black_24dp.svg')
+                    //- img(src='/src/assets/star_black_24dp.svg')
+                    //- img(src='/src/assets/star_black_24dp.svg')
+                    //- img(src='/src/assets/star_black_24dp.svg')
+                    //- img(src='/src/assets/star_black_24dp.svg')
+                    input(id='rating__5' type='radio' name='rating' value='5').room-card-rating__stars__item
+                    label(for='rating__5').room-card-rating__stars__label
+                    input(id='rating__4' type='radio' name='rating' value='4').room-card-rating__stars__item
+                    label(for='rating__4').room-card-rating__stars__label
+                    input(id='rating__3' type='radio' name='rating' value='3').room-card-rating__stars__item
+                    label(for='rating__3').room-card-rating__stars__label
+                    input(id='rating__2' type='radio' name='rating' value='2').room-card-rating__stars__item
+                    label(for='rating__2').room-card-rating__stars__label
+                    input(id='rating__1' type='radio' name='rating' value='1').room-card-rating__stars__item
+                    label(for='rating__1').room-card-rating__stars__label
+                //- .room-card-rating__comment 
+                //-     span 145 Отзывов
                 
 
