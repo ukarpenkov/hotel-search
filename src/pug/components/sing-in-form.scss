@@ -1,0 +1,96 @@
+.sing-in-form {
+  width: 380px;
+  height: 358px;
+  left: 560px;
+  top: 704px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding-left: 30px;
+  font-family: Montserrat;
+}
+
+.sing-in-form h1 {
+  width: 320px;
+  height: 30px;
+  left: 590px;
+  top: 744px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #1f2041;
+}
+
+.sing-in-form__input {
+  display: block;
+  margin-top: 10px;
+  width: 320px;
+  height: 44px;
+  left: 590px;
+  top: 794px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.sing-in-form__submit {
+  margin-top: 10px;
+  display: block;
+  width: 320px;
+  height: 44px;
+  left: 590px;
+  top: 912px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+}
+.sing-in-form__info {
+  display: inline;
+  width: 164px;
+  height: 18px;
+  left: 590px;
+  top: 998px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.sing-in-form__btn {
+  display: inline;
+  width: 99px;
+  height: 44px;
+  left: 811px;
+  top: 986px;
+  border-radius: 22px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border: 2px solid;
+  border-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+
+.sing-in-form_sing-up {
+  display: inline-flex;
+  margin-top: 10px;
+}

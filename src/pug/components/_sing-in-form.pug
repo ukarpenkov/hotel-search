@@ -2,8 +2,16 @@ html
     head
         style
             include sing-in-form.scss
-        form
-            .sing-in-form
+        form.sing-in-form
+            .sing-in-form_sing-in    
                 h1 Войти
+                input(type='text' placeholder='Email').sing-in-form__input
+                input(type='password'  placeholder='Пароль').sing-in-form__input
+                input(type='submit' name='' value='ВОЙТИ').sing-in-form__submit
+            .sing-in-form_sing-up
+                span.sing-in-form__info Нет аккаунта на Toxin?
+                button.sing-in-form__btn СОЗДАТЬ
+
+
                 
                 
