@@ -2,13 +2,15 @@ html
     head
         style
             include registration-form.scss
-        form.registration-form
+        form.form.registration-form
             .registration-form_sing-up    
                 h1 Регистрация аккаунта
                 input(type='text' placeholder='Имя').registration-form_sing-up__input
                 input(type='text'  placeholder='Фамилия').registration-form_sing-up__input
+                input(type='radio' name='Мужчина' ).registration-form_sing-up__gender 
+                span Мужчина
                 input(type='radio' name='' ).registration-form_sing-up__gender
-                input(type='radio' name='' ).registration-form_sing-up__gender
+                span Женщина
                 h2 ДАТА РОЖДЕНИЯ
                 input(type='date' name='' ).registration-form_sing-up__date
                 h2 данные для входа в сервис
