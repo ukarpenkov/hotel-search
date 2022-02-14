@@ -46,20 +46,69 @@
   top: 262px;
 }
 
+.btn_lg {
+  width: 320px;
+  left: 979px;
+  top: 456px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+}
+
 .btn_fill-dark-violet {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-
-  border-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
+  width: 102px;
+  height: 46px;
 }
 
 .btn_fill-light-violet {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   opacity: 0.5;
   color: #ffffff;
+  width: 102px;
+  height: 46px;
 }
 
 .btn_dark-violet {
   color: #bc9cff;
   border-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background: #ffffff;
+  border: 2px solid;
+}
+
+.btn_light-violet {
+  color: #bc9cff;
+  border: 2px solid;
+  background: #ffffff;
+  border-color: linear-gradient(180deg, #bc9cff 100%, #8ba4f9 100%);
+  opacity: 0.5;
+}
+.btn_no-border-violet {
+  color: #bc9cff;
+  border: none;
+  background: #ffffff;
+}
+.btn_small.btn_no-border-dark {
+  color: rgba(31, 32, 65, 0.5);
+  border: none;
+  background: #ffffff;
+}
+
+img {
+  width: 12px;
+  height: 12px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }
