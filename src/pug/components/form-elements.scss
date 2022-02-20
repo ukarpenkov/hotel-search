@@ -143,7 +143,7 @@ img {
   text-transform: none;
   letter-spacing: normal;
 }
-
+// expandable checkbox list
 .expand-arrow {
   color: rgba(31, 32, 65, 0.5);
   padding-left: 30px;
@@ -192,7 +192,6 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   vertical-align: middle;
-  // position: relative;
 }
 
 .visible-checkbox-label::before {
@@ -213,4 +212,21 @@ img {
 
 .checkbox:checked + .visible-checkbox-label::before {
   opacity: 1;
+}
+
+.checkbox-label-rich {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.checkbox-label-describe {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  padding-left: 30px;
+  max-width: 236px;
+  margin-top: 5px;
 }
