@@ -230,3 +230,18 @@ img {
   max-width: 236px;
   margin-top: 5px;
 }
+
+.bullet-list__item {
+  list-style-image: url('./src/assets/Ellipse.png');
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  padding-top: 10px;
+}
+
+ul.bullet-list {
+  padding-left: 15px;
+}
