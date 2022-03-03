@@ -550,6 +550,7 @@ ul.bullet-list {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+  user-select: none;
 }
 
 .toggle + .toggle-label:before {
@@ -602,4 +603,29 @@ ul.bullet-list {
   align-items: center;
   text-align: center;
   color: #bc9cff;
+}
+
+.dropdown__input_default {
+  position: relative;
+  width: 266px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.dropdown__input-text {
+  position: relative;
+  width: 160px;
+  height: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  vertical-align: center;
+  top: 8px;
+  left: 10px;
 }
