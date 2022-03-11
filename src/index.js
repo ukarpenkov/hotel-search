@@ -38,7 +38,6 @@ function counter() {
         console.log('--')
         if (currentValue === 0) {
             newValue = 0
-
         }
     }
     value.innerHTML = newValue
@@ -49,3 +48,14 @@ counterButtons.forEach(btn => {
     btn.addEventListener('click', counter)
 })
 
+
+var slider = document.getElementById('slider');
+
+noUiSlider.create(slider, {
+    start: [20, 80],
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 100
+    }
+})
