@@ -809,3 +809,45 @@ input[type='number'] {
   display: flex;
   justify-content: space-between;
 }
+.filter-price__slider {
+  width: 226px;
+  margin-left: 5px;
+}
+
+.noUi-target {
+  background: #ffffff;
+  border-radius: 100px;
+  box-shadow: none;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  height: 6px;
+}
+
+.noUi-connect {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  box-shadow: none;
+  height: 5px;
+  border: none;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  display: none;
+}
+
+.noUi-handle {
+  box-shadow: none;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border: 2px solid #ffffff;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 12px;
+  height: 12px;
+  right: -10px;
+  top: -4px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: -2px;
+}
