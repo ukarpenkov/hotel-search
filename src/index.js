@@ -1,6 +1,8 @@
 import './styles/index.scss'
 import $ from "jquery"
 import noUiSlider from 'nouislider'
+import flatpickr from 'flatpickr'
+
 
 const userStack = {
     language: 'JavaScript',
@@ -21,11 +23,12 @@ console.log(user)
 
 
 let counterButtons = document.querySelectorAll('.dropdown-counter__btn')
-
+let inputs = document.querySelectorAll('.dropdown__input-text')
 
 function counter() {
     let direction = this.dataset.direction
     let value = this.parentElement.querySelector('.dropdown-counter__value')
+
     let currentValue = +value.innerHTML
     let newValue
 
@@ -43,6 +46,8 @@ function counter() {
     value.innerHTML = newValue
 
 }
+
+
 
 counterButtons.forEach(btn => {
     btn.addEventListener('click', counter)
@@ -85,3 +90,5 @@ if (rangeSlider) {
     })
 
 }
+
+
