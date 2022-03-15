@@ -851,3 +851,93 @@ input[type='number'] {
 .noUi-horizontal .noUi-handle-upper {
   right: -2px;
 }
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: right;
+  color: #1f2041;
+}
+
+.flatpickr-current-month input.cur-year {
+  -webkit-appearance: none;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: left;
+  color: #1f2041;
+}
+.numInputWrapper input,
+.numInputWrapper span {
+  display: none;
+}
+
+.flatpickr-current-month {
+  left: 13px;
+  margin-bottom: 30px;
+}
+.flatpickr-months {
+  margin-top: 15px;
+}
+
+.flatpickr-month {
+  margin-bottom: 30px;
+}
+
+span.flatpickr-weekday {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #bc9cff;
+}
+
+.flatpickr-day {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Dark 50% */
+
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.flatpickr-day.selected {
+  width: 39.88px;
+  height: 40px;
+
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 22px;
+}
+
+.flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
+.flatpickr-months .flatpickr-next-month.flatpickr-next-month {
+  right: 0;
+  top: 13px;
+}
+
+.flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
+  left: 0;
+  top: 13px;
+}

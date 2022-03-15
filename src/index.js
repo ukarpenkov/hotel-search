@@ -2,6 +2,7 @@ import './styles/index.scss'
 import $ from "jquery"
 import noUiSlider from 'nouislider'
 import flatpickr from 'flatpickr'
+import { Russian } from "flatpickr/dist/l10n/ru.js"
 
 
 const userStack = {
@@ -92,3 +93,10 @@ if (rangeSlider) {
 }
 
 
+flatpickr(".calendar", {
+    altInput: true,
+    altFormat: "d.m.Y",
+    dateFormat: "Y-m-d\\Z",
+    "locale": Russian,
+
+});
