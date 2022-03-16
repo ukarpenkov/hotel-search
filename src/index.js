@@ -92,11 +92,40 @@ if (rangeSlider) {
 
 }
 
+var arrowForward = document.createElement('span')
+arrowForward.innerHTML = 'arrow_forward'
+arrowForward.classList.add('material-icons', 'subscribe-arrow')
+
+
+
 
 flatpickr(".calendar", {
+    mode: 'multiple',
     altInput: true,
     altFormat: "d.m.Y",
     dateFormat: "Y-m-d\\Z",
     "locale": Russian,
 
-});
+}
+);
+
+
+
+var calendar = document.querySelectorAll('.flatpickr-calendar')
+
+var applyBtn = document.createElement('p')
+applyBtn.className = 'apply-btn '
+applyBtn.innerHTML = 'ПРИМЕНИТЬ'
+applyBtn.id = 'apply-btn'
+var clearBtn = document.createElement('p')
+clearBtn.className = 'clear-btn'
+clearBtn.innerHTML = 'ОЧИСТИТЬ'
+
+calendar.forEach(item => {
+    item.appendChild(clearBtn)
+    item.appendChild(applyBtn)
+})
+
+
+
+
