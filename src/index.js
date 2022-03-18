@@ -105,7 +105,8 @@ flatpickr(".calendar", {
     altFormat: "d.m.Y",
     dateFormat: "Y-m-d\\Z",
     "locale": Russian,
-
+    nextArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_forward</span>`,
+    prevArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_back</span>`
 }
 );
 
@@ -113,18 +114,19 @@ flatpickr(".calendar", {
 
 var calendar = document.querySelectorAll('.flatpickr-calendar')
 
-var applyBtn = document.createElement('p')
-applyBtn.className = 'apply-btn '
-applyBtn.innerHTML = 'ПРИМЕНИТЬ'
-applyBtn.id = 'apply-btn'
-var clearBtn = document.createElement('p')
-clearBtn.className = 'clear-btn'
-clearBtn.innerHTML = 'ОЧИСТИТЬ'
 
+console.log(calendar)
 calendar.forEach(item => {
+    let applyBtn = document.createElement('p')
+    applyBtn.classList.add('calendar_apply-btn', 'apply-btn')
+    applyBtn.innerHTML = 'ПРИМЕНИТЬ'
+    let clearBtn = document.createElement('p')
+    clearBtn.classList.add('calendar_clear-btn', 'clear-btn')
+    clearBtn.innerHTML = 'ОЧИСТИТЬ'
     item.appendChild(clearBtn)
     item.appendChild(applyBtn)
 })
+
 
 
 

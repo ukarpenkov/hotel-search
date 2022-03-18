@@ -40,12 +40,6 @@
   text-transform: uppercase;
 }
 
-#apply-btn {
-  position: relative;
-  left: 10px;
-  top: 10px;
-}
-
 .btn_small {
   width: 99px;
   left: 980px;
@@ -763,6 +757,27 @@ ul.bullet-list {
   color: #bc9cff;
 }
 
+.calendar_apply-btn {
+  display: inline-block;
+  left: 50px;
+  top: -7px;
+}
+.calendar_clear-btn {
+  display: inline-block;
+  left: -58px;
+  top: -7px;
+}
+
+.input.calendar {
+  width: 150px;
+}
+
+.date-pickers {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -890,7 +905,7 @@ input[type='number'] {
 }
 
 .flatpickr-current-month {
-  left: 13px;
+  left: 20px;
   margin-bottom: 30px;
 }
 .flatpickr-months {
@@ -911,6 +926,7 @@ span.flatpickr-weekday {
   align-items: center;
   text-align: center;
   color: #bc9cff;
+  margin: 12px;
 }
 
 .flatpickr-day {
