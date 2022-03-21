@@ -1,0 +1,130 @@
+html
+    head
+        style
+            include ../components/form-elements.scss
+            include form-elements-page.scss
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        .col-1
+            .form
+                .block-1
+                    .field 
+                        .field-label
+                            h2.label Text Field
+                            span.input-condition DEFAULT
+                        input(type="text" placeholder='Email').input
+                    .field
+                        .field-label
+                            h2.label Text Field
+                            span.input-condition Hover/Focus
+                        input(type="text" placeholder='This is pretty awesome').input.input_focus
+                    .field 
+                        h2.label Dropdown
+                        select.input
+                            option(value='') Сколько гостей
+                            option(value='') 1
+                            option(value='') 2
+                            option(value='') 3
+                    .field
+                        h2.label masked text field
+                        input(type="text" placeholder='ДД.ММ.ГГГГ').input 
+                .date-pickers
+                    .field
+                        h2.label date Dropdown
+                        input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                    .field 
+                        h2.label date dropdown
+                        input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                .field 
+                    h2.label subscription text field
+                    input(type="text" placeholder='   Email').input 
+                    <span class='material-icons subscribe-arrow'>arrow_forward</span>     
+                .dropdown-block
+                .dropdown-block__label 
+                    h2.label dropdown 
+                    span.dropdown-condition DEFAULT
+                .dropdown__input 
+                    .dropdown__input_default 
+                        span.dropdown__input-text  2 спальни
+                        span(class='material-icons expand-arrow dropdown__arrow') expand_more
+            .dropdown-block
+                .dropdown-block__label 
+                    h2.label dropdown 
+                    span.dropdown-condition EXPANDED
+                .dropdown__input 
+                    .dropdown__input_default 
+                        span.dropdown__input-text  2 спальни
+                        span(class='material-icons expand-arrow dropdown__arrow') expand_more
+                    .dropdown__input_expanded
+                        .dropdown-options
+                            .dropdown-item 
+                               h2.dropdown-option.label спальни
+                               .dropdown-counter
+                                    .dropdown-counter__btn(data-direction='minus')  
+                                        span -
+                                    .dropdown-counter__value.label 0
+                                    .dropdown-counter__btn(data-direction='plus') 
+                                        span  +
+                            .dropdown-item 
+                               h2.dropdown-option.label кровати
+                               .dropdown-counter
+                                    .dropdown-counter__btn(data-direction='minus') 
+                                        span  -
+                                    .dropdown-counter__value.label 0
+                                    .dropdown-counter__btn(data-direction='plus')
+                                        span +
+                            .dropdown-item 
+                               h2.dropdown-option.label ванные комнаты
+                               .dropdown-counter
+                                    .dropdown-counter__btn(data-direction='minus') 
+                                        span -
+                                    .dropdown-counter__value.label 0
+                                    .dropdown-counter__btn(data-direction='plus') 
+                                        span +
+                .checkbox-list
+                .checkbox-list__label 
+                    h2.label expandable checkbox list <span class="material-icons expand-arrow">expand_more</span>
+                .checkbox-list_options 
+                    label.checkbox-list_options-items
+                        input(type='checkbox' name='agreement').checkbox
+                        span.visible-checkbox-label
+                        span.checkbox-label Завтрак
+                    label.checkbox-list_options-items
+                        input(type='checkbox' name='agreement' checked).checkbox
+                        span.visible-checkbox-label
+                        span.checkbox-label Письменный стол
+                    label.checkbox-list_options-items
+                        input(type='checkbox' name='agreement' checked).checkbox
+                        span.visible-checkbox-label
+                        span.checkbox-label Стул для кормления
+                    label.checkbox-list_options-items
+                        input(type='checkbox' name='agreement' checked).checkbox
+                        span.visible-checkbox-label
+                        span.checkbox-label Кроватка
+                    label.checkbox-list_options-items
+                        input(type='checkbox' name='agreement').checkbox
+                        span.visible-checkbox-label
+                        span.checkbox-label Телевизор
+                    label.checkbox-list_options-items
+                        input(type='checkbox' name='agreement').checkbox
+                        span.visible-checkbox-label
+                        span.checkbox-label Шампунь
+            
+                
+          
+                
+
+
+
+
+
+               
+
+
+
+
+
+
+                    
+
+                
+
