@@ -10,7 +10,7 @@
 }
 
 .field {
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .input {
@@ -627,9 +627,38 @@ ul.bullet-list {
   margin-left: -19px;
 }
 
+.input_middle {
+  width: 267px;
+}
+
 .subscribe-arrow {
   position: relative;
-  left: -35px;
+  left: 233px;
+  top: -31px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #bc9cff;
+}
+.subscribe-arrow {
+  position: relative;
+  left: 233px;
+  top: -2px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #bc9cff;
+}
+.subscribe-field-arrow {
+  position: relative;
+  left: 233px;
+  top: -31px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -646,7 +675,8 @@ ul.bullet-list {
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  border-radius: 2px;
+  border-radius: 5px;
+  margin-top: 4px;
 }
 
 .dropdown__input-text {
@@ -673,6 +703,10 @@ ul.bullet-list {
   margin-bottom: -5px;
 }
 
+.dropdown-block {
+  margin-top: 12px;
+}
+
 .dropdown-condition {
   position: relative;
   top: 10px;
@@ -688,7 +722,8 @@ ul.bullet-list {
 
 .dropdown__arrow {
   position: relative;
-  left: 145px;
+  left: 157px;
+  top: 9px;
 }
 
 .dropdown__input_expanded {
@@ -735,7 +770,7 @@ ul.bullet-list {
 
 .dropdown-option {
   display: inline-block;
-  padding-left: 5px;
+  padding-left: 12px;
 }
 
 .dropdown-counter__value {
@@ -808,8 +843,9 @@ ul.bullet-list {
 
 .date-pickers {
   display: flex;
-  width: 320px;
+  width: 343px;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 input::-webkit-outer-spin-button,
@@ -1003,4 +1039,21 @@ span.flatpickr-weekday {
 .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
   left: 0;
   top: 13px;
+}
+
+.date-filter__input {
+  width: 267px !important;
+}
+.date-filter_arrow {
+  position: relative;
+  left: 231px;
+  top: -32px;
+}
+
+.date-filter {
+  margin-top: 20px;
+}
+
+.subscribe-field {
+  margin-top: -3px;
 }
