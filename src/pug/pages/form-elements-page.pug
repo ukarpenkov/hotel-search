@@ -4,117 +4,174 @@ html
             include ../components/form-elements.scss
             include form-elements-page.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        .col-1
-            .form
-                .text-fields
-                    .field 
-                        .field-label
-                            h2.label Text Field
-                            span.input-condition DEFAULT
-                        input(type="text" placeholder='Email').input
-                    .field
-                        .field-label
-                            h2.label Text Field
-                            span.input-condition Hover/Focus
-                        input(type="text" placeholder='This is pretty awesome').input.input_focus
-                    .field 
-                        h2.label Dropdown
-                        select.input
-                            option(value='') Сколько гостей
-                            option(value='') 1
-                            option(value='') 2
-                            option(value='') 3
-                    .field
-                        h2.label masked text field
-                        input(type="text" placeholder='ДД.ММ.ГГГГ').input 
-                .date-pickers
-                    .field
-                        h2.label date Dropdown
-                        input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
-                    .field 
-                        h2.label date dropdown
-                        input(type="date" placeholder='19.08.2019').input.calendar
-                .date-filter
-                    .field
-                        h2.label filter date dropdown
-                        input(type="date" placeholder='19 авг - 23 авг').input.calendar.date-filter__input
-                        span(class='material-icons expand-arrow date-filter_arrow') expand_more 
-                .subscribe-field
-                    .field 
-                        h2.label subscription text field
-                        input(type="text" placeholder='   Email').input.input_middle 
-                        <span class='material-icons subscribe-field-arrow'>arrow_forward</span>     
-            .dropdown-block
-                .dropdown-block__label 
-                    h2.label dropdown 
-                    span.dropdown-condition DEFAULT
-                .dropdown__input 
-                    .dropdown__input_default 
-                        span.dropdown__input-text  2 спальни
-                        span(class='material-icons expand-arrow dropdown__arrow') expand_more
-            .dropdown-block
-                .dropdown-block__label 
-                    h2.label dropdown 
-                    span.dropdown-condition EXPANDED
-                .dropdown__input 
-                    .dropdown__input_default 
-                        span.dropdown__input-text  2 спальни
-                        span(class='material-icons expand-arrow dropdown__arrow') expand_more
-                    .dropdown__input_expanded
-                        .dropdown-options
-                            .dropdown-item 
-                               h2.dropdown-option.label спальни
-                               .dropdown-counter
-                                    .dropdown-counter__btn(data-direction='minus')  
-                                        span -
-                                    .dropdown-counter__value.label 0
-                                    .dropdown-counter__btn(data-direction='plus') 
-                                        span  +
-                            .dropdown-item 
-                               h2.dropdown-option.label кровати
-                               .dropdown-counter
-                                    .dropdown-counter__btn(data-direction='minus') 
-                                        span  -
-                                    .dropdown-counter__value.label 0
-                                    .dropdown-counter__btn(data-direction='plus')
-                                        span +
-                            .dropdown-item 
-                               h2.dropdown-option.label ванные комнаты
-                               .dropdown-counter
-                                    .dropdown-counter__btn(data-direction='minus') 
-                                        span -
-                                    .dropdown-counter__value.label 0
-                                    .dropdown-counter__btn(data-direction='plus') 
-                                        span +
+        .forms-elements
+            .col-1
+                .form
+                    .text-fields
+                        .field 
+                            .field-label
+                                h2.label Text Field
+                                span.input-condition DEFAULT
+                            input(type="text" placeholder='Email').input
+                        .field
+                            .field-label
+                                h2.label Text Field
+                                span.input-condition Hover/Focus
+                            input(type="text" placeholder='This is pretty awesome').input.input_focus
+                        .field 
+                            h2.label Dropdown
+                            select.input
+                                option(value='') Сколько гостей
+                                option(value='') 1
+                                option(value='') 2
+                                option(value='') 3
+                        .field
+                            h2.label masked text field
+                            input(type="text" placeholder='ДД.ММ.ГГГГ').input 
+                    .date-pickers
+                        .field
+                            h2.label date Dropdown
+                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                        .field 
+                            h2.label date dropdown
+                            input(type="date" placeholder='19.08.2019').input.calendar
+                    .date-filter
+                        .field
+                            h2.label filter date dropdown
+                            input(type="date" placeholder='19 авг - 23 авг').input.calendar.date-filter__input
+                            span(class='material-icons expand-arrow date-filter_arrow') expand_more 
+                    .subscribe-field
+                        .field 
+                            h2.label subscription text field
+                            input(type="text" placeholder='   Email').input.input_middle 
+                            <span class='material-icons subscribe-field-arrow'>arrow_forward</span>     
+                .dropdown-block
+                    .dropdown-block__label 
+                        h2.label dropdown 
+                        span.dropdown-condition DEFAULT
+                    .dropdown__input 
+                        .dropdown__input_default 
+                            span.dropdown__input-text  2 спальни
+                            span(class='material-icons expand-arrow dropdown__arrow') expand_more
+                .dropdown-block
+                    .dropdown-block__label 
+                        h2.label dropdown 
+                        span.dropdown-condition EXPANDED
+                    .dropdown__input 
+                        .dropdown__input_default 
+                            span.dropdown__input-text  2 спальни
+                            span(class='material-icons expand-arrow dropdown__arrow') expand_more
+                        .dropdown__input_expanded
+                            .dropdown-options
+                                .dropdown-item 
+                                    h2.dropdown-option.label спальни
+                                    .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus')  
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span  +
+                                .dropdown-item 
+                                    h2.dropdown-option.label кровати
+                                    .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span  -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus')
+                                                span +
+                                .dropdown-item 
+                                    h2.dropdown-option.label ванные комнаты
+                                    .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span +
+                    .checkbox-block
+                        .checkbox-list
+                            .checkbox-list__label 
+                                h2.label expandable checkbox list <span class="material-icons expand-arrow">expand_more</span>
+                        .checkbox-list
+                            .checkbox-list__label 
+                                h2.label expandable checkbox list <span class="material-icons expand-arrow expand-arrow__reverse">expand_more</span>
+                            .checkbox-list_options 
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement').checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label Завтрак
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement' checked).checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label Письменный стол
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement' checked).checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label Стул для кормления
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement' checked).checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label Кроватка
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement').checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label Телевизор
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement').checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label Шампунь
+                .room-privilege-block
+                    .room-privilege__image    
+                        <span class="material-icons room-privilege-img">insert_emoticon</span> 
+                    .room-privilege__description 
+                        p.room-privilege__description-label Комфорт
+                        p.room-privilege__description-text Шумопоглощающие стены
+                .room-privilege-block
+                    .room-privilege__image    
+                        <span class="material-icons room-privilege-img">location_city</span> 
+                    .room-privilege__description 
+                        p.room-privilege__description-label Удобство
+                        p.room-privilege__description-text Окно в каждой из спален
+            .col-2
                 .checkbox-list
                 .checkbox-list__label 
-                    h2.label expandable checkbox list <span class="material-icons expand-arrow">expand_more</span>
+                    h2.label Checkbox Buttons 
                 .checkbox-list_options 
                     label.checkbox-list_options-items
                         input(type='checkbox' name='agreement').checkbox
                         span.visible-checkbox-label
-                        span.checkbox-label Завтрак
+                        span.checkbox-label Можно курить
                     label.checkbox-list_options-items
                         input(type='checkbox' name='agreement' checked).checkbox
                         span.visible-checkbox-label
-                        span.checkbox-label Письменный стол
+                        span.checkbox-label Можно с питомцами
                     label.checkbox-list_options-items
                         input(type='checkbox' name='agreement' checked).checkbox
                         span.visible-checkbox-label
-                        span.checkbox-label Стул для кормления
-                    label.checkbox-list_options-items
-                        input(type='checkbox' name='agreement' checked).checkbox
-                        span.visible-checkbox-label
-                        span.checkbox-label Кроватка
-                    label.checkbox-list_options-items
-                        input(type='checkbox' name='agreement').checkbox
-                        span.visible-checkbox-label
-                        span.checkbox-label Телевизор
-                    label.checkbox-list_options-items
-                        input(type='checkbox' name='agreement').checkbox
-                        span.visible-checkbox-label
-                        span.checkbox-label Шампунь
-            
+                        span.checkbox-label Можно пригласить гостей (до 10 человек)  
+                .radio-buttons-block
+                    h2.label Radio Buttons
+                    .radio-buttons-items
+                        .radio
+                            input(type='radio' name='gender' id='1').radio__input
+                            label(for='1').radio__label Мужчина
+                        .radio
+                            input(type='radio' name='gender' id='2').radio__input
+                            label(for='2').radio__label Женщина  
+                .toggle-block 
+                    h2.label TOGGLE
+                    .toggle-item 
+                        input(type='checkbox' class='toggle' id='check1' checked)
+                        label(for='check1' class='toggle-label ') Получать спецпредложения
+                    .toggle-item 
+                        input(type='checkbox' class='toggle' id='check2')
+                        label(for='check2' class='toggle-label ') Получать спецпредложения
+                .like-block 
+                    h2.label like button
+                    .like-buttons
+                        .like-button
+                            <span class="material-icons like">favorite_border</span> <span class="like-quantity">2</span> 
+                        .like-button.like-button_color
+                            <span class="material-icons like like-fill">favorite</span> <span class=" like-quantity like-quantity_color">12</span> 
                 
           
                 
