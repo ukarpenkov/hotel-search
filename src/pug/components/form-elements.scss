@@ -59,6 +59,17 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
+.buttons__item {
+  margin-right: 13px;
+  margin-bottom: 27px;
+}
+.buttons__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 220px;
+  height: 200px;
+}
+
 .btn {
   border: 2px solid;
   outline: none;
@@ -78,6 +89,15 @@
   width: 99px;
   left: 980px;
   top: 262px;
+}
+
+.radio-buttons-block {
+  margin-top: 33px;
+}
+
+.pagination {
+  width: 500px;
+  margin-top: 40px;
 }
 
 .btn-pagination {
@@ -111,9 +131,10 @@
 }
 
 .btn_lg {
+  position: relative;
   width: 320px;
-  left: 979px;
-  top: 456px;
+  left: -117px;
+  top: 19px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
   display: inline-block;
@@ -154,11 +175,16 @@
   color: #bc9cff;
   border: none;
   background: #ffffff;
+  padding-bottom: 10px;
+  margin-top: -8px;
+  margin-left: -18px;
 }
 .btn_small.btn_no-border-dark {
   color: rgba(31, 32, 65, 0.5);
   border: none;
   background: #ffffff;
+  margin-top: -12px;
+  margin-left: -56px;
 }
 
 img {
@@ -336,9 +362,9 @@ ul.bullet-list {
   flex: 0 0 20%;
   height: 100%;
   cursor: pointer;
-  color: #b3b3b6;
+  color: #ceced4;
 
-  border: 0.1px, solid;
+  border: 2px, solid, black;
 }
 
 .rating__label::before {
@@ -407,6 +433,10 @@ ul.bullet-list {
 
 .like-quantity_color {
   color: #bc9cff;
+}
+
+.radio {
+  margin-left: 10px;
 }
 
 .radio__input {
@@ -678,6 +708,10 @@ ul.bullet-list {
   color: #bc9cff;
 }
 
+.dropdown-options {
+  height: 159px;
+}
+
 .dropdown__input_default {
   position: relative;
   width: 266px;
@@ -794,7 +828,7 @@ ul.bullet-list {
   vertical-align: middle;
   align-items: center;
   justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: -5px;
 }
 
@@ -884,18 +918,30 @@ input[type='number'] {
   vertical-align: middle;
 }
 
+.filter-price__head {
+  display: flex;
+  width: 266px;
+  margin-bottom: 20px;
+}
+
 .filter-price__text {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
 
-.filter-price__input {
+.filter-price__text-max {
+  position: relative;
+  text-align: right;
+  left: -23px;
+}
+
+.filter-price__input-min {
   border: none;
   font-weight: 400;
   font-size: 12px;
@@ -904,8 +950,19 @@ input[type='number'] {
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
+.filter-price__input-max {
+  border: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
 
 .filter-price__inputs {
+  position: relative;
+  top: 10px;
   width: 100px;
   display: flex;
   justify-content: space-between;

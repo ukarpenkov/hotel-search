@@ -133,21 +133,21 @@ html
                         p.room-privilege__description-text Окно в каждой из спален
             .col-2
                 .checkbox-list
-                .checkbox-list__label 
-                    h2.label Checkbox Buttons 
-                .checkbox-list_options 
-                    label.checkbox-list_options-items
-                        input(type='checkbox' name='agreement').checkbox
-                        span.visible-checkbox-label
-                        span.checkbox-label Можно курить
-                    label.checkbox-list_options-items
-                        input(type='checkbox' name='agreement' checked).checkbox
-                        span.visible-checkbox-label
-                        span.checkbox-label Можно с питомцами
-                    label.checkbox-list_options-items
-                        input(type='checkbox' name='agreement' checked).checkbox
-                        span.visible-checkbox-label
-                        span.checkbox-label Можно пригласить гостей (до 10 человек)  
+                    .checkbox-list__label 
+                        h2.label Checkbox Buttons 
+                    .checkbox-list_options 
+                        label.checkbox-list_options-items
+                            input(type='checkbox' name='agreement').checkbox
+                            span.visible-checkbox-label
+                            span.checkbox-label Можно курить
+                        label.checkbox-list_options-items
+                            input(type='checkbox' name='agreement' checked).checkbox
+                            span.visible-checkbox-label
+                            span.checkbox-label Можно с питомцами
+                        label.checkbox-list_options-items
+                            input(type='checkbox' name='agreement' checked).checkbox
+                            span.visible-checkbox-label
+                            span.checkbox-label Можно пригласить гостей (до 10 человек)  
                 .radio-buttons-block
                     h2.label Radio Buttons
                     .radio-buttons-items
@@ -172,10 +172,122 @@ html
                             <span class="material-icons like">favorite_border</span> <span class="like-quantity">2</span> 
                         .like-button.like-button_color
                             <span class="material-icons like like-fill">favorite</span> <span class=" like-quantity like-quantity_color">12</span> 
-                
-          
-                
-
+                .rating-block 
+                    h2.label rate button
+                    .stars-block
+                        .rating
+                            .rating-stars
+                                input(id='rating__5' type='radio' name='rating' value='5').rating__star 
+                                label(for='rating__5').rating__label <span class="material-icons">star_border</span>
+                                input(id='rating__4' type='radio' name='rating' value='4').rating__star
+                                label(for='rating__4').rating__label <span class="material-icons">star_border</span>
+                                input(id='rating__3' type='radio' name='rating' value='3').rating__star
+                                label(for='rating__3').rating__label <span class="material-icons">star_border</span>
+                                input(id='rating__2' type='radio' name='rating' value='2').rating__star
+                                label(for='rating__2').rating__label <span class="material-icons">star_border</span>
+                                input(id='rating__1' type='radio' name='rating' value='1').rating__star
+                                label(for='rating__1').rating__label <span class="material-icons">star_border</span>
+                        .rating
+                            .rating-stars
+                                input(id='rating__10' type='radio' name='rating' value='10').rating__star 
+                                label(for='rating__10').rating__label <span class="material-icons">star_border</span>
+                                input(id='rating__9' type='radio' name='rating' value='9').rating__star
+                                label(for='rating__9').rating__label <span class="material-icons">star_border</span>
+                                input(id='rating__8' type='radio' name='rating' value='8').rating__star
+                                label(for='rating__8').rating__label <span class="material-icons">star_border</span>
+                                input(id='rating__7' type='radio' name='rating' value='7').rating__star
+                                label(for='rating__7').rating__label <span class="material-icons">star_border</span>
+                                input(id='rating__6' type='radio' name='rating' value='6').rating__star
+                                label(for='rating__6').rating__label <span class="material-icons">star_border</span>
+                .dropdown-block
+                    .dropdown-block__label 
+                        h2.label dropdown 
+                    .dropdown__input
+                        .dropdown__input_default.dropdown__input_wide  
+                            span.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown__arrow">expand_more</span>
+                        .dropdown__input_expanded.dropdown__input_expanded-apply
+                            .dropdown-options
+                                .dropdown-item 
+                                    h2.dropdown-option.label взрослые
+                                    .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span.counter__btn -
+                                            .dropdown-counter__value.label 0
+                                            
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span.counter__btn  +
+                                .dropdown-item 
+                                    h2.dropdown-option.label дети
+                                    .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span.counter__btn -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span.counter__btn +
+                                .dropdown-item 
+                                    h2.dropdown-option.label младенцы
+                                    .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span.counter__btn -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span.counter__btn  +
+                                .dropdown-buttons
+                                    p.apply-btn применить
+                    .checkbox-list
+                        .checkbox-list__label 
+                            h2.label rich Checkbox Buttons
+                        .checkbox-list_options 
+                            label.checkbox-list_options-items
+                                input(type='checkbox' name='agreement').checkbox
+                                span.visible-checkbox-label
+                                span.checkbox-label.checkbox-label-rich Широкий коридор
+                                p.checkbox-label-describe Ширина коридоров в номере не менее 91 см.
+                            label.checkbox-list_options-items
+                                input(type='checkbox' name='agreement').checkbox
+                                span.visible-checkbox-label
+                                span.checkbox-label.checkbox-label-rich Помощник для инвалидов
+                                p.checkbox-label-describe На 1 этаже вас встретит специалист  и проводит до номера.    
+            .col-3
+                .filter-price
+                    .filter-price__head
+                        h2.label range slider
+                        .filter-price__inputs
+                            label.filter-price__label.filter-price__label-min
+                                input(type='number' min='0' max='100000' placeholder='0' id='input-0').filter-price__input-min
+                                span.filter-price__text ₽-
+                                span.filter-price__text 
+                            label.filter-price__label.filter-price__label-max
+                                input(type='number' min='0' max='100000' placeholder='100000' id='input-1').filter-price__input-max
+                                span.filter-price__text.filter-price__text-max ₽
+                    .filter-price__slider(id='range-slider')
+                .buttons
+                    .buttons__label 
+                        h2.label buttons
+                    .buttons__items
+                        .buttons__item
+                            button.btn.btn_small.btn_fill-dark-violet CLICK ME
+                        .buttons__item
+                            button.btn.btn_small.btn_fill-light-violet CLICK ME
+                        .buttons__item
+                            button.btn.btn_small.btn_dark-violet CLICK ME
+                        .buttons__item
+                            button.btn.btn_small.btn_light-violet CLICK ME
+                        .buttons__item
+                            button.btn.btn_small.btn_no-border-violet CLICK ME
+                        .buttons__item
+                            button.btn.btn_small.btn_no-border-dark CLICK ME
+                            button.btn.btn_lg  <span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span>
+                .pagination
+                    h2.label pagination
+                    br
+                    button.btn.btn-pagination.btn-pagination_active 1
+                    button.btn.btn-pagination.btn-pagination 2
+                    button.btn.btn-pagination.btn-pagination 3
+                    button.btn.btn-pagination.btn-pagination ...
+                    button.btn.btn-pagination.btn-pagination 15
+                    button.btn.btn-pagination.btn-pagination_next <span class="material-icons">arrow_forward</span>
+                    p.pagination-text 1 – 12 из 100+ вариантов аренды
 
 
 
