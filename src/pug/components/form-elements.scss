@@ -222,7 +222,7 @@ img {
   vertical-align: middle;
 }
 .checkbox-list_options-items {
-  display: block;
+  display: flex;
   margin-top: 10px;
 }
 
@@ -235,6 +235,7 @@ img {
   color: rgba(31, 32, 65, 0.5);
   padding-left: 10px;
   vertical-align: middle;
+  width: 226px;
 }
 
 .checkbox {
@@ -322,13 +323,16 @@ ul.bullet-list {
   justify-content: space-between;
   height: 100%;
   align-content: space-between;
-  width: 350px;
-  margin-top: -15px;
+  width: 258px;
+}
+
+.rating-block {
+  margin-top: 32px;
 }
 
 .rating {
   position: relative;
-  font-size: 40px;
+  font-size: 29px;
   display: inline-block;
 }
 
@@ -384,6 +388,14 @@ ul.bullet-list {
   color: #bc9cff;
 }
 
+.like-block {
+  margin-top: 31px;
+}
+
+.like-buttons {
+  margin-top: 11px;
+}
+
 .like-button {
   display: inline-block;
   width: 40px;
@@ -398,7 +410,7 @@ ul.bullet-list {
 
 .like-button_color {
   border: 1px solid #bc9cff;
-  margin-left: 5px;
+  margin-left: 9px;
 }
 
 .like {
@@ -455,14 +467,17 @@ ul.bullet-list {
 .radio {
   display: inline-block;
   vertical-align: middle;
-  margin: 20px;
   position: relative;
+  margin-left: 12px;
+  margin-top: -4px;
 }
 
 .radio-buttons-items {
   width: 300px;
-  margin: -15px;
-  margin-left: -25px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 11px;
+  margin-left: -15px;
 }
 
 .radio__label {
@@ -606,6 +621,10 @@ ul.bullet-list {
   padding-left: 10px;
 }
 
+.toggle-block {
+  margin-top: 34px;
+}
+
 .toggle {
   position: relative;
   opacity: 0;
@@ -665,6 +684,7 @@ ul.bullet-list {
 .toggle-item {
   margin-bottom: 12px;
   margin-left: -19px;
+  margin-top: 9px;
 }
 
 .input_middle {
@@ -922,6 +942,7 @@ input[type='number'] {
   display: flex;
   width: 266px;
   margin-bottom: 20px;
+  margin-left: -12px;
 }
 
 .filter-price__text {
@@ -1122,5 +1143,16 @@ span.flatpickr-weekday {
 }
 
 .subscribe-field {
-  margin-top: -3px;
+  margin-top: 34px;
+}
+
+.head__logo-img {
+  height: 48px;
+  width: 48px;
+}
+
+.header__logo {
+  position: relative;
+  top: -103px;
+  left: -61px;
 }
