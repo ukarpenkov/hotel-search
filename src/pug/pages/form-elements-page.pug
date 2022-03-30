@@ -4,11 +4,11 @@ html
             include ../components/form-elements.scss
             include form-elements-page.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-        .forms-elements
-            .header__logo
+        .header__logo
                 a(href="#")
                     img(src="src/images/only_logo.png", alt="Logo").head__logo-img
+        .forms-elements
+            
             .col-1
                 .form
                     .text-fields
@@ -323,19 +323,20 @@ html
                         li.bullet-list__item Нельзя с питомцами
                         li.bullet-list__item Без вечеринок и мероприятий
                         li.bullet-list__item Время прибытия — после 13:00, а выезд до 12:00.
-            .row-1
-                .room-privilege-block
-                    .room-privilege__image    
-                        <span class="material-icons room-privilege-img">insert_emoticon</span> 
-                    .room-privilege__description 
-                        p.room-privilege__description-label Комфорт
-                        p.room-privilege__description-text Шумопоглощающие стены
-                .room-privilege-block
-                    .room-privilege__image    
-                        <span class="material-icons room-privilege-img">location_city</span> 
-                    .room-privilege__description 
-                        p.room-privilege__description-label Удобство
-                        p.room-privilege__description-text Окно в каждой из спален
+        .row-1
+                .room-privilege
+                    .room-privilege-block
+                        .room-privilege__image    
+                            <span class="material-icons room-privilege-img">insert_emoticon</span> 
+                        .room-privilege__description 
+                            p.room-privilege__description-label Комфорт
+                            p.room-privilege__description-text Шумопоглощающие стены
+                    .room-privilege-block
+                        .room-privilege__image    
+                            <span class="material-icons room-privilege-img">location_city</span> 
+                        .room-privilege__description 
+                            p.room-privilege__description-label Удобство
+                            p.room-privilege__description-text Окно в каждой из спален
                 .comment-block
                     .user-info
                         .avatar  
