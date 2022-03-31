@@ -102,7 +102,7 @@
 .pagination {
   width: 500px;
   margin-top: 40px;
-  margin-bottom: 217px;
+  margin-bottom: 219px;
 }
 
 .btn-pagination {
@@ -196,7 +196,7 @@
   color: rgba(31, 32, 65, 0.5);
   border: none;
   background: #ffffff;
-  margin-top: -11px;
+  margin-top: -9px;
   margin-left: -53px;
 }
 
@@ -216,6 +216,14 @@ img {
   text-transform: none;
   letter-spacing: normal;
 }
+
+.checkbox-list_close {
+  margin-bottom: 26px;
+}
+
+.checkbox-block {
+  margin-top: 42px;
+}
 // expandable checkbox list
 .expand-arrow {
   color: rgba(31, 32, 65, 0.5);
@@ -231,11 +239,20 @@ img {
 .checkbox-list {
   width: 266px;
 }
+
+.checkbox-list_rich {
+  width: 266px;
+  margin-top: 90px;
+}
+.checkbox-list_options {
+  width: 250px;
+}
+
 .checkbox-list_options-item {
   vertical-align: middle;
 }
 .checkbox-list_options-items {
-  display: flex;
+  display: block;
   margin-top: 10px;
 }
 
@@ -247,8 +264,9 @@ img {
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
   padding-left: 10px;
-  vertical-align: middle;
+  vertical-align: text-top;
   width: 226px;
+  display: inline-block;
 }
 
 .checkbox {
@@ -314,6 +332,10 @@ img {
   margin-top: 5px;
 }
 
+.bullet-list {
+  margin-top: 90px;
+}
+
 .bullet-list__item {
   list-style-image: url('./src/assets/Ellipse.png');
   font-family: Montserrat;
@@ -325,8 +347,9 @@ img {
   padding-top: 10px;
 }
 
-ul.bullet-list {
-  padding-left: 15px;
+.bullet-list__items {
+  padding-left: 18px;
+  margin: 0px;
 }
 
 .stars-block {
@@ -341,7 +364,7 @@ ul.bullet-list {
 
 .rating-block {
   margin-top: 32px;
-  margin-bottom: 182px;
+  margin-bottom: 185px;
 }
 
 .rating {
@@ -1176,6 +1199,7 @@ span.flatpickr-weekday {
 }
 
 .header__logo {
+  display: inline-block;
   position: relative;
   top: 28px;
   left: 18%;
