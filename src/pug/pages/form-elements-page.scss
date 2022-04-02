@@ -1,3 +1,15 @@
+.forms-elements-page {
+  max-width: 1440px;
+  min-width: 1024px;
+  margin: auto;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  align-content: center;
+}
+
 .forms-elements {
   display: grid;
   width: 100%;
@@ -5,6 +17,7 @@
   align-content: start;
   align-items: flex-start;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
   margin-left: 27%;
   margin-top: 81px;
 }
@@ -20,17 +33,13 @@
 
 .col-3 {
   width: 320px;
-  margin-left: -120px;
+  margin-left: -123px;
 }
 
 .row-1 {
   display: flex;
+  width: 1158px;
+  justify-content: space-between;
   margin-top: 77px;
   margin-left: 387px;
-}
-
-.forms-elements-page {
-  max-width: 1440px;
-  min-width: 1024px;
-  margin: auto;
 }

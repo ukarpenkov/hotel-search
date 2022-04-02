@@ -10,10 +10,17 @@ $primaryColor: #ffffff;
 
 html {
   font-size: 10px;
-  width: 1440px;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+  width: 100vw;
+  overflow-x: hidden;
 }
+
 body {
   background-color: $primaryColor;
   font-size: 14px;
   max-width: 1440px;
+  min-width: 1024px;
+  height: 100%;
+  overflow-y: visible;
 }
