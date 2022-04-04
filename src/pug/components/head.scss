@@ -15,18 +15,27 @@ $secondaryColor: rgb(79, 47, 74);
   line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding-left: 0;
-  &-item {
-    margin: 0 1.5rem;
+  &__logo {
+    display: block;
+    &-img {
+      width: 106px;
+      height: 40px;
+    }
   }
-  &-link {
-    text-decoration: none;
+  &__nav-bar {
+    display: flex;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    &-item {
+      margin: 0 1.5rem;
+    }
+    &-link {
+      text-decoration: none;
+    }
   }
 }
 

@@ -34,8 +34,8 @@ module.exports = {
     module: {
         rules: [
             {
-            test: /\.html$/i,
-            loader: "html-loader",
+                test: /\.html$/i,
+                loader: "html-loader",
             },
             {
                 test: /\.(sa|sc|c)ss$/,
@@ -50,7 +50,7 @@ module.exports = {
                                     [
                                         "postcss-preset-env",
                                         {
-                                            // Options
+                                            Options
                                         },
                                     ],
                                 ],
