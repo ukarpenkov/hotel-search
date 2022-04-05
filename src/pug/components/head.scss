@@ -1,13 +1,24 @@
 $headerTextColor: #1f2041;
 $secondaryColor: rgb(79, 47, 74);
 
+.header-wrapper {
+  display: block;
+  max-width: 1920px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  align-items: center;
+  text-align: center;
+}
+
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 144rem;
   color: $headerTextColor;
-  padding-left: 1.5rem;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -15,8 +26,10 @@ $secondaryColor: rgb(79, 47, 74);
   line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
-  &__logo {
-    display: block;
+  margin: auto;
+  width: 1920px;
+  &__text-logo {
+    position: relative;
     &-img {
       width: 106px;
       height: 40px;
@@ -24,13 +37,16 @@ $secondaryColor: rgb(79, 47, 74);
   }
   &__nav-bar {
     display: flex;
+    align-items: center;
   }
   &__nav {
     display: flex;
     align-items: center;
     list-style: none;
     padding-left: 0;
+    text-align: left;
     &-item {
+      position: relative;
       margin: 0 1.5rem;
     }
     &-link {
@@ -39,46 +55,44 @@ $secondaryColor: rgb(79, 47, 74);
   }
 }
 
-.container {
-  &__subtitle {
-    color: $secondaryColor;
-    display: block;
-    height: 600px;
-  }
-}
-
-.control {
+.header__buttons-items {
   display: flex;
   align-items: center;
-  padding-left: 0;
-  &-item {
-    margin-left: 20px;
-    list-style: none;
-  }
-  &-btn {
-    border-radius: 22px;
-    border-width: 3px;
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 0em;
+}
 
-    &_singin {
-      border-color: #bc9cff;
-      width: 87px;
-      height: 34px;
-      left: 997px;
-      top: 158px;
-    }
-    &_singup {
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      border-color: #bc9cff;
-      width: 196px;
-      height: 34px;
-      left: 1104px;
-      top: 158px;
-    }
-  }
+.header__btn_small {
+  border: 2px solid;
+  outline: none;
+  text-align: center;
+  margin: 0;
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  width: 87px;
+  height: 34px;
+}
+.header__btn_long {
+  border: 2px solid;
+  outline: none;
+  text-align: center;
+  margin: 0;
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.header__btn_fill-light-violet {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.5;
+  color: #ffffff;
+  width: 199px;
+  height: 38px;
+  align-items: center;
 }

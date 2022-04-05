@@ -3,28 +3,29 @@ html
         style
             include head.scss
             include form-elements.scss
-        .header
-            .header__logo
-                a(href="#")
-                    img(src="src/images/logo.png", alt="Logo").header__logo-img
-            .header__nav-bar
-                nav.header__menu
-                    ul.header__nav
-                        li.header__nav-item
-                            a(href="#").header__nav-link_active О нас
-                        li.nav-item
-                            a(href="#").header__nav-link Услуги
-                        li.nav-item
-                            a(href="#").header__nav-link Вакансии
-                        li.nav-item
-                            a(href="#").header__nav-link Новости
-                        li.nav-item
-                            a(href="#").header__nav-link Соглашения
-                .header__buttons-items
-                    .header__button
-                        button.btn.btn_small.btn_dark-violet войти
-                    .header__button
-                        button.btn.btn_small.btn_fill-light-violet зарегистрироваться
+        .header-wrapper
+            .header
+                .header__text-logo
+                    a(href="#")
+                        img(src="src/images/logo.png", alt="Logo").header__text-logo-img
+                .header__nav-bar
+                    nav.header__menu
+                        ul.header__nav
+                            li.header__nav-item
+                                a(href="#").header__nav-link_active О нас
+                            li.header__nav-item
+                                a(href="#").header__nav-link Услуги
+                            li.header__nav-item
+                                a(href="#").header__nav-link Вакансии
+                            li.header__nav-item
+                                a(href="#").header__nav-link Новости
+                            li.header__nav-item
+                                a(href="#").header__nav-link Соглашения
+                    .header__buttons-items
+                        .header__button
+                            button.header__btn_small.btn_dark-violet войти
+                        .header__button
+                            button.header__btn_long.header__btn_fill-light-violet зарегистрироваться
 
                 
             
