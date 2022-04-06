@@ -16,7 +16,7 @@ $secondaryColor: rgb(79, 47, 74);
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: $headerTextColor;
   font-family: Montserrat;
@@ -27,9 +27,10 @@ $secondaryColor: rgb(79, 47, 74);
   letter-spacing: 0em;
   text-align: left;
   margin: auto;
-  width: 1920px;
+  width: 1440px;
   &__text-logo {
     position: relative;
+    left: 7px;
     &-img {
       width: 106px;
       height: 40px;
@@ -38,6 +39,7 @@ $secondaryColor: rgb(79, 47, 74);
   &__nav-bar {
     display: flex;
     align-items: center;
+    margin-left: 40px;
   }
   &__nav {
     display: flex;
@@ -47,10 +49,15 @@ $secondaryColor: rgb(79, 47, 74);
     text-align: left;
     &-item {
       position: relative;
-      margin: 0 1.5rem;
+      margin-right: 20px;
+      text-decoration: none;
     }
     &-link {
       text-decoration: none;
+    }
+    &-link:hover {
+      box-sizing: border-box;
+      font-weight: bold;
     }
   }
 }
@@ -58,6 +65,10 @@ $secondaryColor: rgb(79, 47, 74);
 .header__buttons-items {
   display: flex;
   align-items: center;
+}
+
+.header__button {
+  margin-right: 20px;
 }
 
 .header__btn_small {
@@ -95,4 +106,8 @@ $secondaryColor: rgb(79, 47, 74);
   width: 199px;
   height: 38px;
   align-items: center;
+}
+
+.header__arrow {
+  position: relative;
 }
