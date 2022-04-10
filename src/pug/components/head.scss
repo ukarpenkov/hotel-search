@@ -4,6 +4,7 @@ $secondaryColor: rgb(79, 47, 74);
 .header-wrapper {
   display: block;
   max-width: 1920px;
+  width: 1440px;
   margin-left: 0 auto;
   margin-right: 0 auto;
   margin-right: 0px;
@@ -12,6 +13,7 @@ $secondaryColor: rgb(79, 47, 74);
   margin-top: 0px;
   align-items: center;
   text-align: center;
+  background-color: #fff;
 }
 
 .header {
@@ -28,9 +30,13 @@ $secondaryColor: rgb(79, 47, 74);
   text-align: left;
   margin: auto;
   width: 1440px;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: -8px;
+  background-color: #fff;
   &__text-logo {
     position: relative;
-    left: 7px;
+    left: 23px;
     &-img {
       width: 106px;
       height: 40px;
@@ -39,7 +45,7 @@ $secondaryColor: rgb(79, 47, 74);
   &__nav-bar {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 73px;
   }
   &__nav {
     display: flex;

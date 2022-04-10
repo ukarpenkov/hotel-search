@@ -7,5 +7,53 @@ html
         .landing-page__wrapper
             .landing-page__header 
                 include ../components/_head
-            .landing-page__main 
-                .div hello
+            .landing-page__main
+                .landing-page__main-bgi
+                    .landing-page__search-form
+                        .landing-page__search-form-elements
+                            h1.search-form__header Найдём номера под ваши пожелания
+                            .search-form__date-pickers
+                                .field
+                                    h2.label прибытие
+                                    input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                                .field 
+                                    h2.label выезд
+                                    input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                            .search-form__dropdown-block
+                                .dropdown-block__label 
+                                    h2.label гости
+                                .dropdown__input
+                                    .dropdown__input_default.dropdown__input_wide  
+                                        span.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown__arrow">expand_more</span>
+                                    .dropdown__input_expanded.dropdown__input_expanded-apply
+                                        .dropdown-options
+                                            .dropdown-item 
+                                                h2.dropdown-option.label взрослые
+                                                .dropdown-counter
+                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                        span -
+                                                    .dropdown-counter__value.label 0
+                                                    .dropdown-counter__btn(data-direction='plus')  
+                                                        span +
+                                            .dropdown-item 
+                                                h2.dropdown-option.label дети
+                                                .dropdown-counter
+                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                        span -
+                                                    .dropdown-counter__value.label 0
+                                                    .dropdown-counter__btn(data-direction='plus') 
+                                                        span  +
+                                            .dropdown-item 
+                                                h2.dropdown-option.label младенцы
+                                                .dropdown-counter
+                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                        span -
+                                                    .dropdown-counter__value.label 0
+                                                    .dropdown-counter__btn(data-direction='plus') 
+                                                        span  +
+                                            .dropdown-buttons
+                                                p.apply-btn применить
+                                                p.clear-btn очистить
+
+                
+                
