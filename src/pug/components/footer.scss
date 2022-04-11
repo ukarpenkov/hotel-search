@@ -1,13 +1,14 @@
 $footerTextColor: #1f2041;
 
 .footer {
-  padding: 2rem;
+  padding: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
-  color: $footerTextColor;
-  padding-left: 1.5rem;
+  max-width: 1440px;
+  color: #1f2041;
+  padding-left: 10.5rem;
+  padding-right: 15rem;
   font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
@@ -15,10 +16,23 @@ $footerTextColor: #1f2041;
   line-height: 14px;
   letter-spacing: 0em;
   text-align: left;
+  &-item__sub {
+    width: 260px;
+  }
   &-item {
     max-width: 200px;
-    p {
-      width: 240px;
+    margin-top: -8px;
+    &__slogan {
+      position: relative;
+
+      left: 23px;
+      width: 260px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.75);
     }
     &__head {
       font-family: Montserrat;
@@ -37,6 +51,83 @@ $footerTextColor: #1f2041;
       text-decoration: none;
       display: block;
       margin-top: 15px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(31, 32, 65, 0.5);
+      margin-top: 22px;
     }
   }
+}
+
+.footer-item__sub {
+  margin-top: -8px;
+}
+
+.footer-list__item-sub {
+  display: block;
+  width: 260px;
+  height: 48px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 19px;
+}
+
+.subscribe-field {
+  margin-top: 22px;
+}
+.field {
+  margin-bottom: 12px;
+}
+
+.footer-item__input {
+  width: 260px;
+  height: 44px;
+  left: 141px;
+  top: 163px;
+  padding-left: 15px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.material-icons {
+  vertical-align: middle;
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: normal;
+  align-items: right;
+  text-align: right;
+  font-size: 24px; /* Preferred icon size */
+  text-transform: none;
+  letter-spacing: normal;
+}
+.footer-item__subscribe-field-arrow {
+  position: relative;
+  left: 226px;
+  top: -33px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #bc9cff;
+}
+
+.footer-item__logo {
+  width: 260px;
 }
