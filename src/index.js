@@ -54,9 +54,6 @@ counterButtons.forEach(btn => {
     btn.addEventListener('click', counter)
 })
 
-
-
-
 var rangeSlider = document.getElementById('range-slider')
 
 if (rangeSlider) {
@@ -95,8 +92,6 @@ if (rangeSlider) {
 var arrowForward = document.createElement('span')
 arrowForward.innerHTML = 'arrow_forward'
 arrowForward.classList.add('material-icons', 'subscribe-arrow')
-
-
 
 
 flatpickr(".calendar", {
