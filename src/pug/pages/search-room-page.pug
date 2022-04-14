@@ -1,0 +1,66 @@
+html
+    head
+        style
+            include ../components/form-elements.scss
+            include ../components/head.scss    
+            include search-room-page.scss
+            include ../components/footer.scss
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <meta name='viewport' content='1024'>
+        .search-room__wrapper
+            .landing-page__header 
+                include ../components/_head
+            .search-room__body 
+                .search-room__aside 
+                    .date-pickers
+                        .field
+                            h2.label date Dropdown
+                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                    .search-form__dropdown-block
+                        .dropdown-block__label 
+                            h2.label гости
+                        .dropdown__input
+                            .dropdown__input_default.dropdown__input_wide  
+                                span.dropdown__input-text  Сколько гостей  
+                                <span class="material-icons expand-arrow dropdown-arrow">expand_more</span>
+                            .dropdown__input_expanded.dropdown__input_expanded-apply
+                                .dropdown-options
+                                    .dropdown-item 
+                                        h2.dropdown-option.label взрослые
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus')  
+                                                span +
+                                    .dropdown-item 
+                                        h2.dropdown-option.label дети
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span  +
+                                    .dropdown-item 
+                                        h2.dropdown-option.label младенцы
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span  +
+                                    .dropdown-buttons
+                                        p.apply-btn применить
+                                        p.clear-btn очистить
+                .filter-price
+                    .filter-price__head
+                        h2.label range slider
+                    .filter-price__inputs
+                        label.filter-price__label.filter-price__label-min
+                            input(type='number' min='0' max='100000' placeholder='0' id='input-0').filter-price__input
+                            span.filter-price__text ₽-
+                            span.filter-price__text 
+                        label.filter-price__label.filter-price__label-max
+                            input(type='number' min='0' max='100000' placeholder='100000' id='input-1').filter-price__input
+                            span.filter-price__text ₽
+                    .filter-price__slider(id='range-slider')
