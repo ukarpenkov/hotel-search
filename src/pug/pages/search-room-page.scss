@@ -3,3 +3,8 @@
   width: 1440px;
   height: 200px;
 }
+
+.search-room__body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}

@@ -52,15 +52,116 @@ html
                                     .dropdown-buttons
                                         p.apply-btn применить
                                         p.clear-btn очистить
-                .filter-price
-                    .filter-price__head
-                        h2.label range slider
-                    .filter-price__inputs
-                        label.filter-price__label.filter-price__label-min
-                            input(type='number' min='0' max='100000' placeholder='0' id='input-0').filter-price__input
-                            span.filter-price__text ₽-
-                            span.filter-price__text 
-                        label.filter-price__label.filter-price__label-max
-                            input(type='number' min='0' max='100000' placeholder='100000' id='input-1').filter-price__input
-                            span.filter-price__text ₽
-                    .filter-price__slider(id='range-slider')
+                    .filter-price
+                        .filter-price__head
+                            h2.label range slider
+                        .filter-price__inputs
+                            label.filter-price__label.filter-price__label-min
+                                input(type='number' min='0' max='100000' placeholder='0' id='input-0').filter-price__input
+                                span.filter-price__text ₽-
+                                span.filter-price__text 
+                            label.filter-price__label.filter-price__label-max
+                                input(type='number' min='0' max='100000' placeholder='100000' id='input-1').filter-price__input
+                                span.filter-price__text ₽
+                        .filter-price__slider(id='range-slider')
+                    .checkbox-list
+                            .checkbox-list__label 
+                                h2.label Checkbox Buttons 
+                            .checkbox-list_options 
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement').checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label правила дома
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement' checked).checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label Можно с питомцами
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement' checked).checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label Можно пригласить гостей (до 10 человек)
+                    .checkbox-list_rich 
+                            .checkbox-list__label 
+                                h2.label rich Checkbox Buttons
+                            .checkbox-list_options 
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement1').checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label.checkbox-label-rich Широкий коридор
+                                    p.checkbox-label-describe Ширина коридоров в номере не менее 91 см.
+                                label.checkbox-list_options-items
+                                    input(type='checkbox' name='agreement2').checkbox
+                                    span.visible-checkbox-label
+                                    span.checkbox-label.checkbox-label-rich Помощник для инвалидов
+                                    p.checkbox-label-describe На 1 этаже вас встретит специалист  и проводит до номера.  
+                    .dropdown-block
+                        .dropdown-block__label 
+                            h2.label Удобства номера
+                            
+                        .dropdown__input 
+                            .dropdown__input_default 
+                                span.dropdown__input-text  2 спальни
+                                span(class='material-icons expand-arrow dropdown__arrow') expand_more
+                            .dropdown__input_expanded
+                                .dropdown-options
+                                    .dropdown-item 
+                                        h2.dropdown-option.label спальни
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus')  
+                                                    span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                    span  +
+                                    .dropdown-item 
+                                        h2.dropdown-option.label кровати
+                                        .dropdown-counter
+                                                .dropdown-counter__btn(data-direction='minus') 
+                                                    span  -
+                                                .dropdown-counter__value.label 0
+                                                .dropdown-counter__btn(data-direction='plus')
+                                                    span +
+                                    .dropdown-item 
+                                        h2.dropdown-option.label ванные комнаты
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span +
+                    .dropdown-block
+                        .dropdown-block__label 
+                            h2.label дополнительные удобства
+                            
+                        .dropdown__input 
+                            .dropdown__input_default 
+                                span.dropdown__input-text  2 спальни
+                                span(class='material-icons expand-arrow dropdown__arrow') expand_more
+                            .dropdown__input_expanded
+                                .dropdown-options
+                                    .dropdown-item 
+                                        h2.dropdown-option.label спальни
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus')  
+                                                    span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                    span  +
+                                    .dropdown-item 
+                                        h2.dropdown-option.label кровати
+                                        .dropdown-counter
+                                                .dropdown-counter__btn(data-direction='minus') 
+                                                    span  -
+                                                .dropdown-counter__value.label 0
+                                                .dropdown-counter__btn(data-direction='plus')
+                                                    span +
+                                    .dropdown-item 
+                                        h2.dropdown-option.label ванные комнаты
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span +
+                .search-room__main 
+                    h1.search-room__label Номера, которые мы для вас подобрали
+                    .search-room__main-col-1
