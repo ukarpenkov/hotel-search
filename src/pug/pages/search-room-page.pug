@@ -1,3 +1,31 @@
+mixin room-card(img, number, price, luxe)
+    .room-card
+        .room-card-img
+            img.room-picture(src=`/src/images/${img}`, alt="")
+        .room-card-info 
+            .room-card-info__number 
+                h3.room-card-number= number
+                h3.luxe= luxe 
+            .room-card-info__price 
+                span= price
+                span &nbsp в сутки
+            .room-card-rating
+                .stars-block
+                    .rating
+                        .rating-stars
+                            input(id='rating__5' type='radio' name='rating' value='5').rating__star 
+                            label(for='rating__5').rating__label <span class="material-icons">star_border</span>
+                            input(id='rating__4' type='radio' name='rating' value='4').rating__star
+                            label(for='rating__4').rating__label <span class="material-icons">star_border</span>
+                            input(id='rating__3' type='radio' name='rating' value='3').rating__star
+                            label(for='rating__3').rating__label <span class="material-icons">star_border</span>
+                            input(id='rating__2' type='radio' name='rating' value='2').rating__star
+                            label(for='rating__2').rating__label <span class="material-icons">star_border</span>
+                            input(id='rating__1' type='radio' name='rating' value='1').rating__star
+                            label(for='rating__1').rating__label <span class="material-icons">star_border</span>
+                .comment
+
+
 html
     head
         style
@@ -165,3 +193,4 @@ html
                 .search-room__main 
                     h1.search-room__label Номера, которые мы для вас подобрали
                     .search-room__main-col-1
+                        +room-card('room-card-img.png', '№455', '9 990₽', 'ЛЮКС')
