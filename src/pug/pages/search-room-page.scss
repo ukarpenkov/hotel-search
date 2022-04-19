@@ -1,15 +1,106 @@
+.search-room__label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1f2041;
+}
+
 .search-room__wrapper {
-  background-color: rgb(212, 66, 66);
+  display: block;
+  background-color: rgb(255, 255, 255);
   width: 1440px;
   height: 200px;
+  padding-top: 1px;
 }
 
 .search-room__body {
   display: grid;
+  width: 1160px;
   grid-template-columns: 1fr 5fr;
+  justify-content: center;
 }
 
 .room-picture {
   width: 270px;
   height: 151px;
+}
+
+.room-card-number {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 17px;
+  color: #1f2041;
+}
+.luxe-attr {
+  position: relative;
+  left: -7px;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+.room-card-sign-number {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1f2041;
+}
+
+.room-card-info__number {
+  position: relative;
+  left: 5px;
+  display: flex;
+  align-items: baseline;
+}
+.room-card-info__text {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 233px;
+}
+
+.room-price {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.price-per {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.comment-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.comment-text-attr {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room-card-rating {
+  display: flex;
 }
