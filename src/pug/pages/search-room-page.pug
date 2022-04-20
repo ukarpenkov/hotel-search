@@ -28,7 +28,7 @@ mixin room-card(img, number, price, luxe, commentCount)
                             label(for='rating__1').rating__label <span class="material-icons">star_border</span>
                 .room-card__comment
                     p.comment-text= commentCount
-                    span.comment-text-attr Отзывов
+                    span.comment-text-attr &nbspОтзывов
 html
     head
         style
@@ -194,5 +194,19 @@ html
                                                 span +
                 .search-room__main 
                     h1.search-room__label Номера, которые мы для вас подобрали
-                    .search-room__main-col-1
-                        +room-card('room-card-img.png', '888', '9 990₽', 'ЛЮКС', '145')
+                    .search-room__cards
+                        .search-room__main-col-1
+                            +room-card('room888.png', '888', '9 990₽', 'ЛЮКС', '145')
+                            +room-card('room856.png', '856', '7 300₽', '' , '19')
+                            +room-card('room678.png', '678', '5 500₽', '' , '45')
+                            +room-card('room666.png', '666', '5 000₽', '' , '25')
+                        .search-room__main-col-2
+                            +room-card('room840.png', '840', '9 990₽', '', '65')
+                            +room-card('room740.png', '740', '6 000₽', '' , '44')
+                            +room-card('room450.png', '450', '5 300₽', '' , '39')
+                            +room-card('room444.png', '444', '5 000₽', '' , '15')
+                        .search-room__main-col-3
+                            +room-card('room980.png', '980', '8 500₽', 'ЛЮКС', '35')
+                            +room-card('room982.png', '982', '5 800₽', '' , '56')
+                            +room-card('room350.png', '350', '5 00₽', '' , '77')
+                            +room-card('room352.png', '352', '5 000₽', '' , '55')
