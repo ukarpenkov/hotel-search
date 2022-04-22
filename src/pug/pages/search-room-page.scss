@@ -11,17 +11,22 @@
   display: block;
   background-color: rgb(255, 255, 255);
   width: 1440px;
-  height: 200px;
+  height: 100%;
   padding-top: 1px;
 }
 
 .search-room__body {
   display: grid;
   width: 1160px;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
   justify-content: center;
+  margin-left: 114px;
 }
-
+.search-room__aside {
+  display: grid;
+  margin-left: 10px;
+  align-items: left;
+}
 .room-picture {
   width: 270px;
   height: 151px;
@@ -68,6 +73,10 @@
 
 .room-card-info {
   margin-left: 20px;
+}
+
+.room-card {
+  margin-bottom: 27px;
 }
 
 .room-card-info__number {
@@ -132,4 +141,7 @@
 }
 .search-room__cards {
   display: flex;
+}
+.search-room__main-col {
+  margin-left: 12px;
 }

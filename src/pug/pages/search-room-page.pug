@@ -45,7 +45,7 @@ html
                 .search-room__aside 
                     .date-pickers
                         .field
-                            h2.label date Dropdown
+                            h2.label даты пребывания в отеле
                             input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
                     .search-form__dropdown-block
                         .dropdown-block__label 
@@ -85,7 +85,7 @@ html
                                         p.clear-btn очистить
                     .filter-price
                         .filter-price__head
-                            h2.label range slider
+                            h2.label диапазон цены
                         .filter-price__inputs
                             label.filter-price__label.filter-price__label-min
                                 input(type='number' min='0' max='100000' placeholder='0' id='input-0').filter-price__input
@@ -97,12 +97,12 @@ html
                         .filter-price__slider(id='range-slider')
                     .checkbox-list
                             .checkbox-list__label 
-                                h2.label Checkbox Buttons 
+                                h2.label правила дома
                             .checkbox-list_options 
                                 label.checkbox-list_options-items
                                     input(type='checkbox' name='agreement').checkbox
                                     span.visible-checkbox-label
-                                    span.checkbox-label правила дома
+                                    span.checkbox-label Можно курить
                                 label.checkbox-list_options-items
                                     input(type='checkbox' name='agreement' checked).checkbox
                                     span.visible-checkbox-label
@@ -113,7 +113,7 @@ html
                                     span.checkbox-label Можно пригласить гостей (до 10 человек)
                     .checkbox-list_rich 
                             .checkbox-list__label 
-                                h2.label rich Checkbox Buttons
+                                h2.label доступность
                             .checkbox-list_options 
                                 label.checkbox-list_options-items
                                     input(type='checkbox' name='agreement1').checkbox
@@ -130,7 +130,7 @@ html
                             h2.label Удобства номера                            
                         .dropdown__input 
                             .dropdown__input_default 
-                                span.dropdown__input-text  2 спальни
+                                span.dropdown__input-text  2 спальни, 2 кровати
                                 span(class='material-icons expand-arrow dropdown__arrow') expand_more
                             .dropdown__input_expanded
                                 .dropdown-options
@@ -195,17 +195,17 @@ html
                 .search-room__main 
                     h1.search-room__label Номера, которые мы для вас подобрали
                     .search-room__cards
-                        .search-room__main-col-1
+                        .search-room__main-col
                             +room-card('room888.png', '888', '9 990₽', 'ЛЮКС', '145')
                             +room-card('room856.png', '856', '7 300₽', '' , '19')
                             +room-card('room678.png', '678', '5 500₽', '' , '45')
                             +room-card('room666.png', '666', '5 000₽', '' , '25')
-                        .search-room__main-col-2
+                        .search-room__main-col
                             +room-card('room840.png', '840', '9 990₽', '', '65')
                             +room-card('room740.png', '740', '6 000₽', '' , '44')
                             +room-card('room450.png', '450', '5 300₽', '' , '39')
                             +room-card('room444.png', '444', '5 000₽', '' , '15')
-                        .search-room__main-col-3
+                        .search-room__main-col
                             +room-card('room980.png', '980', '8 500₽', 'ЛЮКС', '35')
                             +room-card('room982.png', '982', '5 800₽', '' , '56')
                             +room-card('room350.png', '350', '5 00₽', '' , '77')
