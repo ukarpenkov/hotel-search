@@ -33,6 +33,7 @@ html
     head
         style
             include ../components/form-elements.scss
+            include ../pages/form-elements-page.scss
             include ../components/head.scss    
             include search-room-page.scss
             include ../components/footer.scss
@@ -46,14 +47,15 @@ html
                     .date-pickers
                         .field
                             h2.label даты пребывания в отеле
-                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar.calendar_long
+                            <span class="material-icons expand-arrow dropdown-arrow-calendar">expand_more</span>
                     .search-form__dropdown-block
                         .dropdown-block__label 
                             h2.label гости
                         .dropdown__input
-                            .dropdown__input_default.dropdown__input_wide  
+                            .dropdown__input_default.dropdown__input_middle
                                 span.dropdown__input-text  Сколько гостей  
-                                <span class="material-icons expand-arrow dropdown-arrow">expand_more</span>
+                                <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
                             .dropdown__input_expanded.dropdown__input_expanded-apply
                                 .dropdown-options
                                     .dropdown-item 
@@ -84,17 +86,18 @@ html
                                         p.apply-btn применить
                                         p.clear-btn очистить
                     .filter-price
-                        .filter-price__head
-                            h2.label диапазон цены
-                        .filter-price__inputs
-                            label.filter-price__label.filter-price__label-min
-                                input(type='number' min='0' max='100000' placeholder='0' id='input-0').filter-price__input
-                                span.filter-price__text ₽-
-                                span.filter-price__text 
-                            label.filter-price__label.filter-price__label-max
-                                input(type='number' min='0' max='100000' placeholder='100000' id='input-1').filter-price__input
-                                span.filter-price__text ₽
-                        .filter-price__slider(id='range-slider')
+                        .search-room-filter-price__head
+                            .filter-price__head
+                                h2.label диапазон цены
+                                .filter-price__inputs
+                                    label.filter-price__label.filter-price__label-min
+                                        input(type='number' min='0' max='100000' placeholder='0' id='input-0').filter-price__input-min
+                                        span.filter-price__text ₽-
+                                        span.filter-price__text 
+                                    label.filter-price__label.filter-price__label-max
+                                        input(type='number' min='0' max='100000' placeholder='10&nbsp0000' id='input-1').filter-price__input-max
+                                        span.filter-price__text.filter-price__text-max ₽
+                            .filter-price__slider(id='range-slider')
                     .checkbox-list
                             .checkbox-list__label 
                                 h2.label правила дома
