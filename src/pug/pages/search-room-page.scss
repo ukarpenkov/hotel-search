@@ -1,4 +1,7 @@
 .search-room__label {
+  position: relative;
+  left: 10px;
+  top: -4px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -16,16 +19,20 @@
 }
 
 .search-room__body {
-  display: grid;
+  display: flex;
   width: 1160px;
-  grid-template-columns: 1fr 4fr;
-  justify-content: center;
   margin-left: 114px;
 }
 .search-room__aside {
-  display: grid;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-top: -13px;
 }
+
+.search-room__main {
+  margin-left: -29px;
+  margin-top: 16px;
+}
+
 .room-picture {
   width: 270px;
   height: 151px;
@@ -157,4 +164,29 @@
   position: relative;
   left: 116px;
   top: 6px;
+}
+.filter-price_description {
+  position: relative;
+  left: -10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.search-form__dropdown-block {
+}
+.search-room-filter-price {
+  margin-top: 19px;
+  margin-left: 12px;
+}
+
+.search-room-checkbox-list_rich {
+  width: 266px;
+  margin-top: 22px;
+}
+.search-room-checkbox-list {
+  margin-top: 20px;
 }

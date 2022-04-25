@@ -56,36 +56,36 @@ html
                             .dropdown__input_default.dropdown__input_middle
                                 span.dropdown__input-text  Сколько гостей  
                                 <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
-                            .dropdown__input_expanded.dropdown__input_expanded-apply
-                                .dropdown-options
-                                    .dropdown-item 
-                                        h2.dropdown-option.label взрослые
-                                        .dropdown-counter
-                                            .dropdown-counter__btn(data-direction='minus') 
-                                                span -
-                                            .dropdown-counter__value.label 0
-                                            .dropdown-counter__btn(data-direction='plus')  
-                                                span +
-                                    .dropdown-item 
-                                        h2.dropdown-option.label дети
-                                        .dropdown-counter
-                                            .dropdown-counter__btn(data-direction='minus') 
-                                                span -
-                                            .dropdown-counter__value.label 0
-                                            .dropdown-counter__btn(data-direction='plus') 
-                                                span  +
-                                    .dropdown-item 
-                                        h2.dropdown-option.label младенцы
-                                        .dropdown-counter
-                                            .dropdown-counter__btn(data-direction='minus') 
-                                                span -
-                                            .dropdown-counter__value.label 0
-                                            .dropdown-counter__btn(data-direction='plus') 
-                                                span  +
-                                    .dropdown-buttons
-                                        p.apply-btn применить
-                                        p.clear-btn очистить
-                    .filter-price
+                            //- .dropdown__input_expanded.dropdown__input_expanded-apply
+                            //-     .dropdown-options
+                            //-         .dropdown-item 
+                            //-             h2.dropdown-option.label взрослые
+                            //-             .dropdown-counter
+                            //-                 .dropdown-counter__btn(data-direction='minus') 
+                            //-                     span -
+                            //-                 .dropdown-counter__value.label 0
+                            //-                 .dropdown-counter__btn(data-direction='plus')  
+                            //-                     span +
+                            //-         .dropdown-item 
+                            //-             h2.dropdown-option.label дети
+                            //-             .dropdown-counter
+                            //-                 .dropdown-counter__btn(data-direction='minus') 
+                            //-                     span -
+                            //-                 .dropdown-counter__value.label 0
+                            //-                 .dropdown-counter__btn(data-direction='plus') 
+                            //-                     span  +
+                            //-         .dropdown-item 
+                            //-             h2.dropdown-option.label младенцы
+                            //-             .dropdown-counter
+                            //-                 .dropdown-counter__btn(data-direction='minus') 
+                            //-                     span -
+                            //-                 .dropdown-counter__value.label 0
+                            //-                 .dropdown-counter__btn(data-direction='plus') 
+                            //-                     span  +
+                            //-         .dropdown-buttons
+                            //-             p.apply-btn применить
+                            //-             p.clear-btn очистить
+                    .search-room-filter-price
                         .search-room-filter-price__head
                             .filter-price__head
                                 h2.label диапазон цены
@@ -98,7 +98,8 @@ html
                                         input(type='number' min='0' max='100000' placeholder='10&nbsp0000' id='input-1').filter-price__input-max
                                         span.filter-price__text.filter-price__text-max ₽
                             .filter-price__slider(id='range-slider')
-                    .checkbox-list
+                            p.filter-price_description Стоимость за сутки пребывания в номере
+                    .search-room-checkbox-list
                             .checkbox-list__label 
                                 h2.label правила дома
                             .checkbox-list_options 
@@ -114,7 +115,7 @@ html
                                     input(type='checkbox' name='agreement' checked).checkbox
                                     span.visible-checkbox-label
                                     span.checkbox-label Можно пригласить гостей (до 10 человек)
-                    .checkbox-list_rich 
+                    .search-room-checkbox-list_rich 
                             .checkbox-list__label 
                                 h2.label доступность
                             .checkbox-list_options 
@@ -213,3 +214,17 @@ html
                             +room-card('room982.png', '982', '5 800₽', '' , '56')
                             +room-card('room350.png', '350', '5 00₽', '' , '77')
                             +room-card('room352.png', '352', '5 000₽', '' , '55')
+            .search-room__pagination 
+                .pagination
+
+                    .pagination__btns
+                        button.btn.btn-pagination.btn-pagination_active 1
+                        button.btn.btn-pagination.btn-pagination 2
+                        button.btn.btn-pagination.btn-pagination 3
+                        button.btn.btn-pagination.btn-pagination ...
+                        button.btn.btn-pagination.btn-pagination 15
+                        button.btn.btn-pagination.btn-pagination_next <span class="material-icons">arrow_forward</span>
+                        p.pagination-text 1 – 12 из 100+ вариантов аренды
+
+            .landing-page__footer 
+                    include ../components/_footer
