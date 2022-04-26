@@ -176,8 +176,6 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.search-form__dropdown-block {
-}
 .search-room-filter-price {
   margin-top: 19px;
   margin-left: 12px;
@@ -189,4 +187,31 @@
 }
 .search-room-checkbox-list {
   margin-top: 20px;
+}
+
+.search-room__pagination {
+  position: relative;
+  left: 753px;
+  top: -14px;
+}
+.search-page__footer {
+  position: relative;
+  top: -95px;
+  box-shadow: 1px -5px 4px -3px rgb(31 32 65 / 10%);
+}
+
+.dropdown__arrow_checkbox {
+  position: relative;
+  left: -12px;
+  top: 4px;
+}
+
+.dropdown__arrow_comfort {
+  position: relative;
+  left: 78px;
+  top: 7px;
+}
+
+.hidden {
+  display: none;
 }

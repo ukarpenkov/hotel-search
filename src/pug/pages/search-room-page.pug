@@ -56,35 +56,35 @@ html
                             .dropdown__input_default.dropdown__input_middle
                                 span.dropdown__input-text  Сколько гостей  
                                 <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
-                            //- .dropdown__input_expanded.dropdown__input_expanded-apply
-                            //-     .dropdown-options
-                            //-         .dropdown-item 
-                            //-             h2.dropdown-option.label взрослые
-                            //-             .dropdown-counter
-                            //-                 .dropdown-counter__btn(data-direction='minus') 
-                            //-                     span -
-                            //-                 .dropdown-counter__value.label 0
-                            //-                 .dropdown-counter__btn(data-direction='plus')  
-                            //-                     span +
-                            //-         .dropdown-item 
-                            //-             h2.dropdown-option.label дети
-                            //-             .dropdown-counter
-                            //-                 .dropdown-counter__btn(data-direction='minus') 
-                            //-                     span -
-                            //-                 .dropdown-counter__value.label 0
-                            //-                 .dropdown-counter__btn(data-direction='plus') 
-                            //-                     span  +
-                            //-         .dropdown-item 
-                            //-             h2.dropdown-option.label младенцы
-                            //-             .dropdown-counter
-                            //-                 .dropdown-counter__btn(data-direction='minus') 
-                            //-                     span -
-                            //-                 .dropdown-counter__value.label 0
-                            //-                 .dropdown-counter__btn(data-direction='plus') 
-                            //-                     span  +
-                            //-         .dropdown-buttons
-                            //-             p.apply-btn применить
-                            //-             p.clear-btn очистить
+                            .dropdown__input_expanded.dropdown__input_expanded-apply
+                                .dropdown-options
+                                    .dropdown-item 
+                                        h2.dropdown-option.label взрослые
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus')  
+                                                span +
+                                    .dropdown-item 
+                                        h2.dropdown-option.label дети
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span  +
+                                    .dropdown-item 
+                                        h2.dropdown-option.label младенцы
+                                        .dropdown-counter
+                                            .dropdown-counter__btn(data-direction='minus') 
+                                                span -
+                                            .dropdown-counter__value.label 0
+                                            .dropdown-counter__btn(data-direction='plus') 
+                                                span  +
+                                    .dropdown-buttons
+                                        p.apply-btn применить
+                                        p.clear-btn очистить
                     .search-room-filter-price
                         .search-room-filter-price__head
                             .filter-price__head
@@ -133,10 +133,10 @@ html
                         .dropdown-block__label 
                             h2.label Удобства номера                            
                         .dropdown__input 
-                            .dropdown__input_default 
+                            .dropdown__input_default
                                 span.dropdown__input-text  2 спальни, 2 кровати
-                                span(class='material-icons expand-arrow dropdown__arrow') expand_more
-                            .dropdown__input_expanded
+                                span(class='material-icons expand-arrow dropdown__arrow_comfort') expand_more
+                            .dropdown__input_expanded.hidden 
                                 .dropdown-options
                                     .dropdown-item 
                                         h2.dropdown-option.label спальни
@@ -165,37 +165,8 @@ html
                     .dropdown-block
                         .dropdown-block__label 
                             h2.label дополнительные удобства
-                            
-                        .dropdown__input 
-                            .dropdown__input_default 
-                                span.dropdown__input-text  2 спальни
-                                span(class='material-icons expand-arrow dropdown__arrow') expand_more
-                            .dropdown__input_expanded
-                                .dropdown-options
-                                    .dropdown-item 
-                                        h2.dropdown-option.label спальни
-                                        .dropdown-counter
-                                            .dropdown-counter__btn(data-direction='minus')  
-                                                    span -
-                                            .dropdown-counter__value.label 0
-                                            .dropdown-counter__btn(data-direction='plus') 
-                                                    span  +
-                                    .dropdown-item 
-                                        h2.dropdown-option.label кровати
-                                        .dropdown-counter
-                                                .dropdown-counter__btn(data-direction='minus') 
-                                                    span  -
-                                                .dropdown-counter__value.label 0
-                                                .dropdown-counter__btn(data-direction='plus')
-                                                    span +
-                                    .dropdown-item 
-                                        h2.dropdown-option.label ванные комнаты
-                                        .dropdown-counter
-                                            .dropdown-counter__btn(data-direction='minus') 
-                                                span -
-                                            .dropdown-counter__value.label 0
-                                            .dropdown-counter__btn(data-direction='plus') 
-                                                span +
+                            span(class='material-icons expand-arrow dropdown__arrow_checkbox') expand_more
+                       
                 .search-room__main 
                     h1.search-room__label Номера, которые мы для вас подобрали
                     .search-room__cards
@@ -225,6 +196,6 @@ html
                         button.btn.btn-pagination.btn-pagination 15
                         button.btn.btn-pagination.btn-pagination_next <span class="material-icons">arrow_forward</span>
                         p.pagination-text 1 – 12 из 100+ вариантов аренды
-
-            .landing-page__footer 
-                    include ../components/_footer
+            .search-page__footer
+                .landing-page__footer 
+                        include ../components/_footer

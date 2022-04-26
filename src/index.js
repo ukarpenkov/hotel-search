@@ -124,5 +124,13 @@ calendar.forEach(item => {
 
 
 
+var dropdownMenu = document.querySelector('.dropdown__input_expanded')
 
+var comfortArrow = document.querySelector('.dropdown__arrow_comfort')
+
+function hideAndShowElement(element) {
+    element.classList.toggle('hidden')
+}
+
+comfortArrow.addEventListener('click', () => hideAndShowElement(dropdownMenu))
 
