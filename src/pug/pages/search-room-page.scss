@@ -188,6 +188,9 @@
 .search-room-checkbox-list {
   margin-top: 20px;
 }
+.search-room-added-checkbox-list {
+  margin-top: 20px;
+}
 
 .search-room__pagination {
   position: relative;
@@ -214,4 +217,32 @@
 
 .hidden {
   display: none;
+}
+
+.dropdown__input_guests {
+  width: 266px;
+  height: 119px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-top: -1px;
+}
+
+.dropdown__input_guests-expanded-apply {
+  height: 159px;
+}
+
+.apply-btn_narrow {
+  position: relative;
+  width: 84px;
+  height: 15px;
+  left: 175px;
+  bottom: -10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
 }
