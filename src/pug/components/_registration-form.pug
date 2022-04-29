@@ -1,26 +1,41 @@
 html
     head
         style
+            //- include form-elements.scss
             include registration-form.scss
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         form.form.registration-form
             .registration-form_sing-up    
                 h1 Регистрация аккаунта
-                input(type='text' placeholder='Имя').registration-form_sing-up__input
-                input(type='text'  placeholder='Фамилия').registration-form_sing-up__input
-                input(type='radio' name='Мужчина' ).registration-form_sing-up__gender 
-                span Мужчина
-                input(type='radio' name='' ).registration-form_sing-up__gender
-                span Женщина
-                h2 ДАТА РОЖДЕНИЯ
-                input(type='date' name='' ).registration-form_sing-up__date
-                h2 данные для входа в сервис
-                input(type='text' placeholder='Email').registration-form_sing-up__input
-                input(type='password'  placeholder='Пароль').registration-form_sing-up__input
-                label.registration-form_sing-up__switch
-                    input(type='checkbox'  placeholder='').registration-form_sing-up__checkbox
-                    span.registration-form_sing-up__slider-round
-                span Получать спецпредложения
-                input(type='submit' name='' value='ПЕРЕЙТИ К ОПЛАТЕ').sing-in-form__submit
-            .registration-form_sing-in
-                span.sing-in-form__info Уже есть аккаунт на Toxin
-                button.sing-in-form__btn ВОЙТИ
+                .text-fields
+                    .field 
+                        input(type="text" placeholder='Имя').input
+                    .field 
+                        input(type="text" placeholder='Фамилия').input
+                .radio-buttons-items
+                            .radio
+                                input(type='radio' name='gender' id='1').radio__input
+                                label(for='1').radio__label Мужчина
+                            .radio
+                                input(type='radio' name='gender' id='2').radio__input
+                                label(for='2').radio__label Женщина  
+                .text-fields
+                    .field
+                        h2.label даты пребывания в отеле
+                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar.calendar_long
+                            span(class='material-icons expand-arrow date-filter_arrow') expand_more 
+                .text-fields
+                    h2 данные для входа в сервис
+                    .field 
+                        input(type="email" placeholder='Email').input
+                    .field 
+                        input(type="password" placeholder='Пароль').input
+                .toggle-block 
+                    .toggle-item 
+                        input(type='checkbox' class='toggle' id='check1' checked)
+                        label(for='check1' class='toggle-label ') Получать спецпредложения
+                .buttons__item
+                    button.btn.btn_lg  <span>зарегистрироваться</span> <span class="material-icons">arrow_forward</span>
+                .sing-in-block
+                    span.sing-in-form__info Уже есть аккаунт на Toxin?
+                    button.btn.btn_small.btn_dark-violet ВОЙТИ
