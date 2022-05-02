@@ -12,18 +12,17 @@ html
                         input(type="text" placeholder='Имя').input
                     .field 
                         input(type="text" placeholder='Фамилия').input
-                .radio-buttons-items
+                .registration__radio-buttons-items
                             .radio
                                 input(type='radio' name='gender' id='1').radio__input
                                 label(for='1').radio__label Мужчина
                             .radio
                                 input(type='radio' name='gender' id='2').radio__input
                                 label(for='2').radio__label Женщина  
-                .text-fields
+                .registration__date-fields
                     .field
-                        h2.label даты пребывания в отеле
-                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar.calendar_long
-                            span(class='material-icons expand-arrow date-filter_arrow') expand_more 
+                        h2.label даты рождения
+                        input(type="date" placeholder='ДД.ММ.ГГГГ').calendar.calendar_long
                 .text-fields
                     h2 данные для входа в сервис
                     .field 
@@ -35,7 +34,7 @@ html
                         input(type='checkbox' class='toggle' id='check1' checked)
                         label(for='check1' class='toggle-label ') Получать спецпредложения
                 .buttons__item
-                    button.btn.btn_lg  <span>зарегистрироваться</span> <span class="material-icons">arrow_forward</span>
+                    button.btn.registration__btn-lg  <span>зарегистрироваться</span> <span class="material-icons">arrow_forward</span>
                 .sing-in-block
-                    span.sing-in-form__info Уже есть аккаунт на Toxin?
+                    span.sing-in-form__info Уже есть аккаунт на Toxin
                     button.btn.btn_small.btn_dark-violet ВОЙТИ

@@ -1,36 +1,33 @@
 .registration-form {
+  margin-top: 36px;
   width: 380px;
   height: 646px;
   left: 140px;
   top: 564px;
-}
-
-.registration-form {
   background-color: #fff;
+  padding-top: 23px;
 }
 
 .registration-form_sing-up h1 {
-  width: 320px;
-  height: 30px;
-  left: 170px;
-  top: 604px;
+  position: relative;
+  left: -9px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   color: #1f2041;
+  margin-bottom: 21px;
 }
 .registration-form_sing-up h2 {
+  position: relative;
   width: 211px;
   height: 15px;
-  left: 170px;
-  top: 890px;
+  left: -100px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
   text-transform: uppercase;
   color: #1f2041;
 }
@@ -39,6 +36,23 @@
   display: flex;
   width: 500px;
 }
+
+.registration__radio-buttons-items {
+  width: 345px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+}
+
+.calendar.calendar_long {
+  width: 320px;
+  margin-left: 5px;
+}
+
+.registration__date-fields {
+  margin-bottom: 15px;
+}
+
 // .registration-form_sing-up span {
 //   width: 210px;
 //   height: 24px;
@@ -109,10 +123,9 @@
 // }
 
 .sing-in-form__info {
-  display: inline;
-  width: 164px;
+  display: inline-block;
+  width: 222px;
   height: 18px;
-  left: 590px;
   top: 998px;
   font-family: Montserrat;
   font-style: normal;
@@ -123,6 +136,11 @@
   align-items: center;
   color: #000000;
   margin-top: 10px;
+}
+
+.sing-in-block {
+  position: relative;
+  left: 30px;
 }
 
 // .sing-in-form__btn {
@@ -186,3 +204,13 @@
 //   + .registration-form_sing-up__slider-round {
 //   background-color: #2196f3;
 // }
+.registration__btn-lg {
+  position: relative;
+  width: 320px;
+  top: 14px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
