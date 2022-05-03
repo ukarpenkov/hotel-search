@@ -6,6 +6,10 @@
   top: 564px;
   background-color: #fff;
   padding-top: 23px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .registration-form_sing-up h1 {
@@ -19,11 +23,28 @@
   color: #1f2041;
   margin-bottom: 21px;
 }
-.registration-form_sing-up h2 {
+.label-date {
   position: relative;
   width: 211px;
   height: 15px;
-  left: -100px;
+  left: -99px;
+  top: 8px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin-bottom: 13px;
+}
+
+.label-entries {
+  position: relative;
+  width: 211px;
+  height: 15px;
+  left: -53px;
+  top: 5px;
+  margin-bottom: 11px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -32,9 +53,27 @@
   color: #1f2041;
 }
 
-.sing-in-block {
-  display: flex;
-  width: 500px;
+.registration__toggle-block {
+  margin-bottom: -35px;
+  margin-top: 36px;
+}
+
+.registration__arrow {
+  position: relative;
+  left: 58px;
+  top: 0px;
+}
+
+.registration__buttons__item {
+  margin-right: -1px;
+  margin-bottom: 43px;
+}
+
+.toggle-promo + .toggle-label {
+  cursor: pointer;
+  position: relative;
+  left: -29px;
+  top: -29px;
 }
 
 .registration__radio-buttons-items {
@@ -140,7 +179,9 @@
 
 .sing-in-block {
   position: relative;
-  left: 30px;
+
+  display: flex;
+  width: 320px;
 }
 
 // .sing-in-form__btn {

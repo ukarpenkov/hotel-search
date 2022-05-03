@@ -21,20 +21,20 @@ html
                                 label(for='2').radio__label Женщина  
                 .registration__date-fields
                     .field
-                        h2.label даты рождения
+                        h2.label-date дата рождения
                         input(type="date" placeholder='ДД.ММ.ГГГГ').calendar.calendar_long
                 .text-fields
-                    h2 данные для входа в сервис
+                    h2.label-entries данные для входа в сервис
                     .field 
                         input(type="email" placeholder='Email').input
                     .field 
                         input(type="password" placeholder='Пароль').input
-                .toggle-block 
+                .registration__toggle-block 
                     .toggle-item 
-                        input(type='checkbox' class='toggle' id='check1' checked)
+                        input(type='checkbox' class=' toggle toggle-promo' id='check1' checked)
                         label(for='check1' class='toggle-label ') Получать спецпредложения
-                .buttons__item
-                    button.btn.registration__btn-lg  <span>зарегистрироваться</span> <span class="material-icons">arrow_forward</span>
+                .registration__buttons__item
+                    button.btn.registration__btn-lg  <span>зарегистрироваться</span> <span class="material-icons registration__arrow">arrow_forward</span>
                 .sing-in-block
                     span.sing-in-form__info Уже есть аккаунт на Toxin
                     button.btn.btn_small.btn_dark-violet ВОЙТИ
