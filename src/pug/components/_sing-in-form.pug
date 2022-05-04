@@ -1,17 +1,20 @@
 html
     head
         style
+            //- include form-elements.scss
+            include registration-form.scss
             include sing-in-form.scss
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         form.form.sing-in-form
-            .sing-in-form_sing-in    
+            .sing-in-form__data   
                 h1 Войти
-                input(type='text' placeholder='Email').sing-in-form__input
-                input(type='password'  placeholder='Пароль').sing-in-form__input
-                input(type='submit' name='' value='ВОЙТИ').sing-in-form__submit
-            .sing-in-form_sing-up
-                span.sing-in-form__info Нет аккаунта на Toxin?
-                button.sing-in-form__btn СОЗДАТЬ
-
-
-                
-                
+                .sing-in__text-fields
+                    .field 
+                        input(type="email" placeholder='Email').input
+                    .field 
+                        input(type="password" placeholder='Пароль').input
+                .registration__buttons__item
+                    button.btn.sing-in__btn-lg <span class='sing-in__btn-lg-text'>войти</span><span class="material-icons sign-in__arrow">arrow_forward</span>
+                .sing-in-block
+                    span.sing-in-form__info Нет аккаунта на Toxin?
+                    button.btn.btn_small.btn_dark-violet СОЗДАТЬ

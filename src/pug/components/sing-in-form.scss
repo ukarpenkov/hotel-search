@@ -1,89 +1,52 @@
 .sing-in-form {
+  margin-top: 172px;
   width: 380px;
   height: 358px;
-  left: 560px;
-  top: 704px;
+  left: 140px;
+  top: 564px;
+  background-color: #fff;
+  padding-top: 23px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+  border-radius: 4px;
 }
 
-.sing-in-form h1 {
-  width: 320px;
-  height: 30px;
-  left: 590px;
-  top: 744px;
+.sing-in-form__data h1 {
+  position: relative;
+  left: -120px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
-
   color: #1f2041;
+  margin-bottom: 21px;
 }
 
-.sing-in-form__input {
-  display: block;
-  margin-top: 10px;
-  width: 320px;
-  height: 44px;
-  left: 590px;
-  top: 794px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+.sing-in__text-fields {
+  margin-bottom: -9px;
 }
 
-.sing-in-form__submit {
-  margin-top: 10px;
-  display: block;
+.sing-in__btn-lg {
+  position: relative;
   width: 320px;
-  height: 44px;
-  left: 590px;
-  top: 912px;
+  top: 14px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  border-radius: 22px;
-}
-
-.sing-in-form__info {
-  display: inline;
-  width: 164px;
-  height: 18px;
-  left: 590px;
-  top: 998px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-  margin-top: 10px;
-}
-
-.sing-in-form__btn {
-  display: inline;
-  width: 99px;
-  height: 44px;
-  left: 811px;
-  top: 986px;
-  border-radius: 22px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
-  text-transform: uppercase;
-  color: #bc9cff;
-  border: 2px solid;
-  border-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.sing-in-form_sing-up {
-  display: inline-flex;
-  margin-top: 10px;
+.sing-in__btn-lg-text {
+  position: relative;
+  left: 11px;
+  top: 1px;
+}
+
+.sign-in__arrow {
+  position: relative;
+  left: 114px;
+  top: 0px;
 }
