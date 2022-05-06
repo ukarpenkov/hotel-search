@@ -3,3 +3,47 @@
   margin-bottom: 15px;
   height: 140px;
 }
+
+.headers-and-footer-page__mobile-footer {
+  width: 768px;
+  height: 367px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 1px;
+}
+
+.footer-bottom-mobile {
+  margin-top: 3px;
+  padding: 0 132px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.footer__social-mobile-icons {
+  margin-left: 120px;
+  display: flex;
+  width: 134px;
+  justify-content: space-around;
+  margin-right: 15px;
+}
+
+.footer_mobile-copyright-txt {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 25px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.header__mobile-text-logo {
+  position: relative;
+  margin: 0 auto;
+  width: 106px;
+  margin-top: 119px;
+}
