@@ -4,6 +4,31 @@
   height: 140px;
 }
 
+.header-footer-page__wrapper {
+  background-color: #e5e5e5;
+}
+
+.landing-page__footer {
+  background: #ffffff;
+}
+
+.header__logo-img {
+  display: inline-block;
+  position: relative;
+  top: 28px;
+  left: 20px;
+}
+
+.header-page__header {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 38px;
+}
+
+.header-page__logged-in-header {
+  margin-bottom: 100px;
+}
+
 .headers-and-footer-page__mobile-footer {
   width: 768px;
   height: 367px;
@@ -12,6 +37,23 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 1px;
+  margin-top: 42px;
+}
+
+.header__logged-in-menu {
+  margin-left: 188px;
+}
+
+.stroke {
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: -25px;
+  margin-left: 23px;
+  margin-right: 0px;
+  width: 1px;
+  height: 30px;
+  background: rgba(31, 32, 65, 0.1);
 }
 
 .footer-bottom-mobile {
