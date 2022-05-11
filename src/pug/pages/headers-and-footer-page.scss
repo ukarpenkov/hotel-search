@@ -4,8 +4,18 @@
   height: 140px;
 }
 
+.header-footer-page__footer {
+  background: #ffffff;
+  height: 443px;
+}
+
 .header-footer-page__wrapper {
   background-color: #e5e5e5;
+}
+
+.footer__content {
+  position: relative;
+  top: 60px;
 }
 
 .landing-page__footer {
@@ -26,7 +36,7 @@
 }
 
 .header-page__logged-in-header {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .headers-and-footer-page__mobile-footer {
@@ -38,6 +48,7 @@
   margin: 0 auto;
   padding-top: 1px;
   margin-top: 42px;
+  margin-bottom: 120px;
 }
 
 .header__logged-in-menu {

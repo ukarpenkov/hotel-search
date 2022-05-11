@@ -1,0 +1,147 @@
+mixin room-card(img, number, price, luxe, commentCount)
+    .room-card
+        .room-card-img
+            img.room-picture(src=`/src/images/${img}`, alt="")
+        .room-card-info
+            .room-card-info__text
+                .room-card-info__number
+                    p.room-card-sign-number № 
+                    h2.room-card-number= number
+                .special-offer
+                    h3.luxe-attr= luxe 
+                .room-card-info__price 
+                    span.room-price= price
+                    span.price-per &nbsp в сутки
+            .room-card-rating
+                .stars-block
+                    .rating
+                        .rating-stars
+                            input(id='rating__5' type='radio' name='rating' value='5').rating__star 
+                            label(for='rating__5').rating__label <span class="material-icons">star_border</span>
+                            input(id='rating__4' type='radio' name='rating' value='4').rating__star
+                            label(for='rating__4').rating__label <span class="material-icons">star_border</span>
+                            input(id='rating__3' type='radio' name='rating' value='3').rating__star
+                            label(for='rating__3').rating__label <span class="material-icons">star_border</span>
+                            input(id='rating__2' type='radio' name='rating' value='2').rating__star
+                            label(for='rating__2').rating__label <span class="material-icons">star_border</span>
+                            input(id='rating__1' type='radio' name='rating' value='1').rating__star
+                            label(for='rating__1').rating__label <span class="material-icons">star_border</span>
+                .room-card__comment
+                    p.comment-text= commentCount
+                    span.comment-text-attr &nbspОтзывов
+
+html
+    head
+        style
+            include ../components/form-elements.scss
+            include headers-and-footer-page.scss
+            include ../components/head.scss    
+            include landing-page.scss 
+            include registration-page.scss
+            include search-room-page.scss
+            include ../components/footer.scss
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <meta name='viewport' content='1024'>
+        .header-footer-page__wrapper
+            .header-page__logo
+                .header__logo-img
+                    a(href="#")
+                        img(src="src/images/only_logo.png", alt="Logo").head__logo-img
+            .landing-page__search-form
+                .landing-page__search-form-elements
+                    h1.search-form__header Найдём номера под ваши пожелания
+                    .search-form__date-pickers
+                        .field
+                            h2.label прибытие
+                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                            .field 
+                                h2.label выезд
+                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                            .search-form__dropdown-block
+                                .dropdown-block__label 
+                                    h2.label гости
+                                .dropdown__input
+                                    .dropdown__input_default.dropdown__input_wide  
+                                        span.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown-arrow">expand_more</span>
+                                    .dropdown__input_expanded.dropdown__input_expanded-apply
+                                        .dropdown-options
+                                            .dropdown-item 
+                                                h2.dropdown-option.label взрослые
+                                                .dropdown-counter
+                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                        span -
+                                                    .dropdown-counter__value.label 0
+                                                    .dropdown-counter__btn(data-direction='plus')  
+                                                        span +
+                                            .dropdown-item 
+                                                h2.dropdown-option.label дети
+                                                .dropdown-counter
+                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                        span -
+                                                    .dropdown-counter__value.label 0
+                                                    .dropdown-counter__btn(data-direction='plus') 
+                                                        span  +
+                                            .dropdown-item 
+                                                h2.dropdown-option.label младенцы
+                                                .dropdown-counter
+                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                        span -
+                                                    .dropdown-counter__value.label 0
+                                                    .dropdown-counter__btn(data-direction='plus') 
+                                                        span  +
+                                            .dropdown-buttons
+                                                p.apply-btn применить
+                                                p.clear-btn очистить
+            .registration-page__main-bgi
+                include   ../components/_registration-form
+            .landing-page__main
+                .registration-page__main-bgi
+                    include   ../components/_sing-in-form
+            .search-room__main-col
+          
+                +room-card('room666.png', '666', '5 000₽', '' , '25')
+                +room-card('room666.png', '666', '5 000₽', '' , '25')
+            .landing-page__search-form-elements
+                    h1.search-form__header Найдём номера под ваши пожелания
+                    .search-form__date-pickers
+                        .field
+                            h2.label прибытие
+                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                            .field 
+                                h2.label выезд
+                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                            .search-form__dropdown-block
+                                .dropdown-block__label 
+                                    h2.label гости
+                                .dropdown__input
+                                    .dropdown__input_default.dropdown__input_wide  
+                                        span.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown-arrow">expand_more</span>
+                                    .dropdown__input_expanded.dropdown__input_expanded-apply
+                                        .dropdown-options
+                                            .dropdown-item 
+                                                h2.dropdown-option.label взрослые
+                                                .dropdown-counter
+                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                        span -
+                                                    .dropdown-counter__value.label 0
+                                                    .dropdown-counter__btn(data-direction='plus')  
+                                                        span +
+                                            .dropdown-item 
+                                                h2.dropdown-option.label дети
+                                                .dropdown-counter
+                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                        span -
+                                                    .dropdown-counter__value.label 0
+                                                    .dropdown-counter__btn(data-direction='plus') 
+                                                        span  +
+                                            .dropdown-item 
+                                                h2.dropdown-option.label младенцы
+                                                .dropdown-counter
+                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                        span -
+                                                    .dropdown-counter__value.label 0
+                                                    .dropdown-counter__btn(data-direction='plus') 
+                                                        span  +
+                                            .dropdown-buttons
+                                                p.apply-btn применить
+                                                p.clear-btn очистить
