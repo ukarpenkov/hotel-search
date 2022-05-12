@@ -29,7 +29,6 @@ mixin room-card(img, number, price, luxe, commentCount)
                 .room-card__comment
                     p.comment-text= commentCount
                     span.comment-text-attr &nbspОтзывов
-
 html
     head
         style
@@ -37,6 +36,7 @@ html
             include headers-and-footer-page.scss
             include ../components/head.scss    
             include landing-page.scss 
+            include cards-page.scss 
             include registration-page.scss
             include search-room-page.scss
             include ../components/footer.scss
@@ -47,7 +47,7 @@ html
                 .header__logo-img
                     a(href="#")
                         img(src="src/images/only_logo.png", alt="Logo").head__logo-img
-            .landing-page__search-form
+            .cards-page__search-form
                 .landing-page__search-form-elements
                     h1.search-form__header Найдём номера под ваши пожелания
                     .search-form__date-pickers
@@ -92,17 +92,26 @@ html
                                             .dropdown-buttons
                                                 p.apply-btn применить
                                                 p.clear-btn очистить
-            .registration-page__main-bgi
+            .cards-page__form 
                 include   ../components/_registration-form
             .landing-page__main
-                .registration-page__main-bgi
+                .cards-page__form 
                     include   ../components/_sing-in-form
             .search-room__main-col
-          
                 +room-card('room666.png', '666', '5 000₽', '' , '25')
+            .search-room__main-col
                 +room-card('room666.png', '666', '5 000₽', '' , '25')
-            .landing-page__search-form-elements
-                    h1.search-form__header Найдём номера под ваши пожелания
+            .card-page__booking-form
+                    .room-card-info
+                        .room-card-info__text
+                            .room-card-info__number
+                                p.room-card-sign-number №
+                                h2.room-card-number 888
+                            .special-offer
+                                h3.luxe-attr ЛЮКС
+                            .room-card-info__price 
+                                span.room-price 9 990₽
+                                span.price-per &nbsp в сутки
                     .search-form__date-pickers
                         .field
                             h2.label прибытие
@@ -145,3 +154,17 @@ html
                                             .dropdown-buttons
                                                 p.apply-btn применить
                                                 p.clear-btn очистить
+                            .total-info-price 
+                                span 9 990₽ х 4 суток
+                                span 39 960₽
+                            .total-info-options 
+                                span Сбор за услуги: скидка 2 179₽
+                                span 0₽
+                            .total-info-service
+                                span Сбор за дополнительные услуги
+                                span 300₽
+                            .total-price 
+                                h1 Итого
+                                h1 38 081₽
+                            .registration__buttons__item
+                                button.btn.sing-in__btn-lg <span class='sing-in__btn-lg-text'>забронировать</span><span class="material-icons sign-in__arrow">arrow_forward</span>
