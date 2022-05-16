@@ -136,6 +136,7 @@ function hideAndShowElement(element) {
     element.classList.toggle('hidden')
 }
 
+
 comfortArrow.addEventListener('click', () => hideAndShowElement(dropdownMenu))
 guestsArrow.addEventListener('click', () => hideAndShowElement(dropdownGuestsMenu))
 addOptionsArrow.addEventListener('click', () => hideAndShowElement(dropdownCheckboxMenu))
