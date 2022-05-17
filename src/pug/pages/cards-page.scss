@@ -18,6 +18,9 @@
   padding-top: 24px;
   padding-left: 28px;
   padding-right: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .card-page__registration-from {
@@ -251,4 +254,32 @@ h3.luxe-attr {
 .total-info-options {
   display: flex;
   justify-content: space-between;
+  height: 15px;
+}
+.total-info-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: -35px;
+}
+
+span.price-sum {
+  position: relative;
+  top: 23px;
+  width: 170px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.summary-order-info {
+  margin-top: 4px;
+  display: grid;
+  row-gap: 25px;
+}
+
+.card-page__room-card-info {
+  margin-bottom: 5px;
+}
+
+.total-info_long {
+  width: 200px;
 }
