@@ -42,138 +42,140 @@ html
             include ../components/footer.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <meta name='viewport' content='1024'>
-        .header-footer-page__wrapper
+        .cards-page__wrapper
             .header-page__logo
                 .header__logo-img
                     a(href="#")
                         img(src="src/images/only_logo.png", alt="Logo").head__logo-img
-            .cards-page__search-form
-                .landing-page__search-form-elements
-                    h1.search-form__header Найдём номера под ваши пожелания
-                    .search-form__date-pickers
-                        .field
-                            h2.label прибытие
-                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
-                        .field 
-                            h2.label выезд
-                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
-                    .search-form__dropdown-block
-                                .dropdown-block__label 
-                                    h2.label гости
-                                .dropdown__input
-                                    .dropdown__input_default.dropdown__input_wide  
-                                        span.dropdown__input-text  Сколько гостей  
-                                        <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
-                                    .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden
+            .card-page-grid
+                .cards-page__search-form
+                    .landing-page__search-form-elements
+                        h1.search-form__header Найдём номера под ваши пожелания
+                        .search-form__date-pickers
+                            .field
+                                h2.label прибытие
+                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                            .field 
+                                h2.label выезд
+                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                        .search-form__dropdown-block
+                                    .dropdown-block__label 
+                                        h2.label гости
+                                    .dropdown__input
+                                        .dropdown__input_default.dropdown__input_wide  
+                                            span.dropdown__input-text  Сколько гостей  
+                                            <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
+                                        .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden
+                                            .dropdown-options
+                                                .dropdown-item 
+                                                    h2.dropdown-option.label взрослые
+                                                    .dropdown-counter
+                                                        .dropdown-counter__btn(data-direction='minus') 
+                                                            span -
+                                                        .dropdown-counter__value.label 0
+                                                        .dropdown-counter__btn(data-direction='plus')  
+                                                            span +
+                                                .dropdown-item 
+                                                    h2.dropdown-option.label дети
+                                                    .dropdown-counter
+                                                        .dropdown-counter__btn(data-direction='minus') 
+                                                            span -
+                                                        .dropdown-counter__value.label 0
+                                                        .dropdown-counter__btn(data-direction='plus') 
+                                                            span  +
+                                                .dropdown-item 
+                                                    h2.dropdown-option.label младенцы
+                                                    .dropdown-counter
+                                                        .dropdown-counter__btn(data-direction='minus') 
+                                                            span -
+                                                        .dropdown-counter__value.label 0
+                                                        .dropdown-counter__btn(data-direction='plus') 
+                                                            span  +
+                                                .dropdown-buttons
+                                                    p.apply-btn применить
+                                                    p.clear-btn очистить
+                                        button.btn.sing-in__btn-lg.search-button <span class='sing-in__btn-lg-text'>подобрать номер</span><span class="material-icons sign-in__arrow search-arrow">arrow_forward</span>
+                .card-page__booking-form
+                        .card-page__room-card-info
+                            .room-card-info__text
+                                .room-card-info__number
+                                    p.room-card-sign-number №
+                                    h2.card-from.room-card-number 888
+                                    h3.luxe-attr ЛЮКС
+                                .card-page.room-card-info__price 
+                                    span.room-price 9 990₽
+                                    span.price-per &nbsp в сутки
+                        .search-form__date-pickers
+                            .field
+                                h2.label прибытие
+                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                            .field 
+                                h2.label выезд
+                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                        .search-form__dropdown-block
+                            .dropdown-block__label  
+                                h2.label гости
+                            .dropdown__input
+                                .dropdown__input_default.dropdown__input_wide  
+                                    span.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown-arrow dropdown__arrow_comfort dropdown__arrow_checkbox">expand_more</span>
+                                .dropdown__input_guests.dropdown__input_guests-expanded-apply.search-room-added-checkbox-list.hidden
                                         .dropdown-options
-                                            .dropdown-item 
-                                                h2.dropdown-option.label взрослые
-                                                .dropdown-counter
-                                                    .dropdown-counter__btn(data-direction='minus') 
-                                                        span -
-                                                    .dropdown-counter__value.label 0
-                                                    .dropdown-counter__btn(data-direction='plus')  
-                                                        span +
-                                            .dropdown-item 
-                                                h2.dropdown-option.label дети
-                                                .dropdown-counter
-                                                    .dropdown-counter__btn(data-direction='minus') 
-                                                        span -
-                                                    .dropdown-counter__value.label 0
-                                                    .dropdown-counter__btn(data-direction='plus') 
-                                                        span  +
-                                            .dropdown-item 
-                                                h2.dropdown-option.label младенцы
-                                                .dropdown-counter
-                                                    .dropdown-counter__btn(data-direction='minus') 
-                                                        span -
-                                                    .dropdown-counter__value.label 0
-                                                    .dropdown-counter__btn(data-direction='plus') 
-                                                        span  +
-                                            .dropdown-buttons
-                                                p.apply-btn применить
-                                                p.clear-btn очистить
-                                    button.btn.sing-in__btn-lg.search-button <span class='sing-in__btn-lg-text'>подобрать номер</span><span class="material-icons sign-in__arrow search-arrow">arrow_forward</span>
-            .card-page__registration-from
-                .cards-page__form 
-                    include   ../components/_registration-form
-            .card-page__sing-in-from
-                .cards-page__form 
-                    include   ../components/_sing-in-form
-            .search-room__main-col
-                +room-card('room888.png', '888', '9 990₽', 'ЛЮКС' , '145')
-            .search-room__main-col
-                +room-card('room840.png', '840', '9 000₽', '' , '65')
-            .card-page__booking-form
-                    .card-page__room-card-info
-                        .room-card-info__text
-                            .room-card-info__number
-                                p.room-card-sign-number №
-                                h2.card-from.room-card-number 888
-                                h3.luxe-attr ЛЮКС
-                            .card-page.room-card-info__price 
-                                span.room-price 9 990₽
-                                span.price-per &nbsp в сутки
-                    .search-form__date-pickers
-                        .field
-                            h2.label прибытие
-                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
-                        .field 
-                            h2.label выезд
-                            input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
-                    .search-form__dropdown-block
-                        .dropdown-block__label  
-                            h2.label гости
-                        .dropdown__input
-                            .dropdown__input_default.dropdown__input_wide  
-                                span.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown-arrow dropdown__arrow_comfort dropdown__arrow_checkbox">expand_more</span>
-                            .dropdown__input_guests.dropdown__input_guests-expanded-apply.search-room-added-checkbox-list.hidden
-                                    .dropdown-options
-                                            .dropdown-item 
-                                                h2.dropdown-option.label взрослые
-                                                .dropdown-counter
-                                                    .dropdown-counter__btn(data-direction='minus') 
-                                                        span -
-                                                    .dropdown-counter__value.label 0
-                                                    .dropdown-counter__btn(data-direction='plus')  
-                                                        span +
-                                            .dropdown-item 
-                                                h2.dropdown-option.label дети
-                                                .dropdown-counter
-                                                    .dropdown-counter__btn(data-direction='minus') 
-                                                        span -
-                                                    .dropdown-counter__value.label 0
-                                                    .dropdown-counter__btn(data-direction='plus') 
-                                                        span  +
-                                            .dropdown-item 
-                                                h2.dropdown-option.label младенцы
-                                                .dropdown-counter
-                                                    .dropdown-counter__btn(data-direction='minus') 
-                                                        span -
-                                                    .dropdown-counter__value.label 0
-                                                    .dropdown-counter__btn(data-direction='plus') 
-                                                        span  +
-                                            .dropdown-buttons
-                                                p.apply-btn применить
-                                                p.clear-btn очистить
-                        .summary-order-info
-                            .total-info-options 
-                                p.total-info 9 990₽ х 4 суток
-                                p.total-info 39 960₽
-                            .total-info-options 
-                                p.total-info Сбор за услуги: скидка 2 179₽
-                                p.total-info 0₽
-                            .total-info-options 
-                                p.total-info.total-info_long Сбор за дополнительные услуги
-                                p.total-info 300₽
-                            .total-info-summary 
-                                h2.price-sum  Итого
-                                span.price-sum .................................................
-                                h2.price-sum 38 081₽
-                            .registration__buttons__item
-                                button.btn.sing-in__btn-lg <span class='sing-in__btn-lg-text'>забронировать</span><span class="material-icons sign-in__arrow book-arrow">arrow_forward</span>
-            .calendar-form
-                .visible-calendar
+                                                .dropdown-item 
+                                                    h2.dropdown-option.label взрослые
+                                                    .dropdown-counter
+                                                        .dropdown-counter__btn(data-direction='minus') 
+                                                            span -
+                                                        .dropdown-counter__value.label 0
+                                                        .dropdown-counter__btn(data-direction='plus')  
+                                                            span +
+                                                .dropdown-item 
+                                                    h2.dropdown-option.label дети
+                                                    .dropdown-counter
+                                                        .dropdown-counter__btn(data-direction='minus') 
+                                                            span -
+                                                        .dropdown-counter__value.label 0
+                                                        .dropdown-counter__btn(data-direction='plus') 
+                                                            span  +
+                                                .dropdown-item 
+                                                    h2.dropdown-option.label младенцы
+                                                    .dropdown-counter
+                                                        .dropdown-counter__btn(data-direction='minus') 
+                                                            span -
+                                                        .dropdown-counter__value.label 0
+                                                        .dropdown-counter__btn(data-direction='plus') 
+                                                            span  +
+                                                .dropdown-buttons
+                                                    p.apply-btn применить
+                                                    p.clear-btn очистить
+                            .summary-order-info
+                                .total-info-options 
+                                    p.total-info 9 990₽ х 4 суток
+                                    p.total-info 39 960₽
+                                .total-info-options 
+                                    p.total-info Сбор за услуги: скидка 2 179₽
+                                    p.total-info 0₽
+                                .total-info-options 
+                                    p.total-info.total-info_long Сбор за дополнительные услуги
+                                    p.total-info 300₽
+                                .total-info-summary 
+                                    h2.price-sum  Итого
+                                    span.price-sum .................................................
+                                    h2.price-sum 38 081₽
+                                .registration__buttons__item
+                                    button.btn.sing-in__btn-lg <span class='sing-in__btn-lg-text'>забронировать</span><span class="material-icons sign-in__arrow book-arrow">arrow_forward</span>
+                .calendar-form
+                    .visible-calendar
+                .card-page__registration-from
+                    .cards-page__form 
+                        include   ../components/_registration-form
+                .card-page__sing-in-from
+                    .cards-page__form 
+                        include   ../components/_sing-in-form
+                .cards-page__cards
+                    .search-room__main-col
+                        +room-card('room888.png', '888', '9 990₽', 'ЛЮКС' , '145')
+                    .search-room__main-col
+                        +room-card('room840.png', '840', '9 000₽', '' , '65')
                 
                 
 
