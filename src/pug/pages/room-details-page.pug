@@ -1,0 +1,26 @@
+html
+    head
+        style
+            include ../components/form-elements.scss
+            include ../pages/form-elements-page.scss
+            include ../components/head.scss    
+            include search-room-page.scss
+            include room-details-page.scss
+            include ../components/footer.scss
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <meta name='viewport' content='1024'>
+        .room-details-wrapper
+            .header-page__header
+                include ../components/_head
+            .room-details__background-images
+                .room-details__img-item_big
+                    img(src="src/images/room-details01.jpg", alt="image").background-image-item_size_big
+                .room-details__img-items_small
+                    .room-details__img-item
+                        img(src="src/images/room-details02.jpg", alt="image").background-image-item1
+                    .room-details__img-item
+                        img(src="src/images/room-details03.jpg", alt="image").background-image-item2
+
+            .header-footer-page__footer
+                .footer__content
+                    include ../components/_footer
