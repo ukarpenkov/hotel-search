@@ -1,12 +1,17 @@
 html
     head
         style
+            include room-details-page.scss
             include ../components/form-elements.scss
             include ../pages/form-elements-page.scss
             include ../components/head.scss    
             include search-room-page.scss
-            include room-details-page.scss
             include ../components/footer.scss
+            include cards-page.scss
+            include landing-page.scss 
+            include registration-page.scss
+            include headers-and-footer-page.scss
+            include ../components/sing-in-form.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <meta name='viewport' content='1024'>
         .room-details-wrapper
@@ -20,7 +25,133 @@ html
                         img(src="src/images/room-details02.jpg", alt="image").background-image-item1
                     .room-details__img-item
                         img(src="src/images/room-details03.jpg", alt="image").background-image-item2
-
+            .room-details__main 
+                .room-details__info-about-room
+                    h1.room-details__label Сведения о номере
+                    .room-privilege-block
+                        .room-privilege__image    
+                            <span class="material-icons room-privilege-img">insert_emoticon</span> 
+                        .room-privilege__description 
+                            p.room-privilege__description-label Комфорт
+                            p.room-privilege__description-text Шумопоглощающие стены
+                    .room-privilege-block
+                        .room-privilege__image    
+                            <span class="material-icons room-privilege-img">location_city</span> 
+                        .room-privilege__description 
+                            p.room-privilege__description-label Удобство
+                            p.room-privilege__description-text Окно в каждой из спален       
+                    .room-privilege-block
+                        .room-privilege__image    
+                            <span class="material-icons room-privilege-img">whatshot</span> 
+                        .room-privilege__description 
+                            p.room-privilege__description-label Уют
+                            p.room-privilege__description-text Номер оснащён камином
+                .comments 
+                    h1.room-details__label Отзывы посетителей номера    
+                    .comment-block
+                        .user-info
+                            .avatar  
+                                img(src="src/images/avatar.svg", alt="avatar").avatar_small
+                            .user-name
+                                p.room-privilege__description-label Мурад Сарафанов
+                                p.room-privilege__description-text 5 дней назад
+                        .comment
+                            .like-button.like-button_color
+                                <span class="material-icons like like-fill">favorite</span> <span class=" like-quantity like-quantity_color">12</span> 
+                            .comment-text 
+                                p.room-privilege__description-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+                    .comment-block
+                        .user-info
+                            .avatar  
+                                img(src="src/images/avatar2.svg", alt="avatar").avatar_small
+                            .user-name
+                                p.room-privilege__description-label Патрисия Стёклышкова
+                                p.room-privilege__description-text Неделю назад
+                        .comment
+                            .like-button.like-button_color
+                                <span class="material-icons like like-fill">favorite</span> <span class=" like-quantity like-quantity_color">2</span> 
+                            .comment-text 
+                                p.room-privilege__description-text Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
+                .bullet-list 
+                    h1.room-details__label Правила
+                    ul.bullet-list__items 
+                        li.bullet-list__item Нельзя с питомцами
+                        li.bullet-list__item Без вечеринок и мероприятий
+                        li.bullet-list__item Время прибытия — после 13:00, а выезд до 12:00.
+                .cancel-info-block 
+                    h1.room-details__label Отмена
+                    p.cancel-info-block Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+                .chart-block 
+                    h1.room-details__label Впечатления от номера
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                .card-page__booking-form
+                        .card-page__room-card-info
+                            .room-card-info__text
+                                .room-card-info__number
+                                    p.room-card-sign-number №
+                                    h2.card-from.room-card-number 888
+                                    h3.luxe-attr ЛЮКС
+                                .card-page.room-card-info__price 
+                                    span.room-price 9 990₽
+                                    span.price-per &nbsp в сутки
+                        .search-form__date-pickers
+                            .field
+                                h2.label прибытие
+                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                            .field 
+                                h2.label выезд
+                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                        .search-form__dropdown-block
+                            .dropdown-block__label  
+                                h2.label гости
+                            .dropdown__input
+                                .dropdown__input_default.dropdown__input_wide  
+                                    span.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown-arrow dropdown__arrow_comfort dropdown__arrow_checkbox">expand_more</span>
+                                .dropdown__input_guests.dropdown__input_guests-expanded-apply.search-room-added-checkbox-list.hidden
+                                        .dropdown-options
+                                                .dropdown-item 
+                                                    h2.dropdown-option.label взрослые
+                                                    .dropdown-counter
+                                                        .dropdown-counter__btn(data-direction='minus') 
+                                                            span -
+                                                        .dropdown-counter__value.label 0
+                                                        .dropdown-counter__btn(data-direction='plus')  
+                                                            span +
+                                                .dropdown-item 
+                                                    h2.dropdown-option.label дети
+                                                    .dropdown-counter
+                                                        .dropdown-counter__btn(data-direction='minus') 
+                                                            span -
+                                                        .dropdown-counter__value.label 0
+                                                        .dropdown-counter__btn(data-direction='plus') 
+                                                            span  +
+                                                .dropdown-item 
+                                                    h2.dropdown-option.label младенцы
+                                                    .dropdown-counter
+                                                        .dropdown-counter__btn(data-direction='minus') 
+                                                            span -
+                                                        .dropdown-counter__value.label 0
+                                                        .dropdown-counter__btn(data-direction='plus') 
+                                                            span  +
+                                                .dropdown-buttons
+                                                    p.apply-btn применить
+                                                    p.clear-btn очистить
+                            .summary-order-info
+                                .total-info-options 
+                                    p.total-info 9 990₽ х 4 суток
+                                    p.total-info 39 960₽
+                                .total-info-options 
+                                    p.total-info Сбор за услуги: скидка 2 179₽
+                                    p.total-info 0₽
+                                .total-info-options 
+                                    p.total-info.total-info_long Сбор за дополнительные услуги
+                                    p.total-info 300₽
+                                .total-info-summary 
+                                    h2.price-sum  Итого
+                                    span.price-sum .................................................
+                                    h2.price-sum 38 081₽
+                                .registration__buttons__item
+                                    button.btn.sing-in__btn-lg <span class='sing-in__btn-lg-text'>забронировать</span><span class="material-icons sign-in__arrow book-arrow">arrow_forward</span>
             .header-footer-page__footer
                 .footer__content
                     include ../components/_footer
