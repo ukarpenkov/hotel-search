@@ -120,6 +120,7 @@ flatpickr(".visible-calendar", {
 );
 
 const ctx = document.getElementById('myChart').getContext('2d');
+
 const data = {
     labels: [],
 
@@ -128,13 +129,17 @@ const data = {
         label: 'My First Dataset',
         data: [25, 25, 50],
         borderWidth: 35,
+        borderJoinStyle: 'miter',
+        spacing: 1,
+        hoverBorderWidth: 30,
 
+        hoverBorderColor: 'white',
         backgroundColor: [
             '#bc9cff',
             '#6FCF97',
             '#FFE39C'
         ],
-        hoverOffset: 4,
+        hoverOffset: 0,
 
     }]
 };
