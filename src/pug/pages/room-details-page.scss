@@ -50,11 +50,11 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-
   align-items: center;
   text-align: center;
-
   color: #bc9cff;
+  top: 62px;
+  left: 77px;
 }
 .total-value-vote {
   position: absolute;
@@ -63,9 +63,63 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-
   text-align: center;
   text-transform: uppercase;
-
   color: #bc9cff;
+  top: 100px;
+  left: 68px;
+}
+
+.chart-block__list-item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.chart-block__list-ul {
+  list-style-type: none;
+  font-size: 120%;
+  font-weight: bold;
+  padding-left: 0px;
+  margin-left: -10px;
+  z-index: 2;
+}
+
+.chart-block__list-ul li::before {
+  content: '';
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+
+.chart-block__list-item.chart-block__list-item_color_orange::before {
+  background-image: -webkit-linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
+}
+
+.chart-block__list-item.chart-block__list-item_color_green::before {
+  background-image: -webkit-linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+}
+
+.chart-block__list-item.chart-block__list-item_color_violet::before {
+  background-image: -webkit-linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+
+.chart-block__list-item.chart-block__list-item_color_dark::before {
+  background-image: -webkit-linear-gradient(180deg, #919191 0%, #3d4975 100%);
+}
+
+.chart-block__content {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.chart__diagram {
+  position: relative;
+  z-index: -1;
 }
