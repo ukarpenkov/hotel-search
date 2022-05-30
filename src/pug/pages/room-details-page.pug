@@ -25,29 +25,47 @@ html
                         img(src="src/images/room-details02.jpg", alt="image").background-image-item1
                     .room-details__img-item
                         img(src="src/images/room-details03.jpg", alt="image").background-image-item2
-            .room-details__main 
-                .room-details__info-about-room
-                    h1.room-details__label Сведения о номере
-                    .room-privilege-block
-                        .room-privilege__image    
-                            <span class="material-icons room-privilege-img">insert_emoticon</span> 
-                        .room-privilege__description 
-                            p.room-privilege__description-label Комфорт
-                            p.room-privilege__description-text Шумопоглощающие стены
-                    .room-privilege-block
-                        .room-privilege__image    
-                            <span class="material-icons room-privilege-img">location_city</span> 
-                        .room-privilege__description 
-                            p.room-privilege__description-label Удобство
-                            p.room-privilege__description-text Окно в каждой из спален       
-                    .room-privilege-block
-                        .room-privilege__image    
-                            <span class="material-icons room-privilege-img">whatshot</span> 
-                        .room-privilege__description 
-                            p.room-privilege__description-label Уют
-                            p.room-privilege__description-text Номер оснащён камином
+            .room-details__main
+                .room-details-common-info 
+                    .room-details__info-about-room
+                        h1.room-details__label Сведения о номере
+                        .room-privilege-block
+                            .room-privilege__image    
+                                <span class="material-icons room-privilege-img">insert_emoticon</span> 
+                            .room-privilege__description 
+                                p.room-privilege__description-label Комфорт
+                                p.room-privilege__description-text Шумопоглощающие стены
+                        .room-privilege-block
+                            .room-privilege__image    
+                                <span class="material-icons room-privilege-img">location_city</span> 
+                            .room-privilege__description 
+                                p.room-privilege__description-label Удобство
+                                p.room-privilege__description-text Окно в каждой из спален       
+                        .room-privilege-block
+                            .room-privilege__image    
+                                <span class="material-icons room-privilege-img">whatshot</span> 
+                            .room-privilege__description 
+                                p.room-privilege__description-label Уют
+                                p.room-privilege__description-text Номер оснащён камином
+                    .chart-block 
+                        h1.room-details__label Впечатления от номера
+                        .chart-block__content
+                            .chart 
+                                .chart__total-value
+                                    h2.total-value-count 260
+                                    p.total-value-vote голосов
+                                .chart__diagram
+                                    <canvas id="myChart"></canvas>
+                            .chart-block__list 
+                                ul.chart-block__list-ul
+                                    li.chart-block__list-item.chart-block__list-item_color_orange Великолепно      
+                                    li.chart-block__list-item.chart-block__list-item_color_green Хорошо      
+                                    li.chart-block__list-item.chart-block__list-item_color_violet Удовлетворительно      
+                                    li.chart-block__list-item.chart-block__list-item_color_dark Разочарован      
                 .comments 
-                    h1.room-details__label Отзывы посетителей номера    
+                    .comments__header
+                        h1.room-details__label Отзывы посетителей номера
+                        p.comments__count 2 отзыва    
                     .comment-block
                         .user-info
                             .avatar  
@@ -72,30 +90,17 @@ html
                                 <span class="material-icons like like-fill">favorite</span> <span class=" like-quantity like-quantity_color">2</span> 
                             .comment-text 
                                 p.room-privilege__description-text Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
-                .bullet-list 
-                    h1.room-details__label Правила
-                    ul.bullet-list__items 
-                        li.bullet-list__item Нельзя с питомцами
-                        li.bullet-list__item Без вечеринок и мероприятий
-                        li.bullet-list__item Время прибытия — после 13:00, а выезд до 12:00.
-                .cancel-info-block 
-                    h1.room-details__label Отмена
-                    p.cancel-info-block Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-                .chart-block 
-                    h1.room-details__label Впечатления от номера
-                    .chart-block__content
-                        .chart 
-                            .chart__total-value
-                                h2.total-value-count 260
-                                p.total-value-vote голосов
-                            .chart__diagram
-                                <canvas id="myChart"></canvas>
-                        .chart-block__list 
-                            ul.chart-block__list-ul
-                                li.chart-block__list-item.chart-block__list-item_color_orange Великолепно      
-                                li.chart-block__list-item.chart-block__list-item_color_green Хорошо      
-                                li.chart-block__list-item.chart-block__list-item_color_violet Удовлетворительно      
-                                li.chart-block__list-item.chart-block__list-item_color_dark Разочарован      
+                .room-details-rules
+                    .bullet-list 
+                        h1.room-details__label Правила
+                        ul.bullet-list__items 
+                            li.bullet-list__item Нельзя с питомцами
+                            li.bullet-list__item Без вечеринок и мероприятий
+                            li.bullet-list__item Время прибытия — после 13:00, а выезд до 12:00.
+                    .cancel-info-block 
+                        h1.room-details__label Отмена
+                        p.cancel-info-block Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+               
                 .card-page__booking-form
                         .card-page__room-card-info
                             .room-card-info__text

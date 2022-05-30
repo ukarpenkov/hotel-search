@@ -115,6 +115,9 @@
 }
 
 .chart-block__content {
+  position: relative;
+  top: -35px;
+  left: -40px;
   display: inline-flex;
   align-items: flex-end;
 }
@@ -122,4 +125,86 @@
 .chart__diagram {
   position: relative;
   z-index: -1;
+}
+
+.room-details-wrapper .header-page__header {
+  margin-bottom: 0;
+}
+
+.material-icons.like-fill {
+  font-size: 12px;
+}
+
+.comments {
+  display: block;
+  width: 712px;
+  margin-bottom: -23px;
+}
+
+.comments__count {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.comments__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.comments .comment-block {
+  margin-top: -1px;
+  margin-left: -16px;
+}
+
+.room-details__info-about-room .room-privilege-block {
+  margin-top: 24px;
+}
+
+.room-details__main {
+  margin-left: 132px;
+  margin-top: 27px;
+}
+
+.room-details__info-about-room {
+  margin-bottom: 8px;
+}
+
+.room-details-rules {
+  display: flex;
+  width: 686px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.room-details-rules .bullet-list {
+  margin-top: 0;
+}
+
+.bullet-list .bullet-list__items {
+  padding-left: 0;
+}
+
+.bullet-list .room-details__label {
+  margin-bottom: 9px;
+}
+
+.cancel-info-block .room-details__label {
+  margin-bottom: 19px;
+}
+
+.bullet-list .bullet-list__items:last-child {
+  width: 237px;
+}
+
+.room-details-common-info {
+  display: flex;
+  width: 709px;
+  justify-content: space-between;
 }
