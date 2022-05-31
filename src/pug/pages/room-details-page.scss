@@ -197,6 +197,7 @@
 
 .cancel-info-block .room-details__label {
   margin-bottom: 19px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .bullet-list .bullet-list__items:last-child {
@@ -207,4 +208,26 @@
   display: flex;
   width: 709px;
   justify-content: space-between;
+}
+.room-details__content {
+  display: flex;
+  width: 1440px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 146px;
+}
+
+.room-details__aside .card-page__booking-form {
+  margin-top: 40px;
+}
+
+.chart-block__list {
+  position: relative;
+  top: -16px;
+  left: 0px;
+}
+
+.room-details-wrapper .header-footer-page__footer {
+  margin-top: 72px;
+  box-shadow: 0px -1px 0px 0px rgb(31 32 65 / 24%);
 }
