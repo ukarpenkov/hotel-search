@@ -118,9 +118,12 @@ flatpickr(".visible-calendar", {
     prevArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_back</span>`
 }
 );
-
-const ctx = document.getElementById('myChart').getContext('2d');
-
+let ctx
+if ($('#myChart').length) {
+    ctx = document.getElementById('myChart').getContext('2d');
+} else {
+    ctx = null
+}
 const data = {
     labels: [],
 
@@ -179,8 +182,15 @@ function hideAndShowElement(element) {
     element.classList.toggle('hidden')
 }
 
+if (comfortArrow) {
+    comfortArrow.addEventListener('click', () => hideAndShowElement(dropdownMenu))
+}
 
-comfortArrow.addEventListener('click', () => hideAndShowElement(dropdownMenu))
-guestsArrow.addEventListener('click', () => hideAndShowElement(dropdownGuestsMenu))
-addOptionsArrow.addEventListener('click', () => hideAndShowElement(dropdownCheckboxMenu))
+if (guestsArrow) {
+    guestsArrow.addEventListener('click', () => hideAndShowElement(dropdownGuestsMenu))
+}
+
+if (addOptionsArrow) {
+    addOptionsArrow.addEventListener('click', () => hideAndShowElement(dropdownCheckboxMenu))
+}
 
