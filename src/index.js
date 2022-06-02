@@ -194,3 +194,37 @@ if (addOptionsArrow) {
     addOptionsArrow.addEventListener('click', () => hideAndShowElement(dropdownCheckboxMenu))
 }
 
+
+let pageClassesList = [
+    '.color-and-type',
+    '.forms-elements-page',
+    '.cards-page__wrapper',
+    '.header-footer-page__wrapper',
+    '.landing-page__wrapper',
+    '.search-room__wrapper',
+    '.room-details-wrapper',
+    '.registration-page__wrapper',
+    '.sign-in-page__wrapper'
+]
+
+
+function hideAndShowPage(pageClass) {
+    let page = document.querySelector(pageClass)
+    page.classList.toggle('hidden-page')
+}
+
+let showColorAndTypesPage = document.querySelector('.navigate-item-link_page_color-type')
+
+if (showColorAndTypesPage) {
+    showColorAndTypesPage.addEventListener('click', () => hideAndShowPage('.color-and-type'))
+}
+
+let showFormElPage = document.querySelector('.navigate-item-link_page_form-elements')
+
+if (showFormElPage) {
+    showFormElPage.addEventListener('click', () => hideAndShowPage('.forms-elements-page'))
+}
+
+
+
+console.log('js is done')
