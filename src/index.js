@@ -204,27 +204,71 @@ let pageClassesList = [
     '.search-room__wrapper',
     '.room-details-wrapper',
     '.registration-page__wrapper',
-    '.sign-in-page__wrapper'
+    '.sign-in-page__wrapper',
+    '.navigate-wrapper'
 ]
 
 
 function hideAndShowPage(pageClass) {
     let page = document.querySelector(pageClass)
+    for (let i = 0; i < pageClassesList.length; i++) {
+        document.querySelector(pageClassesList[i]).classList.add('hidden-page')
+    }
     page.classList.toggle('hidden-page')
 }
 
-let showColorAndTypesPage = document.querySelector('.navigate-item-link_page_color-type')
+let showColorAndTypesPageBtn = document.querySelector('.navigate-item-link_page_color-type')
 
-if (showColorAndTypesPage) {
-    showColorAndTypesPage.addEventListener('click', () => hideAndShowPage('.color-and-type'))
+if (showColorAndTypesPageBtn) {
+    showColorAndTypesPageBtn.addEventListener('click', () => hideAndShowPage('.color-and-type'))
 }
 
-let showFormElPage = document.querySelector('.navigate-item-link_page_form-elements')
+let showFormElPageBtn = document.querySelector('.navigate-item-link_page_form-elements')
 
-if (showFormElPage) {
-    showFormElPage.addEventListener('click', () => hideAndShowPage('.forms-elements-page'))
+if (showFormElPageBtn) {
+    showFormElPageBtn.addEventListener('click', () => hideAndShowPage('.forms-elements-page'))
 }
 
+let showCardsPageBtn = document.querySelector('.navigate-item-link_page_cards')
 
+if (showCardsPageBtn) {
+    showCardsPageBtn.addEventListener('click', () => hideAndShowPage('.cards-page__wrapper'))
+}
+
+let showHeadersAndFooterBtn = document.querySelector('.navigate-item-link_page_header-footer')
+
+if (showHeadersAndFooterBtn) {
+    showHeadersAndFooterBtn.addEventListener('click', () => hideAndShowPage('.header-footer-page__wrapper'))
+}
+
+let showLandingPageBtn = document.querySelector('.navigate-item-link_page_landing')
+
+if (showLandingPageBtn) {
+    showLandingPageBtn.addEventListener('click', () => hideAndShowPage('.landing-page__wrapper'))
+}
+
+let showSearchRoomPageBtn = document.querySelector('.navigate-item-link_page_search')
+
+if (showSearchRoomPageBtn) {
+    showSearchRoomPageBtn.addEventListener('click', () => hideAndShowPage('.search-room__wrapper'))
+}
+
+let showRoomDetailsPageBtn = document.querySelector('.navigate-item-link_page_room-details')
+
+if (showRoomDetailsPageBtn) {
+    showRoomDetailsPageBtn.addEventListener('click', () => hideAndShowPage('.room-details-wrapper'))
+}
+
+let showSingUpPageBtn = document.querySelector('.navigate-item-link_page_sing-up')
+
+if (showSingUpPageBtn) {
+    showSingUpPageBtn.addEventListener('click', () => hideAndShowPage('.registration-page__wrapper'))
+}
+
+let showSingInPageBtn = document.querySelector('.navigate-item-link_page_sing-in')
+
+if (showSingInPageBtn) {
+    showSingInPageBtn.addEventListener('click', () => hideAndShowPage('.sign-in-page__wrapper'))
+}
 
 console.log('js is done')

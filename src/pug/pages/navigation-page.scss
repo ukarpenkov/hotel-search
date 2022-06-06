@@ -1,6 +1,26 @@
 .navigate-wrapper {
-  background-color: rgb(202, 39, 39);
+  background-color: #ffffff;
   display: grid;
   justify-content: center;
   max-width: 1440px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+.navigate-buttons-list {
+  list-style: none;
+  padding: 0;
+}
+
+.navigate-item {
+  margin-bottom: 20px;
+}
+
+.navigate-item button {
+  width: 150px;
+  height: 50px;
 }
