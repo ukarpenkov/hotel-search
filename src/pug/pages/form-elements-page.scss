@@ -18,7 +18,7 @@
   align-items: flex-start;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
-  margin-left: 27%;
+  margin-left: 9%;
   margin-top: 81px;
 }
 
@@ -41,5 +41,9 @@
   width: 1158px;
   justify-content: space-between;
   margin-top: 77px;
-  margin-left: 387px;
+  margin-left: 130px;
+}
+
+.forms-elements-page .header__logo {
+  margin-left: -16%;
 }

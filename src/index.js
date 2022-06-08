@@ -126,8 +126,6 @@ if ($('#myChart').length) {
 }
 const data = {
     labels: [],
-
-
     datasets: [{
         label: 'My First Dataset',
         data: [25, 25, 50],
@@ -174,6 +172,7 @@ var dropdownMenu = document.querySelector('.dropdown__input_expanded')
 var dropdownGuestsMenu = document.querySelector('.dropdown__input_guests')
 var dropdownCheckboxMenu = document.querySelector('.search-room-added-checkbox-list')
 
+
 var comfortArrow = document.querySelector('.dropdown__arrow_comfort')
 var guestsArrow = document.querySelector('.dropdown-arrow-guests')
 var addOptionsArrow = document.querySelector('.dropdown__arrow_checkbox')
@@ -193,6 +192,7 @@ if (guestsArrow) {
 if (addOptionsArrow) {
     addOptionsArrow.addEventListener('click', () => hideAndShowElement(dropdownCheckboxMenu))
 }
+
 
 
 let pageClassesList = [

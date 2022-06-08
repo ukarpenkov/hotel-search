@@ -827,7 +827,7 @@ img {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.dropdown__arrow {
+.forms-elements-page .dropdown__arrow {
   position: relative;
   left: 157px;
   top: 9px;
@@ -1208,4 +1208,10 @@ span.flatpickr-weekday {
   position: relative;
   top: 28px;
   left: 18%;
+}
+
+.forms-elements-page .material-icons.expand-arrow.dropdown__arrow {
+  position: relative;
+  left: 157px;
+  top: 3px;
 }
