@@ -121,4 +121,18 @@
 
 .type-block {
   display: flex;
+  margin-bottom: 1px;
+}
+
+.type-blocks {
+  display: grid;
+  margin-top: -245px;
+  margin-right: 160px;
+  align-content: center;
+  gap: 26px;
+}
+
+.type-block__description {
+  margin-left: 30px;
+  width: 369px;
 }
