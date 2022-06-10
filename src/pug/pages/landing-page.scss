@@ -84,3 +84,8 @@
   left: 73px;
   top: 0px;
 }
+
+.dropdown__input_expanded.dropdown-landing-guests.dropdown__input_expanded-apply {
+  position: absolute;
+  z-index: 2;
+}

@@ -171,11 +171,14 @@ calendar.forEach(item => {
 var dropdownMenu = document.querySelector('.dropdown__input_expanded')
 var dropdownGuestsMenu = document.querySelector('.dropdown__input_guests')
 var dropdownCheckboxMenu = document.querySelector('.search-room-added-checkbox-list')
+var dropdownGuestsMenuLanding = document.querySelector('.dropdown-landing-guests')
 
 
 var comfortArrow = document.querySelector('.dropdown__arrow_comfort')
 var guestsArrow = document.querySelector('.dropdown-arrow-guests')
 var addOptionsArrow = document.querySelector('.dropdown__arrow_checkbox')
+var guestsArrowLanding = document.querySelector('.dropdown-arrow-guests-lp')
+
 
 function hideAndShowElement(element) {
     element.classList.toggle('hidden')
@@ -191,6 +194,9 @@ if (guestsArrow) {
 
 if (addOptionsArrow) {
     addOptionsArrow.addEventListener('click', () => hideAndShowElement(dropdownCheckboxMenu))
+}
+if (guestsArrowLanding) {
+    guestsArrowLanding.addEventListener('click', () => hideAndShowElement(dropdownGuestsMenuLanding))
 }
 
 
