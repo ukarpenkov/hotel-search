@@ -1046,11 +1046,11 @@ input[type='number'] {
 }
 
 .noUi-target {
-  background: #ffffff;
-  border-radius: 100px;
-  box-shadow: none;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  height: 6px;
+  background: #ffffff !important;
+  border-radius: 100px !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(31, 32, 65, 0.25) !important;
+  height: 6px !important;
 }
 
 .noUi-connect {
@@ -1062,136 +1062,135 @@ input[type='number'] {
 
 .noUi-handle:after,
 .noUi-handle:before {
-  display: none;
+  display: none !important;
 }
 
 .noUi-handle {
-  box-shadow: none;
-  border-radius: 20px;
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-  border: 2px solid #ffffff;
+  box-shadow: none !important;
+  border-radius: 20px !important;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
+  border: 2px solid #ffffff !important;
 }
 
 .noUi-horizontal .noUi-handle {
-  width: 16px;
-  height: 16px;
-  right: -10px;
-  top: -6px;
+  width: 16px !important;
+  height: 16px !important;
+  right: -10px !important;
+  top: -6px !important;
 }
 
 .noUi-horizontal .noUi-handle-upper {
-  right: -2px;
+  right: -2px !important;
 }
 
 .flatpickr-current-month .flatpickr-monthDropdown-months {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 23px;
-  text-align: right;
-  color: #1f2041;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 19px !important;
+  line-height: 23px !important;
+  text-align: right !important;
+  color: #1f2041 !important;
 }
 
 .flatpickr-current-month input.cur-year {
-  -webkit-appearance: none;
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 23px;
-  text-align: left;
-  color: #1f2041;
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 19px !important;
+  line-height: 23px !important;
+  text-align: left !important;
+  color: #1f2041 !important;
 }
 .numInputWrapper input,
 .numInputWrapper span {
-  display: none;
+  display: none !important;
 }
 
 .flatpickr-current-month {
-  left: 20px;
-  margin-bottom: 30px;
+  left: 20px !important;
+  margin-bottom: 30px !important;
 }
 .flatpickr-months {
-  margin-top: 15px;
+  margin-top: 15px !important;
 }
 
 .flatpickr-month {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 span.flatpickr-weekday {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-  margin: 12px;
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  color: #bc9cff !important;
+  margin: 12px !important;
 }
 
 .flatpickr-day {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.5);
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  color: rgba(31, 32, 65, 0.5) !important;
 }
 
 .flatpickr-current-month span.cur-month {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 23px;
-  text-align: center;
-  color: #1f2041;
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 19px !important;
+  line-height: 23px !important;
+  text-align: center !important;
+  color: #1f2041 !important;
 }
 
 .flatpickr-day.selected {
-  width: 39.88px;
-  height: 40px;
-
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-  border-radius: 22px;
+  width: 39.88px !important;
+  height: 40px !important;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
+  border-radius: 22px !important;
 }
 
 .flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
 .flatpickr-months .flatpickr-next-month.flatpickr-next-month {
-  right: 0;
-  top: 13px;
+  right: 0 !important;
+  top: 13px !important;
 }
 
 .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
 .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
-  left: 0;
-  top: 13px;
+  left: 0 !important;
+  top: 13px !important;
 }
 
 .date-filter__input {
   width: 267px !important;
 }
 .date-filter_arrow {
-  position: relative;
-  left: -33px;
-  top: -1px;
+  position: relative !important;
+  left: -33px !important;
+  top: -1px !important;
 }
 
 .date-filter {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
 .subscribe-field {
