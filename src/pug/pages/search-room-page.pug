@@ -1,7 +1,7 @@
 mixin room-card(img, number, price, luxe, commentCount)
     .room-card
         .room-card-img
-            img.room-picture(src=`/src/images/${img}`, alt="")
+            img(src=`src/images/${img}`, alt="").room-picture
         .room-card-info
             .room-card-info__text
                 .room-card-info__number
@@ -39,7 +39,7 @@ html
             include ../components/footer.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <meta name='viewport' content='1024'>
-        .search-room__wrapper
+        .search-room__wrapper.hidden-page
             .landing-page__header 
                 include ../components/_head
             .search-room__body 
