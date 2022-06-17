@@ -18,13 +18,14 @@
   "bugs": {
     "url": "https://github.com/ukarpenkov/hotel-search/issues"
   },
-  "homepage": "https://github.com/ukarpenkov/hotel-search#readme",
+  "homepage": "https://ukarpenkov.github.io/hotel-search/",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "babel-loader": "^8.2.2",
     "cross-env": "^7.0.3",
     "css-loader": "^6.4.0",
+    "gh-pages": "^4.0.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.4.2",
