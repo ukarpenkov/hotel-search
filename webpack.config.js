@@ -29,8 +29,51 @@ module.exports = {
             filename: '[name].[contenthash].css'
         }),
         new HtmlWebpackPlugin({
-            template: "./src/index.pug"
-        })],
+            filename: 'index.html',
+            template: "./src/pug/pages/navigation-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'form-elements-page.html',
+            template: "./src/pug/pages/form-elements-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'cards-page.html',
+            template: "./src/pug/pages/cards-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'headers-and-footer-page.html',
+            template: "./src/pug/pages/headers-and-footer-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'landing-page.html',
+            template: "./src/pug/pages/landing-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'registration-page.html',
+            template: "./src/pug/pages/registration-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'room-details-page.html',
+            template: "./src/pug/pages/room-details-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'search-room-page.html',
+            template: "./src/pug/pages/search-room-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'search-room-page.html',
+            template: "./src/pug/pages/search-room-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'sign-in-page.html',
+            template: "./src/pug/pages/sign-in-page.pug"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'colors-and-type.html',
+            template: "./src/pug/components/_colors-and-type.pug"
+        }),
+
+    ],
     module: {
         rules: [
             {
