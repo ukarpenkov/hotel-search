@@ -50,7 +50,7 @@
   display: block;
   top: 8px;
   min-width: 100px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -207,7 +207,7 @@ img {
 
 .material-icons {
   vertical-align: middle;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
   align-items: right;
@@ -297,9 +297,9 @@ img {
 
 .visible-checkbox-label::before {
   text-align: center;
-  content: '';
+  content: "";
   display: block;
-  background-image: url('./src/assets/checked.png');
+  background-image: url("./src/assets/checked.png");
   background-repeat: no-repeat;
   background-color: #ffffff;
   width: 12px;
@@ -337,7 +337,7 @@ img {
 }
 
 .bullet-list__item {
-  list-style-image: url('./src/assets/Ellipse.png');
+  list-style-image: url("./src/assets/Ellipse.png");
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -374,7 +374,7 @@ img {
 }
 
 .rating::before {
-  content: '★★★★★';
+  content: "★★★★★";
   display: block;
 }
 
@@ -409,7 +409,7 @@ img {
 }
 
 .rating__label::before {
-  content: '★';
+  content: "★";
   display: block;
   transition: color 0.3s ease 0s;
 }
@@ -532,7 +532,7 @@ img {
 }
 
 .radio__label:before {
-  content: '';
+  content: "";
   display: block;
   width: 18px;
   height: 18px;
@@ -547,7 +547,7 @@ img {
 }
 
 .radio__label:after {
-  content: '';
+  content: "";
   display: block;
   width: 12px;
   height: 12px;
@@ -688,7 +688,7 @@ img {
 }
 
 .toggle + .toggle-label:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: 0;
@@ -701,7 +701,7 @@ img {
 }
 
 .toggle + .toggle-label:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 5px;
@@ -961,7 +961,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 .filter-price {
@@ -973,7 +973,7 @@ input[type='number'] {
   align-items: center;
   width: 110px;
   height: 15px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -992,7 +992,7 @@ input[type='number'] {
 }
 
 .filter-price__text {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1012,7 +1012,7 @@ input[type='number'] {
 .filter-price__input-min {
   border: none;
   font-weight: 400;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
@@ -1021,7 +1021,7 @@ input[type='number'] {
   color: rgba(31, 32, 65, 0.5);
 }
 .filter-price__input-max {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   border: none;
   font-weight: 400;
@@ -1087,7 +1087,7 @@ input[type='number'] {
   appearance: none !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
-  font-family: 'Montserrat' !important;
+  font-family: "Montserrat" !important;
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 19px !important;
@@ -1101,7 +1101,7 @@ input[type='number'] {
   margin: 0 !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
-  font-family: 'Montserrat' !important;
+  font-family: "Montserrat" !important;
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 19px !important;
@@ -1127,7 +1127,7 @@ input[type='number'] {
 }
 
 span.flatpickr-weekday {
-  font-family: 'Montserrat' !important;
+  font-family: "Montserrat" !important;
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 12px !important;
@@ -1140,7 +1140,7 @@ span.flatpickr-weekday {
 }
 
 .flatpickr-day {
-  font-family: 'Montserrat' !important;
+  font-family: "Montserrat" !important;
   font-style: normal !important;
   font-weight: 400 !important;
   font-size: 12px !important;
@@ -1152,7 +1152,7 @@ span.flatpickr-weekday {
 }
 
 .flatpickr-current-month span.cur-month {
-  font-family: 'Montserrat' !important;
+  font-family: "Montserrat" !important;
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 19px !important;

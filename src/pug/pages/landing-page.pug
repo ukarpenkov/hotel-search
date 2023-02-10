@@ -6,7 +6,7 @@ html
             include landing-page.scss 
             include ../components/footer.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <meta name='viewport' content='1024'>
+            <meta name="viewport" content="1024">
         .landing-page__wrapper
             .landing-page__header 
                 include ../components/_head
@@ -18,10 +18,10 @@ html
                             .search-form__date-pickers
                                 .field
                                     h2.label прибытие
-                                    input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                                    input(type="date" placeholder="ДД.ММ.ГГГГ").input.calendar
                                 .field 
                                     h2.label выезд
-                                    input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                                    input(type="date" placeholder="ДД.ММ.ГГГГ").input.calendar
                             .search-form__dropdown-block
                                 .dropdown-block__label 
                                     h2.label гости
@@ -33,31 +33,31 @@ html
                                             .dropdown-item 
                                                 h2.dropdown-option.label взрослые
                                                 .dropdown-counter
-                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                    .dropdown-counter__btn(data-direction="minus") 
                                                         span -
                                                     .dropdown-counter__value.label 0
-                                                    .dropdown-counter__btn(data-direction='plus')  
+                                                    .dropdown-counter__btn(data-direction="plus")  
                                                         span +
                                             .dropdown-item 
                                                 h2.dropdown-option.label дети
                                                 .dropdown-counter
-                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                    .dropdown-counter__btn(data-direction="minus") 
                                                         span -
                                                     .dropdown-counter__value.label 0
-                                                    .dropdown-counter__btn(data-direction='plus') 
+                                                    .dropdown-counter__btn(data-direction="plus") 
                                                         span  +
                                             .dropdown-item 
                                                 h2.dropdown-option.label младенцы
                                                 .dropdown-counter
-                                                    .dropdown-counter__btn(data-direction='minus') 
+                                                    .dropdown-counter__btn(data-direction="minus") 
                                                         span -
                                                     .dropdown-counter__value.label 0
-                                                    .dropdown-counter__btn(data-direction='plus') 
+                                                    .dropdown-counter__btn(data-direction="plus") 
                                                         span  +
                                             .dropdown-buttons
                                                 p.apply-btn применить
                                                 p.clear-btn очистить
-                        button.btn.sing-in__btn-lg.search-button <span class='sing-in__btn-lg-text'>подобрать номер</span><span class="material-icons sign-in__arrow search-arrow">arrow_forward</span>
+                        button.btn.sing-in__btn-lg.search-button <span class="sing-in__btn-lg-text">подобрать номер</span><span class="material-icons sign-in__arrow search-arrow">arrow_forward</span>
             .landing-page__footer 
                 include ../components/_footer
 

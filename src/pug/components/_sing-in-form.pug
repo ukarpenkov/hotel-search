@@ -1,7 +1,6 @@
 html
     head
         style
-            //- include form-elements.scss
             include registration-form.scss
             include sing-in-form.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -10,11 +9,11 @@ html
                 h1 Войти
                 .sing-in__text-fields
                     .field 
-                        input(type="email" placeholder='Email').input
+                        input(type="email" placeholder="Email").input
                     .field 
-                        input(type="password" placeholder='Пароль').input
+                        input(type="password" placeholder="Пароль").input
                 .registration__buttons__item
-                    button.btn.sing-in__btn-lg <span class='sing-in__btn-lg-text'>войти</span><span class="material-icons sign-in__arrow">arrow_forward</span>
+                    button.btn.sing-in__btn-lg <span class="sing-in__btn-lg-text">войти</span><span class="material-icons sign-in__arrow">arrow_forward</span>
                 .sing-in-block
                     span.sing-in-form__info Нет аккаунта на Toxin?
                     button.btn.btn_small.btn_dark-violet СОЗДАТЬ
