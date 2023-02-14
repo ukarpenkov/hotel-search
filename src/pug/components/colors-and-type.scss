@@ -5,14 +5,13 @@
 }
 
 .color-block__description_head {
-  font-family: 'Montserrat';
   font-weight: bold;
   font-size: 19px;
   color: #1f2041;
   margin: 0;
 }
+
 .color-block__description_value {
-  font-family: 'Montserrat';
   font-size: 19px;
   color: #1f2041;
   margin: 0;
@@ -39,11 +38,10 @@
 .color-and-type_wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .type-block_type_h1 {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   text-align: right;
@@ -51,8 +49,6 @@
 }
 
 .type-block_type_h2 {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 23px;
@@ -61,8 +57,6 @@
 }
 
 .type-block_type_h3 {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -72,8 +66,6 @@
 }
 
 .type-block_type_body {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -83,27 +75,18 @@
 }
 
 .type-block__description_type_h1 {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: #1f2041;
 }
 
 .type-block__description_type_h2 {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
   font-size: 19px;
   line-height: 23px;
   color: #1f2041;
 }
 
 .type-block__description_type_h3 {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -111,12 +94,10 @@
 }
 
 .type-block__description_type_body {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .type-block {
@@ -126,7 +107,8 @@
 
 .type-blocks {
   display: grid;
-  margin-top: -245px;
+  justify-items: end;
+  margin-top: 40px;
   margin-right: 160px;
   align-content: center;
   gap: 26px;

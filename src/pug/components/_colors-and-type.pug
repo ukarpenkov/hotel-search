@@ -11,9 +11,7 @@ html
         style
             include colors-and-type.scss
         .color-and-type
-            .header__logo
-                    a(href="index.html")
-                        img(src="src/images/only_logo.png", alt="Logo").head__logo-img
+            include ../components/_header-img-logo.pug
             .color-and-type_wrapper       
                 .color-blocks
                     +color-block("background: #1F2041", "Dark Shade 100%", "#1F2041")
@@ -23,7 +21,6 @@ html
                     +color-block("background: #1F20410D", "Dark Shade 5%", "#1F2041")
                     +color-block("background: #BC9CFF", "Purple", "#BC9CFF")
                     +color-block("background: #6FCF97", "Green", "#6FCF97")
-                
                 .type-blocks
                     .type-block
                         h1.type-block_type_h1 H1 
