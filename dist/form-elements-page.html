@@ -1,1266 +1,1993 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><style>.label {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  color: #1f2041;
-  display: inline-block;
-}
-
-.field {
-  margin-bottom: 12px;
-}
-
-.input {
-  width: 320px;
-  height: 44px;
-  left: 141px;
-  top: 163px;
-  padding-left: 15px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-}
-.input.input_focus {
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  border-radius: 4px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.field-label {
-  display: block;
-  width: 320px;
-  display: flex;
-  justify-content: space-between;
-  vertical-align: middle;
-}
-
-.input-condition {
-  position: relative;
-  display: block;
-  top: 8px;
-  min-width: 100px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  text-align: right;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.buttons__label {
-  margin-bottom: 10px;
-}
-
-.buttons__item {
-  margin-right: 13px;
-  margin-bottom: 27px;
-}
-.buttons__items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 220px;
-  height: 200px;
-}
-
-.btn {
-  border: 2px solid;
-  outline: none;
-  text-align: center;
-  margin: 0;
-  height: 44px;
-  border-radius: 22px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-
-.btn_small {
-  width: 99px;
-  left: 980px;
-  top: 262px;
-}
-
-.radio-buttons-block {
-  margin-top: 33px;
-}
-
-.pagination {
-  width: 500px;
-  margin-top: 40px;
-  margin-bottom: 219px;
-}
-
-.btn-pagination {
-  width: 40px;
-  height: 40px;
-  outline: none;
-  border: none;
-}
-
-.btn-pagination_active {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-}
-
-.btn-pagination_next {
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-  color: #ffffff;
-}
-
-.pagination-text {
-  position: relative;
-  height: 24px;
-  top: -7px;
-  left: 4px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.pagination__btns {
-  margin-top: 12px;
-}
-
-.buttons {
-  margin-bottom: 68px;
-}
-
-.btn_lg {
-  position: relative;
-  width: 320px;
-  left: -118px;
-  top: 14px;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.btn_fill-dark-violet {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  width: 102px;
-  height: 46px;
-}
-
-.btn_fill-light-violet {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  opacity: 0.5;
-  color: #ffffff;
-  width: 102px;
-  height: 46px;
-}
-
-.btn_dark-violet {
-  color: #bc9cff;
-  border-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  background: #ffffff;
-  border: 2px solid;
-}
-
-.btn_light-violet {
-  color: #bc9cff;
-  border: 2px solid;
-  background: #ffffff;
-  border-color: linear-gradient(180deg, #bc9cff 100%, #8ba4f9 100%);
-  opacity: 0.5;
-}
-.btn_no-border-violet {
-  color: #bc9cff;
-  border: none;
-  background: #ffffff;
-  padding-bottom: 10px;
-  margin-top: -5px;
-  margin-left: -18px;
-}
-.btn_small.btn_no-border-dark {
-  color: rgba(31, 32, 65, 0.5);
-  border: none;
-  background: #ffffff;
-  margin-top: -9px;
-  margin-left: -53px;
-}
-
-img {
-  width: 12px;
-  height: 12px;
-}
-
-.material-icons {
-  vertical-align: middle;
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: normal;
-  align-items: right;
-  text-align: right;
-  font-size: 24px; /* Preferred icon size */
-  text-transform: none;
-  letter-spacing: normal;
-}
-
-.checkbox-list_close {
-  margin-bottom: 26px;
-}
-
-.checkbox-block {
-  margin-top: 42px;
-}
-// expandable checkbox list
-.expand-arrow {
-  color: rgba(31, 32, 65, 0.5);
-  padding-left: 30px;
-}
-
-.expand-arrow__reverse {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  writing-mode: lr-tb;
-}
-
-.checkbox-list {
-  width: 266px;
-}
-
-.checkbox-list_rich {
-  width: 266px;
-  margin-top: 90px;
-}
-.checkbox-list_options {
-  width: 250px;
-}
-
-.checkbox-list_options-item {
-  vertical-align: middle;
-}
-.checkbox-list_options-items {
-  display: block;
-  margin-top: 10px;
-}
-
-.checkbox-label {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
-  padding-left: 10px;
-  vertical-align: text-top;
-  width: 226px;
-  display: inline-block;
-}
-
-.checkbox {
-  width: 20px;
-  height: 20px;
-  left: 140px;
-  top: 1292.44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  vertical-align: middle;
-  display: none;
-}
-
-.visible-checkbox-label {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  left: 140px;
-  top: 1292.44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  vertical-align: middle;
-}
-
-.visible-checkbox-label::before {
-  text-align: center;
-  content: '';
-  display: block;
-  background-image: url('./src/assets/checked.png');
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  width: 12px;
-  height: 11px;
-  transform: translate(35%, 41%);
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.checkbox:checked + .visible-checkbox-label::before {
-  opacity: 1;
-}
-
-.checkbox-label-rich {
-  font-weight: bold;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.checkbox-label-describe {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(31, 32, 65, 0.5);
-  padding-left: 30px;
-  max-width: 236px;
-  margin-top: 5px;
-}
-
-.bullet-list {
-  margin-top: 90px;
-}
-
-.bullet-list__item {
-  list-style-image: url('./src/assets/Ellipse.png');
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  padding-top: 10px;
-}
-
-.bullet-list__items {
-  padding-left: 18px;
-  margin: 0px;
-}
-
-.stars-block {
-  display: flex;
-  align-items: flex-start;
-  align-self: flex-start;
-  justify-content: space-between;
-  height: 100%;
-  align-content: space-between;
-  width: 258px;
-}
-
-.rating-block {
-  margin-top: 32px;
-  margin-bottom: 185px;
-}
-
-.rating {
-  position: relative;
-  font-size: 29px;
-  display: inline-block;
-}
-
-.rating::before {
-  content: '★★★★★';
-  display: block;
-}
-
-.rating-stars {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row-reverse;
-  overflow: hidden;
-}
-
-.rating__star {
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-}
-
-.rating__label {
-  flex: 0 0 20%;
-  height: 100%;
-  cursor: pointer;
-  color: #ceced4;
-
-  border: 2px, solid, black;
-}
-
-.rating__label::before {
-  content: '★';
-  display: block;
-  transition: color 0.3s ease 0s;
-}
-
-.rating__star:checked,
-.rating__star:checked ~ .rating__label {
-  color: #bc9cff;
-}
-
-.rating__label:hover,
-.rating__label:hover ~ .rating__label,
-.rating__label:checked ~ .rating__label:hover {
-  color: #bc9cff;
-}
-
-.like-block {
-  margin-top: 31px;
-}
-
-.like-buttons {
-  margin-top: 11px;
-}
-
-.like-button {
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  left: 587px;
-  top: 565px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.like-button_color {
-  border: 1px solid #bc9cff;
-  margin-left: 9px;
-}
-
-.like {
-  font-size: 10px;
-  line-height: 9px;
-  align-items: center;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.25);
-  margin-left: 4px;
-}
-
-.like-quantity {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 12px;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.25);
-  margin-left: 3px;
-}
-
-.like-fill {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 9px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
-
-.like-quantity_color {
-  color: #bc9cff;
-}
-
-.radio {
-  margin-left: 10px;
-}
-
-.radio__input {
-  width: 18px;
-  height: 18px;
-  background: #ffffff;
-  border: 1px solid #bc9cff;
-  box-sizing: border-box;
-  border-radius: 10px;
-  vertical-align: middle;
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-
-.radio {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  margin-left: 12px;
-  margin-top: -4px;
-}
-
-.radio-buttons-items {
-  width: 300px;
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 11px;
-  margin-left: -15px;
-}
-
-.radio__label {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
-  vertical-align: middle;
-  cursor: pointer;
-  display: inline-block;
-  padding-left: 35px;
-  padding-top: 4px;
-}
-
-.radio__label:before {
-  content: '';
-  display: block;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  position: absolute;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  top: 3px;
-  left: 5px;
-  z-index: 1;
-  transition: border 0.1s linear;
-}
-
-.radio__label:after {
-  content: '';
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  opacity: 0;
-  position: absolute;
-  top: 6px;
-  left: 8px;
-  z-index: 2;
-  transition: opacity 0.1s linear;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  border-radius: 10px;
-}
-
-.radio__input:checked + .radio__label:before {
-  border-color: #bc9cff;
-}
-
-.radio__input:checked + .radio__label:after {
-  opacity: 1;
-}
-
-.room-privilege-block {
-  margin-top: 25px;
-  width: 300px;
-}
-
-.material-icons.room-privilege-img {
-  width: 48px;
-  height: 48px;
-  left: 140px;
-  top: 1564px;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 41px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-}
-
-.room-privilege__description-label {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.room-privilege__description-text {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-}
-
-.room-privilege__image {
-  float: left;
-}
-
-.room-privilege__description {
-  display: inline-block;
-  padding-left: 10px;
-}
-
-.avatar {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-.avatar_small {
-  width: 160%;
-  height: 160%;
-  display: block;
-  float: left;
-}
-
-.user-name {
-  display: inline-block;
-  padding-left: 20px;
-}
-
-.comment-text .room-privilege__description-text {
-  width: 653px;
-  height: 72px;
-}
-
-.comment-block {
-  margin-top: 25px;
-}
-
-.comment {
-  padding-left: 10px;
-}
-
-.comment .like-button_color {
-  float: left;
-}
-
-.comment-text {
-  display: inline-block;
-  padding-left: 10px;
-}
-
-.toggle-block {
-  margin-top: 34px;
-}
-
-.toggle {
-  position: relative;
-  opacity: 0;
-}
-
-.toggle + .toggle-label {
-  position: relative;
-  padding: 0 0 0 52px;
-  cursor: pointer;
-}
-
-.toggle-label {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  user-select: none;
-}
-
-.toggle + .toggle-label:before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 40px;
-  height: 20px;
-  border-radius: 13px;
-  background: #fff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  transition: 0.2s;
-}
-
-.toggle + .toggle-label:after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 10px;
-  background: rgba(31, 32, 65, 0.25);
-  transition: 0.2s;
-}
-
-.toggle:checked + .toggle-label:after {
-  left: 25px;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-}
-
-.toggle:checked + .toggle-label:before {
-  background: #fff;
-  border: 1px solid #bc9cff;
-}
-
-.toggle-item {
-  margin-bottom: 12px;
-  margin-left: -19px;
-  margin-top: 9px;
-}
-
-.input_middle {
-  width: 267px;
-  margin-bottom: 77px;
-}
-
-.subscribe-arrow {
-  position: relative;
-  left: 233px;
-  top: -31px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
-.subscribe-arrow {
-  position: relative;
-  left: 233px;
-  top: -2px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
-.subscribe-field-arrow {
-  position: relative;
-  left: -36px;
-  top: -4px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
-
-.dropdown-options {
-  height: 159px;
-}
-
-.dropdown__input_default {
-  position: relative;
-  width: 266px;
-  height: 44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 5px;
-  margin-top: 4px;
-  cursor: pointer;
-}
-
-.dropdown__input-text {
-  position: relative;
-  width: 160px;
-  height: 24px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  vertical-align: center;
-  top: 8px;
-  left: 10px;
-}
-
-.dropdown-block__label {
-  display: flex;
-  justify-content: space-between;
-  width: 266px;
-  align-content: center;
-  vertical-align: middle;
-  margin-bottom: -5px;
-}
-
-.dropdown-block {
-  margin-top: 12px;
-}
-
-.dropdown-condition {
-  position: relative;
-  top: 10px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.forms-elements-page .dropdown__arrow {
-  position: relative;
-  left: 157px;
-  top: 9px;
-}
-
-.dropdown__input_expanded {
-  width: 266px;
-  height: 119px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 2px;
-  margin-top: -1px;
-}
-
-.dropdown-counter__btn {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 22px;
-  text-align: center;
-}
-.dropdown-counter__btn span {
-  position: relative;
-  display: inline-block;
-  top: 2px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  align-items: center;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.dropdown-counter {
-  position: relative;
-  width: 92px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  vertical-align: middle;
-  right: 8px;
-}
-
-.dropdown-option {
-  display: inline-block;
-  padding-left: 12px;
-}
-
-.dropdown-counter__value {
-  position: relative;
-  display: inline-block;
-  top: 6px;
-}
-
-.dropdown-item {
-  display: flex;
-  vertical-align: middle;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: -5px;
-}
-
-.dropdown__input_expanded-apply {
-  width: 320px;
-  height: 159px;
-}
-.dropdown__input_wide {
-  width: 320px;
-}
-
-.apply-btn {
-  position: relative;
-  width: 84px;
-  height: 15px;
-  left: 223px;
-  bottom: -10px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
-
-.clear-btn {
-  position: relative;
-  width: 84px;
-  height: 15px;
-  left: 10px;
-  bottom: 15px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
-
-.calendar_apply-btn {
-  display: inline-block;
-  left: 50px;
-  top: -7px;
-}
-.calendar_clear-btn {
-  display: inline-block;
-  left: -58px;
-  top: -7px;
-}
-
-.input.calendar {
-  width: 150px;
-}
-
-.date-pickers {
-  display: flex;
-  width: 343px;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type='number'] {
-  -moz-appearance: textfield;
-}
-.filter-price {
-  margin-bottom: 32px;
-}
-
-.filter-price__label {
-  display: flex;
-  align-items: center;
-  width: 110px;
-  height: 15px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-  vertical-align: middle;
-}
-
-.filter-price__head {
-  display: flex;
-  width: 266px;
-  margin-bottom: 20px;
-  margin-left: -12px;
-}
-
-.filter-price__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: left;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.filter-price__text-max {
-  position: relative;
-  text-align: left;
-  left: -11px;
-  float: left;
-}
-
-.filter-price__input-min {
-  border: none;
-  font-weight: 400;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-}
-.filter-price__input-max {
-  font-family: 'Montserrat';
-  font-style: normal;
-  border: none;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: left;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.filter-price__inputs {
-  position: relative;
-  top: 11px;
-  left: 23px;
-  width: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-.filter-price__slider {
-  width: 267px;
-  margin-left: -12px;
-}
-
-.noUi-target {
-  background: #ffffff !important;
-  border-radius: 100px !important;
-  box-shadow: none !important;
-  border: 1px solid rgba(31, 32, 65, 0.25) !important;
-  height: 6px !important;
-}
-
-.noUi-connect {
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-  box-shadow: none;
-  height: 5px;
-  border: none;
-}
-
-.noUi-handle:after,
-.noUi-handle:before {
-  display: none !important;
-}
-
-.noUi-handle {
-  box-shadow: none !important;
-  border-radius: 20px !important;
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
-  border: 2px solid #ffffff !important;
-}
-
-.noUi-horizontal .noUi-handle {
-  width: 16px !important;
-  height: 16px !important;
-  right: -10px !important;
-  top: -6px !important;
-}
-
-.noUi-horizontal .noUi-handle-upper {
-  right: -2px !important;
-}
-
-.flatpickr-current-month .flatpickr-monthDropdown-months {
-  appearance: none !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 19px !important;
-  line-height: 23px !important;
-  text-align: right !important;
-  color: #1f2041 !important;
-}
-
-.flatpickr-current-month input.cur-year {
-  -webkit-appearance: none !important;
-  margin: 0 !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 19px !important;
-  line-height: 23px !important;
-  text-align: left !important;
-  color: #1f2041 !important;
-}
-.numInputWrapper input,
-.numInputWrapper span {
-  display: none !important;
-}
-
-.flatpickr-current-month {
-  left: 20px !important;
-  margin-bottom: 30px !important;
-}
-.flatpickr-months {
-  margin-top: 15px !important;
-}
-
-.flatpickr-month {
-  margin-bottom: 30px !important;
-}
-
-span.flatpickr-weekday {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 12px !important;
-  line-height: 15px !important;
-  display: flex !important;
-  align-items: center !important;
-  text-align: center !important;
-  color: #bc9cff !important;
-  margin: 12px !important;
-}
-
-.flatpickr-day {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  font-size: 12px !important;
-  line-height: 15px !important;
-  display: flex !important;
-  align-items: center !important;
-  text-align: center !important;
-  color: rgba(31, 32, 65, 0.5) !important;
-}
-
-.flatpickr-current-month span.cur-month {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 19px !important;
-  line-height: 23px !important;
-  text-align: center !important;
-  color: #1f2041 !important;
-}
-
-.flatpickr-day.selected {
-  width: 39.88px !important;
-  height: 40px !important;
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
-  border-radius: 22px !important;
-}
-
-.flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-next-month {
-  right: 0 !important;
-  top: 13px !important;
-}
-
-.flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
-  left: 0 !important;
-  top: 13px !important;
-}
-
-.date-filter__input {
-  width: 267px !important;
-}
-.date-filter_arrow {
-  position: relative !important;
-  left: -33px !important;
-  top: -1px !important;
-}
-
-.date-filter {
-  margin-top: 20px !important;
-}
-
-.subscribe-field {
-  margin-top: 34px;
-}
-
-.head__logo-img {
-  height: 48px;
-  width: 48px;
-}
-
-.header__logo {
-  display: inline-block;
-  position: relative;
-  top: 28px;
-  left: 18%;
-}
-
-.forms-elements-page .material-icons.expand-arrow.dropdown__arrow {
-  position: relative;
-  left: 157px;
-  top: 3px;
-}
-.forms-elements-page {
-  max-width: 1440px;
-  min-width: 1024px;
-  margin: auto;
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  align-content: center;
-}
-
-.forms-elements {
-  display: grid;
-  width: 100%;
-  justify-content: space-between;
-  align-content: start;
-  align-items: flex-start;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
-  margin-left: 9%;
-  margin-top: 81px;
-}
-
-.col-1 {
-  width: 320px;
-}
-
-.col-2 {
-  width: 320px;
-  margin-left: -34px;
-}
-
-.col-3 {
-  width: 320px;
-  margin-left: -123px;
-}
-
-.row-1 {
-  display: flex;
-  width: 1158px;
-  justify-content: space-between;
-  margin-top: 77px;
-  margin-left: 130px;
-}
-
-.forms-elements-page .header__logo {
-  margin-left: -16%;
-}
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></style><div class="forms-elements-page"><div class="header__logo"><a href="index.html"><img class="head__logo-img" src="src/images/only_logo.png" alt="Logo"></a></div><div class="forms-elements"><div class="col-1"><div class="form"><div class="text-fields"><div class="field"><div class="field-label"><h2 class="label">Text Field</h2><span class="input-condition">DEFAULT</span></div><input class="input" placeholder="Email"></div><div class="field"><div class="field-label"><h2 class="label">Text Field</h2><span class="input-condition">Hover/Focus</span></div><input class="input input_focus" placeholder="This is pretty awesome"></div><div class="field"><h2 class="label">Dropdown</h2><select class="input"><option value="">Сколько гостей</option><option value="">1</option><option value="">2</option><option value="">3</option></select></div><div class="field"><h2 class="label">masked text field</h2><input class="input" placeholder="ДД.ММ.ГГГГ"></div></div><div class="date-pickers"><div class="field"><h2 class="label">date Dropdown</h2><input class="input calendar" type="date" placeholder="ДД.ММ.ГГГГ"></div><div class="field"><h2 class="label">date dropdown</h2><input class="input calendar" type="date" placeholder="19.08.2019"></div></div><div class="date-filter"><div class="field"><h2 class="label">filter date dropdown</h2><input class="input calendar date-filter__input" type="date" placeholder="19 авг - 23 авг"><span class="material-icons expand-arrow date-filter_arrow">expand_more</span></div></div><div class="subscribe-field"><div class="field"><h2 class="label">subscription text field</h2><input class="input input_middle" placeholder="   Email"><span class="material-icons subscribe-field-arrow">arrow_forward</span></div></div></div><div class="dropdown-block"><div class="dropdown-block__label"><h2 class="label">dropdown</h2><span class="dropdown-condition">DEFAULT</span></div><div class="dropdown__input"><div class="dropdown__input_default"><span class="dropdown__input-text">2 спальни</span><span class="material-icons expand-arrow dropdown__arrow">expand_more</span></div></div></div><div class="dropdown-block"><div class="dropdown-block__label"><h2 class="label">dropdown</h2><span class="dropdown-condition">EXPANDED</span></div><div class="dropdown__input"><div class="dropdown__input_default"><span class="dropdown__input-text">2 спальни</span><span class="material-icons expand-arrow dropdown__arrow">expand_more</span></div><div class="dropdown__input_expanded"><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">спальни</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">кровати</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">ванные комнаты</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div></div></div></div><div class="checkbox-block"><div class="checkbox-list_close"><div class="checkbox-list__label"><h2 class="label">expandable checkbox list <span class="material-icons expand-arrow">expand_more</span></h2></div></div><div class="checkbox-list"><div class="checkbox-list__label"><h2 class="label">expandable checkbox list <span class="material-icons expand-arrow expand-arrow__reverse">expand_more</span></h2></div><div class="checkbox-list_options"><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label">Завтрак</span></label><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement" checked="checked"><span class="visible-checkbox-label"></span><span class="checkbox-label">Письменный стол</span></label><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement" checked="checked"><span class="visible-checkbox-label"></span><span class="checkbox-label">Стул для кормления</span></label><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement" checked="checked"><span class="visible-checkbox-label"></span><span class="checkbox-label">Кроватка</span></label><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label">Телевизор</span></label><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label">Шампунь</span></label></div></div></div></div></div><div class="col-2"><div class="checkbox-list"><div class="checkbox-list__label"><h2 class="label">Checkbox Buttons</h2></div><div class="checkbox-list_options"><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label">Можно курить</span></label><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement" checked="checked"><span class="visible-checkbox-label"></span><span class="checkbox-label">Можно с питомцами</span></label><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement" checked="checked"><span class="visible-checkbox-label"></span><span class="checkbox-label">Можно пригласить гостей (до 10 человек)</span></label></div></div><div class="radio-buttons-block"><h2 class="label">Radio Buttons</h2><div class="radio-buttons-items"><div class="radio"><input class="radio__input" type="radio" name="gender" id="1"><label class="radio__label" for="1">Мужчина</label></div><div class="radio"><input class="radio__input" type="radio" name="gender" id="2"><label class="radio__label" for="2">Женщина</label></div></div></div><div class="toggle-block"><h2 class="label">TOGGLE</h2><div class="toggle-item"><input class="toggle" type="checkbox" id="check1" checked="checked"><label class="toggle-label" for="check1">Получать спецпредложения</label></div><div class="toggle-item"><input class="toggle" type="checkbox" id="check2"><label class="toggle-label" for="check2">Получать спецпредложения</label></div></div><div class="like-block"><h2 class="label">like button</h2><div class="like-buttons"><div class="like-button"><span class="material-icons like">favorite_border</span> <span class="like-quantity">2</span></div><div class="like-button like-button_color"><span class="material-icons like like-fill">favorite</span> <span class="like-quantity like-quantity_color">12</span></div></div></div><div class="rating-block"><h2 class="label">rate button</h2><div class="stars-block"><div class="rating"><div class="rating-stars"><input class="rating__star" id="rating__5" type="radio" name="rating" value="5"><label class="rating__label" for="rating__5"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__4" type="radio" name="rating" value="4"><label class="rating__label" for="rating__4"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__3" type="radio" name="rating" value="3"><label class="rating__label" for="rating__3"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__2" type="radio" name="rating" value="2"><label class="rating__label" for="rating__2"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__1" type="radio" name="rating" value="1"><label class="rating__label" for="rating__1"><span class="material-icons">star_border</span></label></div></div><div class="rating"><div class="rating-stars"><input class="rating__star" id="rating__10" type="radio" name="rating" value="10"><label class="rating__label" for="rating__10"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__9" type="radio" name="rating" value="9"><label class="rating__label" for="rating__9"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__8" type="radio" name="rating" value="8"><label class="rating__label" for="rating__8"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__7" type="radio" name="rating" value="7"><label class="rating__label" for="rating__7"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__6" type="radio" name="rating" value="6"><label class="rating__label" for="rating__6"><span class="material-icons">star_border</span></label></div></div></div></div><div class="dropdown-block"><div class="dropdown-block__label"><h2 class="label">dropdown</h2></div><div class="dropdown__input"><div class="dropdown__input_default dropdown__input_wide"><span class="dropdown__input-text">Сколько гостей <span class="material-icons expand-arrow dropdown__arrow">expand_more</span></span></div><div class="dropdown__input_expanded dropdown__input_expanded-apply"><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">взрослые</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span class="counter__btn">-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span class="counter__btn">+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">дети</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span class="counter__btn">-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span class="counter__btn">+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">младенцы</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span class="counter__btn">-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span class="counter__btn">+</span></div></div></div><div class="dropdown-buttons"><p class="apply-btn">применить</p></div></div></div></div><div class="checkbox-list_rich"><div class="checkbox-list__label"><h2 class="label">rich Checkbox Buttons</h2></div><div class="checkbox-list_options"><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label checkbox-label-rich">Широкий коридор</span><p class="checkbox-label-describe">Ширина коридоров в номере не менее 91 см.</p></label><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label checkbox-label-rich">Помощник для инвалидов</span><p class="checkbox-label-describe">На 1 этаже вас встретит специалист и проводит до номера.</p></label></div></div></div></div><div class="col-3"><div class="filter-price"><div class="filter-price__head"><h2 class="label">range slider</h2><div class="filter-price__inputs"><label class="filter-price__label filter-price__label-min"><input class="filter-price__input-min" type="number" min="0" max="100000" placeholder="0" id="input-0"><span class="filter-price__text">₽-</span><span class="filter-price__text"></span></label><label class="filter-price__label filter-price__label-max"><input class="filter-price__input-max" type="number" min="0" max="100000" placeholder="10&amp;nbsp0000" id="input-1"><span class="filter-price__text filter-price__text-max">₽</span></label></div></div><div class="filter-price__slider" id="range-slider"></div></div><div class="buttons"><div class="buttons__label"><h2 class="label">buttons</h2></div><div class="buttons__items"><div class="buttons__item"><button class="btn btn_small btn_fill-dark-violet">CLICK ME</button></div><div class="buttons__item"><button class="btn btn_small btn_fill-light-violet">CLICK ME</button></div><div class="buttons__item"><button class="btn btn_small btn_dark-violet">CLICK ME</button></div><div class="buttons__item"><button class="btn btn_small btn_light-violet">CLICK ME</button></div><div class="buttons__item"><button class="btn btn_small btn_no-border-violet">CLICK ME</button></div><div class="buttons__item"><button class="btn btn_small btn_no-border-dark">CLICK ME</button><button class="btn btn_lg"><span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span></button></div></div></div><div class="pagination"><h2 class="label">pagination</h2><br><div class="pagination__btns"><button class="btn btn-pagination btn-pagination_active">1</button><button class="btn btn-pagination btn-pagination">2</button><button class="btn btn-pagination btn-pagination">3</button><button class="btn btn-pagination btn-pagination">...</button><button class="btn btn-pagination btn-pagination">15</button><button class="btn btn-pagination btn-pagination_next"><span class="material-icons">arrow_forward</span></button><p class="pagination-text">1 – 12 из 100+ вариантов аренды</p></div></div><div class="dropdown-block"><div class="dropdown-block__label"><h2 class="label">dropdown</h2></div><div class="dropdown__input"><div class="dropdown__input_default dropdown__input_wide"><span class="dropdown__input-text">Сколько гостей <span class="material-icons expand-arrow dropdown__arrow">expand_more</span></span></div><div class="dropdown__input_expanded dropdown__input_expanded-apply"><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">взрослые</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">дети</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">младенцы</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-buttons"><p class="apply-btn">применить</p><p class="clear-btn">очистить</p></div></div></div></div></div><div class="bullet-list"><h2 class="label">bullet list</h2><ul class="bullet-list__items"><li class="bullet-list__item">Нельзя с питомцами</li><li class="bullet-list__item">Без вечеринок и мероприятий</li><li class="bullet-list__item">Время прибытия — после 13:00, а выезд до 12:00.</li></ul></div></div></div><div class="row-1"><div class="room-privilege"><div class="room-privilege-block"><div class="room-privilege__image"><span class="material-icons room-privilege-img">insert_emoticon</span></div><div class="room-privilege__description"><p class="room-privilege__description-label">Комфорт</p><p class="room-privilege__description-text">Шумопоглощающие стены</p></div></div><div class="room-privilege-block"><div class="room-privilege__image"><span class="material-icons room-privilege-img">location_city</span></div><div class="room-privilege__description"><p class="room-privilege__description-label">Удобство</p><p class="room-privilege__description-text">Окно в каждой из спален</p></div></div></div><div class="comment-block"><div class="user-info"><div class="avatar"><img class="avatar_small" src="src/images/avatar.svg" alt="avatar"></div><div class="user-name"><p class="room-privilege__description-label">Мурад Сарафанов</p><p class="room-privilege__description-text">5 дней назад</p></div></div><div class="comment"><div class="like-button like-button_color"><span class="material-icons like like-fill">favorite</span> <span class="like-quantity like-quantity_color">12</span></div><div class="comment-text"><p class="room-privilege__description-text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p></div></div></div></div></div><script defer="defer" src="755.52307dbfb21fd8529785.js"></script><script defer="defer" src="441.26cf6d4bb562cbf06ea0.js"></script><script defer="defer" src="scripts.69c141cdf0c96affabf4.js"></script><script defer="defer" src="user.468cd42f063739eb6b2f.js"></script><link href="scripts.8c3e257ca36bcac6c223.css" rel="stylesheet"></head></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <style>
+      .label {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: #1f2041;
+        display: inline-block;
+      }
+
+      .field {
+        margin-bottom: 12px;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        left: 141px;
+        top: 163px;
+        padding-left: 15px;
+
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.25);
+      }
+      .input.input_focus {
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        box-sizing: border-box;
+        border-radius: 4px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .field-label {
+        display: block;
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+      }
+
+      .input-condition {
+        position: relative;
+        display: block;
+        top: 8px;
+        min-width: 100px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        text-align: right;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .buttons__label {
+        margin-bottom: 10px;
+      }
+
+      .buttons__item {
+        margin-right: 13px;
+        margin-bottom: 27px;
+      }
+      .buttons__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 220px;
+        height: 200px;
+      }
+
+      .btn {
+        border: 2px solid;
+        outline: none;
+        text-align: center;
+        margin: 0;
+        height: 44px;
+        border-radius: 22px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+      }
+
+      .btn_small {
+        width: 99px;
+        left: 980px;
+        top: 262px;
+      }
+
+      .radio-buttons-block {
+        margin-top: 33px;
+      }
+
+      .pagination {
+        width: 500px;
+        margin-top: 40px;
+        margin-bottom: 219px;
+      }
+
+      .btn-pagination {
+        width: 40px;
+        height: 40px;
+        outline: none;
+        border: none;
+      }
+
+      .btn-pagination_active {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+      }
+
+      .btn-pagination_next {
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        color: #ffffff;
+      }
+
+      .pagination-text {
+        position: relative;
+        height: 24px;
+        top: -7px;
+        left: 4px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .pagination__btns {
+        margin-top: 12px;
+      }
+
+      .buttons {
+        margin-bottom: 68px;
+      }
+
+      .btn_lg {
+        position: relative;
+        width: 320px;
+        left: -118px;
+        top: 14px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .btn_fill-dark-violet {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+        width: 102px;
+        height: 46px;
+      }
+
+      .btn_fill-light-violet {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        opacity: 0.5;
+        color: #ffffff;
+        width: 102px;
+        height: 46px;
+      }
+
+      .btn_dark-violet {
+        color: #bc9cff;
+        border-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+
+        border: 2px solid;
+      }
+
+      .btn_light-violet {
+        color: #bc9cff;
+        border: 2px solid;
+
+        border-color: linear-gradient(180deg, #bc9cff 100%, #8ba4f9 100%);
+        opacity: 0.5;
+      }
+      .btn_no-border-violet {
+        color: #bc9cff;
+        border: none;
+
+        padding-bottom: 10px;
+        margin-top: -5px;
+        margin-left: -18px;
+      }
+      .btn_small.btn_no-border-dark {
+        color: rgba(31, 32, 65, 0.5);
+        border: none;
+
+        margin-top: -9px;
+        margin-left: -53px;
+      }
+
+      img {
+        width: 12px;
+        height: 12px;
+      }
+
+      .material-icons {
+        vertical-align: middle;
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: normal;
+        align-items: right;
+        text-align: right;
+        font-size: 24px; /* Preferred icon size */
+        text-transform: none;
+        letter-spacing: normal;
+      }
+
+      .checkbox-list_close {
+        margin-bottom: 26px;
+      }
+
+      .checkbox-block {
+        margin-top: 42px;
+      }
+      // expandable checkbox list
+      .expand-arrow {
+        color: rgba(31, 32, 65, 0.5);
+        padding-left: 30px;
+      }
+
+      .expand-arrow__reverse {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        writing-mode: lr-tb;
+      }
+
+      .checkbox-list {
+        width: 266px;
+      }
+
+      .checkbox-list_rich {
+        width: 266px;
+        margin-top: 90px;
+      }
+      .checkbox-list_options {
+        width: 250px;
+      }
+
+      .checkbox-list_options-item {
+        vertical-align: middle;
+      }
+      .checkbox-list_options-items {
+        display: block;
+        margin-top: 10px;
+      }
+
+      .checkbox-label {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        padding-left: 10px;
+        vertical-align: text-top;
+        width: 226px;
+        display: inline-block;
+      }
+
+      .checkbox {
+        width: 20px;
+        height: 20px;
+        left: 140px;
+        top: 1292.44px;
+
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        vertical-align: middle;
+        display: none;
+      }
+
+      .visible-checkbox-label {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        left: 140px;
+        top: 1292.44px;
+
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        vertical-align: middle;
+      }
+
+      .visible-checkbox-label::before {
+        text-align: center;
+        content: '';
+        display: block;
+        background-image: url('./src/assets/checked.png');
+        background-repeat: no-repeat;
+        background-color: #ffffff;
+        width: 12px;
+        height: 11px;
+        transform: translate(35%, 41%);
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .checkbox:checked + .visible-checkbox-label::before {
+        opacity: 1;
+      }
+
+      .checkbox-label-rich {
+        font-weight: bold;
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .checkbox-label-describe {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(31, 32, 65, 0.5);
+        padding-left: 30px;
+        max-width: 236px;
+        margin-top: 5px;
+      }
+
+      .bullet-list {
+        margin-top: 90px;
+      }
+
+      .bullet-list__item {
+        list-style-image: url('./src/assets/Ellipse.png');
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        padding-top: 10px;
+      }
+
+      .bullet-list__items {
+        padding-left: 18px;
+        margin: 0px;
+      }
+
+      .stars-block {
+        display: flex;
+        align-items: flex-start;
+        align-self: flex-start;
+        justify-content: space-between;
+        height: 100%;
+        align-content: space-between;
+        width: 258px;
+      }
+
+      .rating-block {
+        margin-top: 32px;
+        margin-bottom: 185px;
+      }
+
+      .rating {
+        position: relative;
+        font-size: 29px;
+        display: inline-block;
+      }
+
+      .rating::before {
+        content: '★★★★★';
+        display: block;
+      }
+
+      .rating-stars {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+      }
+
+      .rating__star {
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+      }
+
+      .rating__label {
+        flex: 0 0 20%;
+        height: 100%;
+        cursor: pointer;
+        color: #ceced4;
+
+        border: 2px, solid, black;
+      }
+
+      .rating__label::before {
+        content: '★';
+        display: block;
+        transition: color 0.3s ease 0s;
+      }
+
+      .rating__star:checked,
+      .rating__star:checked ~ .rating__label {
+        color: #bc9cff;
+      }
+
+      .rating__label:hover,
+      .rating__label:hover ~ .rating__label,
+      .rating__label:checked ~ .rating__label:hover {
+        color: #bc9cff;
+      }
+
+      .like-block {
+        margin-top: 31px;
+      }
+
+      .like-buttons {
+        margin-top: 11px;
+      }
+
+      .like-button {
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        left: 587px;
+        top: 565px;
+
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+
+      .like-button_color {
+        border: 1px solid #bc9cff;
+        margin-left: 9px;
+      }
+
+      .like {
+        font-size: 10px;
+        line-height: 9px;
+        align-items: center;
+        text-align: center;
+        color: rgba(31, 32, 65, 0.25);
+        margin-left: 4px;
+      }
+
+      .like-quantity {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        color: rgba(31, 32, 65, 0.25);
+        margin-left: 3px;
+      }
+
+      .like-fill {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 9px;
+        align-items: center;
+        text-align: center;
+        color: #bc9cff;
+      }
+
+      .like-quantity_color {
+        color: #bc9cff;
+      }
+
+      .radio {
+        margin-left: 10px;
+      }
+
+      .radio__input {
+        width: 18px;
+        height: 18px;
+
+        border: 1px solid #bc9cff;
+        box-sizing: border-box;
+        border-radius: 10px;
+        vertical-align: middle;
+        -webkit-appearance: none;
+        appearance: none;
+        position: absolute;
+      }
+
+      .radio {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        margin-left: 12px;
+        margin-top: -4px;
+      }
+
+      .radio-buttons-items {
+        width: 300px;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 11px;
+        margin-left: -15px;
+      }
+
+      .radio__label {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        vertical-align: middle;
+        cursor: pointer;
+        display: inline-block;
+        padding-left: 35px;
+        padding-top: 4px;
+      }
+
+      .radio__label:before {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        position: absolute;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        top: 3px;
+        left: 5px;
+        z-index: 1;
+        transition: border 0.1s linear;
+      }
+
+      .radio__label:after {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        z-index: 2;
+        transition: opacity 0.1s linear;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        border-radius: 10px;
+      }
+
+      .radio__input:checked + .radio__label:before {
+        border-color: #bc9cff;
+      }
+
+      .radio__input:checked + .radio__label:after {
+        opacity: 1;
+      }
+
+      .room-privilege-block {
+        margin-top: 25px;
+        width: 300px;
+      }
+
+      .material-icons.room-privilege-img {
+        width: 48px;
+        height: 48px;
+        left: 140px;
+        top: 1564px;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 41px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+      }
+
+      .room-privilege__description-label {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .room-privilege__description-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        margin-top: 0px;
+      }
+
+      .room-privilege__image {
+        float: left;
+      }
+
+      .room-privilege__description {
+        display: inline-block;
+        padding-left: 10px;
+      }
+
+      .avatar {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+      }
+      .avatar_small {
+        width: 160%;
+        height: 160%;
+        display: block;
+        float: left;
+      }
+
+      .user-name {
+        display: inline-block;
+        padding-left: 20px;
+      }
+
+      .comment-text .room-privilege__description-text {
+        width: 653px;
+        height: 72px;
+      }
+
+      .comment-block {
+        margin-top: 25px;
+      }
+
+      .comment {
+        padding-left: 10px;
+      }
+
+      .comment .like-button_color {
+        float: left;
+      }
+
+      .comment-text {
+        display: inline-block;
+        padding-left: 10px;
+      }
+
+      .toggle-block {
+        margin-top: 34px;
+      }
+
+      .toggle {
+        position: relative;
+        opacity: 0;
+      }
+
+      .toggle + .toggle-label {
+        position: relative;
+        padding: 0 0 0 52px;
+        cursor: pointer;
+      }
+
+      .toggle-label {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        user-select: none;
+      }
+
+      .toggle + .toggle-label:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 0;
+        width: 40px;
+        height: 20px;
+        border-radius: 13px;
+        background: #fff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        transition: 0.2s;
+      }
+
+      .toggle + .toggle-label:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 10px;
+        background: rgba(31, 32, 65, 0.25);
+        transition: 0.2s;
+      }
+
+      .toggle:checked + .toggle-label:after {
+        left: 25px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      }
+
+      .toggle:checked + .toggle-label:before {
+        background: #fff;
+        border: 1px solid #bc9cff;
+      }
+
+      .toggle-item {
+        margin-bottom: 12px;
+        margin-left: -19px;
+        margin-top: 9px;
+      }
+
+      .input_middle {
+        width: 267px;
+        margin-bottom: 77px;
+      }
+
+      .subscribe-arrow {
+        position: relative;
+        left: 233px;
+        top: -31px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #bc9cff;
+      }
+      .subscribe-arrow {
+        position: relative;
+        left: 233px;
+        top: -2px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #bc9cff;
+      }
+      .subscribe-field-arrow {
+        position: relative;
+        left: -36px;
+        top: -4px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #bc9cff;
+      }
+
+      .dropdown-options {
+        height: 159px;
+      }
+
+      .dropdown__input_default {
+        position: relative;
+        width: 266px;
+        height: 44px;
+
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-top: 4px;
+        cursor: pointer;
+      }
+
+      .dropdown__input-text {
+        position: relative;
+        width: 160px;
+        height: 24px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        vertical-align: center;
+        top: 8px;
+        left: 10px;
+      }
+
+      .dropdown-block__label {
+        display: flex;
+        justify-content: space-between;
+        width: 266px;
+        align-content: center;
+        vertical-align: middle;
+        margin-bottom: -5px;
+      }
+
+      .dropdown-block {
+        margin-top: 12px;
+      }
+
+      .dropdown-condition {
+        position: relative;
+        top: 10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .forms-elements-page .dropdown__arrow {
+        position: relative;
+        left: 157px;
+        top: 9px;
+      }
+
+      .dropdown__input_expanded {
+        width: 266px;
+        height: 119px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 2px;
+        margin-top: -1px;
+      }
+
+      .dropdown-counter__btn {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 22px;
+        text-align: center;
+      }
+      .dropdown-counter__btn span {
+        position: relative;
+        display: inline-block;
+        top: 2px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        align-items: center;
+        text-align: center;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .dropdown-counter {
+        position: relative;
+        width: 92px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        vertical-align: middle;
+        right: 8px;
+      }
+
+      .dropdown-option {
+        display: inline-block;
+        padding-left: 12px;
+      }
+
+      .dropdown-counter__value {
+        position: relative;
+        display: inline-block;
+        top: 6px;
+      }
+
+      .dropdown-item {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: -5px;
+      }
+
+      .dropdown__input_expanded-apply {
+        width: 320px;
+        height: 159px;
+      }
+      .dropdown__input_wide {
+        width: 320px;
+      }
+
+      .apply-btn {
+        position: relative;
+        width: 84px;
+        height: 15px;
+        left: 223px;
+        bottom: -10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      .clear-btn {
+        position: relative;
+        width: 84px;
+        height: 15px;
+        left: 10px;
+        bottom: 15px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      .calendar_apply-btn {
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+      .calendar_clear-btn {
+        display: inline-block;
+        left: -58px;
+        top: -7px;
+      }
+
+      .input.calendar {
+        width: 150px;
+      }
+
+      .date-pickers {
+        display: flex;
+        width: 343px;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type='number'] {
+        -moz-appearance: textfield;
+      }
+      .filter-price {
+        margin-bottom: 32px;
+      }
+
+      .filter-price__label {
+        display: flex;
+        align-items: center;
+        width: 110px;
+        height: 15px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
+        vertical-align: middle;
+      }
+
+      .filter-price__head {
+        display: flex;
+        width: 266px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+      }
+
+      .filter-price__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: left;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .filter-price__text-max {
+        position: relative;
+        text-align: left;
+        left: -11px;
+        float: left;
+      }
+
+      .filter-price__input-min {
+        border: none;
+        font-weight: 400;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
+      }
+      .filter-price__input-max {
+        font-family: 'Montserrat';
+        font-style: normal;
+        border: none;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: left;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .filter-price__inputs {
+        position: relative;
+        top: 11px;
+        left: 23px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .filter-price__slider {
+        width: 267px;
+        margin-left: -12px;
+      }
+
+      .noUi-target {
+        background: #ffffff !important;
+        border-radius: 100px !important;
+        box-shadow: none !important;
+        border: 1px solid rgba(31, 32, 65, 0.25) !important;
+        height: 6px !important;
+      }
+
+      .noUi-connect {
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        box-shadow: none;
+        height: 5px;
+        border: none;
+      }
+
+      .noUi-handle:after,
+      .noUi-handle:before {
+        display: none !important;
+      }
+
+      .noUi-handle {
+        box-shadow: none !important;
+        border-radius: 20px !important;
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
+        border: 2px solid #ffffff !important;
+      }
+
+      .noUi-horizontal .noUi-handle {
+        width: 16px !important;
+        height: 16px !important;
+        right: -10px !important;
+        top: -6px !important;
+      }
+
+      .noUi-horizontal .noUi-handle-upper {
+        right: -2px !important;
+      }
+
+      .flatpickr-current-month .flatpickr-monthDropdown-months {
+        appearance: none !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 19px !important;
+        line-height: 23px !important;
+        text-align: right !important;
+        color: #1f2041 !important;
+      }
+
+      .flatpickr-current-month input.cur-year {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 19px !important;
+        line-height: 23px !important;
+        text-align: left !important;
+        color: #1f2041 !important;
+      }
+      .numInputWrapper input,
+      .numInputWrapper span {
+        display: none !important;
+      }
+
+      .flatpickr-current-month {
+        left: 20px !important;
+        margin-bottom: 30px !important;
+      }
+      .flatpickr-months {
+        margin-top: 15px !important;
+      }
+
+      .flatpickr-month {
+        margin-bottom: 30px !important;
+      }
+
+      span.flatpickr-weekday {
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        text-align: center !important;
+        color: #bc9cff !important;
+        margin: 12px !important;
+      }
+
+      .flatpickr-day {
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        text-align: center !important;
+        color: rgba(31, 32, 65, 0.5) !important;
+      }
+
+      .flatpickr-current-month span.cur-month {
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 19px !important;
+        line-height: 23px !important;
+        text-align: center !important;
+        color: #1f2041 !important;
+      }
+
+      .flatpickr-day.selected {
+        width: 39.88px !important;
+        height: 40px !important;
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
+        border-radius: 22px !important;
+      }
+
+      .flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
+      .flatpickr-months .flatpickr-next-month.flatpickr-next-month {
+        right: 0 !important;
+        top: 13px !important;
+      }
+
+      .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
+      .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
+        left: 0 !important;
+        top: 13px !important;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+      .date-filter_arrow {
+        position: relative !important;
+        left: -33px !important;
+        top: -1px !important;
+      }
+
+      .date-filter {
+        margin-top: 20px !important;
+      }
+
+      .subscribe-field {
+        margin-top: 34px;
+      }
+
+      .head__logo-img {
+        height: 48px;
+        width: 48px;
+      }
+
+      .header__logo {
+        display: inline-block;
+        position: relative;
+        top: 28px;
+        left: 18%;
+      }
+
+      .forms-elements-page .material-icons.expand-arrow.dropdown__arrow {
+        position: relative;
+        left: 157px;
+        top: 3px;
+      }
+      .forms-elements-page {
+        max-width: 1440px;
+        min-width: 1024px;
+        margin: auto;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        align-content: center;
+      }
+
+      .forms-elements {
+        display: grid;
+        width: 100%;
+        justify-content: space-between;
+        align-content: start;
+        align-items: flex-start;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        margin-left: 9%;
+        margin-top: 81px;
+      }
+
+      .col-1 {
+        width: 320px;
+      }
+
+      .col-2 {
+        width: 320px;
+        margin-left: -34px;
+      }
+
+      .col-3 {
+        width: 320px;
+        margin-left: -123px;
+      }
+
+      .row-1 {
+        display: flex;
+        width: 1158px;
+        justify-content: space-between;
+        margin-top: 77px;
+        margin-left: 130px;
+      }
+
+      .forms-elements-page .header__logo {
+        margin-left: -16%;
+      }
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </style>
+    <div class="forms-elements-page">
+      <div class="header__logo">
+        <a href="index.html"
+          ><img
+            class="head__logo-img"
+            src="src/images/only_logo.png"
+            alt="Logo"
+        /></a>
+      </div>
+      <div class="forms-elements">
+        <div class="col-1">
+          <div class="form">
+            <div class="mixed-fields">
+              <div class="field">
+                <div class="field-label">
+                  <h2 class="label">Text Field</h2>
+                  <span class="input-condition">DEFAULT</span>
+                </div>
+                <input class="input" placeholder="Email" />
+              </div>
+              <div class="field">
+                <div class="field-label">
+                  <h2 class="label">Text Field</h2>
+                  <span class="input-condition">Hover/Focus</span>
+                </div>
+                <input
+                  class="input input_focus"
+                  placeholder="This is pretty awesome"
+                />
+              </div>
+              <div class="field">
+                <h2 class="label">Dropdown</h2>
+                <select class="input">
+                  <option value="">Сколько гостей</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+              </div>
+              <div class="field">
+                <h2 class="label">masked text field</h2>
+                <input class="input" placeholder="ДД.ММ.ГГГГ" />
+              </div>
+            </div>
+            <div class="date-pickers">
+              <div class="field">
+                <h2 class="label">date Dropdown</h2>
+                <input
+                  class="input calendar"
+                  type="date"
+                  placeholder="ДД.ММ.ГГГГ"
+                />
+              </div>
+              <div class="field">
+                <h2 class="label">date dropdown</h2>
+                <input
+                  class="input calendar"
+                  type="date"
+                  placeholder="19.08.2019"
+                />
+              </div>
+            </div>
+            <div class="date-filter">
+              <div class="field">
+                <h2 class="label">filter date dropdown</h2>
+                <input
+                  class="input calendar date-filter__input"
+                  type="date"
+                  placeholder="19 авг - 23 авг"
+                /><span class="material-icons expand-arrow date-filter_arrow"
+                  >expand_more</span
+                >
+              </div>
+            </div>
+            <div class="subscribe-field">
+              <div class="field">
+                <h2 class="label">subscription text field</h2>
+                <input class="input input_middle" placeholder="   Email" /><span
+                  class="material-icons subscribe-field-arrow"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-block">
+            <div class="dropdown-block__label">
+              <h2 class="label">dropdown</h2>
+              <span class="dropdown-condition">DEFAULT</span>
+            </div>
+            <div class="dropdown__input">
+              <div class="dropdown__input_default">
+                <span class="dropdown__input-text">2 спальни</span
+                ><span class="material-icons expand-arrow dropdown__arrow"
+                  >expand_more</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-block">
+            <div class="dropdown-block__label">
+              <h2 class="label">dropdown</h2>
+              <span class="dropdown-condition">EXPANDED</span>
+            </div>
+            <div class="dropdown__input">
+              <div class="dropdown__input_default">
+                <span class="dropdown__input-text">2 спальни</span
+                ><span class="material-icons expand-arrow dropdown__arrow"
+                  >expand_more</span
+                >
+              </div>
+              <div class="dropdown__input_expanded">
+                <div class="dropdown-options">
+                  <div class="dropdown-item">
+                    <h2 class="dropdown-option label">спальни</h2>
+                    <div class="dropdown-counter">
+                      <div class="dropdown-counter__btn" data-direction="minus">
+                        <span>-</span>
+                      </div>
+                      <div class="dropdown-counter__value label">0</div>
+                      <div class="dropdown-counter__btn" data-direction="plus">
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item">
+                    <h2 class="dropdown-option label">кровати</h2>
+                    <div class="dropdown-counter">
+                      <div class="dropdown-counter__btn" data-direction="minus">
+                        <span>-</span>
+                      </div>
+                      <div class="dropdown-counter__value label">0</div>
+                      <div class="dropdown-counter__btn" data-direction="plus">
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item">
+                    <h2 class="dropdown-option label">ванные комнаты</h2>
+                    <div class="dropdown-counter">
+                      <div class="dropdown-counter__btn" data-direction="minus">
+                        <span>-</span>
+                      </div>
+                      <div class="dropdown-counter__value label">0</div>
+                      <div class="dropdown-counter__btn" data-direction="plus">
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkbox-block">
+              <div class="checkbox-list_close">
+                <div class="checkbox-list__label">
+                  <h2 class="label">
+                    expandable checkbox list
+                    <span class="material-icons expand-arrow">expand_more</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="checkbox-list">
+                <div class="checkbox-list__label">
+                  <h2 class="label">
+                    expandable checkbox list
+                    <span
+                      class="material-icons expand-arrow expand-arrow__reverse"
+                      >expand_more</span
+                    >
+                  </h2>
+                </div>
+                <div class="checkbox-list_options">
+                  <label class="checkbox-list_options-items"
+                    ><input
+                      class="checkbox"
+                      type="checkbox"
+                      name="agreement"
+                    /><span class="visible-checkbox-label"></span
+                    ><span class="checkbox-label">Завтрак</span></label
+                  ><label class="checkbox-list_options-items"
+                    ><input
+                      class="checkbox"
+                      type="checkbox"
+                      name="agreement"
+                      checked="checked"
+                    /><span class="visible-checkbox-label"></span
+                    ><span class="checkbox-label">Письменный стол</span></label
+                  ><label class="checkbox-list_options-items"
+                    ><input
+                      class="checkbox"
+                      type="checkbox"
+                      name="agreement"
+                      checked="checked"
+                    /><span class="visible-checkbox-label"></span
+                    ><span class="checkbox-label"
+                      >Стул для кормления</span
+                    ></label
+                  ><label class="checkbox-list_options-items"
+                    ><input
+                      class="checkbox"
+                      type="checkbox"
+                      name="agreement"
+                      checked="checked"
+                    /><span class="visible-checkbox-label"></span
+                    ><span class="checkbox-label">Кроватка</span></label
+                  ><label class="checkbox-list_options-items"
+                    ><input
+                      class="checkbox"
+                      type="checkbox"
+                      name="agreement"
+                    /><span class="visible-checkbox-label"></span
+                    ><span class="checkbox-label">Телевизор</span></label
+                  ><label class="checkbox-list_options-items"
+                    ><input
+                      class="checkbox"
+                      type="checkbox"
+                      name="agreement"
+                    /><span class="visible-checkbox-label"></span
+                    ><span class="checkbox-label">Шампунь</span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="checkbox-list">
+            <div class="checkbox-list__label">
+              <h2 class="label">Checkbox Buttons</h2>
+            </div>
+            <div class="checkbox-list_options">
+              <label class="checkbox-list_options-items"
+                ><input
+                  class="checkbox"
+                  type="checkbox"
+                  name="agreement"
+                /><span class="visible-checkbox-label"></span
+                ><span class="checkbox-label">Можно курить</span></label
+              ><label class="checkbox-list_options-items"
+                ><input
+                  class="checkbox"
+                  type="checkbox"
+                  name="agreement"
+                  checked="checked"
+                /><span class="visible-checkbox-label"></span
+                ><span class="checkbox-label">Можно с питомцами</span></label
+              ><label class="checkbox-list_options-items"
+                ><input
+                  class="checkbox"
+                  type="checkbox"
+                  name="agreement"
+                  checked="checked"
+                /><span class="visible-checkbox-label"></span
+                ><span class="checkbox-label"
+                  >Можно пригласить гостей (до 10 человек)</span
+                ></label
+              >
+            </div>
+          </div>
+          <div class="radio-buttons-block">
+            <h2 class="label">Radio Buttons</h2>
+            <div class="radio-buttons-items">
+              <div class="radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="gender"
+                  id="1"
+                /><label class="radio__label" for="1">Мужчина</label>
+              </div>
+              <div class="radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="gender"
+                  id="2"
+                /><label class="radio__label" for="2">Женщина</label>
+              </div>
+            </div>
+          </div>
+          <div class="toggle-block">
+            <h2 class="label">TOGGLE</h2>
+            <div class="toggle-item">
+              <input
+                class="toggle"
+                type="checkbox"
+                id="check1"
+                checked="checked"
+              /><label class="toggle-label" for="check1"
+                >Получать спецпредложения</label
+              >
+            </div>
+            <div class="toggle-item">
+              <input class="toggle" type="checkbox" id="check2" /><label
+                class="toggle-label"
+                for="check2"
+                >Получать спецпредложения</label
+              >
+            </div>
+          </div>
+          <div class="like-block">
+            <h2 class="label">like button</h2>
+            <div class="like-buttons">
+              <div class="like-button">
+                <span class="material-icons like">favorite_border</span>
+                <span class="like-quantity">2</span>
+              </div>
+              <div class="like-button like-button_color">
+                <span class="material-icons like like-fill">favorite</span>
+                <span class="like-quantity like-quantity_color">12</span>
+              </div>
+            </div>
+          </div>
+          <div class="rating-block">
+            <h2 class="label">rate button</h2>
+            <div class="stars-block">
+              <div class="rating">
+                <div class="rating-stars">
+                  <input
+                    class="rating__star"
+                    id="rating__5"
+                    type="radio"
+                    name="rating"
+                    value="5"
+                  /><label class="rating__label" for="rating__5"
+                    ><span class="material-icons">star_border</span></label
+                  ><input
+                    class="rating__star"
+                    id="rating__4"
+                    type="radio"
+                    name="rating"
+                    value="4"
+                  /><label class="rating__label" for="rating__4"
+                    ><span class="material-icons">star_border</span></label
+                  ><input
+                    class="rating__star"
+                    id="rating__3"
+                    type="radio"
+                    name="rating"
+                    value="3"
+                  /><label class="rating__label" for="rating__3"
+                    ><span class="material-icons">star_border</span></label
+                  ><input
+                    class="rating__star"
+                    id="rating__2"
+                    type="radio"
+                    name="rating"
+                    value="2"
+                  /><label class="rating__label" for="rating__2"
+                    ><span class="material-icons">star_border</span></label
+                  ><input
+                    class="rating__star"
+                    id="rating__1"
+                    type="radio"
+                    name="rating"
+                    value="1"
+                  /><label class="rating__label" for="rating__1"
+                    ><span class="material-icons">star_border</span></label
+                  >
+                </div>
+              </div>
+              <div class="rating">
+                <div class="rating-stars">
+                  <input
+                    class="rating__star"
+                    id="rating__10"
+                    type="radio"
+                    name="rating"
+                    value="10"
+                  /><label class="rating__label" for="rating__10"
+                    ><span class="material-icons">star_border</span></label
+                  ><input
+                    class="rating__star"
+                    id="rating__9"
+                    type="radio"
+                    name="rating"
+                    value="9"
+                  /><label class="rating__label" for="rating__9"
+                    ><span class="material-icons">star_border</span></label
+                  ><input
+                    class="rating__star"
+                    id="rating__8"
+                    type="radio"
+                    name="rating"
+                    value="8"
+                  /><label class="rating__label" for="rating__8"
+                    ><span class="material-icons">star_border</span></label
+                  ><input
+                    class="rating__star"
+                    id="rating__7"
+                    type="radio"
+                    name="rating"
+                    value="7"
+                  /><label class="rating__label" for="rating__7"
+                    ><span class="material-icons">star_border</span></label
+                  ><input
+                    class="rating__star"
+                    id="rating__6"
+                    type="radio"
+                    name="rating"
+                    value="6"
+                  /><label class="rating__label" for="rating__6"
+                    ><span class="material-icons">star_border</span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-block">
+            <div class="dropdown-block__label">
+              <h2 class="label">dropdown</h2>
+            </div>
+            <div class="dropdown__input">
+              <div class="dropdown__input_default dropdown__input_wide">
+                <span class="dropdown__input-text"
+                  >Сколько гостей
+                  <span class="material-icons expand-arrow dropdown__arrow"
+                    >expand_more</span
+                  ></span
+                >
+              </div>
+              <div
+                class="dropdown__input_expanded dropdown__input_expanded-apply"
+              >
+                <div class="dropdown-options">
+                  <div class="dropdown-item">
+                    <h2 class="dropdown-option label">взрослые</h2>
+                    <div class="dropdown-counter">
+                      <div class="dropdown-counter__btn" data-direction="minus">
+                        <span class="counter__btn">-</span>
+                      </div>
+                      <div class="dropdown-counter__value label">0</div>
+                      <div class="dropdown-counter__btn" data-direction="plus">
+                        <span class="counter__btn">+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item">
+                    <h2 class="dropdown-option label">дети</h2>
+                    <div class="dropdown-counter">
+                      <div class="dropdown-counter__btn" data-direction="minus">
+                        <span class="counter__btn">-</span>
+                      </div>
+                      <div class="dropdown-counter__value label">0</div>
+                      <div class="dropdown-counter__btn" data-direction="plus">
+                        <span class="counter__btn">+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item">
+                    <h2 class="dropdown-option label">младенцы</h2>
+                    <div class="dropdown-counter">
+                      <div class="dropdown-counter__btn" data-direction="minus">
+                        <span class="counter__btn">-</span>
+                      </div>
+                      <div class="dropdown-counter__value label">0</div>
+                      <div class="dropdown-counter__btn" data-direction="plus">
+                        <span class="counter__btn">+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-buttons">
+                    <p class="apply-btn">применить</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkbox-list_rich">
+              <div class="checkbox-list__label">
+                <h2 class="label">rich Checkbox Buttons</h2>
+              </div>
+              <div class="checkbox-list_options">
+                <label class="checkbox-list_options-items"
+                  ><input
+                    class="checkbox"
+                    type="checkbox"
+                    name="agreement"
+                  /><span class="visible-checkbox-label"></span
+                  ><span class="checkbox-label checkbox-label-rich"
+                    >Широкий коридор</span
+                  >
+                  <p class="checkbox-label-describe">
+                    Ширина коридоров в номере не менее 91 см.
+                  </p></label
+                ><label class="checkbox-list_options-items"
+                  ><input
+                    class="checkbox"
+                    type="checkbox"
+                    name="agreement"
+                  /><span class="visible-checkbox-label"></span
+                  ><span class="checkbox-label checkbox-label-rich"
+                    >Помощник для инвалидов</span
+                  >
+                  <p class="checkbox-label-describe">
+                    На 1 этаже вас встретит специалист и проводит до номера.
+                  </p></label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="filter-price">
+            <div class="filter-price__head">
+              <h2 class="label">range slider</h2>
+              <div class="filter-price__inputs">
+                <label class="filter-price__label filter-price__label-min"
+                  ><input
+                    class="filter-price__input-min"
+                    type="number"
+                    min="0"
+                    max="100000"
+                    placeholder="0"
+                    id="input-0" /><span class="filter-price__text">₽-</span
+                  ><span class="filter-price__text"></span></label
+                ><label class="filter-price__label filter-price__label-max"
+                  ><input
+                    class="filter-price__input-max"
+                    type="number"
+                    min="0"
+                    max="100000"
+                    placeholder="10&amp;nbsp0000"
+                    id="input-1"
+                  /><span class="filter-price__text filter-price__text-max"
+                    >₽</span
+                  ></label
+                >
+              </div>
+            </div>
+            <div class="filter-price__slider" id="range-slider"></div>
+          </div>
+          <div class="buttons">
+            <div class="buttons__label"><h2 class="label">buttons</h2></div>
+            <div class="buttons__items">
+              <div class="buttons__item">
+                <button class="btn btn_small btn_fill-dark-violet">
+                  CLICK ME
+                </button>
+              </div>
+              <div class="buttons__item">
+                <button class="btn btn_small btn_fill-light-violet">
+                  CLICK ME
+                </button>
+              </div>
+              <div class="buttons__item">
+                <button class="btn btn_small btn_dark-violet">CLICK ME</button>
+              </div>
+              <div class="buttons__item">
+                <button class="btn btn_small btn_light-violet">CLICK ME</button>
+              </div>
+              <div class="buttons__item">
+                <button class="btn btn_small btn_no-border-violet">
+                  CLICK ME
+                </button>
+              </div>
+              <div class="buttons__item">
+                <button class="btn btn_small btn_no-border-dark">
+                  CLICK ME</button
+                ><button class="btn btn_lg">
+                  <span>ПЕРЕЙТИ К ОПЛАТЕ</span>
+                  <span class="material-icons">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <h2 class="label">pagination</h2>
+            <br />
+            <div class="pagination__btns">
+              <button class="btn btn-pagination btn-pagination_active">1</button
+              ><button class="btn btn-pagination btn-pagination">2</button
+              ><button class="btn btn-pagination btn-pagination">3</button
+              ><button class="btn btn-pagination btn-pagination">...</button
+              ><button class="btn btn-pagination btn-pagination">15</button
+              ><button class="btn btn-pagination btn-pagination_next">
+                <span class="material-icons">arrow_forward</span>
+              </button>
+              <p class="pagination-text">1 – 12 из 100+ вариантов аренды</p>
+            </div>
+          </div>
+          <div class="dropdown-block">
+            <div class="dropdown-block__label">
+              <h2 class="label">dropdown</h2>
+            </div>
+            <div class="dropdown__input">
+              <div class="dropdown__input_default dropdown__input_wide">
+                <span class="dropdown__input-text"
+                  >Сколько гостей
+                  <span class="material-icons expand-arrow dropdown__arrow"
+                    >expand_more</span
+                  ></span
+                >
+              </div>
+              <div
+                class="dropdown__input_expanded dropdown__input_expanded-apply"
+              >
+                <div class="dropdown-options">
+                  <div class="dropdown-item">
+                    <h2 class="dropdown-option label">взрослые</h2>
+                    <div class="dropdown-counter">
+                      <div class="dropdown-counter__btn" data-direction="minus">
+                        <span>-</span>
+                      </div>
+                      <div class="dropdown-counter__value label">0</div>
+                      <div class="dropdown-counter__btn" data-direction="plus">
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item">
+                    <h2 class="dropdown-option label">дети</h2>
+                    <div class="dropdown-counter">
+                      <div class="dropdown-counter__btn" data-direction="minus">
+                        <span>-</span>
+                      </div>
+                      <div class="dropdown-counter__value label">0</div>
+                      <div class="dropdown-counter__btn" data-direction="plus">
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item">
+                    <h2 class="dropdown-option label">младенцы</h2>
+                    <div class="dropdown-counter">
+                      <div class="dropdown-counter__btn" data-direction="minus">
+                        <span>-</span>
+                      </div>
+                      <div class="dropdown-counter__value label">0</div>
+                      <div class="dropdown-counter__btn" data-direction="plus">
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-buttons">
+                    <p class="apply-btn">применить</p>
+                    <p class="clear-btn">очистить</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bullet-list">
+            <h2 class="label">bullet list</h2>
+            <ul class="bullet-list__items">
+              <li class="bullet-list__item">Нельзя с питомцами</li>
+              <li class="bullet-list__item">Без вечеринок и мероприятий</li>
+              <li class="bullet-list__item">
+                Время прибытия — после 13:00, а выезд до 12:00.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row-1">
+        <div class="room-privilege">
+          <div class="room-privilege-block">
+            <div class="room-privilege__image">
+              <span class="material-icons room-privilege-img"
+                >insert_emoticon</span
+              >
+            </div>
+            <div class="room-privilege__description">
+              <p class="room-privilege__description-label">Комфорт</p>
+              <p class="room-privilege__description-text">
+                Шумопоглощающие стены
+              </p>
+            </div>
+          </div>
+          <div class="room-privilege-block">
+            <div class="room-privilege__image">
+              <span class="material-icons room-privilege-img"
+                >location_city</span
+              >
+            </div>
+            <div class="room-privilege__description">
+              <p class="room-privilege__description-label">Удобство</p>
+              <p class="room-privilege__description-text">
+                Окно в каждой из спален
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="comment-block">
+          <div class="user-info">
+            <div class="avatar">
+              <img
+                class="avatar_small"
+                src="src/images/avatar.svg"
+                alt="avatar"
+              />
+            </div>
+            <div class="user-name">
+              <p class="room-privilege__description-label">Мурад Сарафанов</p>
+              <p class="room-privilege__description-text">5 дней назад</p>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="like-button like-button_color">
+              <span class="material-icons like like-fill">favorite</span>
+              <span class="like-quantity like-quantity_color">12</span>
+            </div>
+            <div class="comment-text">
+              <p class="room-privilege__description-text">
+                Великолепный матрас на кровати в основной спальне! А пуфик
+                вообще потрясающий. И стены, действительно, шумоподавляющие.
+                Выкрикивал комплименты повару — никто не жаловался из соседей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer="defer" src="755.52307dbfb21fd8529785.js"></script>
+    <script defer="defer" src="441.26cf6d4bb562cbf06ea0.js"></script>
+    <script defer="defer" src="scripts.69c141cdf0c96affabf4.js"></script>
+    <script defer="defer" src="user.468cd42f063739eb6b2f.js"></script>
+    <link href="scripts.8c3e257ca36bcac6c223.css" rel="stylesheet" />
+  </head>
+</html>

@@ -1,7 +1,4 @@
 .label {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
   font-size: 12px;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -16,45 +13,29 @@
 .input {
   width: 320px;
   height: 44px;
-  left: 141px;
-  top: 163px;
   padding-left: 15px;
-  background: #ffffff;
+
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
   border-radius: 4px;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 18px;
   color: rgba(31, 32, 65, 0.25);
 }
+
 .input.input_focus {
   border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  border-radius: 4px;
   color: rgba(31, 32, 65, 0.75);
 }
 
 .field-label {
-  display: block;
-  width: 320px;
   display: flex;
   justify-content: space-between;
-  vertical-align: middle;
 }
 
 .input-condition {
   position: relative;
-  display: block;
   top: 8px;
-  min-width: 100px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
-  text-align: right;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
@@ -173,21 +154,21 @@
 .btn_dark-violet {
   color: #bc9cff;
   border-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  background: #ffffff;
+
   border: 2px solid;
 }
 
 .btn_light-violet {
   color: #bc9cff;
   border: 2px solid;
-  background: #ffffff;
+
   border-color: linear-gradient(180deg, #bc9cff 100%, #8ba4f9 100%);
   opacity: 0.5;
 }
 .btn_no-border-violet {
   color: #bc9cff;
   border: none;
-  background: #ffffff;
+
   padding-bottom: 10px;
   margin-top: -5px;
   margin-left: -18px;
@@ -195,7 +176,7 @@
 .btn_small.btn_no-border-dark {
   color: rgba(31, 32, 65, 0.5);
   border: none;
-  background: #ffffff;
+
   margin-top: -9px;
   margin-left: -53px;
 }
@@ -208,13 +189,8 @@ img {
 .material-icons {
   vertical-align: middle;
   font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: normal;
   align-items: right;
-  text-align: right;
-  font-size: 24px; /* Preferred icon size */
-  text-transform: none;
-  letter-spacing: normal;
+  font-size: 24px;
 }
 
 .material-icons.like {
@@ -228,10 +204,9 @@ img {
 .checkbox-block {
   margin-top: 42px;
 }
-// expandable checkbox list
+
 .expand-arrow {
   color: rgba(31, 32, 65, 0.5);
-  padding-left: 30px;
 }
 
 .expand-arrow__reverse {
@@ -278,7 +253,7 @@ img {
   height: 20px;
   left: 140px;
   top: 1292.44px;
-  background: #ffffff;
+
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
@@ -292,7 +267,7 @@ img {
   height: 20px;
   left: 140px;
   top: 1292.44px;
-  background: #ffffff;
+
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
@@ -445,7 +420,7 @@ img {
   height: 20px;
   left: 587px;
   top: 565px;
-  background: #ffffff;
+
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 10px;
@@ -497,7 +472,7 @@ img {
 .radio__input {
   width: 18px;
   height: 18px;
-  background: #ffffff;
+
   border: 1px solid #bc9cff;
   box-sizing: border-box;
   border-radius: 10px;
@@ -784,7 +759,7 @@ img {
   position: relative;
   width: 266px;
   height: 44px;
-  background: #ffffff;
+
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 5px;
@@ -957,7 +932,6 @@ img {
 .date-pickers {
   display: flex;
   width: 343px;
-  justify-content: space-between;
   margin-top: 30px;
 }
 
