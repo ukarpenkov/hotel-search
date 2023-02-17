@@ -215,16 +215,18 @@ img {
   writing-mode: lr-tb;
 }
 
-.checkbox-list {
-  width: 266px;
-}
-
 .checkbox-list_rich {
   width: 266px;
   margin-top: 90px;
 }
 .checkbox-list_options {
+  display: grid;
+  gap: 10px;
   width: 250px;
+}
+
+.checkbox-list__label {
+  margin-bottom: 10px;
 }
 
 .checkbox-list_options-item {
@@ -232,15 +234,9 @@ img {
 }
 .checkbox-list_options-items {
   display: block;
-  margin-top: 10px;
 }
 
 .checkbox-label {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
   padding-left: 10px;
   vertical-align: text-top;
@@ -249,15 +245,6 @@ img {
 }
 
 .checkbox {
-  width: 20px;
-  height: 20px;
-  left: 140px;
-  top: 1292.44px;
-
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  vertical-align: middle;
   display: none;
 }
 
@@ -265,11 +252,7 @@ img {
   display: inline-block;
   width: 20px;
   height: 20px;
-  left: 140px;
-  top: 1292.44px;
-
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
   border-radius: 4px;
   vertical-align: middle;
 }
@@ -465,51 +448,34 @@ img {
   color: #bc9cff;
 }
 
-.radio {
-  margin-left: 10px;
-}
-
 .radio__input {
   width: 18px;
   height: 18px;
-
   border: 1px solid #bc9cff;
-  box-sizing: border-box;
   border-radius: 10px;
-  vertical-align: middle;
-  -webkit-appearance: none;
   appearance: none;
   position: absolute;
 }
 
 .radio {
+  margin-left: 10px;
   display: inline-block;
-  vertical-align: middle;
   position: relative;
-  margin-left: 12px;
-  margin-top: -4px;
 }
 
 .radio-buttons-items {
-  width: 300px;
-  display: flex;
   justify-content: flex-start;
-  margin-top: 11px;
+  margin-top: 12px;
   margin-left: -15px;
 }
 
 .radio__label {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
   vertical-align: middle;
   cursor: pointer;
   display: inline-block;
   padding-left: 35px;
-  padding-top: 4px;
+  padding-top: 3px;
 }
 
 .radio__label:before {
@@ -711,7 +677,6 @@ img {
 
 .input_middle {
   width: 267px;
-  margin-bottom: 77px;
 }
 
 .subscribe-arrow {
@@ -738,16 +703,12 @@ img {
   text-align: center;
   color: #bc9cff;
 }
+
 .subscribe-field-arrow {
   position: relative;
   left: -36px;
-  top: -4px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
+  top: -1px;
   align-items: center;
-  text-align: center;
   color: #bc9cff;
 }
 
