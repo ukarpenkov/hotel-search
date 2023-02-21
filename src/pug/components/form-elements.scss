@@ -58,15 +58,11 @@
 .btn {
   border: 2px solid;
   outline: none;
-  text-align: center;
-  margin: 0;
   height: 44px;
   border-radius: 22px;
   font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
   text-transform: uppercase;
 }
 
@@ -131,9 +127,6 @@
   top: 14px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
 }
 
 .btn_fill-dark-violet {
@@ -353,21 +346,12 @@ img {
 
 .rating__star {
   position: absolute;
-  width: 0%;
-  height: 0%;
-  opacity: 0;
-  top: 0;
-  left: 0;
   visibility: hidden;
 }
 
 .rating__label {
-  flex: 0 0 20%;
-  height: 100%;
   cursor: pointer;
   color: #ceced4;
-
-  border: 2px, solid, black;
 }
 
 .rating__label::before {
@@ -401,11 +385,7 @@ img {
   align-items: center;
   width: 40px;
   height: 20px;
-  left: 587px;
-  top: 565px;
-
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
   border-radius: 10px;
 }
 
@@ -471,7 +451,6 @@ img {
 
 .radio__label {
   color: rgba(31, 32, 65, 0.5);
-  vertical-align: middle;
   cursor: pointer;
   display: inline-block;
   padding-left: 35px;
@@ -479,15 +458,11 @@ img {
 }
 
 .radio__label:before {
-  content: '';
-  display: block;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   position: absolute;
   border: 1px solid #ccc;
-  background-color: #fff;
-  top: 3px;
   left: 5px;
   z-index: 1;
   transition: border 0.1s linear;
@@ -495,15 +470,12 @@ img {
 
 .radio__label:after {
   content: '';
-  display: block;
   width: 12px;
   height: 12px;
-  border-radius: 50%;
   opacity: 0;
   position: absolute;
   top: 6px;
   left: 8px;
-  z-index: 2;
   transition: opacity 0.1s linear;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 10px;
@@ -614,7 +586,6 @@ img {
 }
 
 .toggle {
-  position: relative;
   opacity: 0;
 }
 
@@ -642,7 +613,6 @@ img {
   width: 40px;
   height: 20px;
   border-radius: 13px;
-  background: #fff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   transition: 0.2s;
 }
@@ -665,7 +635,6 @@ img {
 }
 
 .toggle:checked + .toggle-label:before {
-  background: #fff;
   border: 1px solid #bc9cff;
 }
 
@@ -717,30 +686,24 @@ img {
 }
 
 .dropdown__input_default {
-  position: relative;
   width: 266px;
   height: 44px;
-
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
   border-radius: 5px;
   margin-top: 4px;
   cursor: pointer;
 }
 
 .dropdown__input-text {
+  display: flex;
+  width: 294px;
+  height: 37px;
   position: relative;
-  width: 160px;
-  height: 24px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  height: 40px;
   color: rgba(31, 32, 65, 0.75);
-  vertical-align: center;
-  top: 8px;
   left: 10px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dropdown-block__label {
@@ -770,9 +733,7 @@ img {
 }
 
 .forms-elements-page .dropdown__arrow {
-  position: relative;
-  left: 157px;
-  top: 9px;
+  display: inline-block;
 }
 
 .dropdown__input_expanded {
@@ -911,18 +872,7 @@ input[type='number'] {
 
 .filter-price__label {
   display: flex;
-  align-items: center;
-  width: 110px;
   height: 15px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-  vertical-align: middle;
 }
 
 .filter-price__head {
@@ -933,13 +883,8 @@ input[type='number'] {
 }
 
 .filter-price__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  text-align: left;
-  text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -952,24 +897,17 @@ input[type='number'] {
 
 .filter-price__input-min {
   border: none;
-  font-weight: 400;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-size: 12px;
   line-height: 15px;
   text-align: right;
-  text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
+
 .filter-price__input-max {
   font-family: 'Montserrat';
-  font-style: normal;
   border: none;
-  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  text-align: left;
-  text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -1151,7 +1089,5 @@ span.flatpickr-weekday {
 }
 
 .forms-elements-page .material-icons.expand-arrow.dropdown__arrow {
-  position: relative;
-  left: 157px;
-  top: 3px;
+  display: inline-block;
 }
