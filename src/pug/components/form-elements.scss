@@ -79,7 +79,7 @@
 .pagination {
   width: 500px;
   margin-top: 40px;
-  margin-bottom: 219px;
+  margin-bottom: 228px;
 }
 
 .btn-pagination {
@@ -278,10 +278,6 @@ img {
 
 .bullet-list__item {
   list-style-image: url('./src/assets/Ellipse.png');
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   padding-top: 10px;
@@ -476,7 +472,6 @@ img {
 
 .room-privilege-block {
   margin-top: 25px;
-  width: 300px;
 }
 
 .material-icons.room-privilege-img {
@@ -499,20 +494,14 @@ img {
 }
 
 .room-privilege__description-label {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .room-privilege__description-text {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   margin-top: 0px;
