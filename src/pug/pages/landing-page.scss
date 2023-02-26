@@ -28,14 +28,9 @@
 }
 
 .search-form__header {
-  display: block;
   width: 320px;
   height: 59px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
   margin-top: 40px;
 }
 
@@ -54,9 +49,6 @@
   background-color: #fff;
 }
 
-.search-form__dropdown-block {
-  margin-top: 0px;
-}
 .dropdown-arrow {
   position: relative;
   top: 0px;

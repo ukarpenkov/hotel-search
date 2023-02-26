@@ -679,10 +679,9 @@ img {
 }
 
 .dropdown-block__label {
+  margin-bottom: -5px;
   display: flex;
   justify-content: space-between;
-  width: 266px;
-  margin-bottom: -5px;
 }
 
 .dropdown-block {
@@ -691,6 +690,7 @@ img {
 
 .dropdown-condition {
   position: relative;
+  right: 55px;
   top: 10px;
   font-size: 12px;
   text-transform: uppercase;
@@ -752,7 +752,9 @@ img {
   height: 159px;
 }
 .dropdown__input_wide {
+  display: flex;
   width: 320px;
+  padding-right: 177px;
 }
 
 .apply-btn {
@@ -767,15 +769,10 @@ img {
 
 .clear-btn {
   position: relative;
-  width: 84px;
-  height: 15px;
   left: 10px;
   bottom: 15px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
   text-transform: uppercase;
   color: #bc9cff;
 }
