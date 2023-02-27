@@ -177,13 +177,8 @@
 .dropdown__input_guests.dropdown__input_guests {
   width: 320px;
   background-color: #fff;
-  height: 119px;
   border: 1px px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
   border-radius: 2px;
-  margin-top: -1px;
-  height: 159px;
-  z-index: 2;
   position: absolute;
 }
 
@@ -219,48 +214,24 @@
 }
 
 .total-info {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
 
 .card-from.room-card-number {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
-  line-height: 17px;
   color: #1f2041;
 }
 
 h2.price-sum {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
   font-size: 19px;
-  line-height: 23px;
-
   color: #1f2041;
-}
-
-h3.luxe-attr {
-  position: relative;
-  left: 9px;
-  font-family: 'Montserrat';
-  font-weight: bolder;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #bc9cff;
 }
 
 .card-page.room-card-info__price {
   position: relative;
   left: 91px;
   top: 3px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .total-info-options {
@@ -273,13 +244,6 @@ h3.luxe-attr {
   justify-content: space-between;
   margin-top: 15px;
   margin-bottom: -35px;
-}
-
-span.price-sum {
-  position: relative;
-  top: 23px;
-  width: 170px;
-  color: rgba(31, 32, 65, 0.25);
 }
 
 .summary-order-info {
@@ -301,7 +265,6 @@ span.price-sum {
 }
 
 .calendar-form {
-  margin-bottom: 0px;
   margin-top: -15px;
 }
 
