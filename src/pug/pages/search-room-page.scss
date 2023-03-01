@@ -39,13 +39,9 @@
   border-radius: 4px 4px 0px 0px;
 }
 
-.room-card-img {
-  z-index: -1;
-}
-
 .room-card {
   width: 270px;
-
+  background-color: #fff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
 }
@@ -71,10 +67,6 @@
 
 .room-card-info {
   margin-left: 20px;
-}
-
-.room-card {
-  margin-bottom: 27px;
 }
 
 .room-card-info__number {
@@ -122,10 +114,7 @@
   width: 230px;
   box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
 }
-.room-card__comment {
-  display: flex;
-  align-items: baseline;
-}
+
 .stars-block {
   width: 120px;
 }
