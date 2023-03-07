@@ -26,11 +26,7 @@ $footerTextColor: #1f2041;
       color: rgba(31, 32, 65, 0.75);
     }
     &__head {
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
       font-size: 12px;
-      line-height: 15px;
       color: #1f2041;
     }
   }
@@ -41,13 +37,6 @@ $footerTextColor: #1f2041;
     &__link {
       text-decoration: none;
       display: block;
-      margin-top: 15px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: rgba(31, 32, 65, 0.5);
       margin-top: 22px;
     }
   }
@@ -61,13 +50,7 @@ $footerTextColor: #1f2041;
   display: block;
   width: 260px;
   height: 48px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
-  margin-top: 19px;
 }
 
 .subscribe-field {
@@ -77,18 +60,10 @@ $footerTextColor: #1f2041;
 .footer-item__input {
   width: 260px;
   height: 44px;
-  left: 141px;
-  top: 163px;
   padding-left: 15px;
-
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
   border-radius: 4px;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
   color: rgba(31, 32, 65, 0.25);
 }
 
@@ -102,26 +77,15 @@ $footerTextColor: #1f2041;
   position: relative;
   left: 226px;
   top: -33px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
   color: #bc9cff;
 }
 
 .footer_copyright-txt {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
   color: rgba(31, 32, 65, 0.75);
 }
 
 .footer__social-icons {
-  margin-left: 10px;
   display: flex;
   width: 120px;
   justify-content: space-around;
@@ -136,7 +100,6 @@ $footerTextColor: #1f2041;
 .footer-bottom {
   margin-top: 46px;
   padding: 0 132px;
-  display: block;
   display: flex;
   justify-content: space-between;
   align-items: center;
