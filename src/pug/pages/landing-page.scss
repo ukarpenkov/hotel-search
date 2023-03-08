@@ -2,12 +2,9 @@
   position: relative;
   top: -60px;
   left: -8px;
-  z-index: 1;
   display: block;
-  width: 1440px;
   height: 888px;
   background-image: url('src/images/bg-image3.png');
-  background-repeat: no-repeat;
 }
 
 .landing-page__header {
@@ -65,9 +62,6 @@
   left: 28px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
 }
 
 .landing-page__main .sign-in__arrow.search-arrow {

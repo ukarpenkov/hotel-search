@@ -4,7 +4,6 @@ $footerTextColor: #1f2041;
   padding: 4rem;
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
   padding-left: 10.5rem;
   padding-right: 15rem;
   &-item__sub {
@@ -103,7 +102,6 @@ $footerTextColor: #1f2041;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
   height: 70px;
   box-shadow: 0px -2px rgb(31 32 65 / 13%);
 }
