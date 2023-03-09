@@ -383,9 +383,8 @@
 .flatpickr-current-month
   .flatpickr-monthDropdown-months
   .flatpickr-monthDropdown-month {
-  background-color: transparent;
-  outline: none;
-  padding: 0;
+  margin: 0px auto;
+  text-align: center;
 }
 .flatpickr-weekdays {
   background: transparent;

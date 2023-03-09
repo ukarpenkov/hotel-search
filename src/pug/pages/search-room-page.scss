@@ -36,8 +36,6 @@
 }
 
 .room-card {
-  width: 270px;
-  background-color: #fff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
 }
@@ -87,14 +85,6 @@
   font-size: 12px;
 }
 
-.comment-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
-}
 .comment-text-attr {
   font-family: 'Montserrat';
   font-style: normal;
@@ -144,11 +134,7 @@
 .filter-price_description {
   position: relative;
   left: -10px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
-
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -181,14 +167,12 @@
 
 .dropdown__arrow_checkbox {
   position: relative;
-  left: -12px;
+  left: -88px;
   top: 4px;
 }
 
 .dropdown__arrow_comfort {
-  position: relative;
-  left: 78px;
-  top: 7px;
+  display: inline-block;
 }
 
 .hidden {
