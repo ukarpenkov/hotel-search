@@ -1,3 +1,15 @@
+mixin like-btn(isActive, likeCount)
+    .like-button
+        if isActive
+            .like-button
+                span.material-icons.like favorite_border
+                span.like-quantity= likeCount
+        else
+            .like-button.like-button_color
+                span.material-icons.like.like-fill favorite
+                span.like-quantity.like-quantity_color= likeCount
+
+
 html
     head
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -160,10 +172,11 @@ html
                     .like-block 
                         h2.label like button
                         .like-buttons
-                            .like-button
-                                <span class="material-icons like">favorite_border</span> <span class="like-quantity">2</span> 
-                            .like-button.like-button_color
-                                <span class="material-icons like like-fill">favorite</span> <span class=" like-quantity like-quantity_color">12</span> 
+                            +like-btn(true, 2)
+                            +like-btn(false, 12)
+                            //- .like-button.like-button_color
+                            //-     span.material-icons.like.like-fill favorite
+                            //-     span.like-quantity.like-quantity_color 12
                     .rating-block 
                         h2.label rate button
                         .stars-block

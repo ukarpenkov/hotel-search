@@ -36,6 +36,17 @@
   transition: color 0.3s ease 0s;
 }
 
+.rating__star:checked,
+.rating__star:checked ~ .rating__label {
+  color: #bc9cff;
+}
+
+.rating__label:hover,
+.rating__label:hover ~ .rating__label,
+.rating__label:checked ~ .rating__label:hover {
+  color: #bc9cff;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
