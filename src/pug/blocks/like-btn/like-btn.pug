@@ -1,18 +1,9 @@
 mixin like-btn(isActive, likeCount)
-    .like-button
-        if isActive='not'
+        if isActive
             .like-button
                 span.material-icons.like favorite_border
                 span.like-quantity= likeCount
-        if isActive='yes'
+        else
             .like-button.like-button_color
                 span.material-icons.like.like-fill favorite
-                span.like-quantity.like-quantity_color 12
-
-
-html
-    head
-        style
-            include like-btn.scss
-        .like-button
-            <span class="material-icons like">favorite_border</span> <span class="like-quantity">2</span> 
+                span.like-quantity.like-quantity_color= likeCount

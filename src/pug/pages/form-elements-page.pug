@@ -1,13 +1,3 @@
-mixin like-btn(isActive, likeCount)
-    .like-button
-        if isActive
-            .like-button
-                span.material-icons.like favorite_border
-                span.like-quantity= likeCount
-        else
-            .like-button.like-button_color
-                span.material-icons.like.like-fill favorite
-                span.like-quantity.like-quantity_color= likeCount
 
 
 html
@@ -154,29 +144,24 @@ html
                                 span.checkbox-label Можно пригласить гостей (до 10 человек)  
                     .radio-buttons-block
                         h2.label Radio Buttons
-                        .radio-buttons-items
-                            .radio
-                                input(type="radio" name="gender" id="1").radio__input
-                                label(for="1").radio__label Мужчина
-                            .radio
-                                input(type="radio" name="gender" id="2").radio__input
-                                label(for="2").radio__label Женщина  
+                        include ../blocks/radio-btns/radio-btns.pug
                     .toggle-block 
                         h2.label TOGGLE
-                        .toggle-item 
-                            input(type="checkbox" class="toggle" id="check1" checked)
-                            label(for="check1" class="toggle-label ") Получать спецпредложения
-                        .toggle-item 
-                            input(type="checkbox" class="toggle" id="check2")
-                            label(for="check2" class="toggle-label ") Получать спецпредложения
+                        //- .toggle-item 
+                        //-     input(type="checkbox" class="toggle" id="check1" checked)
+                        //-     label(for="check1" class="toggle-label ") Получать спецпредложения
+                        //- .toggle-item 
+                        //-     input(type="checkbox" class="toggle" id="check2")
+                        //-     label(for="check2" class="toggle-label ") Получать спецпредложения
+                        include ../blocks/toggle/toggle.pug
+                        +toggle('checked')
+                        +toggle('notChecked')
                     .like-block 
                         h2.label like button
                         .like-buttons
+                            include ../blocks/like-btn/like-btn.pug
                             +like-btn(true, 2)
                             +like-btn(false, 12)
-                            //- .like-button.like-button_color
-                            //-     span.material-icons.like.like-fill favorite
-                            //-     span.like-quantity.like-quantity_color 12
                     .rating-block 
                         h2.label rate button
                         .stars-block
@@ -264,14 +249,7 @@ html
                     .pagination
                         h2.label pagination
                         br
-                        .pagination__btns
-                            button.btn.btn-pagination.btn-pagination_active 1
-                            button.btn.btn-pagination.btn-pagination 2
-                            button.btn.btn-pagination.btn-pagination 3
-                            button.btn.btn-pagination.btn-pagination ...
-                            button.btn.btn-pagination.btn-pagination 15
-                            button.btn.btn-pagination.btn-pagination_next <span class="material-icons">arrow_forward</span>
-                            p.pagination-text 1 – 12 из 100+ вариантов аренды
+                        include ../blocks/pagination/pagination.pug
                     .dropdown-block
                         .dropdown-block__label 
                             h2.label dropdown 

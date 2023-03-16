@@ -19,6 +19,7 @@ html
                             .radio
                                 input(type="radio" name="gender" id="2").radio__input
                                 label(for="2").radio__label Женщина  
+                include ../blocks/radio-btns/radio-btns.pug
                 .registration__date-fields
                     .field
                         h2.label-date дата рождения
@@ -30,9 +31,11 @@ html
                     .field 
                         input(type="password" placeholder="Пароль").input
                 .registration__toggle-block 
-                    .toggle-item 
-                        input(type="checkbox" class=" toggle toggle-promo" id="check1" checked)
-                        label(for="check1" class="toggle-label ") Получать спецпредложения
+                    //- .toggle-item 
+                    //-     input(type="checkbox" class=" toggle toggle-promo" id="check1" checked)
+                    //-     label(for="check1" class="toggle-label ") Получать спецпредложения
+                    include ../blocks/toggle/toggle.pug
+                    +toggle('checked')
                 .registration__buttons__item
                     button.btn.registration__btn-lg  <span>зарегистрироваться</span> <span class="material-icons registration__arrow">arrow_forward</span>
                 .sing-in-block
