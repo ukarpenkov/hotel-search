@@ -99,60 +99,27 @@ html
                             .checkbox-list
                                 .checkbox-list__label 
                                     h2.label expandable checkbox list <span class="material-icons expand-arrow expand-arrow__reverse">expand_more</span>
-                                .checkbox-list_options 
-                                    label.checkbox-list_options-items
-                                        input(type="checkbox" name="agreement").checkbox
-                                        span.visible-checkbox-label
-                                        span.checkbox-label Завтрак
-                                    label.checkbox-list_options-items
-                                        input(type="checkbox" name="agreement" checked).checkbox
-                                        span.visible-checkbox-label
-                                        span.checkbox-label Письменный стол
-                                    label.checkbox-list_options-items
-                                        input(type="checkbox" name="agreement" checked).checkbox
-                                        span.visible-checkbox-label
-                                        span.checkbox-label Стул для кормления
-                                    label.checkbox-list_options-items
-                                        input(type="checkbox" name="agreement" checked).checkbox
-                                        span.visible-checkbox-label
-                                        span.checkbox-label Кроватка
-                                    label.checkbox-list_options-items
-                                        input(type="checkbox" name="agreement").checkbox
-                                        span.visible-checkbox-label
-                                        span.checkbox-label Телевизор
-                                    label.checkbox-list_options-items
-                                        input(type="checkbox" name="agreement").checkbox
-                                        span.visible-checkbox-label
-                                        span.checkbox-label Шампунь
-                
+                                .checkbox-list_options
+                                    include ../blocks/checkbox/checkbox.pug
+                                    +checkbox('Завтрак')
+                                    +checkbox('Письменный стол', true)
+                                    +checkbox('Стул для кормления', true)
+                                    +checkbox('Кроватка', true)
+                                    +checkbox('Телевизор')
+                                    +checkbox('Шампунь')    
                 .col-2
                     .checkbox-list
                         .checkbox-list__label 
                             h2.label Checkbox Buttons 
                         .checkbox-list_options 
-                            label.checkbox-list_options-items
-                                input(type="checkbox" name="agreement").checkbox
-                                span.visible-checkbox-label
-                                span.checkbox-label Можно курить
-                            label.checkbox-list_options-items
-                                input(type="checkbox" name="agreement" checked).checkbox
-                                span.visible-checkbox-label
-                                span.checkbox-label Можно с питомцами
-                            label.checkbox-list_options-items
-                                input(type="checkbox" name="agreement" checked).checkbox
-                                span.visible-checkbox-label
-                                span.checkbox-label Можно пригласить гостей (до 10 человек)  
+                            +checkbox('Можно курить')
+                            +checkbox('Можно с питомцами', true)
+                            +checkbox('Можно пригласить гостей (до 10 человек)', true)
                     .radio-buttons-block
                         h2.label Radio Buttons
                         include ../blocks/radio-btns/radio-btns.pug
                     .toggle-block 
                         h2.label TOGGLE
-                        //- .toggle-item 
-                        //-     input(type="checkbox" class="toggle" id="check1" checked)
-                        //-     label(for="check1" class="toggle-label ") Получать спецпредложения
-                        //- .toggle-item 
-                        //-     input(type="checkbox" class="toggle" id="check2")
-                        //-     label(for="check2" class="toggle-label ") Получать спецпредложения
                         include ../blocks/toggle/toggle.pug
                         +toggle('checked')
                         +toggle('notChecked')

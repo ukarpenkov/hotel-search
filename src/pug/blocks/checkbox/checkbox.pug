@@ -1,0 +1,11 @@
+mixin checkbox(label, checked)
+        if checked==true
+            label.checkbox-list_options-items
+                input(type="checkbox" name="agreement" checked).checkbox
+                span.visible-checkbox-label
+                span.checkbox-label= label
+        else
+            label.checkbox-list_options-items
+                input(type="checkbox" name="agreement").checkbox
+                span.visible-checkbox-label
+                span.checkbox-label= label
