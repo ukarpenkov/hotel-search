@@ -8,6 +8,7 @@ html
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <meta name="viewport" content="1024">
         .landing-page__wrapper
+            include ../blocks/input/input.pug
             .landing-page__header 
                 include ../components/_head
             .landing-page__main
@@ -18,10 +19,10 @@ html
                             .search-form__date-pickers
                                 .field
                                     h2.label прибытие
-                                    input(type="date" placeholder="ДД.ММ.ГГГГ").input.calendar
+                                    +input("date", "ДД.ММ.ГГГГ", "narrow")
                                 .field 
                                     h2.label выезд
-                                    input(type="date" placeholder="ДД.ММ.ГГГГ").input.calendar
+                                    +input("date", "ДД.ММ.ГГГГ", "narrow")
                             .search-form__dropdown-block
                                 .dropdown-block__label 
                                     h2.label гости
