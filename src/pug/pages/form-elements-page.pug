@@ -11,6 +11,8 @@ html
             include ../components/_header-img-logo.pug
             include ../blocks/label-h2/label.pug
             include ../blocks/input/input.pug
+            include ../blocks/input-condition/input-condition.pug
+            include ../blocks/dropdown-condition/dropdown-condition.pug
             .forms-elements 
                 .col-1
                     .form
@@ -18,12 +20,12 @@ html
                             .field 
                                 .field-label
                                     +label("Text Field")
-                                    span.input-condition DEFAULT
+                                    +input-condition("DEFAULT")
                                 +input("text", "Email", "wide")
                             .field
                                 .field-label
                                     +label("Text Field")
-                                    span.input-condition Hover/Focus
+                                    +input-condition("Hover/Focus")
                                 input(type="text" placeholder="This is pretty awesome").input.input_focus
                             .field 
                                 +label("Dropdown")
@@ -47,20 +49,20 @@ html
                             .field 
                                 +label("subscription text field")
                                 +input("text", "Email", "middle")
-                                <span class="material-icons subscribe-field-arrow">arrow_forward</span>     
+                                <span class="material-icons subscribe-field-arrow">arrow_forward</span>   
                     .dropdown-block
-                        .dropdown-block__label 
+                        .dropdown-block__label
                             +label("dropdown")
-                            span.dropdown-condition DEFAULT
-                        .dropdown__input 
-                            .dropdown__input_default 
+                            +dropdown-condition("DEFAULT")
+                        .dropdown__input
+                            .dropdown__input_default
                                 div.dropdown__input-text  2 спальни
                                 span(class="material-icons expand-arrow dropdown__arrow") expand_more
                     .dropdown-block
-                        .dropdown-block__label 
+                        .dropdown-block__label
                             +label("dropdown")
-                            span.dropdown-condition EXPANDED
-                        .dropdown__input 
+                            +dropdown-condition("EXPANDED")
+                        .dropdown__input
                             .dropdown__input_default 
                                 div.dropdown__input-text  2 спальни
                                 span(class="material-icons expand-arrow dropdown__arrow") expand_more
@@ -69,15 +71,15 @@ html
                                     .dropdown-item 
                                         h2.dropdown-option.label спальни
                                         .dropdown-counter
-                                                .dropdown-counter__btn(data-direction="minus")  
+                                                .dropdown-counter__btn(data-direction="minus")
                                                     span -
                                                 .dropdown-counter__value.label 0
-                                                .dropdown-counter__btn(data-direction="plus") 
+                                                .dropdown-counter__btn(data-direction="plus")
                                                     span  +
                                     .dropdown-item 
                                         h2.dropdown-option.label кровати
                                         .dropdown-counter
-                                                .dropdown-counter__btn(data-direction="minus") 
+                                                .dropdown-counter__btn(data-direction="minus")
                                                     span  -
                                                 .dropdown-counter__value.label 0
                                                 .dropdown-counter__btn(data-direction="plus")
@@ -85,19 +87,19 @@ html
                                     .dropdown-item 
                                         h2.dropdown-option.label ванные комнаты
                                         .dropdown-counter
-                                                .dropdown-counter__btn(data-direction="minus") 
+                                                .dropdown-counter__btn(data-direction="minus")
                                                     span -
                                                 .dropdown-counter__value.label 0
-                                                .dropdown-counter__btn(data-direction="plus") 
+                                                .dropdown-counter__btn(data-direction="plus")
                                                     span +
                         .checkbox-block
                             .checkbox-list_close
                                 .checkbox-list__label 
-                                    +label("expandable checkbox list") 
+                                    +label("expandable checkbox list")
                                     span.material-icons.expand-arrow expand_more
                             .checkbox-list
                                 .checkbox-list__label 
-                                    +label("expandable checkbox list") 
+                                    +label("expandable checkbox list")
                                     span.material-icons.expand-arrow expand_more
                                 .checkbox-list_options
                                     include ../blocks/checkbox/checkbox.pug
@@ -106,7 +108,7 @@ html
                                     +checkbox('Стул для кормления', true)
                                     +checkbox('Кроватка', true)
                                     +checkbox('Телевизор')
-                                    +checkbox('Шампунь')    
+                                    +checkbox('Шампунь')
                 .col-2
                     .checkbox-list
                         .checkbox-list__label
