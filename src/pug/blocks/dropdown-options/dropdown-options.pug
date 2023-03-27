@@ -1,0 +1,29 @@
+mixin dropdown-block(item1, item2, item3, btn1, btn2)
+    .dropdown-options
+        .dropdown-item 
+            h2.dropdown-option.label= item1
+            .dropdown-counter
+                .dropdown-counter__btn(data-direction="minus") 
+                    span -
+                .dropdown-counter__value.label 0
+                .dropdown-counter__btn(data-direction="plus")  
+                    span +
+        .dropdown-item 
+            h2.dropdown-option.label= item2
+            .dropdown-counter
+                .dropdown-counter__btn(data-direction="minus") 
+                    span -
+                .dropdown-counter__value.label 0
+                .dropdown-counter__btn(data-direction="plus") 
+                    span  +
+        .dropdown-item 
+            h2.dropdown-option.label= item3
+            .dropdown-counter
+                .dropdown-counter__btn(data-direction="minus") 
+                    span -
+                .dropdown-counter__value.label 0
+                .dropdown-counter__btn(data-direction="plus") 
+                    span  +
+        .dropdown-buttons
+            p.apply-btn= btn1
+            p.clear-btn= btn2
