@@ -1,7 +1,6 @@
 html
     head
         style
-            //- include form-elements.scss
             include registration-form.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         form.form.registration-form
@@ -13,13 +12,7 @@ html
                     .field 
                         input(type="text" placeholder="Фамилия").input
                 .registration__radio-buttons-items
-                            .radio
-                                input(type="radio" name="gender" id="1").radio__input
-                                label(for="1").radio__label Мужчина
-                            .radio
-                                input(type="radio" name="gender" id="2").radio__input
-                                label(for="2").radio__label Женщина  
-                include ../blocks/radio-btns/radio-btns.pug
+                    include ../blocks/radio-btns/radio-btns.pug 
                 .registration__date-fields
                     .field
                         h2.label-date дата рождения

@@ -1,37 +1,7 @@
-mixin room-card(img, number, price, luxe, commentCount)
-    .room-card
-        .room-card-img
-            img.room-picture(src=`src/images/${img}`, alt="room interior")
-        .room-card-info
-            .room-card-info__text
-                .room-card-info__number
-                    p.room-card-sign-number № 
-                    h2.room-card-number= number
-                .special-offer
-                    h3.luxe-attr= luxe 
-                .room-card-info__price 
-                    span.room-price= price
-                    span.price-per &nbsp в сутки
-            .room-card-rating
-                .stars-block
-                    .rating
-                        .rating-stars
-                            input(id='rating__5' type='radio' name='rating' value='5').rating__star 
-                            label(for='rating__5').rating__label <span class="material-icons">star_border</span>
-                            input(id='rating__4' type='radio' name='rating' value='4').rating__star
-                            label(for='rating__4').rating__label <span class="material-icons">star_border</span>
-                            input(id='rating__3' type='radio' name='rating' value='3').rating__star
-                            label(for='rating__3').rating__label <span class="material-icons">star_border</span>
-                            input(id='rating__2' type='radio' name='rating' value='2').rating__star
-                            label(for='rating__2').rating__label <span class="material-icons">star_border</span>
-                            input(id='rating__1' type='radio' name='rating' value='1').rating__star
-                            label(for='rating__1').rating__label <span class="material-icons">star_border</span>
-                .room-card__comment
-                    p.comment-text= commentCount
-                    span.comment-text-attr &nbspОтзывов
 html
     head
         style
+            include ../components/room-card/room-card.pug
             include cards-page.scss 
             include ../components/form-elements.scss
             include headers-and-footer-page.scss
@@ -40,6 +10,8 @@ html
             include registration-page.scss
             include search-room-page.scss
             include ../components/footer.scss
+            include ../blocks/label-h2/label.pug
+            include ../blocks/input/input.pug
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <meta name='viewport' content='1024'>
         .cards-page__wrapper
@@ -51,14 +23,14 @@ html
                         h1.search-form__header Найдём номера под ваши пожелания
                         .search-form__date-pickers
                             .field
-                                h2.label прибытие
-                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
-                            .field 
-                                h2.label выезд
-                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                                +label("прибытие")
+                                +input("date", "ДД.ММ.ГГГГ", "narrow")
+                            .field
+                                +label("выезд") 
+                                +input("date", "ДД.ММ.ГГГГ", "narrow")
                         .search-form__dropdown-block
                                     .dropdown-block__label 
-                                        h2.label гости
+                                        +label("гости")
                                     .dropdown__input
                                         .dropdown__input_default.dropdown__input_wide  
                                             span.dropdown__input-text  Сколько гостей  
@@ -105,14 +77,14 @@ html
                                     span.price-per &nbsp в сутки
                         .search-form__date-pickers
                             .field
-                                h2.label прибытие
-                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
-                            .field 
-                                h2.label выезд
-                                input(type="date" placeholder='ДД.ММ.ГГГГ').input.calendar
+                                +label("прибытие")
+                                +input("date", "ДД.ММ.ГГГГ", "narrow")
+                            .field
+                                +label("выезд") 
+                                +input("date", "ДД.ММ.ГГГГ", "narrow")
                         .search-form__dropdown-block
-                            .dropdown-block__label  
-                                h2.label гости
+                            .dropdown-block__label
+                                +label("гости")   
                             .dropdown__input
                                 .dropdown__input_default.dropdown__input_wide  
                                     span.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown-arrow dropdown__arrow_comfort dropdown__arrow_checkbox">expand_more</span>

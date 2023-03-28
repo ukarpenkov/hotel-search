@@ -1,5 +1,3 @@
-
-
 html
     head
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -16,6 +14,7 @@ html
             include ../blocks/room-privilege/room-privilege.pug
             include ../blocks/dropdown-options/dropdown-options.pug
             include ../blocks/comment/comment.pug
+            include ../blocks/button/button.pug
             .forms-elements 
                 .col-1
                     .form
@@ -148,17 +147,17 @@ html
                             +label("buttons")  
                         .buttons__items
                             .buttons__item
-                                button.btn.btn_small.btn_fill-dark-violet CLICK ME
+                                +button("fill-dark", "CLICK ME")
                             .buttons__item
-                                button.btn.btn_small.btn_fill-light-violet CLICK ME
+                                +button("fill-light", "CLICK ME")
                             .buttons__item
-                                button.btn.btn_small.btn_dark-violet CLICK ME
+                                +button("border-dark", "CLICK ME")
                             .buttons__item
-                                button.btn.btn_small.btn_light-violet CLICK ME
+                                +button("border-light", "CLICK ME")
                             .buttons__item
-                                button.btn.btn_small.btn_no-border-violet CLICK ME
+                                +button("light", "CLICK ME")
                             .buttons__item
-                                button.btn.btn_small.btn_no-border-dark CLICK ME
+                                +button("dark", "CLICK ME")
                                 button.btn.btn_lg  <span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span>
                     .pagination
                         +label("pagination") 
@@ -169,7 +168,8 @@ html
                             +label("dropdown")  
                         .dropdown__input
                             .dropdown__input_default.dropdown__input_wide  
-                                div.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown__arrow">expand_more</span>
+                                div.dropdown__input-text  Сколько гостей  
+                                span.material-icons.expand-arrow.dropdown__arrow expand_more
                             .dropdown__input_expanded.dropdown__input_expanded-apply
                                 +dropdown-block("взрослые", "дети", "младенцы", "применить","очистить")
                     .bullet-list
