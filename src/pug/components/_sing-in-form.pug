@@ -5,15 +5,19 @@ html
             include sing-in-form.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         form.form.sing-in-form
+            include ../blocks/input/input.pug
             .sing-in-form__data   
                 h1 Войти
                 .sing-in__mixed-fields
                     .field 
-                        input(type="email" placeholder="Email").input
+                        +input("email","Email","wide")
                     .field 
-                        input(type="password" placeholder="Пароль").input
+                        +input("password", "Пароль", "") 
                 .registration__buttons__item
-                    button.btn.sing-in__btn-lg <span class="sing-in__btn-lg-text">войти</span><span class="material-icons sign-in__arrow">arrow_forward</span>
+                    button.btn.sing-in__btn-lg 
+                        span.sing-in__btn-lg-text Войти
+                        span.material-icons.sign-in__arrow arrow_forward
                 .sing-in-block
                     span.sing-in-form__info Нет аккаунта на Toxin?
-                    button.btn.btn_small.btn_dark-violet СОЗДАТЬ
+                    include ../blocks/button/button.pug
+                    +button("border-dark", "СОЗДАТЬ")
