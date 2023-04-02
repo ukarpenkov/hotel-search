@@ -1,0 +1,18 @@
+mixin summary-order(dayPrice, daysCount, preTotalPrice, discount, serviceСharge,  addСharge, totalPrice)
+    .summary-order-info
+        .total-info-options 
+            p.total-info=dayPrice₽ х =day суток
+            p.total-info=preTotalPrice₽
+        .total-info-options 
+            p.total-info Сбор за услуги: скидка =discount₽
+            p.total-info=serviceСharge₽
+        .total-info-options 
+            p.total-info.total-info_long Сбор за дополнительные услуги
+            p.total-info=serviceСharge₽
+        .total-info-summary 
+            h2.price-sum  Итого
+            h2.price-sum=totalPrice₽
+        .registration__buttons__item
+            button.btn.sing-in__btn-lg
+                span.sing-in__btn-lg-text забронировать
+               span.material-icons.sign-in__arrow.book-arrow arrow_forward
