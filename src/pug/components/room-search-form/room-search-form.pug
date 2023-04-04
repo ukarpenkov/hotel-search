@@ -3,7 +3,7 @@ html
         style
         .landing-page__search-form-elements
             h1.search-form__header Найдём номера под ваши пожелания
-           .search-form__date-pickers
+            .search-form__date-pickers
                 .field
                     include ../../blocks/label-h2/label.pug
                     +label("прибытие")
@@ -18,9 +18,9 @@ html
                 .dropdown__input
                     .dropdown__input_default.dropdown__input_wide  
                         span.dropdown__input-text  Сколько гостей  
-                       span.material-icons.expand-arrow.dropdown-arrow-guests expand_more
+                        span.material-icons.expand-arrow.dropdown-arrow-guests expand_more
                     .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden
-                         include ../../blocks/dropdown-options/dropdown-options.pug
+                        include ../../blocks/dropdown-options/dropdown-options.pug
                         +dropdown-block("взрослые", "дети", "младенцы", "применить","очистить")
                     button.btn.sing-in__btn-lg.search-button 
                         span.sing-in__btn-lg-text подобрать номер

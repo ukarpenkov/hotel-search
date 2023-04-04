@@ -16,61 +16,14 @@ html
             include ../blocks/label-h2/label.pug
             include ../blocks/input/input.pug
             include ../blocks/summary-order/summary-order.pug
+            include ../blocks/dropdown-options/dropdown-options.pug
             .header-page__logo
                 include ../components/_header-img-logo.pug
             .card-page-grid
                 .cards-page__search-form
                     include ../components/room-search-form/room-search-form.pug
-                    //- .landing-page__search-form-elements
-                    //-     h1.search-form__header Найдём номера под ваши пожелания
-                    //-     .search-form__date-pickers
-                    //-         .field
-                    //-             +label("прибытие")
-                    //-             +input("date", "ДД.ММ.ГГГГ", "narrow")
-                    //-         .field
-                    //-             +label("выезд") 
-                    //-             +input("date", "ДД.ММ.ГГГГ", "narrow")
-                    //-     .search-form__dropdown-block
-                    //-         .dropdown-block__label 
-                    //-             +label("гости")
-                    //-         .dropdown__input
-                    //-             .dropdown__input_default.dropdown__input_wide  
-                    //-                 span.dropdown__input-text  Сколько гостей  
-                    //-                 span.material-icons.expand-arrow.dropdown-arrow-guests expand_more
-                    //-             .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden
-                    //-                 include ../blocks/dropdown-options/dropdown-options.pug
-                    //-                 +dropdown-block("взрослые", "дети", "младенцы", "применить","очистить")
-                    //-             button.btn.sing-in__btn-lg.search-button 
-                    //-                 span.sing-in__btn-lg-text подобрать номер
-                    //-                 span.material-icons.sign-in__arrow.search-arrow arrow_forward
                 .card-page__booking-form
-                        .card-page__room-card-info
-                            .room-card-info__text
-                                .room-card-info__number
-                                    p.room-card-sign-number №
-                                    h2.card-from.room-card-number 888
-                                    h3.luxe-attr ЛЮКС
-                                .card-page.room-card-info__price 
-                                    span.room-price 9 990₽
-                                    span.price-per &nbsp в сутки
-                        .search-form__date-pickers
-                            .field
-                                +label("прибытие")
-                                +input("date", "ДД.ММ.ГГГГ", "narrow")
-                            .field
-                                +label("выезд") 
-                                +input("date", "ДД.ММ.ГГГГ", "narrow")
-                        .search-form__dropdown-block
-                            .dropdown-block__label
-                                +label("гости")   
-                            .dropdown__input
-                                .dropdown__input_default.dropdown__input_wide  
-                                    span.dropdown__input-text  Сколько гостей
-                                    span.material-icons.expand-arrow.dropdown-arrow.dropdown__arrow_comfort.dropdown__arrow_checkbox expand_more
-                                .dropdown__input_guests.dropdown__input_guests-expanded-apply.search-room-added-checkbox-list.hidden
-                                        +dropdown-block("взрослые", "дети", "младенцы", "применить","очистить")
-                            .summary-order-info
-                                +summary-order("9 990", "4", "39 960", "2 179", "0", "300", "38 081")
+                    include ../components/booking-form/booking-form.pug
                 .calendar-form
                     .visible-calendar
                 .card-page__registration-from
