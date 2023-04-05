@@ -1,23 +1,4 @@
-mixin room-card(img, number, price, luxe, commentCount)
-    .room-card
-        .room-card-img
-            img(src=`src/images/${img}`, alt="").room-picture
-        .room-card-info
-            .room-card-info__text
-                .room-card-info__number
-                    p.room-card-sign-number № 
-                    h2.room-card-number= number
-                .special-offer
-                    h3.luxe-attr= luxe 
-                .room-card-info__price 
-                    span.room-price= price
-                    span.price-per &nbsp в сутки
-            .room-card-rating
-                .stars-block
-                    include ../blocks/rating-stars/rating-stars.pug
-                .room-card__comment
-                    p.comment-text= commentCount
-                    span.comment-text-attr &nbspОтзывов
+
 html
     head
         style
@@ -29,13 +10,19 @@ html
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <meta name="viewport" content="1024">
         .search-room__wrapper
+            include ../blocks/input/input.pug
+            include ../components/room-card/room-card.pug
+            include ../blocks/checkbox/checkbox.pug
+            include ../blocks/rich-checkbox/rich-checkbox.pug
+            include ../blocks/label-h2/label.pug
             .landing-page__header 
                 include ../components/_head
             .search-room__body 
                 .search-room__aside 
                     .date-pickers
                         .field
-                            h2.label даты пребывания в отеле
+                            +label("даты пребывания в отеле")
+                            //- +input("date", "ДД.ММ.ГГГГ", "middle")
                             input(type="date" placeholder="ДД.ММ.ГГГГ").input.calendar.calendar_long
                             <span class="material-icons expand-arrow dropdown-arrow-calendar">expand_more</span>
                     .search-form__dropdown-block
@@ -47,7 +34,7 @@ html
                                 <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
                             .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden
                                 .dropdown-options
-                                    .dropdown-item 
+                                    .dropdown-item         
                                         h2.dropdown-option.label взрослые
                                         .dropdown-counter
                                             .dropdown-counter__btn(data-direction="minus") 
@@ -89,38 +76,21 @@ html
                             .filter-price__slider(id="range-slider")
                             p.filter-price_description Стоимость за сутки пребывания в номере
                     .search-room-checkbox-list
-                            .checkbox-list__label 
-                                h2.label правила дома
+                            .checkbox-list__label
+                                +label("правила дома")  
                             .checkbox-list_options 
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement").checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label Можно курить
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement" checked).checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label Можно с питомцами
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement" checked).checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label Можно пригласить гостей (до 10 человек)
+                                +checkbox('Можно курить')
+                                +checkbox('Можно с питомцами', true)
+                                +checkbox('Можно пригласить гостей (до 10 человек)', true)
                     .search-room-checkbox-list_rich 
-                            .checkbox-list__label 
-                                h2.label доступность
+                            .checkbox-list__label
+                                +label("доступность")   
                             .checkbox-list_options 
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement1").checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label.checkbox-label-rich Широкий коридор
-                                    p.checkbox-label-describe Ширина коридоров в номере не менее 91 см.
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement2").checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label.checkbox-label-rich Помощник для инвалидов
-                                    p.checkbox-label-describe На 1 этаже вас встретит специалист  и проводит до номера.  
+                                +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+                                +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
                     .dropdown-block
-                        .dropdown-block__label 
-                            h2.label Удобства номера                            
+                        .dropdown-block__label
+                            +label("Удобства номера")                          
                         .dropdown__input 
                             .dropdown__input_default
                                 span.dropdown__input-text  2 спальни, 2 кровати
@@ -152,38 +122,19 @@ html
                                                 .dropdown-counter__btn(data-direction="plus")
                                                     span +                             
                     .dropdown-block
-                        .dropdown-block__label 
-                            h2.label дополнительные удобства
+                        .dropdown-block__label
+                            +label("дополнительные удобства")   
                             span(class="material-icons expand-arrow dropdown__arrow_checkbox") expand_more
                     .search-room-added-checkbox-list.hidden
-                            .checkbox-list_options 
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement").checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label Завтрак
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement" ).checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label Письменный стол
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement" ).checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label Стул для кормления
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement" ).checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label Кроватка
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement" ).checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label Телевизор
-                                label.checkbox-list_options-items
-                                    input(type="checkbox" name="agreement" ).checkbox
-                                    span.visible-checkbox-label
-                                    span.checkbox-label Шампунь
-                       
-                .search-room__main 
-                    h1.search-room__label Номера, которые мы для вас подобрали
+                            .checkbox-list_options
+                                +checkbox('Завтрак') 
+                                +checkbox('Письменный стол') 
+                                +checkbox('Стул для кормления') 
+                                +checkbox('Кроватка') 
+                                +checkbox('Телевизор') 
+                                +checkbox('Шампунь')                      
+                .search-room__main
+                    +label("Номера, которые мы для вас подобрали")     
                     .search-room__cards
                         .search-room__main-col
                             +room-card("room888.png", "888", "9 990₽", "ЛЮКС", "145")
