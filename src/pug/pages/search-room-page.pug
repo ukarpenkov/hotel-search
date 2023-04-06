@@ -5,8 +5,8 @@ html
             include ../components/form-elements.scss
             include ../pages/form-elements-page.scss
             include ../components/head.scss    
-            include search-room-page.scss
             include ../components/footer.scss
+            include search-room-page.scss
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <meta name="viewport" content="1024">
         .search-room__wrapper
@@ -15,6 +15,7 @@ html
             include ../blocks/checkbox/checkbox.pug
             include ../blocks/rich-checkbox/rich-checkbox.pug
             include ../blocks/label-h2/label.pug
+            include ../blocks/dropdown-options/dropdown-options.pug
             .landing-page__header 
                 include ../components/_head
             .search-room__body 
@@ -33,48 +34,9 @@ html
                                 span.dropdown__input-text  Сколько гостей  
                                 <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
                             .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden
-                                .dropdown-options
-                                    .dropdown-item         
-                                        h2.dropdown-option.label взрослые
-                                        .dropdown-counter
-                                            .dropdown-counter__btn(data-direction="minus") 
-                                                span -
-                                            .dropdown-counter__value.label 0
-                                            .dropdown-counter__btn(data-direction="plus")  
-                                                span +
-                                    .dropdown-item 
-                                        h2.dropdown-option.label дети
-                                        .dropdown-counter
-                                            .dropdown-counter__btn(data-direction="minus") 
-                                                span -
-                                            .dropdown-counter__value.label 0
-                                            .dropdown-counter__btn(data-direction="plus") 
-                                                span  +
-                                    .dropdown-item 
-                                        h2.dropdown-option.label младенцы
-                                        .dropdown-counter
-                                            .dropdown-counter__btn(data-direction="minus") 
-                                                span -
-                                            .dropdown-counter__value.label 0
-                                            .dropdown-counter__btn(data-direction="plus") 
-                                                span  +
-                                    .dropdown-buttons
-                                        p.apply-btn_narrow применить
-                                        p.clear-btn очистить
+                                +dropdown-block("взрослые", "дети", "младенцы", "применить","очистить")
                     .search-room-filter-price
-                        .search-room-filter-price__head
-                            .filter-price__head
-                                h2.label диапазон цены
-                                .filter-price__inputs
-                                    label.filter-price__label.filter-price__label-min
-                                        input(type="number" min="0" max="100000" placeholder="0" id="input-0").filter-price__input-min
-                                        span.filter-price__text ₽-
-                                        span.filter-price__text 
-                                    label.filter-price__label.filter-price__label-max
-                                        input(type="number" min="0" max="100000" placeholder="10&nbsp0000" id="input-1").filter-price__input-max
-                                        span.filter-price__text.filter-price__text-max ₽
-                            .filter-price__slider(id="range-slider")
-                            p.filter-price_description Стоимость за сутки пребывания в номере
+                        include ../components/range_slider/range_slider.pug
                     .search-room-checkbox-list
                             .checkbox-list__label
                                 +label("правила дома")  
@@ -95,32 +57,8 @@ html
                             .dropdown__input_default
                                 span.dropdown__input-text  2 спальни, 2 кровати
                                 span(class="material-icons expand-arrow dropdown__arrow_comfort") expand_more
-                            .dropdown__input_expanded.hidden 
-                                .dropdown-options
-                                    .dropdown-item 
-                                        h2.dropdown-option.label спальни
-                                        .dropdown-counter
-                                            .dropdown-counter__btn(data-direction="minus")  
-                                                    span -
-                                            .dropdown-counter__value.label 0
-                                            .dropdown-counter__btn(data-direction="plus") 
-                                                    span  +
-                                    .dropdown-item 
-                                        h2.dropdown-option.label кровати
-                                        .dropdown-counter
-                                                .dropdown-counter__btn(data-direction="minus") 
-                                                    span  -
-                                                .dropdown-counter__value.label 0
-                                                .dropdown-counter__btn(data-direction="plus")
-                                                    span +
-                                    .dropdown-item 
-                                        h2.dropdown-option.label ванные комнаты
-                                        .dropdown-counter
-                                                .dropdown-counter__btn(data-direction="minus") 
-                                                    span  -
-                                                .dropdown-counter__value.label 0
-                                                .dropdown-counter__btn(data-direction="plus")
-                                                    span +                             
+                            .dropdown__input_expanded.hidden
+                                +dropdown-block("спальни", "кровати", "ванные комнаты", "","")                      
                     .dropdown-block
                         .dropdown-block__label
                             +label("дополнительные удобства")   
