@@ -11,7 +11,19 @@
 .sign-in-page__wrapper .sing-in-form {
   position: relative;
   margin-top: 61px;
-
   left: 0px;
   top: 175px;
+}
+
+.registration__radio-buttons-items {
+  width: 345px;
+  display: flex;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+.registration-page__main-bgi .registration__toggle-block {
+  margin-bottom: -5px;
+  margin-top: 10px;
+  margin-left: -50px;
 }
