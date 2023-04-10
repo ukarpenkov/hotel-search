@@ -1,0 +1,37 @@
+.checkbox {
+  display: none;
+}
+
+.visible-checkbox-label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.visible-checkbox-label::before {
+  text-align: center;
+  content: '';
+  display: block;
+  background-image: url('./src/assets/checked.png');
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 11px;
+  transform: translate(35%, 41%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.checkbox:checked + .visible-checkbox-label::before {
+  opacity: 1;
+}
+
+.checkbox-label {
+  color: rgba(31, 32, 65, 0.5);
+  padding-left: 10px;
+  vertical-align: text-top;
+  width: 226px;
+  display: inline-block;
+}
