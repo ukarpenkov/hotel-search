@@ -1,0 +1,35 @@
+.room-privilege-block {
+  margin-top: 25px;
+}
+
+.material-icons.room-privilege-img {
+  font-size: 48px;
+  align-items: center;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #bc9cff, #8ba4f9);
+}
+
+.room-privilege__description-label {
+  font-weight: bold;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.room-privilege__description-text {
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 0px;
+}
+
+.room-privilege__image {
+  float: left;
+}
+
+.room-privilege__description {
+  display: inline-block;
+  padding-left: 10px;
+}

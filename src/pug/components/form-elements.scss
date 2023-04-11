@@ -179,49 +179,8 @@ img {
   gap: 10px;
 }
 
-.checkbox-list__label {
-  margin-bottom: 10px;
-}
-
-.checkbox-list_options-item {
-  vertical-align: middle;
-}
-
-.checkbox-label {
-  color: rgba(31, 32, 65, 0.5);
-  padding-left: 10px;
-  vertical-align: text-top;
-  width: 226px;
-  display: inline-block;
-}
-
-.checkbox:checked + .visible-checkbox-label::before {
-  opacity: 1;
-}
-
-.checkbox-label-rich {
-  font-weight: bold;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.checkbox-label-describe {
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(31, 32, 65, 0.5);
-  padding-left: 30px;
-  max-width: 253px;
-  margin-top: 5px;
-}
-
 .bullet-list {
   margin-top: 90px;
-}
-
-.bullet-list__item {
-  list-style-image: url('./src/assets/Ellipse.png');
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  padding-top: 10px;
 }
 
 .bullet-list__items {
@@ -299,42 +258,6 @@ img {
 
 .radio {
   margin-left: 10px;
-}
-
-.room-privilege-block {
-  margin-top: 25px;
-}
-
-.material-icons.room-privilege-img {
-  font-size: 48px;
-  align-items: center;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-}
-
-.room-privilege__description-label {
-  font-weight: bold;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.room-privilege__description-text {
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-}
-
-.room-privilege__image {
-  float: left;
-}
-
-.room-privilege__description {
-  display: inline-block;
-  padding-left: 10px;
 }
 
 .avatar {
