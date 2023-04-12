@@ -1,4 +1,6 @@
 mixin input(type, placeholder, width)
+    style
+        include ./input.scss
     if type==="text" || type==="email"
         if width==="wide"
             input(type=type placeholder=placeholder).input

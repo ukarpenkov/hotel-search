@@ -10,18 +10,6 @@
   margin-bottom: 12px;
 }
 
-.input {
-  width: 320px;
-  height: 44px;
-  padding-left: 15px;
-
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  font-family: Montserrat;
-  font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
-}
-
 .input.input_focus {
   border: 1px solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75);
@@ -390,8 +378,6 @@ img {
 .subscribe-field-arrow {
   position: relative;
   left: -36px;
-  top: -1px;
-  align-items: center;
   color: #bc9cff;
 }
 
@@ -526,10 +512,6 @@ img {
   display: inline-block;
   left: -58px;
   top: -7px;
-}
-
-.input.calendar {
-  width: 150px;
 }
 
 .date-pickers {
@@ -744,9 +726,6 @@ span.flatpickr-weekday {
   top: 13px !important;
 }
 
-.date-filter__input {
-  width: 267px !important;
-}
 .date-filter_arrow {
   position: relative !important;
   left: -33px !important;
@@ -771,4 +750,17 @@ span.flatpickr-weekday {
   position: relative;
   top: 28px;
   left: 18%;
+}
+
+.subcribe-input {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-options {
+  user-select: none;
+}
+
+.dropdown__input {
+  user-select: none;
 }

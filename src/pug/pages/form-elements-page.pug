@@ -50,8 +50,9 @@ html
                         .subscribe-field
                             .field 
                                 +label("subscription text field")
-                                +input("text", "Email", "middle")
-                                <span class="material-icons subscribe-field-arrow">arrow_forward</span>   
+                                .subcribe-input
+                                    +input("text", "Email", "middle")
+                                    span.material-icons.subscribe-field-arrow arrow_forward 
                     .dropdown-block
                         .dropdown-block__label
                             +label("dropdown")
