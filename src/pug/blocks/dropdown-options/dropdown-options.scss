@@ -1,0 +1,61 @@
+.dropdown-options {
+  user-select: none;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.dropdown-option {
+  padding-left: 12px;
+}
+
+.dropdown-counter {
+  position: relative;
+  width: 92px;
+  display: flex;
+  justify-content: space-between;
+  right: 8px;
+}
+
+.dropdown-counter__btn {
+  width: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 22px;
+  text-align: center;
+}
+
+.dropdown-counter__value {
+  position: relative;
+  top: 6px;
+  font-weight: 700;
+}
+
+.dropdown-counter__btn span {
+  position: relative;
+  top: 2px;
+  font-size: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.apply-btn {
+  position: relative;
+  left: 223px;
+  bottom: -10px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.clear-btn {
+  position: relative;
+  left: 10px;
+  bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}

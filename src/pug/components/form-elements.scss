@@ -1,11 +1,3 @@
-.label {
-  font-size: 12px;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  color: #1f2041;
-  display: inline-block;
-}
-
 .field {
   margin-bottom: 12px;
 }
@@ -435,44 +427,6 @@ img {
   margin-top: -1px;
 }
 
-.dropdown-counter__btn {
-  width: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 22px;
-  text-align: center;
-}
-
-.dropdown-counter__btn span {
-  position: relative;
-  top: 2px;
-  font-size: 18px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.dropdown-counter {
-  position: relative;
-  width: 92px;
-  display: flex;
-  justify-content: space-between;
-  right: 8px;
-}
-
-.dropdown-option {
-  padding-left: 12px;
-}
-
-.dropdown-counter__value {
-  position: relative;
-  top: 6px;
-  font-weight: 700;
-}
-
-.dropdown-item {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-}
-
 .dropdown__input_expanded-apply {
   width: 320px;
   height: 159px;
@@ -481,26 +435,6 @@ img {
   display: flex;
   width: 320px;
   padding-right: 177px;
-}
-
-.apply-btn {
-  position: relative;
-  left: 223px;
-  bottom: -10px;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
-
-.clear-btn {
-  position: relative;
-  left: 10px;
-  bottom: 15px;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
 }
 
 .calendar_apply-btn {
