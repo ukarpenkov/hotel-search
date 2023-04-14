@@ -185,17 +185,8 @@
   width: 320px;
 }
 
-.total-info {
-  color: rgba(31, 32, 65, 0.75);
-}
-
 .card-from.room-card-number {
   font-size: 24px;
-  color: #1f2041;
-}
-
-h2.price-sum {
-  font-size: 19px;
   color: #1f2041;
 }
 
@@ -204,12 +195,6 @@ h2.price-sum {
   left: 91px;
   top: 3px;
   color: rgba(31, 32, 65, 0.5);
-}
-
-.total-info-options {
-  display: flex;
-  justify-content: space-between;
-  height: 15px;
 }
 
 .total-info-summary {
@@ -227,10 +212,6 @@ h2.price-sum {
 
 .card-page__room-card-info {
   margin-bottom: 5px;
-}
-
-.total-info_long {
-  width: 200px;
 }
 
 .visible-calendar.form-control.input {
