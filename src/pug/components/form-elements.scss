@@ -35,23 +35,6 @@
   height: 200px;
 }
 
-.btn {
-  border: 2px solid;
-  outline: none;
-  height: 44px;
-  border-radius: 22px;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.btn_small {
-  width: 99px;
-  left: 980px;
-  top: 262px;
-}
-
 .radio-buttons-block {
   margin-top: 33px;
 }
@@ -72,49 +55,6 @@
   top: 14px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
-}
-
-.btn_fill-dark-violet {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-  width: 102px;
-  height: 46px;
-}
-
-.btn_fill-light-violet {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  opacity: 0.5;
-  color: #ffffff;
-  width: 102px;
-  height: 46px;
-}
-
-.btn_dark-violet {
-  color: #bc9cff;
-}
-
-.btn_light-violet {
-  color: #bc9cff;
-  border: 2px solid;
-  border-color: linear-gradient(180deg, #bc9cff 100%, #8ba4f9 100%);
-  opacity: 0.5;
-}
-
-.btn_no-border-violet {
-  color: #bc9cff;
-  border: none;
-  background: #ffffff;
-  padding-bottom: 10px;
-  margin-top: -5px;
-  margin-left: -18px;
-}
-
-.btn_small.btn_no-border-dark {
-  color: rgba(31, 32, 65, 0.5);
-  border: none;
-  background: #ffffff;
-  margin-top: -9px;
-  margin-left: -53px;
 }
 
 img {

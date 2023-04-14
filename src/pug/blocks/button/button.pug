@@ -1,4 +1,6 @@
 mixin button(type, text)
+    style
+        include ./button.scss
     if(type=="fill-dark")
         button.btn.btn_small.btn_fill-dark-violet= text
     if(type=="fill-light")
