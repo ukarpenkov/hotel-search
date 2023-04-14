@@ -1,0 +1,38 @@
+.toggle + .toggle-label:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  border-radius: 13px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  transition: 0.2s;
+}
+
+.toggle + .toggle-label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: rgba(31, 32, 65, 0.25);
+  transition: 0.2s;
+}
+
+.toggle:checked + .toggle-label:after {
+  left: 25px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+
+.toggle:checked + .toggle-label:before {
+  border: 1px solid #bc9cff;
+}
+
+.toggle-item {
+  margin-bottom: 12px;
+  margin-left: -19px;
+  margin-top: 9px;
+}
