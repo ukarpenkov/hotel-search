@@ -12,14 +12,6 @@
   justify-content: space-between;
 }
 
-.input-condition {
-  position: relative;
-  top: 8px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-}
-
 .buttons__label {
   margin-bottom: 10px;
 }
@@ -81,10 +73,6 @@ img {
   font-size: 24px;
 }
 
-.material-icons.like {
-  font-size: 12px;
-}
-
 .checkbox-list_close {
   margin-bottom: 26px;
 }
@@ -144,20 +132,6 @@ img {
   display: flex;
 }
 
-.like-button {
-  display: flex;
-  align-items: center;
-  width: 40px;
-  height: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 10px;
-}
-
-.like-button_color {
-  border: 1px solid #bc9cff;
-  margin-left: 9px;
-}
-
 .like {
   font-size: 10px;
   line-height: 9px;
@@ -165,27 +139,6 @@ img {
   text-align: center;
   color: rgba(31, 32, 65, 0.25);
   margin-left: 4px;
-}
-
-.like-quantity {
-  font-size: 10px;
-  line-height: 12px;
-  color: rgba(31, 32, 65, 0.25);
-  margin-left: 3px;
-}
-
-.like-fill {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 9px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
-
-.like-quantity_color {
-  color: #bc9cff;
 }
 
 .radio {
@@ -356,15 +309,6 @@ img {
 
 .dropdown-block {
   margin-top: 12px;
-}
-
-.dropdown-condition {
-  position: relative;
-  right: 55px;
-  top: 10px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
 }
 
 .forms-elements-page .dropdown__arrow {
