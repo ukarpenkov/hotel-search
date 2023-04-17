@@ -1,0 +1,63 @@
+.card-page__room-card-info {
+  margin-bottom: 5px;
+}
+
+.room-card-info__text {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 233px;
+}
+
+.room-card-info__number {
+  position: relative;
+  left: 5px;
+  top: 3px;
+  display: flex;
+  align-items: baseline;
+}
+
+.room-card-sign-number {
+  font-weight: 700;
+  color: #1f2041;
+}
+
+.card-from.room-card-number {
+  font-size: 24px;
+  color: #1f2041;
+}
+
+.luxe-attr {
+  position: relative;
+  left: 9px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}
+
+.card-page.room-card-info__price {
+  position: relative;
+  left: 91px;
+  top: 3px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room-price {
+  font-weight: 700;
+}
+
+.price-per {
+  font-size: 12px;
+}
+
+.search-form__date-pickers {
+  display: flex;
+  width: 321px;
+  margin-top: -5px;
+}
+
+.summary-order-info {
+  margin-top: 4px;
+  display: grid;
+  row-gap: 25px;
+}
