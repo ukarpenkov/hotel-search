@@ -42,7 +42,6 @@
 
 .header__logged-in-menu {
   margin-bottom: 10px;
-  margin-left: 188px;
 }
 
 .stroke {
@@ -93,4 +92,11 @@
   margin: 0 auto;
   width: 106px;
   margin-top: 119px;
+}
+
+@media (max-width: 1200px) {
+  .header-footer-page__footer {
+    height: 1200px;
+    background-color: #fff;
+  }
 }

@@ -95,3 +95,21 @@ $secondaryColor: rgb(79, 47, 74);
 .header__arrow {
   position: relative;
 }
+
+@media (max-width: 1200px) {
+  .header {
+    display: grid;
+    justify-content: start;
+    height: 250px;
+  }
+
+  .header__nav-bar {
+    display: grid;
+    margin-left: 73px;
+    margin-top: -10px;
+  }
+
+  .header__nav {
+    display: grid;
+  }
+}
