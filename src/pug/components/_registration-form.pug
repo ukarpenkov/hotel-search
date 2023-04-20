@@ -18,7 +18,8 @@ html
                 .registration__date-fields
                     .field
                         h2.label-date дата рождения
-                        input(type="date" placeholder="ДД.ММ.ГГГГ").calendar.calendar_long
+                        +input("date", "ДД.ММ.ГГГГ", "wide")
+                        
                 .mixed-fields
                     h2.label-entries данные для входа в сервис
                     .field

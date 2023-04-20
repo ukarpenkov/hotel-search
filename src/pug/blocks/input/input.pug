@@ -11,6 +11,8 @@ mixin input(type, placeholder, width)
             input(type=type placeholder=placeholder).input.calendar
         if width==="middle" 
             input(type=type placeholder=placeholder).input.calendar.date-filter__input
+        if width==="wide"
+            input(type="date" placeholder="ДД.ММ.ГГГГ").calendar.calendar_long
     if type=="select"
         select.input
             option(value="") Сколько гостей
