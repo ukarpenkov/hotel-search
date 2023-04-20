@@ -221,3 +221,29 @@
   text-transform: uppercase;
   color: #bc9cff;
 }
+
+@media (max-width: 1200px) {
+  .search-room__cards {
+    display: grid;
+  }
+
+  .search-room__body {
+    margin-left: 20px;
+  }
+
+  .search-room__pagination.search-room__pagination {
+    position: relative;
+    left: 377px;
+    top: -14px;
+  }
+
+  .search-room__pagination .pagination {
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+
+  .footer-item__sub {
+    margin-top: -8px;
+    margin-left: 20px;
+  }
+}
