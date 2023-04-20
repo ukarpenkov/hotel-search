@@ -2,6 +2,7 @@
   background-color: #e5e5e5;
   height: 1350px;
 }
+
 .card-page-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
@@ -240,4 +241,34 @@ h2.price-sum {
 .cards-page__cards .search-room__main-col {
   margin-bottom: 47px;
   width: 270px;
+}
+
+@media (max-width: 1200px) {
+  .cards-page__wrapper {
+    background-color: #e5e5e5;
+    height: 100%;
+  }
+
+  .card-page-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 12fr;
+    column-gap: 35px;
+    row-gap: 30px;
+    margin-left: 145px;
+  }
+
+  .cards-page__search-form {
+    width: 380px;
+  }
+
+  .card-page-grid .calendar-form {
+    margin-top: -15px;
+    margin-bottom: 110px;
+  }
+
+  .cards-page__cards {
+    margin-left: -10px;
+    margin-top: 10px;
+  }
 }
