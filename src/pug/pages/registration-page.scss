@@ -29,4 +29,29 @@
 }
 
 @media (max-width: 1200px) {
+  .registration-page__main-bgi {
+    text-align: initial;
+  }
+
+  .registration-form {
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .registration-form_sing-up .label-date {
+    left: -16px;
+  }
+
+  .registration-form_sing-up .label-entries {
+    left: 30px;
+  }
+
+  .sing-in-block {
+    margin-left: 30px;
+  }
+
+  .sign-in-page__wrapper .sing-in-form {
+    left: 48px;
+    text-align: -webkit-center;
+  }
 }
