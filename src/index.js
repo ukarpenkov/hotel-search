@@ -7,24 +7,6 @@ import { Russian } from "flatpickr/dist/l10n/ru.js"
 import Chart from 'chart.js/auto';
 
 
-const userStack = {
-    language: 'JavaScript',
-    framework: 'Angular'
-}
-
-const user = {
-    name: 'IURII',
-    age: '31',
-    ...userStack
-}
-
-
-$('.block').html('jQuery is working');
-
-console.log(user)
-
-
-
 let counterButtons = document.querySelectorAll('.dropdown-counter__btn')
 let inputs = document.querySelectorAll('.dropdown__input-text')
 
