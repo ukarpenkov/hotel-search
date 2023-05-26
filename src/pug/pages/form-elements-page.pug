@@ -1,216 +1,204 @@
 html
-    head
-        title= 'TOXIN'
-        link(rel='icon', sizes='image/svg+xml', href='src/assets/favicon.svg')
-        link(rel="icon" type="image/png" href="src/assets/favicon.png")
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        style
-            include ../components/form-elements.scss
-            include form-elements-page.scss
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        .forms-elements-page
-            include ../components/_header-img-logo.pug
-            include ../blocks/label-h2/label.pug
-            include ../blocks/input/input.pug
-            include ../blocks/input-condition/input-condition.pug
-            include ../blocks/dropdown-condition/dropdown-condition.pug
-            include ../blocks/room-privilege/room-privilege.pug
-            include ../blocks/dropdown-options/dropdown-options.pug
-            include ../blocks/comment/comment.pug
-            include ../blocks/button/button.pug
-            .forms-elements 
-                .col-1
-                    .form
-                        .mixed-fields
-                            .field 
-                                .field-label
-                                    +label("Text Field")
-                                    +input-condition("DEFAULT")
-                                +input("text", "Email", "wide")
-                            .field
-                                .field-label
-                                    +label("Text Field")
-                                    +input-condition("Hover/Focus")
-                                input(type="text" placeholder="This is pretty awesome").input.input_focus
-                            .field 
-                                +label("Dropdown")
-                                +input("select")
-                            .field
-                                +label("masked text field")
-                                +input("text", "ДД.ММ.ГГГГ", "wide")
-                        .date-pickers
-                            .field
-                                +label("date Dropdown")
-                                +input("date", "ДД.ММ.ГГГГ", "narrow")
-                            .field 
-                                +label("date Dropdown")
-                                +input("date", "19.08.2019", "narrow")
-                        .date-filter
-                            .field
-                                +label("filter date dropdown")
-                                +input("date", "19 авг - 23 авг", "middle")
-                                span(class="material-icons expand-arrow date-filter_arrow") expand_more 
-                        .subscribe-field
-                            .field 
-                                +label("subscription text field")
-                                .subcribe-input
-                                    +input("text", "Email", "middle")
-                                    span.material-icons.subscribe-field-arrow arrow_forward 
-                    .dropdown-block
-                        .dropdown-block__label
-                            +label("dropdown")
-                            +dropdown-condition("DEFAULT")
-                        .dropdown__input
-                            .dropdown__input_default
-                                div.dropdown__input-text  2 спальни
-                                span(class="material-icons expand-arrow dropdown__arrow") expand_more
-                    .dropdown-block
-                        .dropdown-block__label
-                            +label("dropdown")
-                            +dropdown-condition("EXPANDED")
-                        .dropdown__input
-                            .dropdown__input_default 
-                                div.dropdown__input-text  2 спальни
-                                span.material-icons.expand-arrow.dropdown__arrow expand_more
-                            .dropdown__input_expanded
-                                +dropdown-block("спальни", "кровати", "ванные комнаты", "","")
-                        .checkbox-block
-                            .checkbox-list_close
-                                .checkbox-list__label 
-                                    +label("expandable checkbox list")
-                                    span.material-icons.expand-arrow expand_more
-                            .checkbox-list
-                                .checkbox-list__label 
-                                    +label("expandable checkbox list")
-                                    span.material-icons.expand-arrow expand_more
-                                .checkbox-list_options
-                                    include ../blocks/checkbox/checkbox.pug
-                                    +checkbox('Завтрак')
-                                    +checkbox('Письменный стол', true)
-                                    +checkbox('Стул для кормления', true)
-                                    +checkbox('Кроватка', true)
-                                    +checkbox('Телевизор')
-                                    +checkbox('Шампунь')
-                .col-2
-                    .checkbox-list
-                        .checkbox-list__label
-                            +label("Checkbox Buttons")  
-                        .checkbox-list_options 
-                            +checkbox('Можно курить')
-                            +checkbox('Можно с питомцами', true)
-                            +checkbox('Можно пригласить гостей (до 10 человек)', true)
-                    .radio-buttons-block
-                        +label("Radio Buttons")  
-                        include ../blocks/radio-btns/radio-btns.pug
-                    .toggle-block
-                        +label("TOGGLE")   
-                        include ../blocks/toggle/toggle.pug
-                        +toggle('checked')
-                        +toggle('notChecked')
-                    .like-block
-                        +label("like button")  
-                        .like-buttons
-                            include ../blocks/like-btn/like-btn.pug
-                            +like-btn(true, 2)
-                            +like-btn(false, 12)
-                    .rating-block 
-                        +label("rate button")
-                        .stars-block
-                            include ../blocks/rating-stars/rating-stars.pug
-                            include ../blocks/rating-stars/rating-stars.pug
-                    .dropdown-block
-                        .dropdown-block__label
-                            +label("dropdown") 
-                        .dropdown__input
-                            .dropdown__input_default.dropdown__input_wide  
-                                div.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown__arrow">expand_more</span>
-                            .dropdown__input_expanded.dropdown__input_expanded-apply
-                                +dropdown-block("взрослые", "дети", "младенцы", "применить","")
-                        .checkbox-list_rich 
-                            .checkbox-list__label
-                                +label("rich Checkbox Buttons")  
-                            .checkbox-list_options 
-                                include ../blocks/rich-checkbox/rich-checkbox.pug
-                                +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
-                                +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
-                .col-3
-                    .filter-price
-                        .filter-price__head
-                            +label("range slider")  
-                            .filter-price__inputs
-                                label.filter-price__label.filter-price__label-min
-                                    input(type="number" min="0" max="100000" placeholder="0" id="input-0").filter-price__input-min
-                                    span.filter-price__text ₽-
-                                    span.filter-price__text 
-                                label.filter-price__label.filter-price__label-max
-                                    input(type="number" min="0" max="100000" placeholder="10&nbsp0000" id="input-1").filter-price__input-max
-                                    span.filter-price__text.filter-price__text-max ₽
-                        .filter-price__slider(id="range-slider")
-                    .buttons
-                        .buttons__label
-                            +label("buttons")  
-                        .buttons__items
-                            .buttons__item
-                                +button("fill-dark", "CLICK ME")
-                            .buttons__item
-                                +button("fill-light", "CLICK ME")
-                            .buttons__item
-                                +button("border-dark", "CLICK ME")
-                            .buttons__item
-                                +button("border-light", "CLICK ME")
-                            .buttons__item
-                                +button("light", "CLICK ME")
-                            .buttons__item
-                                +button("dark", "CLICK ME")
-                                button.btn.btn_lg  <span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span>
-                    .pagination
-                        +label("pagination") 
-                        br
-                        include ../blocks/pagination/pagination.pug
-                    .dropdown-block
-                        .dropdown-block__label
-                            +label("dropdown")  
-                        .dropdown__input
-                            .dropdown__input_default.dropdown__input_wide  
-                                div.dropdown__input-text  Сколько гостей  
-                                span.material-icons.expand-arrow.dropdown__arrow expand_more
-                            .dropdown__input_expanded.dropdown__input_expanded-apply
-                                +dropdown-block("взрослые", "дети", "младенцы", "применить","очистить")
-                    .bullet-list
-                        +label("bullet list") 
-                        ul.bullet-list__items
-                            include ../blocks/list-item/list-item.pug
-                            +list-item("Нельзя с питомцами")
-                            +list-item("Без вечеринок и мероприятий")
-                            +list-item("Время прибытия — после 13:00, а выезд до 12:00")
-            .row-1
-                    .room-privilege
-                        +room-privilege("Комфорт", "insert_emoticon", "Шумопоглощающие стены")
-                        +room-privilege("Удобство", "location_city", "Окно в каждой из спален")
-                    +comment-block("Мурад Сарафанов","5 дней назад", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из сосе")
-                    //- .comment-block
-                    //-     .user-info
-                    //-         .avatar  
-                    //-             img(src="src/images/avatar.svg", alt="avatar").avatar_small
-                    //-         .user-name
-                    //-             p.room-privilege__description-label Мурад Сарафанов
-                    //-             p.room-privilege__description-text 5 дней назад
-                    //-     .comment
-                    //-         .like-button.like-button_color
-                    //-             <span class="material-icons like like-fill">favorite</span> <span class=" like-quantity like-quantity_color">12</span> 
-                    //-         .comment-text 
-                    //-             p.room-privilege__description-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+head
+  title= 'TOXIN'
+  link(rel='icon', sizes='image/svg+xml', href='src/assets/favicon.svg')
+  link(rel="icon" type="image/png" href="src/assets/favicon.png")
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  style
+    include ../components/form-elements.scss
+    include form-elements-page.scss
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  .forms-elements-page
+    include ../components/_header-img-logo.pug
+    include ../blocks/label-h2/label.pug
+    include ../blocks/input/input.pug
+    include ../blocks/input-condition/input-condition.pug
+    include ../blocks/dropdown-condition/dropdown-condition.pug
+    include ../blocks/room-privilege/room-privilege.pug
+    include ../blocks/dropdown-options/dropdown-options.pug
+    include ../blocks/comment/comment.pug
+    include ../blocks/button/button.pug
+    .forms-elements 
+      .col-1
+        .form
+          .mixed-fields
+            .field 
+              .field-label
+                +label("Text Field")
+                +input-condition("DEFAULT")
+              +input("text", "Email", "wide")
+            .field
+              .field-label
+                +label("Text Field")
+                +input-condition("Hover/Focus")
+              input(type="text" placeholder="This is pretty awesome").input.input_focus
+            .field 
+              +label("Dropdown")
+              +input("select")
+            .field
+              +label("masked text field")
+              +input("text", "ДД.ММ.ГГГГ", "wide")
+          .date-pickers
+            .field
+              +label("date Dropdown")
+              +input("date", "ДД.ММ.ГГГГ", "narrow")
+            .field 
+              +label("date Dropdown")
+              +input("date", "19.08.2019", "narrow")
+          .date-filter
+            .field
+              +label("filter date dropdown")
+              +input("date", "19 авг - 23 авг", "middle")
+              span(class="material-icons expand-arrow date-filter_arrow") expand_more 
+          .subscribe-field
+            .field 
+              +label("subscription text field")
+              .subcribe-input
+                +input("text", "Email", "middle")
+                span.material-icons.subscribe-field-arrow arrow_forward 
+        .dropdown-block
+          .dropdown-block__label
+            +label("dropdown")
+            +dropdown-condition("DEFAULT")
+          .dropdown__input
+            .dropdown__input_default
+              div.dropdown__input-text  2 спальни
+              span(class="material-icons expand-arrow dropdown__arrow") expand_more
+        .dropdown-block
+          .dropdown-block__label
+            +label("dropdown")
+            +dropdown-condition("EXPANDED")
+          .dropdown__input
+            .dropdown__input_default 
+              div.dropdown__input-text  2 спальни
+              span.material-icons.expand-arrow.dropdown__arrow expand_more
+            .dropdown__input_expanded
+              +dropdown-block("спальни", "кровати", "ванные комнаты", "","")
+          .checkbox-block
+            .checkbox-list_close
+              .checkbox-list__label 
+                +label("expandable checkbox list")
+                span.material-icons.expand-arrow expand_more
+              .checkbox-list
+                .checkbox-list__label 
+                  +label("expandable checkbox list")
+                  span.material-icons.expand-arrow expand_more
+                .checkbox-list_options
+                  include ../blocks/checkbox/checkbox.pug
+                  +checkbox('Завтрак')
+                  +checkbox('Письменный стол', true)
+                  +checkbox('Стул для кормления', true)
+                  +checkbox('Кроватка', true)
+                  +checkbox('Телевизор')
+                  +checkbox('Шампунь')
+      .col-2
+        .checkbox-list
+          .checkbox-list__label
+            +label("Checkbox Buttons")  
+          .checkbox-list_options 
+            +checkbox('Можно курить')
+            +checkbox('Можно с питомцами', true)
+            +checkbox('Можно пригласить гостей (до 10 человек)', true)
+          .radio-buttons-block
+            +label("Radio Buttons")  
+            include ../blocks/radio-btns/radio-btns.pug
+          .toggle-block
+            +label("TOGGLE")   
+            include ../blocks/toggle/toggle.pug
+            +toggle('checked')
+            +toggle('notChecked')
+          .like-block
+            +label("like button")  
+            .like-buttons
+              include ../blocks/like-btn/like-btn.pug
+              +like-btn(true, 2)
+              +like-btn(false, 12)
+          .rating-block 
+            +label("rate button")
+            .stars-block
+              include ../blocks/rating-stars/rating-stars.pug
+              include ../blocks/rating-stars/rating-stars.pug
+          .dropdown-block
+            .dropdown-block__label
+              +label("dropdown") 
+            .dropdown__input
+              .dropdown__input_default.dropdown__input_wide  
+                div.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown__arrow">expand_more</span>
+              .dropdown__input_expanded.dropdown__input_expanded-apply
+                +dropdown-block("взрослые", "дети", "младенцы", "применить","")
+            .checkbox-list_rich 
+              .checkbox-list__label
+                +label("rich Checkbox Buttons")  
+              .checkbox-list_options 
+                include ../blocks/rich-checkbox/rich-checkbox.pug
+                +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+                +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
+      .col-3
+        .filter-price
+          .filter-price__head
+            +label("range slider")  
+            .filter-price__inputs
+              label.filter-price__label.filter-price__label-min
+                input(type="number" min="0" max="100000" placeholder="0" id="input-0").filter-price__input-min
+                span.filter-price__text ₽-
+                span.filter-price__text 
+              label.filter-price__label.filter-price__label-max
+                input(type="number" min="0" max="100000" placeholder="10&nbsp0000" id="input-1").filter-price__input-max
+                span.filter-price__text.filter-price__text-max ₽
+          .filter-price__slider(id="range-slider")
+        .buttons
+          .buttons__label
+            +label("buttons")  
+            .buttons__items
+              .buttons__item
+                +button("fill-dark", "CLICK ME")
+              .buttons__item
+                +button("fill-light", "CLICK ME")
+              .buttons__item
+                +button("border-dark", "CLICK ME")
+              .buttons__item
+                +button("border-light", "CLICK ME")
+              .buttons__item
+                +button("light", "CLICK ME")
+              .buttons__item
+                +button("dark", "CLICK ME")
+                button.btn.btn_lg  <span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span>
+        .pagination
+          +label("pagination") 
+          br
+          include ../blocks/pagination/pagination.pug
+        .dropdown-block
+          .dropdown-block__label
+            +label("dropdown")  
+          .dropdown__input
+            .dropdown__input_default.dropdown__input_wide  
+              div.dropdown__input-text  Сколько гостей  
+              span.material-icons.expand-arrow.dropdown__arrow expand_more
+            .dropdown__input_expanded.dropdown__input_expanded-apply
+              +dropdown-block("взрослые", "дети", "младенцы", "применить","очистить")
+        .bullet-list
+          +label("bullet list") 
+          ul.bullet-list__items
+            include ../blocks/list-item/list-item.pug
+            +list-item("Нельзя с питомцами")
+            +list-item("Без вечеринок и мероприятий")
+            +list-item("Время прибытия — после 13:00, а выезд до 12:00")
+    .row-1
+      .room-privilege
+        +room-privilege("Комфорт", "insert_emoticon", "Шумопоглощающие стены")
+        +room-privilege("Удобство", "location_city", "Окно в каждой из спален")
+      +comment-block("Мурад Сарафанов","5 дней назад", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из сосе")
 
 
 
-               
+        
 
 
 
 
 
 
-                    
+            
 
-                
+        
 

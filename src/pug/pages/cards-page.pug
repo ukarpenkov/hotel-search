@@ -4,42 +4,42 @@ html
         link(rel='icon', sizes='image/svg+xml', href='src/assets/favicon.svg')
         link(rel="icon" type="image/png" href="src/assets/favicon.png")
         style
-            include ../components/room-card/room-card.pug
-            include cards-page.scss 
-            include ../components/form-elements.scss
-            include headers-and-footer-page.scss
-            include ../components/head.scss    
-            include landing-page.scss 
-            include registration-page.scss
-            include search-room-page.scss
-            include ../components/footer.scss
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <meta name='viewport' content='1024'>
+          include ../components/room-card/room-card.pug
+          include cards-page.scss 
+          include ../components/form-elements.scss
+          include headers-and-footer-page.scss
+          include ../components/head.scss    
+          include landing-page.scss 
+          include registration-page.scss
+          include search-room-page.scss
+          include ../components/footer.scss
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <meta name='viewport' content='1024'>
         .cards-page__wrapper
-            include ../blocks/label-h2/label.pug
-            include ../blocks/input/input.pug
-            include ../blocks/summary-order/summary-order.pug
-            include ../blocks/dropdown-options/dropdown-options.pug
-            .header-page__logo
-                include ../components/_header-img-logo.pug
-            .card-page-grid
-                .cards-page__search-form
-                    include ../components/room-search-form/room-search-form.pug
-                .card-page__booking-form
-                    include ../components/booking-form/booking-form.pug
-                .calendar-form
-                    .visible-calendar
-                .card-page__registration-from
-                    .cards-page__form 
-                        include   ../components/_registration-form
-                .card-page__sing-in-from
-                    .cards-page__form 
-                        include   ../components/_sing-in-form
-                .cards-page__cards
-                    .search-room__main-col
-                        +room-card('room888.png', '888', '9 990₽', 'ЛЮКС' , '145')
-                    .search-room__main-col
-                        +room-card('room840.png', '840', '9 000₽', '' , '65')
+          include ../blocks/label-h2/label.pug
+          include ../blocks/input/input.pug
+          include ../blocks/summary-order/summary-order.pug
+          include ../blocks/dropdown-options/dropdown-options.pug
+          .header-page__logo
+            include ../components/_header-img-logo.pug
+          .card-page-grid
+            .cards-page__search-form
+              include ../components/room-search-form/room-search-form.pug
+            .card-page__booking-form
+              include ../components/booking-form/booking-form.pug
+            .calendar-form
+              .visible-calendar
+            .card-page__registration-from
+              .cards-page__form 
+                include   ../components/_registration-form
+            .card-page__sing-in-from
+              .cards-page__form 
+                include   ../components/_sing-in-form
+            .cards-page__cards
+              .search-room__main-col
+                +room-card('room888.png', '888', '9 990₽', 'ЛЮКС' , '145')
+              .search-room__main-col
+                +room-card('room840.png', '840', '9 000₽', '' , '65')
                 
                 
 
