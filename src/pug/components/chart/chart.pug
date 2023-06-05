@@ -1,16 +1,16 @@
 mixin chart(voteCount)
-    style 
-        include ./chatr.scss
-    .chart-block__content
-        .chart 
-            .chart__total-value
-                h2.total-value-count= voteCount
-                p.total-value-vote голосов
-            .chart__diagram
-                <canvas id="myChart"></canvas>
-        .chart-block__list 
-            ul.chart-block__list-ul
-                li.chart-block__list-item.chart-block__list-item_color_orange Великолепно      
-                li.chart-block__list-item.chart-block__list-item_color_green Хорошо      
-                li.chart-block__list-item.chart-block__list-item_color_violet Удовлетворительно      
-                li.chart-block__list-item.chart-block__list-item_color_dark Разочарован   
+  style 
+    include ./chatr.scss
+  .chart-block__content
+    .chart 
+      .chart__total-value
+        h2.total-value-count= voteCount
+        p.total-value-vote голосов
+      .chart__diagram
+        <canvas id="myChart"></canvas>
+    .chart-block__list 
+      ul.chart-block__list-ul
+        li.chart-block__list-item.chart-block__list-item_color_orange Великолепно      
+        li.chart-block__list-item.chart-block__list-item_color_green Хорошо      
+        li.chart-block__list-item.chart-block__list-item_color_violet Удовлетворительно      
+        li.chart-block__list-item.chart-block__list-item_color_dark Разочарован   

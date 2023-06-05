@@ -1,11 +1,11 @@
 mixin toggle(checked)
-        style   
-            include ./toogle.scss
-        if checked=='checked'
-            .toggle-item
-                input(type="checkbox" class="toggle" id="check1" checked)
-                label(for="check1" class="toggle-label ") Получать спецпредложения
-        else 
-            .toggle-item
-                input(type="checkbox" class="toggle" id="check2")
-                label(for="check2" class="toggle-label ") Получать спецпредложения
+  style   
+    include ./toogle.scss
+  if checked=='checked'
+    .toggle-item
+      input(type="checkbox" class="toggle" id="check1" checked)
+      label(for="check1" class="toggle-label ") Получать спецпредложения
+  else 
+    .toggle-item
+      input(type="checkbox" class="toggle" id="check2")
+      label(for="check2" class="toggle-label ") Получать спецпредложения

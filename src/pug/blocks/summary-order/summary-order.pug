@@ -1,34 +1,34 @@
 mixin summary-order(dayPrice, daysCount, preTotalPrice, discount, serviceСharge,  addСharge, totalPrice)
-    style 
-        include ./summary-order.scss
-    .total-info-options 
-        p.total-info
-            span= dayPrice
-            span ₽ х&nbsp;
-            span= daysCount
-            span &nbsp;суток
-        p.total-info
-            span= preTotalPrice
-            span ₽
-    .total-info-options 
-       p.total-info
-            span Сбор за услуги: скидка&nbsp;
-            span= discount
-            span ₽
-       p.total-info
-            span= serviceСharge
-            span ₽
-    .total-info-options 
-        p.total-info.total-info_long Сбор за дополнительные услуги
-        p.total-info
-            span= addСharge
-            span ₽
-    .total-info-summary 
-       h2.price-sum  Итого
-        h2.price-sum
-            span= totalPrice
-            span ₽
-    .registration__buttons__item
-        button.btn.sing-in__btn-lg
-            span.sing-in__btn-lg-text забронировать
-            span.material-icons.sign-in__arrow.book-arrow arrow_forward
+  style 
+    include ./summary-order.scss
+  .total-info-options 
+    p.total-info
+      span= dayPrice
+      span ₽ х&nbsp;
+      span= daysCount
+      span &nbsp;суток
+    p.total-info
+      span= preTotalPrice
+      span ₽
+  .total-info-options 
+    p.total-info
+      span Сбор за услуги: скидка&nbsp;
+      span= discount
+      span ₽
+    p.total-info
+      span= serviceСharge
+      span ₽
+  .total-info-options 
+    p.total-info.total-info_long Сбор за дополнительные услуги
+    p.total-info
+      span= addСharge
+      span ₽
+  .total-info-summary 
+    h2.price-sum  Итого
+    h2.price-sum
+      span= totalPrice
+      span ₽
+  .registration__buttons__item
+    button.btn.sing-in__btn-lg
+      span.sing-in__btn-lg-text забронировать
+      span.material-icons.sign-in__arrow.book-arrow arrow_forward

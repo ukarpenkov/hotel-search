@@ -1,16 +1,16 @@
 html
-    head
-        style
-        .search-room-filter-price__head
-            .filter-price__head
-                +label("диапазон цены")
-                .filter-price__inputs
-                    label.filter-price__label.filter-price__label-min
-                        input(type="number" min="0" max="100000" placeholder="0" id="input-0").filter-price__input-min
-                        span.filter-price__text ₽-
-                        span.filter-price__text 
-                    label.filter-price__label.filter-price__label-max
-                        input(type="number" min="0" max="100000" placeholder="10&nbsp0000" id="input-1").filter-price__input-max
-                        span.filter-price__text.filter-price__text-max ₽
-            .filter-price__slider(id="range-slider")
-            p.filter-price_description Стоимость за сутки пребывания в номере
+  head
+    style
+    .search-room-filter-price__head
+      .filter-price__head
+        +label("диапазон цены")
+        .filter-price__inputs
+          label.filter-price__label.filter-price__label-min
+            input(type="number" min="0" max="100000" placeholder="0" id="input-0").filter-price__input-min
+            span.filter-price__text ₽-
+            span.filter-price__text 
+          label.filter-price__label.filter-price__label-max
+            input(type="number" min="0" max="100000" placeholder="10&nbsp0000" id="input-1").filter-price__input-max
+            span.filter-price__text.filter-price__text-max ₽
+      .filter-price__slider(id="range-slider")
+      p.filter-price_description Стоимость за сутки пребывания в номере

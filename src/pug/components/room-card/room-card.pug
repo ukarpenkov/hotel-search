@@ -1,20 +1,20 @@
 mixin room-card(img, number, price, luxe, commentCount)
-        .room-card
-            .room-card-img
-                img.room-picture(src=`src/images/${img}`, alt="room interior")
-            .room-card-info
-                .room-card-info__text
-                    .room-card-info__number
-                        p.room-card-sign-number № 
-                        h2.room-card-number= number
-                    .special-offer
-                        h3.luxe-attr= luxe 
-                    .room-card-info__price 
-                        span.room-price= price
-                        span.price-per &nbsp в сутки
-                .room-card-rating
-                    .stars-block
-                        include ../../blocks/rating-stars/rating-stars.pug
-                    .room-card__comment
-                        p.comment-text= commentCount
-                        span.comment-text-attr &nbspОтзывов
+  .room-card
+    .room-card-img
+      img.room-picture(src=`src/images/${img}`, alt="room interior")
+    .room-card-info
+      .room-card-info__text
+        .room-card-info__number
+          p.room-card-sign-number № 
+          h2.room-card-number= number
+        .special-offer
+          h3.luxe-attr= luxe 
+        .room-card-info__price 
+          span.room-price= price
+          span.price-per &nbsp в сутки
+      .room-card-rating
+        .stars-block
+          include ../../blocks/rating-stars/rating-stars.pug
+        .room-card__comment
+          p.comment-text= commentCount
+          span.comment-text-attr &nbspОтзывов
