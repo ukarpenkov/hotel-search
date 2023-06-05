@@ -1,24 +1,24 @@
 mixin input(type, placeholder, width)
-    style
-        include ./input.scss
-    if type==="text" || type==="email"
-        if width==="wide"
-            input(type=type placeholder=placeholder).input
-        if width==="middle"
-            input(type=type placeholder=placeholder).input.input_middle 
-    if type==="date"
-        if width==="narrow"
-            input(type=type placeholder=placeholder).input.calendar
-        if width==="middle" 
-            input(type=type placeholder=placeholder).input.calendar.date-filter__input
-        if width==="wide"
-            input(type="date" placeholder="ДД.ММ.ГГГГ").calendar.calendar_long
-    if type=="select"
-        select.input
-            option(value="") Сколько гостей
-            option(value="") 1
-            option(value="") 2
-            option(value="") 3
-    if type=="password"
-        input(type=type placeholder=placeholder).input
+  style
+    include ./input.scss
+  if type==="text" || type==="email"
+    if width==="wide"
+      input(type=type placeholder=placeholder).input
+    if width==="middle"
+      input(type=type placeholder=placeholder).input.input_middle 
+  if type==="date"
+    if width==="narrow"
+      input(type=type placeholder=placeholder).input.calendar
+    if width==="middle" 
+      input(type=type placeholder=placeholder).input.calendar.date-filter__input
+    if width==="wide"
+      input(type="date" placeholder="ДД.ММ.ГГГГ").calendar.calendar_long
+  if type=="select"
+    select.input
+      option(value="") Сколько гостей
+      option(value="") 1
+      option(value="") 2
+      option(value="") 3
+  if type=="password"
+    input(type=type placeholder=placeholder).input
 

@@ -1,14 +1,14 @@
 mixin comment-block(userName, date, text)
     include ../like-btn/like-btn.pug
     .comment-block
-        .user-info
-            .avatar  
-                img(src="src/images/avatar.svg", alt="avatar").avatar_small
-            .user-name
-                p.room-privilege__description-label= name
-                p.room-privilege__description-text= date
-        .comment
-            .like-button.like-button_color
-                +like-btn(true, 12)
-            .comment-text 
-                p.room-privilege__description-text= text
+      .user-info
+        .avatar  
+          img(src="src/images/avatar.svg", alt="avatar").avatar_small
+        .user-name
+          p.room-privilege__description-label= name
+          p.room-privilege__description-text= date
+    .comment
+      .like-button.like-button_color
+        +like-btn(true, 12)
+      .comment-text 
+        p.room-privilege__description-text= text

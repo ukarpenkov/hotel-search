@@ -1,38 +1,37 @@
 html
-    head
-        style
-            include registration-form.scss
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        form.form.registration-form
-            include ../blocks/input/input.pug
-            include ../blocks/label-h2/label.pug
-            .registration-form_sing-up    
-                h1 Регистрация аккаунта
-                .mixed-fields
-                    .field 
-                        +input("text","Имя","wide")
-                    .field
-                        +input("text","Фамилия","wide")
-                .registration__radio-buttons-items
-                    include ../blocks/radio-btns/radio-btns.pug 
-                .registration__date-fields
-                    .field
-                        h2.label-date дата рождения
-                        +input("date", "ДД.ММ.ГГГГ", "wide")
-                        
-                .mixed-fields
-                    h2.label-entries данные для входа в сервис
-                    .field
-                        +input("text","Email","wide")
-                    .field
-                        +input("password", "Пароль", "") 
-                .registration__toggle-block 
-                    include ../blocks/toggle/toggle.pug
-                    +toggle('checked')
-                .registration__buttons__item
-                    button.btn.registration__btn-lg  зарегистрироваться
-                        span.material-icons.registration__arrow arrow_forward
-                .sing-in-block
-                    span.sing-in-form__info Уже есть аккаунт на Toxin
-                    include ../blocks/button/button.pug
-                    +button("border-dark", "войти")
+  head
+    style
+      include registration-form.scss
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    form.form.registration-form
+      include ../blocks/input/input.pug
+      include ../blocks/label-h2/label.pug
+      .registration-form_sing-up    
+        h1 Регистрация аккаунта
+        .mixed-fields
+          .field 
+            +input("text","Имя","wide")
+          .field
+            +input("text","Фамилия","wide")
+        .registration__radio-buttons-items
+          include ../blocks/radio-btns/radio-btns.pug 
+        .registration__date-fields
+          .field
+            h2.label-date дата рождения
+            +input("date", "ДД.ММ.ГГГГ", "wide") 
+        .mixed-fields
+          h2.label-entries данные для входа в сервис
+          .field
+            +input("text","Email","wide")
+          .field
+            +input("password", "Пароль", "") 
+        .registration__toggle-block 
+          include ../blocks/toggle/toggle.pug
+          +toggle('checked')
+        .registration__buttons__item
+          button.btn.registration__btn-lg  зарегистрироваться
+            span.material-icons.registration__arrow arrow_forward
+        .sing-in-block
+          span.sing-in-form__info Уже есть аккаунт на Toxin
+          include ../blocks/button/button.pug
+          +button("border-dark", "войти")
