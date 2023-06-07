@@ -10,9 +10,14 @@
 }
 
 .input.calendar {
+  cursor: pointer;
   width: 150px;
 }
 
 .date-filter__input {
   width: 267px !important;
+}
+
+.select-input {
+  cursor: pointer;
 }

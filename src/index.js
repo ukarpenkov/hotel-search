@@ -259,4 +259,3 @@ if (showSingInPageBtn) {
   showSingInPageBtn.addEventListener('click', () => hideAndShowPage('.sign-in-page__wrapper'))
 }
 
-console.log('js is done')

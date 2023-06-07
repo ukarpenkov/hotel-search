@@ -30,6 +30,7 @@
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .buttons__items {
@@ -237,6 +238,7 @@ img {
   position: relative;
   left: -36px;
   color: #bc9cff;
+  cursor: pointer;
 }
 
 .dropdown__input_default {
@@ -520,6 +522,7 @@ span.flatpickr-weekday {
 }
 
 .date-filter_arrow {
+  cursor: pointer;
   position: relative !important;
   left: -33px !important;
   top: -1px !important;
