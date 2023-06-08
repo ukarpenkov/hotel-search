@@ -7,8 +7,8 @@ mixin comment-block(userName, date, text)
         .user-name
           p.room-privilege__description-label= name
           p.room-privilege__description-text= date
-    .comment
-      .like-button.like-button_color
-        +like-btn(true, 12)
-      .comment-text 
-        p.room-privilege__description-text= text
+      .comment
+        .like-button.like-button_color
+          +like-btn(true, 12)
+        .comment-text 
+          p.room-privilege__description-text= text

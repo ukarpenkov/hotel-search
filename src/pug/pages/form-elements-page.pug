@@ -126,13 +126,13 @@ html
                   div.dropdown__input-text  Сколько гостей  <span class="material-icons expand-arrow dropdown__arrow">expand_more</span>
                 .dropdown__input_expanded.dropdown__input_expanded-apply
                   +dropdown-block("взрослые", "дети", "младенцы", "применить","")
-              .checkbox-list_rich 
-                .checkbox-list__label
-                  +label("rich Checkbox Buttons")  
-                .checkbox-list_options 
-                  include ../blocks/rich-checkbox/rich-checkbox.pug
-                  +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
-                  +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
+            .checkbox-list_rich 
+              .checkbox-list__label
+                +label("rich Checkbox Buttons")  
+              .checkbox-list_options 
+                include ../blocks/rich-checkbox/rich-checkbox.pug
+                +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+                +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
         .col-3
           .filter-price
             .filter-price__head
