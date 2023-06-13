@@ -1,7 +1,7 @@
 {
   "name": "hotel-search",
   "version": "1.0.0",
-  "description": "",
+  "description": "для того чтобы развернуть проект у себя необходимо:",
   "main": "index.js",
   "scripts": {
     "start": "set NODE_ENV=development&&webpack serve --open",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/ukarpenkov/hotel-search.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Iurii",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ukarpenkov/hotel-search/issues"
