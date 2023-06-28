@@ -1,26 +1,23 @@
 html
   head
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
-    meta(http-equiv="X-UA-Compatible" content="IE=edge")
     style
       include registration-form.scss
       include sing-in-form.scss
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    form.form.sing-in-form
-      include ../blocks/input/input.pug
-      .sing-in-form__data   
-        h1 Войти
-        .sing-in__mixed-fields
-          .field 
-            +input("email","Email","wide")
-          .field 
-            +input("password", "Пароль", "") 
-        .registration__buttons__item
-          button.btn.sing-in__btn-lg 
-            span.sing-in__btn-lg-text Войти
-            span.material-icons.sign-in__arrow arrow_forward
-        .sing-in-block
-          span.sing-in-form__info Нет аккаунта на Toxin?
-          include ../blocks/button/button.pug
-          +button("border-dark", "СОЗДАТЬ")
+  form.form.sing-in-form
+    include ../blocks/input/input.pug
+    .sing-in-form__data   
+      h1 Войти
+      .sing-in__mixed-fields
+        .field 
+          +input("email","Email","wide")
+        .field 
+          +input("password", "Пароль", "") 
+      .registration__buttons__item
+        button.btn.sing-in__btn-lg 
+          span.sing-in__btn-lg-text Войти
+          span.material-icons.sign-in__arrow arrow_forward
+      .sing-in-block
+        span.sing-in-form__info Нет аккаунта на Toxin?
+        include ../blocks/button/button.pug
+        +button("border-dark", "СОЗДАТЬ")
