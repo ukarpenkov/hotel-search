@@ -119,7 +119,8 @@ html
             +label("rate button")
             .stars-block
               include ../blocks/rating-stars/rating-stars.pug
-              include ../blocks/rating-stars/rating-stars.pug
+              +ratingStars(1)
+              +ratingStars(10)
           .dropdown-block
             .dropdown-block__label
               +label("dropdown") 
