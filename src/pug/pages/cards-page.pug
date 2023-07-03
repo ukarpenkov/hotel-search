@@ -16,14 +16,14 @@ html
         include landing-page.scss 
         include registration-page.scss
         include search-room-page.scss
-        include ../components/footer.scss
+        include ../components/footer/footer.scss
     .cards-page__wrapper
       include ../blocks/label-h2/label.pug
       include ../blocks/input/input.pug
       include ../blocks/summary-order/summary-order.pug
       include ../blocks/dropdown-options/dropdown-options.pug
       .header-page__logo
-        include ../components/_header-img-logo.pug
+        include ../components/header-img-logo.pug
       .card-page-grid
         .cards-page__search-form
           include ../components/room-search-form/room-search-form.pug
@@ -33,10 +33,10 @@ html
           .visible-calendar
         .card-page__registration-from
           .cards-page__form 
-            include   ../components/_registration-form
+            include   ../components/registration-form
         .card-page__sing-in-from
           .cards-page__form 
-            include   ../components/_sing-in-form
+            include   ../components/sing-in-form
         .cards-page__cards
           .search-room__main-col
             +room-card('room888.png', '888', '9 990₽', 'ЛЮКС' , '145')

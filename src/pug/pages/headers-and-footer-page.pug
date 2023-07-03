@@ -12,14 +12,14 @@ html
       include ../components/head.scss    
       include landing-page.scss 
       include registration-page.scss
-      include ../components/footer.scss
+      include ../components/footer/footer.scss
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <meta name="viewport" content="1024">
   .header-footer-page__wrapper
     .header-page__logo
-      include ../components/_header-img-logo.pug
+      include ../components/header-img-logo.pug
     .header-page__header
-      include ../components/_head
+      include ../components/head
     .header-page__logged-in-header
       .header
         .header__text-logo
@@ -45,7 +45,7 @@ html
                 a(href="#").header__nav-link Юлий Цезарь
     .header-footer-page__footer
       .footer__content
-        include ../components/_footer
+        include ../components/footer/footer
     .headers-and-footer-page__mobile-footer
       .header__mobile-text-logo
         a(href="index.html")
