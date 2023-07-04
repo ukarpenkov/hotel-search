@@ -10,14 +10,14 @@ html
       include room-details-page.scss
       include ../components/form-elements.scss
       include ../pages/form-elements-page.scss
-      include ../components/head.scss    
+      include ../components/header/head.scss    
       include search-room-page.scss
       include ../components/footer/footer.scss
       include cards-page.scss
       include landing-page.scss 
       include registration-page.scss
       include headers-and-footer-page.scss
-      include ../components/sing-in-form.scss
+      include ../components/sign-in-form/sign-in-form.scss
   .room-details-wrapper
     include ../blocks/dropdown-options/dropdown-options.pug
     include ../blocks/label-h2/label.pug
@@ -25,7 +25,7 @@ html
     include ../blocks/summary-order/summary-order.pug
     include ../blocks/dropdown-options/dropdown-options.pug
     .header-page__header
-      include ../components/head
+      include ../components/header/head
     .room-details__background-images
       .room-details__img-item_big
         img(src="src/images/room-details01.jpg", alt="image").background-image-item_size_big

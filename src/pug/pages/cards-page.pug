@@ -12,7 +12,7 @@ html
         include cards-page.scss 
         include ../components/form-elements.scss
         include headers-and-footer-page.scss
-        include ../components/head.scss    
+        include ../components/header/head.scss    
         include landing-page.scss 
         include registration-page.scss
         include search-room-page.scss
@@ -34,9 +34,9 @@ html
         .card-page__registration-from
           .cards-page__form 
             include   ../components/registration-form
-        .card-page__sing-in-from
+        .card-page__sign-in-from
           .cards-page__form 
-            include   ../components/sing-in-form
+            include   ../components/sign-in-form/sign-in-form
         .cards-page__cards
           .search-room__main-col
             +room-card('room888.png', '888', '9 990₽', 'ЛЮКС' , '145')

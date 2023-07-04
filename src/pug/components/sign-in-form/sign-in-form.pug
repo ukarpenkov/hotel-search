@@ -1,0 +1,23 @@
+html
+  head
+    style
+      include ./../registration-form.scss
+      include sign-in-form.scss
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  form.form.sign-in-form
+    include ./../../blocks/input/input.pug
+    .sign-in-form__data   
+      h1 Войти
+      .sign-in__mixed-fields
+        .field 
+          +input("email","Email","wide")
+        .field 
+          +input("password", "Пароль", "") 
+      .registration__buttons__item
+        button.btn.sign-in__btn-lg 
+          span.sign-in__btn-lg-text Войти
+          span.material-icons.sign-in__arrow arrow_forward
+      .sign-in-block
+        span.sign-in-form__info Нет аккаунта на Toxin?
+        include ./../../blocks/button/button.pug
+        +button("border-dark", "СОЗДАТЬ")

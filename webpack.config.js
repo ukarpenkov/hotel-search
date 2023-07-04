@@ -70,7 +70,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'colors-and-type.html',
-      template: "./src/pug/components/colors-and-type.pug"
+      template: "./src/pug/components/colors-and-type/colors-and-type.pug"
     }),
 
   ],

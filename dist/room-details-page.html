@@ -1,3000 +1,3640 @@
-<!doctype html><html><head><title>TOXIN</title><link rel="icon" sizes="image/svg+xml" href="src/assets/favicon.svg"><link rel="icon" type="image/png" href="src/assets/favicon.png"><style>.background-image-item_size_big {
-  width: 981px;
-  height: 485px;
-}
-
-.background-image-item1 {
-  width: 459px;
-  height: 262px;
-}
-
-.background-image-item2 {
-  width: 459px;
-  height: 244px;
-  position: relative;
-  top: -25px;
-}
-
-.room-details__background-images {
-  display: flex;
-}
-
-.room-details__label {
-  font-size: 19px;
-  color: #1f2041;
-}
-
-.room-details-wrapper .header-page__header {
-  margin-bottom: 0;
-}
-
-.material-icons.like-fill {
-  font-size: 12px;
-}
-
-.comments {
-  display: block;
-  width: 712px;
-  margin-bottom: -23px;
-}
-
-.comments__count {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.comments__header {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.comments .comment-block {
-  margin-top: -1px;
-  margin-left: -16px;
-}
-
-.room-details__info-about-room .room-privilege-block {
-  margin-top: 24px;
-}
-
-.room-details__main {
-  margin-left: 132px;
-  margin-top: 27px;
-}
-
-.room-details__info-about-room {
-  margin-bottom: 8px;
-}
-
-.room-details-rules {
-  display: flex;
-  width: 686px;
-  justify-content: space-between;
-  margin-left: 15px;
-}
-
-.room-details-rules .bullet-list {
-  margin-top: 0;
-}
-
-.bullet-list .bullet-list__items {
-  padding-left: 0;
-}
-
-.bullet-list .room-details__label {
-  margin-bottom: 9px;
-}
-
-.cancel-info-block .room-details__label {
-  margin-bottom: 19px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.bullet-list .bullet-list__items:last-child {
-  width: 237px;
-}
-
-.room-details-common-info {
-  display: flex;
-  width: 709px;
-  justify-content: space-between;
-}
-.room-details__content {
-  display: flex;
-  width: 1440px;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding-right: 146px;
-}
-
-.room-details__aside .card-page__booking-form {
-  margin-top: 40px;
-}
-
-.chart-block__list {
-  position: relative;
-  top: -16px;
-  left: 0px;
-}
-
-.room-details-wrapper .header-footer-page__footer {
-  margin-top: 72px;
-  box-shadow: 0px -1px 0px 0px rgb(31 32 65 / 24%);
-}
-
-@media (max-width: 1200px) {
-  .room-details__content {
-    display: grid;
-  }
-
-  .room-details__aside .card-page__booking-form {
-    margin-left: 120px;
-  }
-}
-.field {
-  margin-bottom: 12px;
-}
-
-.input.input_focus {
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.field-label {
-  display: flex;
-  justify-content: space-between;
-}
-
-.buttons__label {
-  margin-bottom: 10px;
-}
-
-.buttons__item {
-  margin-right: 13px;
-  margin-bottom: 27px;
-}
-
-.btn {
-  border: 2px solid;
-  outline: none;
-  height: 44px;
-  border-radius: 22px;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.buttons__items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 220px;
-  height: 200px;
-}
-
-.radio-buttons-block {
-  margin-top: 33px;
-}
-
-.pagination {
-  margin-top: 40px;
-  margin-bottom: 228px;
-}
-
-.buttons {
-  margin-bottom: 68px;
-}
-
-.btn_lg {
-  position: relative;
-  width: 320px;
-  left: -118px;
-  top: 14px;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-}
-
-img {
-  width: 12px;
-  height: 12px;
-}
-
-.material-icons {
-  vertical-align: middle;
-  font-family: 'Material Icons';
-  align-items: right;
-  font-size: 24px;
-}
-
-.checkbox-list_close {
-  margin-bottom: 26px;
-}
-
-.checkbox-block {
-  margin-top: 42px;
-}
-
-.expand-arrow {
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.expand-arrow__reverse {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  writing-mode: lr-tb;
-}
-
-.checkbox-list_rich {
-  margin-top: 90px;
-}
-.checkbox-list_options {
-  display: grid;
-  gap: 10px;
-}
-
-.bullet-list {
-  margin-top: 90px;
-}
-
-.bullet-list__items {
-  padding-left: 18px;
-  margin: 0px;
-}
-
-.stars-block {
-  display: flex;
-  align-items: flex-start;
-  align-self: flex-start;
-  justify-content: space-between;
-  height: 100%;
-  align-content: space-between;
-  width: 258px;
-}
-
-.rating-block {
-  margin-top: 32px;
-  margin-bottom: 185px;
-}
-
-.like-block {
-  margin-top: 31px;
-}
-
-.like-buttons {
-  margin-top: 11px;
-  display: flex;
-}
-
-.like {
-  font-size: 10px;
-  line-height: 9px;
-  align-items: center;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.25);
-  margin-left: 4px;
-}
-
-.radio {
-  margin-left: 10px;
-}
-
-.avatar {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-.avatar_small {
-  width: 160%;
-  height: 160%;
-
-  float: left;
-}
-
-.user-name {
-  display: inline-block;
-  padding-left: 20px;
-}
-
-.comment-text .room-privilege__description-text {
-  width: 653px;
-  height: 72px;
-}
-
-.comment-block {
-  margin-top: 25px;
-}
-
-.comment {
-  padding-left: 10px;
-}
-
-.comment .like-button_color {
-  float: left;
-}
-
-.comment-text {
-  display: inline-block;
-  padding-left: 10px;
-}
-
-.toggle-block {
-  margin-top: 34px;
-}
-
-.toggle {
-  opacity: 0;
-}
-
-.toggle + .toggle-label {
-  position: relative;
-  padding: 0 0 0 52px;
-  cursor: pointer;
-}
-
-.toggle-label {
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  user-select: none;
-}
-
-.input_middle {
-  width: 267px;
-}
-
-.subscribe-arrow {
-  position: relative;
-  left: 233px;
-  top: -31px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
-.subscribe-arrow {
-  position: relative;
-  left: 233px;
-  top: -2px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
-
-.subscribe-field-arrow {
-  position: relative;
-  left: -36px;
-  color: #bc9cff;
-}
-
-.dropdown__input_default {
-  display: flex;
-  width: 266px;
-  padding-right: 9px;
-  height: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 5px;
-  margin-top: 4px;
-  cursor: pointer;
-  align-items: center;
-}
-
-.dropdown__input-text {
-  display: flex;
-  position: relative;
-  left: 10px;
-  width: 295px;
-  height: 40px;
-  color: rgba(31, 32, 65, 0.75);
-  align-items: center;
-  justify-content: space-between;
-}
-
-.dropdown-block__label {
-  margin-bottom: -5px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.dropdown-block {
-  margin-top: 12px;
-}
-
-.forms-elements-page .dropdown__arrow {
-  display: inline-block;
-}
-
-.dropdown__input_expanded {
-  width: 266px;
-  height: 119px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 2px;
-  margin-top: -1px;
-}
-
-.dropdown__input_expanded-apply {
-  width: 320px;
-  height: 159px;
-}
-.dropdown__input_wide {
-  display: flex;
-  width: 320px;
-  padding-right: 177px;
-}
-
-.calendar_apply-btn.apply-btn {
-  display: inline-block;
-  left: 50px;
-  top: -7px;
-}
-
-.calendar_clear-btn.clear-btn {
-  display: inline-block;
-  left: -58px;
-  top: -7px;
-}
-
-.date-pickers {
-  display: flex;
-  width: 343px;
-  margin-top: 30px;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type='number'] {
-  -moz-appearance: textfield;
-}
-
-.filter-price {
-  margin-bottom: 32px;
-}
-
-.filter-price__label {
-  display: flex;
-  height: 15px;
-}
-
-.filter-price__head {
-  display: flex;
-  width: 266px;
-  margin-bottom: 20px;
-  margin-left: -12px;
-}
-
-.filter-price__text {
-  font-size: 12px;
-  line-height: 15px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.filter-price__text-max {
-  position: relative;
-  text-align: left;
-  left: -11px;
-  float: left;
-}
-
-.filter-price__input-min {
-  font-family: 'Montserrat';
-  border: none;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.filter-price__input-max {
-  font-family: 'Montserrat';
-  border: none;
-  font-size: 12px;
-  line-height: 15px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.filter-price__inputs {
-  position: relative;
-  top: 11px;
-  left: 23px;
-  width: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-.filter-price__slider {
-  width: 267px;
-  margin-left: -12px;
-}
-
-.noUi-target {
-  background: #ffffff !important;
-  border-radius: 100px !important;
-  box-shadow: none !important;
-  border: 1px solid rgba(31, 32, 65, 0.25) !important;
-  height: 6px !important;
-}
-
-.noUi-connect {
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-  box-shadow: none;
-  height: 5px;
-  border: none;
-}
-
-.noUi-handle:after,
-.noUi-handle:before {
-  display: none !important;
-}
-
-.noUi-handle {
-  box-shadow: none !important;
-  border-radius: 20px !important;
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
-  border: 2px solid #ffffff !important;
-}
-
-.noUi-horizontal .noUi-handle {
-  width: 16px !important;
-  height: 16px !important;
-  right: -10px !important;
-  top: -6px !important;
-}
-
-.noUi-horizontal .noUi-handle-upper {
-  right: -2px !important;
-}
-
-.flatpickr-current-month .flatpickr-monthDropdown-months {
-  appearance: none !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 19px !important;
-  line-height: 23px !important;
-  color: #1f2041 !important;
-  text-align: center;
-  margin: 0 auto;
-  text-align: center;
-  width: 283px;
-}
-
-.flatpickr-current-month input.cur-year {
-  -webkit-appearance: none !important;
-  margin: 0 !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 19px !important;
-  line-height: 23px !important;
-  text-align: left !important;
-  color: #1f2041 !important;
-}
-.numInputWrapper input,
-.numInputWrapper span {
-  display: none !important;
-}
-
-.flatpickr-current-month {
-  left: 20px !important;
-  margin-bottom: 30px !important;
-}
-.flatpickr-months {
-  margin-top: 15px !important;
-}
-
-.flatpickr-month {
-  margin-bottom: 30px !important;
-}
-
-span.flatpickr-weekday {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 12px !important;
-  line-height: 15px !important;
-  display: flex !important;
-  align-items: center !important;
-  text-align: center !important;
-  color: #bc9cff !important;
-  margin: 12px !important;
-}
-
-.flatpickr-day {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  font-size: 12px !important;
-  line-height: 15px !important;
-  display: flex !important;
-  align-items: center !important;
-  text-align: center !important;
-  color: rgba(31, 32, 65, 0.5) !important;
-}
-
-.flatpickr-current-month span.cur-month {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 19px !important;
-  line-height: 23px !important;
-  text-align: center !important;
-  color: #1f2041 !important;
-}
-
-.flatpickr-day.selected {
-  width: 39.88px !important;
-  height: 40px !important;
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
-  border-radius: 22px !important;
-}
-
-.flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-next-month {
-  right: 0 !important;
-  top: 13px !important;
-}
-
-.flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
-  left: 0 !important;
-  top: 13px !important;
-}
-
-.date-filter_arrow {
-  position: relative !important;
-  left: -33px !important;
-  top: -1px !important;
-}
-
-.date-filter {
-  margin-top: 20px !important;
-}
-
-.subscribe-field {
-  margin-top: 34px;
-}
-
-.head__logo-img {
-  height: 48px;
-  width: 48px;
-}
-
-.header__logo {
-  display: inline-block;
-  position: relative;
-  top: 28px;
-  left: 18%;
-}
-
-.subcribe-input {
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-options {
-  user-select: none;
-}
-
-.dropdown__input {
-  user-select: none;
-}
-
-.btn_dark-violet {
-  color: #bc9cff;
-}
-.forms-elements {
-  display: grid;
-  width: 100%;
-  justify-content: space-between;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
-  margin-left: 9%;
-  margin-top: 81px;
-}
-
-.col-1 {
-  width: 320px;
-}
-.col-1 .form {
-  margin-bottom: 98px;
-}
-
-.col-2 {
-  width: 320px;
-  margin-left: -34px;
-}
-
-.col-3 {
-  width: 320px;
-  margin-left: -123px;
-}
-
-.row-1 {
-  display: flex;
-  width: 1158px;
-  justify-content: space-between;
-  margin-top: 77px;
-  margin-left: 130px;
-}
-
-.forms-elements-page .header__logo {
-  margin-left: -16%;
-}
-
-@media (max-width: 1200px) {
-  .forms-elements {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .col-2 {
-    margin-left: 0px;
-  }
-
-  .col-3 {
-    margin-left: 0px;
-  }
-
-  .pagination {
-    margin-bottom: 0px;
-  }
-
-  .rating-block {
-    margin-bottom: 0px;
-  }
-
-  .col-1 .form {
-    margin-bottom: 0px;
-  }
-
-  .row-1 {
-    display: grid;
-    margin-left: 60px;
-  }
-}
-$headerTextColor: #1f2041;
-$secondaryColor: rgb(79, 47, 74);
-
-.header-wrapper {
-  margin-top: -19px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: $headerTextColor;
-  height: 70px;
-  margin-top: 20px;
-  margin-left: -8px;
-  background-color: #ffffff;
-  &__text-logo {
-    position: relative;
-    left: 23px;
-    &-img {
-      width: 106px;
-      height: 40px;
-    }
-  }
-  &__nav-bar {
-    display: flex;
-    margin-left: 73px;
-  }
-  &__nav {
-    display: flex;
-    align-items: baseline;
-    list-style: none;
-    padding-left: 0;
-    &-item {
-      margin-right: 20px;
-    }
-    &-link {
-      text-decoration: none;
-      transition: 0.1s;
-    }
-    &-link:hover {
-      font-weight: bold;
-    }
-  }
-}
-
-.header__buttons-items {
-  display: flex;
-  align-items: center;
-}
-
-.header__button {
-  margin-right: 20px;
-}
-
-.header__btn_small {
-  border: 2px solid;
-  outline: none;
-  text-align: center;
-  margin: 0;
-  border-radius: 22px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  width: 87px;
-  height: 34px;
-}
-
-.header__btn_long {
-  border: 2px solid;
-  outline: none;
-  text-align: center;
-  margin: 0;
-  border-radius: 22px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-
-.header__btn_fill-light-violet {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  opacity: 0.5;
-  color: #ffffff;
-  width: 199px;
-  height: 38px;
-  align-items: center;
-}
-
-.header__arrow {
-  position: relative;
-}
-
-@media (max-width: 1200px) {
-  .header {
-    display: grid;
-    justify-content: start;
-    height: 250px;
-  }
-
-  .header__nav-bar {
-    display: grid;
-    margin-left: 73px;
-    margin-top: -10px;
-  }
-
-  .header__nav {
-    display: grid;
-  }
-}
-.search-room__label {
-  position: relative;
-  left: 10px;
-  top: -4px;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1f2041;
-}
-
-.search-room__wrapper {
-  display: block;
-  background-color: rgb(255, 255, 255);
-  width: 1440px;
-  height: 100%;
-  padding-top: 1px;
-}
-
-.search-room__body {
-  display: flex;
-  margin-left: 114px;
-}
-.search-room__aside {
-  margin-left: 20px;
-  margin-top: -13px;
-}
-
-.search-room__main {
-  margin-left: -29px;
-  margin-top: 16px;
-}
-
-.room-picture {
-  width: 270px;
-  height: 151px;
-  border-radius: 4px 4px 0px 0px;
-}
-
-.room-card {
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px;
-  background-color: #fff;
-}
-
-.room-card-number {
-  font-size: 19px;
-  line-height: 17px;
-  color: #1f2041;
-}
-
-.luxe-attr {
-  position: relative;
-  left: 9px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
-
-.room-card-sign-number {
-  font-weight: 700;
-  color: #1f2041;
-}
-
-.room-card-info {
-  margin-left: 20px;
-}
-
-.room-card-info__number {
-  position: relative;
-  left: 5px;
-  top: 3px;
-  display: flex;
-  align-items: baseline;
-}
-
-.room-card-info__text {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  width: 233px;
-}
-
-.room-price {
-  font-weight: 700;
-}
-
-.price-per {
-  font-size: 12px;
-}
-
-.comment-text-attr {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.room-card-rating {
-  display: flex;
-  width: 230px;
-  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
-}
-
-.stars-block {
-  width: 120px;
-}
-.search-room__cards {
-  display: flex;
-}
-.search-room__main-col {
-  margin-left: 12px;
-}
-
-.input.calendar.calendar_long {
-  width: 320px;
-}
-
-.dropdown-arrow-calendar {
-  position: relative;
-  left: -32px;
-}
-
-.dropdown-arrow-guests {
-  position: relative;
-  left: 4px;
-  top: 2px;
-}
-
-.room-card__comment {
-  display: flex;
-  align-items: center;
-}
-
-.filter-price_description {
-  position: relative;
-  left: -10px;
-  font-size: 12px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.search-room-filter-price {
-  margin-top: 19px;
-  margin-left: 12px;
-}
-
-.search-room-checkbox-list_rich {
-  width: 266px;
-  margin-top: 22px;
-}
-.search-room-checkbox-list {
-  margin-top: 20px;
-}
-.search-room-added-checkbox-list {
-  margin-top: 20px;
-}
-
-.search-room__pagination {
-  position: relative;
-  left: 753px;
-  top: -14px;
-}
-.search-page__footer {
-  position: relative;
-  top: -95px;
-  box-shadow: 1px -5px 4px -3px rgb(31 32 65 / 10%);
-}
-
-.dropdown__arrow_checkbox {
-  position: relative;
-  left: -88px;
-  top: 4px;
-}
-
-.dropdown__arrow_comfort {
-  display: inline-block;
-}
-
-.hidden {
-  display: none;
-}
-
-.dropdown__input_guests {
-  width: 266px;
-  height: 119px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 2px;
-  margin-top: -1px;
-}
-
-.dropdown__input_guests-expanded-apply {
-  height: 159px;
-}
-
-.apply-btn_narrow {
-  position: relative;
-  width: 84px;
-  height: 15px;
-  left: 175px;
-  bottom: -10px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
-
-.input.calendar.calendar_long {
-  width: 266px;
-}
-
-.search-room__body .apply-btn {
-  position: relative;
-  left: 175px;
-  bottom: -10px;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
-
-@media (max-width: 1200px) {
-  .search-room__cards {
-    display: grid;
-  }
-
-  .search-room__body {
-    margin-left: 20px;
-  }
-
-  .search-room__pagination.search-room__pagination {
-    position: relative;
-    left: 377px;
-    top: -14px;
-  }
-
-  .search-room__pagination .pagination {
-    margin-top: 40px;
-    margin-bottom: 90px;
-  }
-
-  .footer-item__sub {
-    margin-top: -8px;
-    margin-left: 20px;
-  }
-}
-$footerTextColor: #1f2041;
-
-.footer {
-  padding: 4rem;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10.5rem;
-  padding-right: 15rem;
-  &-item__sub {
-    width: 260px;
-  }
-  &-item {
-    max-width: 200px;
-    margin-top: -8px;
-    &__slogan {
-      position: relative;
-      left: 23px;
-      width: 260px;
-      line-height: 24px;
-      color: rgba(31, 32, 65, 0.75);
-    }
-    &__head {
-      font-size: 12px;
-      color: #1f2041;
-    }
-  }
-  &-list {
-    list-style: none;
-    padding-left: 0;
-
-    &__link {
-      text-decoration: none;
-      display: block;
-      margin-top: 22px;
-    }
-  }
-}
-
-.footer-item__sub {
-  margin-top: -8px;
-}
-
-.footer-list__item-sub {
-  display: block;
-  width: 260px;
-  height: 48px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.subscribe-field {
-  margin-top: 22px;
-}
-
-.footer-item__input {
-  width: 260px;
-  height: 44px;
-  padding-left: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  font-family: Montserrat;
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  text-transform: none;
-}
-
-.footer-item__subscribe-field-arrow {
-  position: relative;
-  left: 226px;
-  top: -33px;
-  font-size: 24px;
-  color: #bc9cff;
-}
-
-.footer_copyright-txt {
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.footer__social-icons {
-  display: flex;
-  width: 120px;
-  justify-content: space-around;
-  margin-right: 15px;
-}
-
-.social-logo {
-  width: 24px;
-  height: 24px;
-}
-
-.footer-bottom {
-  margin-top: 46px;
-  padding: 0 132px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  box-shadow: 0px -2px rgb(31 32 65 / 13%);
-}
-
-@media (max-width: 1200px) {
-  .footer {
-    display: grid;
-    padding-left: 3rem;
-  }
-
-  .footer-item {
-    margin-left: 20px;
-  }
-
-  .headers-and-footer-page__mobile-footer {
-    margin-left: 0px;
-  }
-}
-.cards-page__wrapper {
-  background-color: #e5e5e5;
-  height: 1350px;
-}
-
-.card-page-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 3fr;
-  column-gap: 35px;
-  margin-left: 145px;
-}
-
-.cards-page__cards {
-  margin-left: -10px;
-  margin-top: -106px;
-}
-
-.card-page__sing-in-from {
-  margin-top: 38px;
-}
-
-.cards-page__search-form {
-  display: grid;
-  height: 374px;
-  background-color: #fff;
-  box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
-  border-radius: 4px;
-}
-
-.card-page__booking-form {
-  width: 380px;
-  height: 512px;
-  padding-top: 24px;
-  padding-left: 28px;
-  padding-right: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  background-color: #fff;
-}
-
-.card-page__registration-from {
-  margin-top: -136px;
-}
-
-.cards-page__form .registration-form_sing-up h1 {
-  position: relative;
-  left: 29px;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1f2041;
-  margin-bottom: 21px;
-}
-
-.cards-page__form .mixed-fields {
-  margin-left: 30px;
-  margin-bottom: -2px;
-}
-
-.cards-page__form .registration__radio-buttons-items {
-  margin-bottom: 14px;
-  margin-left: 31px;
-}
-
-.cards-page__form .registration__date-fields {
-  margin-bottom: 15px;
-  margin-left: 25px;
-}
-
-.field .label-date {
-  position: relative;
-  left: 6px;
-  top: 10px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #1f2041;
-  margin-bottom: 13px;
-}
-
-.mixed-fields .label-entries {
-  position: relative;
-  width: 211px;
-  height: 15px;
-  left: 0px;
-  top: 6px;
-  margin-bottom: 11px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #1f2041;
-}
-
-.registration-form_sing-up .registration__toggle-block {
-  position: relative;
-  left: 33px;
-  top: -19px;
-}
-
-.registration-form_sing-up .registration__buttons__item {
-  position: relative;
-  left: -4px;
-  top: 4px;
-}
-
-.registration-form_sing-up .sing-in-block {
-  position: relative;
-  display: flex;
-  width: 320px;
-  left: 27px;
-  top: 7px;
-}
-
-.cards-page__form .sing-in-form {
-  margin-top: 0px;
-  width: 380px;
-  height: 358px;
-  left: 140px;
-  top: 564px;
-  background-color: #fff;
-  padding-top: 23px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
-  border-radius: 4px;
-}
-
-.sing-in-form .sing-in-form__data h1 {
-  position: relative;
-  left: 28px;
-}
-
-.sing-in-form__data .sing-in__mixed-fields {
-  position: relative;
-  left: 28px;
-}
-
-.sing-in-form__data .registration__buttons__item {
-  position: relative;
-  left: 0px;
-  margin-right: -1px;
-  margin-bottom: 43px;
-}
-
-.sing-in-form__data .sing-in-block {
-  position: relative;
-  left: 29px;
-  top: 2px;
-}
-
-.dropdown__input_guests.dropdown__input_guests {
-  width: 320px;
-  background-color: #fff;
-  border: 1px px solid rgba(31, 32, 65, 0.25);
-  border-radius: 2px;
-  position: absolute;
-  z-index: 1;
-}
-
-.material-icons.dropdown__arrow_comfort {
-  position: relative;
-  left: 158px;
-  top: 1px;
-}
-
-.material-icons.dropdown-arrow-guests {
-  position: relative;
-  left: 169px;
-  top: 1px;
-}
-
-.sing-in__btn-lg.search-button {
-  position: relative;
-  top: 30px;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-}
-
-.sign-in__arrow.search-arrow {
-  left: 73px;
-}
-
-.sign-in__arrow.book-arrow {
-  position: relative;
-  left: 79px;
-  top: 0px;
-}
-.calendar.calendar_long.form-control.input {
-  width: 320px;
-}
-
-.total-info {
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.card-from.room-card-number {
-  font-size: 24px;
-  color: #1f2041;
-}
-
-h2.price-sum {
-  font-size: 19px;
-  color: #1f2041;
-}
-
-.card-page.room-card-info__price {
-  position: relative;
-  left: 91px;
-  top: 3px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.total-info-options {
-  display: flex;
-  justify-content: space-between;
-  height: 15px;
-}
-
-.total-info-summary {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: -35px;
-}
-
-.summary-order-info {
-  margin-top: 4px;
-  display: grid;
-  row-gap: 25px;
-}
-
-.total-info_long {
-  width: 200px;
-}
-
-.visible-calendar.form-control.input {
-  display: none;
-}
-
-.calendar-form {
-  margin-top: -15px;
-}
-
-.cards-page__cards .search-room__main-col {
-  margin-bottom: 47px;
-  width: 270px;
-}
-
-@media (max-width: 1200px) {
-  .cards-page__wrapper {
-    background-color: #e5e5e5;
-    height: 100%;
-  }
-
-  .card-page-grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 12fr;
-    column-gap: 35px;
-    row-gap: 30px;
-    margin-left: 145px;
-  }
-
-  .cards-page__search-form {
-    width: 380px;
-  }
-
-  .card-page-grid .calendar-form {
-    margin-top: -15px;
-    margin-bottom: 110px;
-  }
-
-  .cards-page__cards {
-    margin-left: -10px;
-    margin-top: 10px;
-  }
-}
-.landing-page__main-bgi {
-  position: relative;
-  top: -60px;
-  left: -8px;
-  display: block;
-  height: 888px;
-  background-image: url('src/images/bg-image3.png');
-}
-
-.landing-page__header {
-  position: relative;
-  z-index: 2;
-}
-
-.landing-page__search-form {
-  position: relative;
-  display: grid;
-  top: 127px;
-  left: 140px;
-  width: 380px;
-  height: 374px;
-  background-color: #fff;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.search-form__header {
-  width: 320px;
-  height: 59px;
-  font-size: 24px;
-  margin-top: 40px;
-}
-
-.search-form__date-pickers {
-  display: flex;
-  width: 321px;
-  margin-top: -5px;
-}
-
-.landing-page__search-form-elements {
-  margin-left: 30px;
-}
-
-.dropdown__input_expanded.dropdown__input_expanded-apply {
-  background-color: #fff;
-}
-
-.dropdown-arrow {
-  position: relative;
-  top: 0px;
-  left: 160px;
-}
-
-.hidden {
-  display: none;
-}
-
-.landing-page__main .sing-in__btn-lg.search-button {
-  position: relative;
-  width: 320px;
-  top: 30px;
-  left: 0px;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-}
-
-.landing-page__main .sign-in__arrow.search-arrow {
-  position: relative;
-  left: 73px;
-  top: 0px;
-}
-
-.dropdown__input_expanded.dropdown-landing-guests.dropdown__input_expanded-apply {
-  position: absolute;
-  z-index: 2;
-}
-
-.material-icons.dropdown-arrow-guests {
-  position: relative;
-  left: 169px;
-  top: 1px;
-}
-
-.dropdown__input_guests.dropdown__input_guests {
-  width: 320px;
-  background-color: #fff;
-  border: 1px px solid rgba(31, 32, 65, 0.25);
-  border-radius: 2px;
-  position: absolute;
-  z-index: 1;
-}
-.registration-page__main-bgi {
-  position: relative;
-  text-align: -webkit-center;
-  top: -60px;
-  left: -8px;
-  width: 1440px;
-  background-image: url('src/images/bg-image4.png');
-  height: 722px;
-}
-
-.sign-in-page__wrapper .sing-in-form {
-  position: relative;
-  margin-top: 61px;
-  left: 0px;
-  top: 175px;
-}
-
-.registration__radio-buttons-items {
-  width: 345px;
-  display: flex;
-  margin-bottom: 14px;
-  margin-left: 20px;
-}
-
-.registration-page__main-bgi .registration__toggle-block {
-  margin-bottom: -5px;
-  margin-top: 10px;
-  margin-left: -50px;
-}
-
-@media (max-width: 1200px) {
-  .registration-page__main-bgi {
-    text-align: initial;
-  }
-
-  .registration-form {
-    text-align: center;
-    margin-left: 30px;
-  }
-
-  .registration-form_sing-up .label-date {
-    left: -16px;
-  }
-
-  .registration-form_sing-up .label-entries {
-    left: 30px;
-  }
-
-  .sing-in-block {
-    margin-left: 30px;
-  }
-
-  .sign-in-page__wrapper .sing-in-form {
-    left: 48px;
-    text-align: -webkit-center;
-  }
-}
-.header-page__logo {
-  margin-bottom: 15px;
-  height: 140px;
-}
-
-.header-footer-page__footer {
-  height: 443px;
-  background-color: #fff;
-}
-
-.header-footer-page__wrapper {
-  background-color: #e5e5e5;
-}
-
-.footer__content {
-  position: relative;
-  top: 60px;
-}
-
-.landing-page__footer {
-}
-
-.header-page__header {
-  position: relative;
-  margin-bottom: 38px;
-}
-
-.header-page__logged-in-header {
-  margin-bottom: 40px;
-}
-
-.headers-and-footer-page__mobile-footer {
-  width: 768px;
-  height: 367px;
-  background-color: #fff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  margin: 0 auto;
-  padding-top: 1px;
-  margin-top: 42px;
-  margin-bottom: 120px;
-}
-
-.header__logged-in-menu {
-  margin-bottom: 10px;
-}
-
-.stroke {
-  display: inline-block;
-  position: relative;
-  top: 0px;
-  left: -25px;
-  margin-left: 23px;
-  margin-right: 0px;
-  width: 1px;
-  height: 30px;
-  background: rgba(31, 32, 65, 0.1);
-}
-
-.btn_dark-violet {
-  color: #bc9cff;
-}
-
-.footer-bottom-mobile {
-  margin-top: 3px;
-  padding: 0 132px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-}
-
-.footer__social-mobile-icons {
-  margin-left: 120px;
-  display: flex;
-  width: 134px;
-  justify-content: space-around;
-  margin-right: 15px;
-}
-
-.footer_mobile-copyright-txt {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  margin-bottom: 25px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.header__mobile-text-logo {
-  position: relative;
-  margin: 0 auto;
-  width: 106px;
-  margin-top: 119px;
-}
-
-@media (max-width: 1200px) {
-  .header-footer-page__footer {
-    height: 1200px;
-    background-color: #fff;
-  }
-}
-.sing-in-form {
-  width: 380px;
-  height: 358px;
-  background-color: #fff;
-  padding-top: 23px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
-  border-radius: 4px;
-}
-
-.sing-in-form__data h1 {
-  margin-left: 27px;
-  text-align: left;
-  font-size: 24px;
-  color: #1f2041;
-  margin-bottom: 21px;
-}
-
-.sing-in__mixed-fields {
-  margin-bottom: -9px;
-}
-
-.sing-in__btn-lg {
-  position: relative;
-  width: 320px;
-  top: 14px;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-}
-
-.sing-in__btn-lg-text {
-  position: relative;
-  left: 11px;
-  top: 1px;
-}
-
-.sign-in__arrow {
-  position: relative;
-  left: 114px;
-  top: 0px;
-}
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<meta name="viewport" content="1024"></style><div class="room-details-wrapper"><div class="header-page__header"><!doctype html><html><head><style>$headerTextColor: #1f2041;
-$secondaryColor: rgb(79, 47, 74);
-
-.header-wrapper {
-  margin-top: -19px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: $headerTextColor;
-  height: 70px;
-  margin-top: 20px;
-  margin-left: -8px;
-  background-color: #ffffff;
-  &__text-logo {
-    position: relative;
-    left: 23px;
-    &-img {
-      width: 106px;
-      height: 40px;
-    }
-  }
-  &__nav-bar {
-    display: flex;
-    margin-left: 73px;
-  }
-  &__nav {
-    display: flex;
-    align-items: baseline;
-    list-style: none;
-    padding-left: 0;
-    &-item {
-      margin-right: 20px;
-    }
-    &-link {
-      text-decoration: none;
-      transition: 0.1s;
-    }
-    &-link:hover {
-      font-weight: bold;
-    }
-  }
-}
-
-.header__buttons-items {
-  display: flex;
-  align-items: center;
-}
-
-.header__button {
-  margin-right: 20px;
-}
-
-.header__btn_small {
-  border: 2px solid;
-  outline: none;
-  text-align: center;
-  margin: 0;
-  border-radius: 22px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  width: 87px;
-  height: 34px;
-}
-
-.header__btn_long {
-  border: 2px solid;
-  outline: none;
-  text-align: center;
-  margin: 0;
-  border-radius: 22px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-
-.header__btn_fill-light-violet {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  opacity: 0.5;
-  color: #ffffff;
-  width: 199px;
-  height: 38px;
-  align-items: center;
-}
-
-.header__arrow {
-  position: relative;
-}
-
-@media (max-width: 1200px) {
-  .header {
-    display: grid;
-    justify-content: start;
-    height: 250px;
-  }
-
-  .header__nav-bar {
-    display: grid;
-    margin-left: 73px;
-    margin-top: -10px;
-  }
-
-  .header__nav {
-    display: grid;
-  }
-}
-.field {
-  margin-bottom: 12px;
-}
-
-.input.input_focus {
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.field-label {
-  display: flex;
-  justify-content: space-between;
-}
-
-.buttons__label {
-  margin-bottom: 10px;
-}
-
-.buttons__item {
-  margin-right: 13px;
-  margin-bottom: 27px;
-}
-
-.btn {
-  border: 2px solid;
-  outline: none;
-  height: 44px;
-  border-radius: 22px;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.buttons__items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 220px;
-  height: 200px;
-}
-
-.radio-buttons-block {
-  margin-top: 33px;
-}
-
-.pagination {
-  margin-top: 40px;
-  margin-bottom: 228px;
-}
-
-.buttons {
-  margin-bottom: 68px;
-}
-
-.btn_lg {
-  position: relative;
-  width: 320px;
-  left: -118px;
-  top: 14px;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  color: #ffffff;
-}
-
-img {
-  width: 12px;
-  height: 12px;
-}
-
-.material-icons {
-  vertical-align: middle;
-  font-family: 'Material Icons';
-  align-items: right;
-  font-size: 24px;
-}
-
-.checkbox-list_close {
-  margin-bottom: 26px;
-}
-
-.checkbox-block {
-  margin-top: 42px;
-}
-
-.expand-arrow {
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.expand-arrow__reverse {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  writing-mode: lr-tb;
-}
-
-.checkbox-list_rich {
-  margin-top: 90px;
-}
-.checkbox-list_options {
-  display: grid;
-  gap: 10px;
-}
-
-.bullet-list {
-  margin-top: 90px;
-}
-
-.bullet-list__items {
-  padding-left: 18px;
-  margin: 0px;
-}
-
-.stars-block {
-  display: flex;
-  align-items: flex-start;
-  align-self: flex-start;
-  justify-content: space-between;
-  height: 100%;
-  align-content: space-between;
-  width: 258px;
-}
-
-.rating-block {
-  margin-top: 32px;
-  margin-bottom: 185px;
-}
-
-.like-block {
-  margin-top: 31px;
-}
-
-.like-buttons {
-  margin-top: 11px;
-  display: flex;
-}
-
-.like {
-  font-size: 10px;
-  line-height: 9px;
-  align-items: center;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.25);
-  margin-left: 4px;
-}
-
-.radio {
-  margin-left: 10px;
-}
-
-.avatar {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-.avatar_small {
-  width: 160%;
-  height: 160%;
-
-  float: left;
-}
-
-.user-name {
-  display: inline-block;
-  padding-left: 20px;
-}
-
-.comment-text .room-privilege__description-text {
-  width: 653px;
-  height: 72px;
-}
-
-.comment-block {
-  margin-top: 25px;
-}
-
-.comment {
-  padding-left: 10px;
-}
-
-.comment .like-button_color {
-  float: left;
-}
-
-.comment-text {
-  display: inline-block;
-  padding-left: 10px;
-}
-
-.toggle-block {
-  margin-top: 34px;
-}
-
-.toggle {
-  opacity: 0;
-}
-
-.toggle + .toggle-label {
-  position: relative;
-  padding: 0 0 0 52px;
-  cursor: pointer;
-}
-
-.toggle-label {
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  user-select: none;
-}
-
-.input_middle {
-  width: 267px;
-}
-
-.subscribe-arrow {
-  position: relative;
-  left: 233px;
-  top: -31px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
-.subscribe-arrow {
-  position: relative;
-  left: 233px;
-  top: -2px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
-
-.subscribe-field-arrow {
-  position: relative;
-  left: -36px;
-  color: #bc9cff;
-}
-
-.dropdown__input_default {
-  display: flex;
-  width: 266px;
-  padding-right: 9px;
-  height: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 5px;
-  margin-top: 4px;
-  cursor: pointer;
-  align-items: center;
-}
-
-.dropdown__input-text {
-  display: flex;
-  position: relative;
-  left: 10px;
-  width: 295px;
-  height: 40px;
-  color: rgba(31, 32, 65, 0.75);
-  align-items: center;
-  justify-content: space-between;
-}
-
-.dropdown-block__label {
-  margin-bottom: -5px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.dropdown-block {
-  margin-top: 12px;
-}
-
-.forms-elements-page .dropdown__arrow {
-  display: inline-block;
-}
-
-.dropdown__input_expanded {
-  width: 266px;
-  height: 119px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 2px;
-  margin-top: -1px;
-}
-
-.dropdown__input_expanded-apply {
-  width: 320px;
-  height: 159px;
-}
-.dropdown__input_wide {
-  display: flex;
-  width: 320px;
-  padding-right: 177px;
-}
-
-.calendar_apply-btn.apply-btn {
-  display: inline-block;
-  left: 50px;
-  top: -7px;
-}
-
-.calendar_clear-btn.clear-btn {
-  display: inline-block;
-  left: -58px;
-  top: -7px;
-}
-
-.date-pickers {
-  display: flex;
-  width: 343px;
-  margin-top: 30px;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type='number'] {
-  -moz-appearance: textfield;
-}
-
-.filter-price {
-  margin-bottom: 32px;
-}
-
-.filter-price__label {
-  display: flex;
-  height: 15px;
-}
-
-.filter-price__head {
-  display: flex;
-  width: 266px;
-  margin-bottom: 20px;
-  margin-left: -12px;
-}
-
-.filter-price__text {
-  font-size: 12px;
-  line-height: 15px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.filter-price__text-max {
-  position: relative;
-  text-align: left;
-  left: -11px;
-  float: left;
-}
-
-.filter-price__input-min {
-  font-family: 'Montserrat';
-  border: none;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.filter-price__input-max {
-  font-family: 'Montserrat';
-  border: none;
-  font-size: 12px;
-  line-height: 15px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.filter-price__inputs {
-  position: relative;
-  top: 11px;
-  left: 23px;
-  width: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-.filter-price__slider {
-  width: 267px;
-  margin-left: -12px;
-}
-
-.noUi-target {
-  background: #ffffff !important;
-  border-radius: 100px !important;
-  box-shadow: none !important;
-  border: 1px solid rgba(31, 32, 65, 0.25) !important;
-  height: 6px !important;
-}
-
-.noUi-connect {
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-  box-shadow: none;
-  height: 5px;
-  border: none;
-}
-
-.noUi-handle:after,
-.noUi-handle:before {
-  display: none !important;
-}
-
-.noUi-handle {
-  box-shadow: none !important;
-  border-radius: 20px !important;
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
-  border: 2px solid #ffffff !important;
-}
-
-.noUi-horizontal .noUi-handle {
-  width: 16px !important;
-  height: 16px !important;
-  right: -10px !important;
-  top: -6px !important;
-}
-
-.noUi-horizontal .noUi-handle-upper {
-  right: -2px !important;
-}
-
-.flatpickr-current-month .flatpickr-monthDropdown-months {
-  appearance: none !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 19px !important;
-  line-height: 23px !important;
-  color: #1f2041 !important;
-  text-align: center;
-  margin: 0 auto;
-  text-align: center;
-  width: 283px;
-}
-
-.flatpickr-current-month input.cur-year {
-  -webkit-appearance: none !important;
-  margin: 0 !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 19px !important;
-  line-height: 23px !important;
-  text-align: left !important;
-  color: #1f2041 !important;
-}
-.numInputWrapper input,
-.numInputWrapper span {
-  display: none !important;
-}
-
-.flatpickr-current-month {
-  left: 20px !important;
-  margin-bottom: 30px !important;
-}
-.flatpickr-months {
-  margin-top: 15px !important;
-}
-
-.flatpickr-month {
-  margin-bottom: 30px !important;
-}
-
-span.flatpickr-weekday {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 12px !important;
-  line-height: 15px !important;
-  display: flex !important;
-  align-items: center !important;
-  text-align: center !important;
-  color: #bc9cff !important;
-  margin: 12px !important;
-}
-
-.flatpickr-day {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  font-size: 12px !important;
-  line-height: 15px !important;
-  display: flex !important;
-  align-items: center !important;
-  text-align: center !important;
-  color: rgba(31, 32, 65, 0.5) !important;
-}
-
-.flatpickr-current-month span.cur-month {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  font-size: 19px !important;
-  line-height: 23px !important;
-  text-align: center !important;
-  color: #1f2041 !important;
-}
-
-.flatpickr-day.selected {
-  width: 39.88px !important;
-  height: 40px !important;
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
-  border-radius: 22px !important;
-}
-
-.flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-next-month {
-  right: 0 !important;
-  top: 13px !important;
-}
-
-.flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
-.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
-  left: 0 !important;
-  top: 13px !important;
-}
-
-.date-filter_arrow {
-  position: relative !important;
-  left: -33px !important;
-  top: -1px !important;
-}
-
-.date-filter {
-  margin-top: 20px !important;
-}
-
-.subscribe-field {
-  margin-top: 34px;
-}
-
-.head__logo-img {
-  height: 48px;
-  width: 48px;
-}
-
-.header__logo {
-  display: inline-block;
-  position: relative;
-  top: 28px;
-  left: 18%;
-}
-
-.subcribe-input {
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-options {
-  user-select: none;
-}
-
-.dropdown__input {
-  user-select: none;
-}
-
-.btn_dark-violet {
-  color: #bc9cff;
-}</style><div class="header-wrapper"><div class="header"><div class="header__text-logo"><a href="index.html"><img class="header__text-logo-img" src="src/images/logo.png" alt="Logo"></a></div><div class="header__nav-bar"><nav class="header__menu"><ul class="header__nav"><li class="header__nav-item"><a class="header__nav-link" href="#">О нас</a></li><li class="header__nav-item"><a class="header__nav-link" href="#">Услуги </a><span class="material-icons expand-arrow header__arrow">expand_more</span></li><li class="header__nav-item"><a class="header__nav-link" href="#">Вакансии</a></li><li class="header__nav-item"><a class="header__nav-link" href="#">Новости</a></li><li class="header__nav-item"><a class="header__nav-link" href="#">Соглашения</a><span class="material-icons expand-arrow header__arrow">expand_more</span></li></ul></nav><div class="header__buttons-items"><div class="header__button"><button class="header__btn_small btn_dark-violet">войти</button></div><div class="header__button"><button class="header__btn_long header__btn_fill-light-violet">зарегистрироваться</button></div></div></div></div></div><script defer="defer" src="755.52307dbfb21fd8529785.js"></script><script defer="defer" src="441.26cf6d4bb562cbf06ea0.js"></script><script defer="defer" src="scripts.69c141cdf0c96affabf4.js"></script><script defer="defer" src="user.468cd42f063739eb6b2f.js"></script><link href="scripts.a751f45186deecbd1acc.css" rel="stylesheet"></head></html></div><div class="room-details__background-images"><div class="room-details__img-item_big"><img class="background-image-item_size_big" src="src/images/room-details01.jpg" alt="image"></div><div class="room-details__img-items_small"><div class="room-details__img-item"><img class="background-image-item1" src="src/images/room-details02.jpg" alt="image"></div><div class="room-details__img-item"><img class="background-image-item2" src="src/images/room-details03.jpg" alt="image"></div></div></div><div class="room-details__content"><div class="room-details__main"><div class="room-details-common-info"><div class="room-details__info-about-room"><h1 class="room-details__label">Сведения о номере</h1><style>.room-privilege-block {
-  margin-top: 25px;
-}
-
-.material-icons.room-privilege-img {
-  font-size: 48px;
-  align-items: center;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-}
-
-.room-privilege__description-label {
-  font-weight: bold;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.room-privilege__description-text {
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-}
-
-.room-privilege__image {
-  float: left;
-}
-
-.room-privilege__description {
-  display: inline-block;
-  padding-left: 10px;
-}</style><div class="room-privilege-block"><div class="room-privilege__image"><span class="material-icons room-privilege-img">insert_emoticon</span></div><div class="room-privilege__description"><p class="room-privilege__description-label">Комфорт</p><p class="room-privilege__description-text">Шумопоглощающие стены</p></div></div><style>.room-privilege-block {
-  margin-top: 25px;
-}
-
-.material-icons.room-privilege-img {
-  font-size: 48px;
-  align-items: center;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-}
-
-.room-privilege__description-label {
-  font-weight: bold;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.room-privilege__description-text {
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-}
-
-.room-privilege__image {
-  float: left;
-}
-
-.room-privilege__description {
-  display: inline-block;
-  padding-left: 10px;
-}</style><div class="room-privilege-block"><div class="room-privilege__image"><span class="material-icons room-privilege-img">location_city</span></div><div class="room-privilege__description"><p class="room-privilege__description-label">Удобство</p><p class="room-privilege__description-text">Окно в каждой из спален</p></div></div><style>.room-privilege-block {
-  margin-top: 25px;
-}
-
-.material-icons.room-privilege-img {
-  font-size: 48px;
-  align-items: center;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to bottom, #bc9cff, #8ba4f9);
-}
-
-.room-privilege__description-label {
-  font-weight: bold;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.room-privilege__description-text {
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 0px;
-}
-
-.room-privilege__image {
-  float: left;
-}
-
-.room-privilege__description {
-  display: inline-block;
-  padding-left: 10px;
-}</style><div class="room-privilege-block"><div class="room-privilege__image"><span class="material-icons room-privilege-img">whatshot</span></div><div class="room-privilege__description"><p class="room-privilege__description-label">Уют</p><p class="room-privilege__description-text">Номер оснащён камином</p></div></div></div><div class="chart-block"><h1 class="room-details__label">Впечатления от номера</h1><style>.cancel-info-block {
-  width: 341px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-.chart {
-  position: relative;
-  width: 200px;
-  height: 200px;
-}
-
-.total-value-count {
-  position: absolute;
-  font-size: 24px;
-  align-items: center;
-  color: #bc9cff;
-  top: 62px;
-  left: 77px;
-}
-
-.total-value-vote {
-  position: absolute;
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
-  top: 100px;
-  left: 68px;
-}
-
-.chart-block__list-item {
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.chart-block__list-ul {
-  list-style-type: none;
-  font-size: 120%;
-  padding-left: 0px;
-  margin-left: -10px;
-  z-index: 2;
-}
-
-.chart-block__list-ul li::before {
-  content: '';
-  display: inline-block;
-  border-radius: 5px;
-  width: 10px;
-  height: 10px;
-  margin-right: 6px;
-}
-
-.chart-block__list-item.chart-block__list-item_color_orange::before {
-  background-image: -webkit-linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
-}
-
-.chart-block__list-item.chart-block__list-item_color_green::before {
-  background-image: -webkit-linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-}
-
-.chart-block__list-item.chart-block__list-item_color_violet::before {
-  background-image: -webkit-linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-}
-
-.chart-block__list-item.chart-block__list-item_color_dark::before {
-  background-image: -webkit-linear-gradient(180deg, #919191 0%, #3d4975 100%);
-}
-
-.chart-block__content {
-  position: relative;
-  top: -35px;
-  left: -40px;
-  display: inline-flex;
-  align-items: flex-end;
-}
-
-.chart__diagram {
-  position: relative;
-  z-index: -1;
-}</style><div class="chart-block__content"><div class="chart"><div class="chart__total-value"><h2 class="total-value-count">260</h2><p class="total-value-vote">голосов</p></div><div class="chart__diagram"><canvas id="myChart"></canvas></div></div><div class="chart-block__list"><ul class="chart-block__list-ul"><li class="chart-block__list-item chart-block__list-item_color_orange">Великолепно</li><li class="chart-block__list-item chart-block__list-item_color_green">Хорошо</li><li class="chart-block__list-item chart-block__list-item_color_violet">Удовлетворительно</li><li class="chart-block__list-item chart-block__list-item_color_dark">Разочарован</li></ul></div></div></div></div><div class="comments"><div class="comments__header"><h1 class="room-details__label">Отзывы посетителей номера</h1><p class="comments__count">2 отзыва</p></div><div class="comment-block"><div class="user-info"><div class="avatar"><img class="avatar_small" src="src/images/avatar.svg" alt="avatar"></div><div class="user-name"><p class="room-privilege__description-label">Мурад Сарафанов</p><p class="room-privilege__description-text">5 дней назад</p></div></div><div class="comment"><div class="like-button like-button_color"><span class="material-icons like like-fill">favorite</span> <span class="like-quantity like-quantity_color">12</span></div><div class="comment-text"><p class="room-privilege__description-text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p></div></div></div><div class="comment-block"><div class="user-info"><div class="avatar"><img class="avatar_small" src="src/images/avatar2.svg" alt="avatar"></div><div class="user-name"><p class="room-privilege__description-label">Патрисия Стёклышкова</p><p class="room-privilege__description-text">Неделю назад</p></div></div><div class="comment"><div class="like-button like-button_color"><span class="material-icons like like-fill">favorite</span> <span class="like-quantity like-quantity_color">2</span></div><div class="comment-text"><p class="room-privilege__description-text">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</p></div></div></div></div><div class="room-details-rules"><div class="bullet-list"><h1 class="room-details__label">Правила</h1><ul class="bullet-list__items"><style>.bullet-list__item {
-  list-style-image: url('./src/assets/Ellipse.png');
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  padding-top: 10px;
-}</style><li class="bullet-list__item">Нельзя с питомцами</li><style>.bullet-list__item {
-  list-style-image: url('./src/assets/Ellipse.png');
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  padding-top: 10px;
-}</style><li class="bullet-list__item">Без вечеринок и мероприятий</li><style>.bullet-list__item {
-  list-style-image: url('./src/assets/Ellipse.png');
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  padding-top: 10px;
-}</style><li class="bullet-list__item">Время прибытия — после 13:00, а выезд до 12:00</li></ul></div><div class="cancel-info-block"><h1 class="room-details__label">Отмена</h1><p class="cancel-info-block">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</p></div></div></div><div class="room-details__aside"><div class="card-page__booking-form"><html><head><style>.card-page__room-card-info {
-  margin-bottom: 5px;
-}
-
-.room-card-info__text {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  width: 233px;
-}
-
-.room-card-info__number {
-  position: relative;
-  left: 5px;
-  top: 3px;
-  display: flex;
-  align-items: baseline;
-}
-
-.room-card-sign-number {
-  font-weight: 700;
-  color: #1f2041;
-}
-
-.card-from.room-card-number {
-  font-size: 24px;
-  color: #1f2041;
-}
-
-.luxe-attr {
-  position: relative;
-  left: 9px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
-
-.card-page.room-card-info__price {
-  position: relative;
-  left: 91px;
-  top: 3px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.room-price {
-  font-weight: 700;
-}
-
-.price-per {
-  font-size: 12px;
-}
-
-.search-form__date-pickers {
-  display: flex;
-  width: 321px;
-  margin-top: -5px;
-}
-
-.summary-order-info {
-  margin-top: 4px;
-  display: grid;
-  row-gap: 25px;
-}</style><div class="card-page__room-card-info"><div class="room-card-info__text"><div class="room-card-info__number"><p class="room-card-sign-number">№</p><h2 class="card-from room-card-number">888</h2><h3 class="luxe-attr">ЛЮКС</h3></div><div class="card-page room-card-info__price"><span class="room-price">9 990₽</span><span class="price-per">&nbsp в сутки</span></div></div></div><div class="search-form__date-pickers"><div class="field"><style>.label {
-    font-size: 12px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    color: #1f2041;
-    display: inline-block;
-}</style><h2 class="label">прибытие</h2><style>.input {
-  width: 320px;
-  height: 44px;
-  padding-left: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  font-family: Montserrat;
-  font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.input.calendar {
-  width: 150px;
-}
-
-.date-filter__input {
-  width: 267px !important;
-}</style><input class="input calendar" type="date" placeholder="ДД.ММ.ГГГГ"></div><div class="field"><style>.label {
-    font-size: 12px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    color: #1f2041;
-    display: inline-block;
-}</style><h2 class="label">выезд</h2><style>.input {
-  width: 320px;
-  height: 44px;
-  padding-left: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  font-family: Montserrat;
-  font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.input.calendar {
-  width: 150px;
-}
-
-.date-filter__input {
-  width: 267px !important;
-}</style><input class="input calendar" type="date" placeholder="ДД.ММ.ГГГГ"></div></div><div class="search-form__dropdown-block"><div class="dropdown-block__label"><style>.label {
-    font-size: 12px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    color: #1f2041;
-    display: inline-block;
-}</style><h2 class="label">гости</h2></div><div class="dropdown__input"><div class="dropdown__input_default dropdown__input_wide"><span class="dropdown__input-text">Сколько гостей</span><span class="material-icons expand-arrow dropdown-arrow dropdown__arrow_comfort dropdown__arrow_checkbox">expand_more</span></div><div class="dropdown__input_guests dropdown__input_guests-expanded-apply search-room-added-checkbox-list hidden"><style>.dropdown-options {
-  user-select: none;
-}
-
-.dropdown-item {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-}
-
-.dropdown-option {
-  padding-left: 12px;
-}
-
-.dropdown-counter {
-  position: relative;
-  width: 92px;
-  display: flex;
-  justify-content: space-between;
-  right: 8px;
-}
-
-.dropdown-counter__btn {
-  width: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 22px;
-  text-align: center;
-}
-
-.dropdown-counter__value {
-  position: relative;
-  top: 6px;
-  font-weight: 700;
-}
-
-.dropdown-counter__btn span {
-  position: relative;
-  top: 2px;
-  font-size: 18px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.apply-btn {
-  position: relative;
-  left: 223px;
-  bottom: -10px;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
-
-.clear-btn {
-  position: relative;
-  left: 10px;
-  bottom: 15px;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
-}</style><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">взрослые</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">дети</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">младенцы</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-buttons"><p class="apply-btn">применить</p><p class="clear-btn">очистить</p></div></div></div></div><div class="summary-order-info"><style>.total-info-options {
-  display: flex;
-  justify-content: space-between;
-  height: 15px;
-}
-
-.total-info {
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.total-info_long {
-  width: 200px;
-}
-
-h2.price-sum {
-  font-size: 19px;
-  color: #1f2041;
-}</style><div class="total-info-options"><p class="total-info"><span>9 990</span><span>₽ х&nbsp;</span><span>4</span><span>&nbsp;суток</span></p><p class="total-info"><span>39 960</span><span>₽</span></p></div><div class="total-info-options"><p class="total-info"><span>Сбор за услуги: скидка&nbsp;</span><span>2 179</span><span>₽</span></p><p class="total-info"><span>0</span><span>₽</span></p></div><div class="total-info-options"><p class="total-info total-info_long">Сбор за дополнительные услуги</p><p class="total-info"><span>300</span><span>₽</span></p></div><div class="total-info-summary"><h2 class="price-sum">Итого<h2 class="price-sum"><span>38 081</span><span>₽</span></h2></h2></div><div class="registration__buttons__item"><button class="btn sing-in__btn-lg"><span class="sing-in__btn-lg-text">забронировать</span><span class="material-icons sign-in__arrow book-arrow">arrow_forward</span></button></div></div></div></head></html></div></div></div><div class="header-footer-page__footer"><div class="footer__content"><!doctype html><html><head><style>$footerTextColor: #1f2041;
-
-.footer {
-  padding: 4rem;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10.5rem;
-  padding-right: 15rem;
-  &-item__sub {
-    width: 260px;
-  }
-  &-item {
-    max-width: 200px;
-    margin-top: -8px;
-    &__slogan {
-      position: relative;
-      left: 23px;
-      width: 260px;
-      line-height: 24px;
-      color: rgba(31, 32, 65, 0.75);
-    }
-    &__head {
-      font-size: 12px;
-      color: #1f2041;
-    }
-  }
-  &-list {
-    list-style: none;
-    padding-left: 0;
-
-    &__link {
-      text-decoration: none;
-      display: block;
-      margin-top: 22px;
-    }
-  }
-}
-
-.footer-item__sub {
-  margin-top: -8px;
-}
-
-.footer-list__item-sub {
-  display: block;
-  width: 260px;
-  height: 48px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.subscribe-field {
-  margin-top: 22px;
-}
-
-.footer-item__input {
-  width: 260px;
-  height: 44px;
-  padding-left: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  font-family: Montserrat;
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  text-transform: none;
-}
-
-.footer-item__subscribe-field-arrow {
-  position: relative;
-  left: 226px;
-  top: -33px;
-  font-size: 24px;
-  color: #bc9cff;
-}
-
-.footer_copyright-txt {
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.footer__social-icons {
-  display: flex;
-  width: 120px;
-  justify-content: space-around;
-  margin-right: 15px;
-}
-
-.social-logo {
-  width: 24px;
-  height: 24px;
-}
-
-.footer-bottom {
-  margin-top: 46px;
-  padding: 0 132px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  box-shadow: 0px -2px rgb(31 32 65 / 13%);
-}
-
-@media (max-width: 1200px) {
-  .footer {
-    display: grid;
-    padding-left: 3rem;
-  }
-
-  .footer-item {
-    margin-left: 20px;
-  }
-
-  .headers-and-footer-page__mobile-footer {
-    margin-left: 0px;
-  }
-}</style><div class="footer"><div class="footer-item__logo"><div class="header__text-logo"><a href="#"><img class="header__text-logo-img" src="src/images/logo.png" alt="Logo"></a></div><p class="footer-item__slogan">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p></div><div class="footer-item"><h3 class="footer-item__head">НАВИГАЦИЯ</h3><ul class="footer-list"><li class="footer-list__item"><a class="footer-list__link" href="#">О нас</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Новости</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Служба поддержки</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Услуги</a></li></ul></div><div class="footer-item"><h3 class="footer-item__head">О НАС</h3><ul class="footer-list"><li class="footer-list__item"><a class="footer-list__link" href="#">О сервисе</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Наша команда</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Вакансии</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Инвесторы</a></li></ul></div><div class="footer-item"><h3 class="footer-item__head">СЛУЖБА ПОДДЕРЖКИ</h3><ul class="footer-list"><li class="footer-list__item"><a class="footer-list__link" href="#">Соглашения</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Сообщества</a></li><li class="footer-list__item"><a class="footer-list__link" href="#">Связь с нами</a></li></ul></div><div class="footer-item__sub"><h3 class="footer-item__head">ПОДПИСКА</h3><ul class="footer-list"><li class="footer-list__item-sub">Получайте специальные предложения и новости сервиса</li><div class="subscribe-field"><div class="field"><input class="footer-item__input" placeholder="   Email"><span class="material-icons footer-item__subscribe-field-arrow">arrow_forward</span></div></div></ul></div></div><div class="footer-bottom"><p class="footer_copyright-txt">Copyright © 2018 Toxin отель. Все права защищены.</p><div class="footer__social-icons"><div class="social-icon_item"><img class="social-logo" src="src/images/twitter.svg" alt="avatar"></div><div class="social-icon_item"><img class="social-logo" src="src/images/FB.svg" alt="avatar"></div><div class="social-icon_item"><img class="social-logo" src="src/images/instagram.svg" alt="avatar"></div></div></div></head></html></div></div></div></head></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TOXIN</title>
+    <link rel="icon" sizes="image/svg+xml" href="src/assets/favicon.svg" />
+    <link rel="icon" type="image/png" href="src/assets/favicon.png" />
+    <style>
+      .background-image-item_size_big {
+        width: 981px;
+        height: 485px;
+      }
+
+      .background-image-item1 {
+        width: 459px;
+        height: 262px;
+      }
+
+      .background-image-item2 {
+        width: 459px;
+        height: 244px;
+        position: relative;
+        top: -25px;
+      }
+
+      .room-details__background-images {
+        display: flex;
+      }
+
+      .room-details__label {
+        font-size: 19px;
+        color: #1f2041;
+      }
+
+      .room-details-wrapper .header-page__header {
+        margin-bottom: 0;
+      }
+
+      .material-icons.like-fill {
+        font-size: 12px;
+      }
+
+      .comments {
+        display: block;
+        width: 712px;
+        margin-bottom: -23px;
+      }
+
+      .comments__count {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .comments__header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+
+      .comments .comment-block {
+        margin-top: -1px;
+        margin-left: -16px;
+      }
+
+      .room-details__info-about-room .room-privilege-block {
+        margin-top: 24px;
+      }
+
+      .room-details__main {
+        margin-left: 132px;
+        margin-top: 27px;
+      }
+
+      .room-details__info-about-room {
+        margin-bottom: 8px;
+      }
+
+      .room-details-rules {
+        display: flex;
+        width: 686px;
+        justify-content: space-between;
+        margin-left: 15px;
+      }
+
+      .room-details-rules .bullet-list {
+        margin-top: 0;
+      }
+
+      .bullet-list .bullet-list__items {
+        padding-left: 0;
+      }
+
+      .bullet-list .room-details__label {
+        margin-bottom: 9px;
+      }
+
+      .cancel-info-block .room-details__label {
+        margin-bottom: 19px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .bullet-list .bullet-list__items:last-child {
+        width: 237px;
+      }
+
+      .room-details-common-info {
+        display: flex;
+        width: 709px;
+        justify-content: space-between;
+      }
+      .room-details__content {
+        display: flex;
+        width: 1440px;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 146px;
+      }
+
+      .room-details__aside .card-page__booking-form {
+        margin-top: 40px;
+      }
+
+      .chart-block__list {
+        position: relative;
+        top: -16px;
+        left: 0px;
+      }
+
+      .room-details-wrapper .header-footer-page__footer {
+        margin-top: 72px;
+        box-shadow: 0px -1px 0px 0px rgb(31 32 65 / 24%);
+      }
+
+      @media (max-width: 1200px) {
+        .room-details__content {
+          display: grid;
+        }
+
+        .room-details__aside .card-page__booking-form {
+          margin-left: 120px;
+        }
+      }
+      .field {
+        margin-bottom: 12px;
+      }
+
+      .input.input_focus {
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .field-label {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .buttons__label {
+        margin-bottom: 10px;
+      }
+
+      .buttons__item {
+        margin-right: 13px;
+        margin-bottom: 27px;
+      }
+
+      .btn {
+        border: 2px solid;
+        outline: none;
+        height: 44px;
+        border-radius: 22px;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .buttons__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 220px;
+        height: 200px;
+      }
+
+      .radio-buttons-block {
+        margin-top: 33px;
+      }
+
+      .pagination {
+        margin-top: 40px;
+        margin-bottom: 228px;
+      }
+
+      .buttons {
+        margin-bottom: 68px;
+      }
+
+      .btn_lg {
+        position: relative;
+        width: 320px;
+        left: -118px;
+        top: 14px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+      }
+
+      img {
+        width: 12px;
+        height: 12px;
+      }
+
+      .material-icons {
+        vertical-align: middle;
+        font-family: 'Material Icons';
+        align-items: right;
+        font-size: 24px;
+      }
+
+      .checkbox-list_close {
+        margin-bottom: 26px;
+      }
+
+      .checkbox-block {
+        margin-top: 42px;
+      }
+
+      .expand-arrow {
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .expand-arrow__reverse {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        writing-mode: lr-tb;
+      }
+
+      .checkbox-list_rich {
+        margin-top: 90px;
+      }
+      .checkbox-list_options {
+        display: grid;
+        gap: 10px;
+      }
+
+      .bullet-list {
+        margin-top: 90px;
+      }
+
+      .bullet-list__items {
+        padding-left: 18px;
+        margin: 0px;
+      }
+
+      .stars-block {
+        display: flex;
+        align-items: flex-start;
+        align-self: flex-start;
+        justify-content: space-between;
+        height: 100%;
+        align-content: space-between;
+        width: 258px;
+      }
+
+      .rating-block {
+        margin-top: 32px;
+        margin-bottom: 185px;
+      }
+
+      .like-block {
+        margin-top: 31px;
+      }
+
+      .like-buttons {
+        margin-top: 11px;
+        display: flex;
+      }
+
+      .like {
+        font-size: 10px;
+        line-height: 9px;
+        align-items: center;
+        text-align: center;
+        color: rgba(31, 32, 65, 0.25);
+        margin-left: 4px;
+      }
+
+      .radio {
+        margin-left: 10px;
+      }
+
+      .avatar {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+      }
+      .avatar_small {
+        width: 160%;
+        height: 160%;
+
+        float: left;
+      }
+
+      .user-name {
+        display: inline-block;
+        padding-left: 20px;
+      }
+
+      .comment-text .room-privilege__description-text {
+        width: 653px;
+        height: 72px;
+      }
+
+      .comment-block {
+        margin-top: 25px;
+      }
+
+      .comment {
+        padding-left: 10px;
+      }
+
+      .comment .like-button_color {
+        float: left;
+      }
+
+      .comment-text {
+        display: inline-block;
+        padding-left: 10px;
+      }
+
+      .toggle-block {
+        margin-top: 34px;
+      }
+
+      .toggle {
+        opacity: 0;
+      }
+
+      .toggle + .toggle-label {
+        position: relative;
+        padding: 0 0 0 52px;
+        cursor: pointer;
+      }
+
+      .toggle-label {
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        user-select: none;
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .subscribe-arrow {
+        position: relative;
+        left: 233px;
+        top: -31px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #bc9cff;
+      }
+      .subscribe-arrow {
+        position: relative;
+        left: 233px;
+        top: -2px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #bc9cff;
+      }
+
+      .subscribe-field-arrow {
+        position: relative;
+        left: -36px;
+        color: #bc9cff;
+      }
+
+      .dropdown__input_default {
+        display: flex;
+        width: 266px;
+        padding-right: 9px;
+        height: 44px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 5px;
+        margin-top: 4px;
+        cursor: pointer;
+        align-items: center;
+      }
+
+      .dropdown__input-text {
+        display: flex;
+        position: relative;
+        left: 10px;
+        width: 295px;
+        height: 40px;
+        color: rgba(31, 32, 65, 0.75);
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .dropdown-block__label {
+        margin-bottom: -5px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .dropdown-block {
+        margin-top: 12px;
+      }
+
+      .forms-elements-page .dropdown__arrow {
+        display: inline-block;
+      }
+
+      .dropdown__input_expanded {
+        width: 266px;
+        height: 119px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 2px;
+        margin-top: -1px;
+      }
+
+      .dropdown__input_expanded-apply {
+        width: 320px;
+        height: 159px;
+      }
+      .dropdown__input_wide {
+        display: flex;
+        width: 320px;
+        padding-right: 177px;
+      }
+
+      .calendar_apply-btn.apply-btn {
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .calendar_clear-btn.clear-btn {
+        display: inline-block;
+        left: -58px;
+        top: -7px;
+      }
+
+      .date-pickers {
+        display: flex;
+        width: 343px;
+        margin-top: 30px;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type='number'] {
+        -moz-appearance: textfield;
+      }
+
+      .filter-price {
+        margin-bottom: 32px;
+      }
+
+      .filter-price__label {
+        display: flex;
+        height: 15px;
+      }
+
+      .filter-price__head {
+        display: flex;
+        width: 266px;
+        margin-bottom: 20px;
+        margin-left: -12px;
+      }
+
+      .filter-price__text {
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .filter-price__text-max {
+        position: relative;
+        text-align: left;
+        left: -11px;
+        float: left;
+      }
+
+      .filter-price__input-min {
+        font-family: 'Montserrat';
+        border: none;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .filter-price__input-max {
+        font-family: 'Montserrat';
+        border: none;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .filter-price__inputs {
+        position: relative;
+        top: 11px;
+        left: 23px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .filter-price__slider {
+        width: 267px;
+        margin-left: -12px;
+      }
+
+      .noUi-target {
+        background: #ffffff !important;
+        border-radius: 100px !important;
+        box-shadow: none !important;
+        border: 1px solid rgba(31, 32, 65, 0.25) !important;
+        height: 6px !important;
+      }
+
+      .noUi-connect {
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        box-shadow: none;
+        height: 5px;
+        border: none;
+      }
+
+      .noUi-handle:after,
+      .noUi-handle:before {
+        display: none !important;
+      }
+
+      .noUi-handle {
+        box-shadow: none !important;
+        border-radius: 20px !important;
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
+        border: 2px solid #ffffff !important;
+      }
+
+      .noUi-horizontal .noUi-handle {
+        width: 16px !important;
+        height: 16px !important;
+        right: -10px !important;
+        top: -6px !important;
+      }
+
+      .noUi-horizontal .noUi-handle-upper {
+        right: -2px !important;
+      }
+
+      .flatpickr-current-month .flatpickr-monthDropdown-months {
+        appearance: none !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 19px !important;
+        line-height: 23px !important;
+        color: #1f2041 !important;
+        text-align: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 283px;
+      }
+
+      .flatpickr-current-month input.cur-year {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 19px !important;
+        line-height: 23px !important;
+        text-align: left !important;
+        color: #1f2041 !important;
+      }
+      .numInputWrapper input,
+      .numInputWrapper span {
+        display: none !important;
+      }
+
+      .flatpickr-current-month {
+        left: 20px !important;
+        margin-bottom: 30px !important;
+      }
+      .flatpickr-months {
+        margin-top: 15px !important;
+      }
+
+      .flatpickr-month {
+        margin-bottom: 30px !important;
+      }
+
+      span.flatpickr-weekday {
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        text-align: center !important;
+        color: #bc9cff !important;
+        margin: 12px !important;
+      }
+
+      .flatpickr-day {
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        text-align: center !important;
+        color: rgba(31, 32, 65, 0.5) !important;
+      }
+
+      .flatpickr-current-month span.cur-month {
+        font-family: 'Montserrat' !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 19px !important;
+        line-height: 23px !important;
+        text-align: center !important;
+        color: #1f2041 !important;
+      }
+
+      .flatpickr-day.selected {
+        width: 39.88px !important;
+        height: 40px !important;
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
+        border-radius: 22px !important;
+      }
+
+      .flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
+      .flatpickr-months .flatpickr-next-month.flatpickr-next-month {
+        right: 0 !important;
+        top: 13px !important;
+      }
+
+      .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
+      .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
+        left: 0 !important;
+        top: 13px !important;
+      }
+
+      .date-filter_arrow {
+        position: relative !important;
+        left: -33px !important;
+        top: -1px !important;
+      }
+
+      .date-filter {
+        margin-top: 20px !important;
+      }
+
+      .subscribe-field {
+        margin-top: 34px;
+      }
+
+      .head__logo-img {
+        height: 48px;
+        width: 48px;
+      }
+
+      .header__logo {
+        display: inline-block;
+        position: relative;
+        top: 28px;
+        left: 18%;
+      }
+
+      .subcribe-input {
+        display: flex;
+        align-items: center;
+      }
+
+      .dropdown-options {
+        user-select: none;
+      }
+
+      .dropdown__input {
+        user-select: none;
+      }
+
+      .btn_dark-violet {
+        color: #bc9cff;
+      }
+      .forms-elements {
+        display: grid;
+        width: 100%;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        margin-left: 9%;
+        margin-top: 81px;
+      }
+
+      .col-1 {
+        width: 320px;
+      }
+      .col-1 .form {
+        margin-bottom: 98px;
+      }
+
+      .col-2 {
+        width: 320px;
+        margin-left: -34px;
+      }
+
+      .col-3 {
+        width: 320px;
+        margin-left: -123px;
+      }
+
+      .row-1 {
+        display: flex;
+        width: 1158px;
+        justify-content: space-between;
+        margin-top: 77px;
+        margin-left: 130px;
+      }
+
+      .forms-elements-page .header__logo {
+        margin-left: -16%;
+      }
+
+      @media (max-width: 1200px) {
+        .forms-elements {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .col-2 {
+          margin-left: 0px;
+        }
+
+        .col-3 {
+          margin-left: 0px;
+        }
+
+        .pagination {
+          margin-bottom: 0px;
+        }
+
+        .rating-block {
+          margin-bottom: 0px;
+        }
+
+        .col-1 .form {
+          margin-bottom: 0px;
+        }
+
+        .row-1 {
+          display: grid;
+          margin-left: 60px;
+        }
+      }
+      $headerTextColor: #1f2041;
+      $secondaryColor: rgb(79, 47, 74);
+
+      .header-wrapper {
+        margin-top: -19px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: $headerTextColor;
+        height: 70px;
+        margin-top: 20px;
+        margin-left: -8px;
+        background-color: #ffffff;
+        &__text-logo {
+          position: relative;
+          left: 23px;
+          &-img {
+            width: 106px;
+            height: 40px;
+          }
+        }
+        &__nav-bar {
+          display: flex;
+          margin-left: 73px;
+        }
+        &__nav {
+          display: flex;
+          align-items: baseline;
+          list-style: none;
+          padding-left: 0;
+          &-item {
+            margin-right: 20px;
+          }
+          &-link {
+            text-decoration: none;
+            transition: 0.1s;
+          }
+          &-link:hover {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .header__buttons-items {
+        display: flex;
+        align-items: center;
+      }
+
+      .header__button {
+        margin-right: 20px;
+      }
+
+      .header__btn_small {
+        border: 2px solid;
+        outline: none;
+        text-align: center;
+        margin: 0;
+        border-radius: 22px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        width: 87px;
+        height: 34px;
+      }
+
+      .header__btn_long {
+        border: 2px solid;
+        outline: none;
+        text-align: center;
+        margin: 0;
+        border-radius: 22px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+      }
+
+      .header__btn_fill-light-violet {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        opacity: 0.5;
+        color: #ffffff;
+        width: 199px;
+        height: 38px;
+        align-items: center;
+      }
+
+      .header__arrow {
+        position: relative;
+      }
+
+      @media (max-width: 1200px) {
+        .header {
+          display: grid;
+          justify-content: start;
+          height: 250px;
+        }
+
+        .header__nav-bar {
+          display: grid;
+          margin-left: 73px;
+          margin-top: -10px;
+        }
+
+        .header__nav {
+          display: grid;
+        }
+      }
+      .search-room__label {
+        position: relative;
+        left: 10px;
+        top: -4px;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1f2041;
+      }
+
+      .search-room__wrapper {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        width: 1440px;
+        height: 100%;
+        padding-top: 1px;
+      }
+
+      .search-room__body {
+        display: flex;
+        margin-left: 114px;
+      }
+      .search-room__aside {
+        margin-left: 20px;
+        margin-top: -13px;
+      }
+
+      .search-room__main {
+        margin-left: -29px;
+        margin-top: 16px;
+      }
+
+      .room-picture {
+        width: 270px;
+        height: 151px;
+        border-radius: 4px 4px 0px 0px;
+      }
+
+      .room-card {
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        border-radius: 4px;
+        background-color: #fff;
+      }
+
+      .room-card-number {
+        font-size: 19px;
+        line-height: 17px;
+        color: #1f2041;
+      }
+
+      .luxe-attr {
+        position: relative;
+        left: 9px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      .room-card-sign-number {
+        font-weight: 700;
+        color: #1f2041;
+      }
+
+      .room-card-info {
+        margin-left: 20px;
+      }
+
+      .room-card-info__number {
+        position: relative;
+        left: 5px;
+        top: 3px;
+        display: flex;
+        align-items: baseline;
+      }
+
+      .room-card-info__text {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 233px;
+      }
+
+      .room-price {
+        font-weight: 700;
+      }
+
+      .price-per {
+        font-size: 12px;
+      }
+
+      .comment-text-attr {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .room-card-rating {
+        display: flex;
+        width: 230px;
+        box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .stars-block {
+        width: 120px;
+      }
+      .search-room__cards {
+        display: flex;
+      }
+      .search-room__main-col {
+        margin-left: 12px;
+      }
+
+      .input.calendar.calendar_long {
+        width: 320px;
+      }
+
+      .dropdown-arrow-calendar {
+        position: relative;
+        left: -32px;
+      }
+
+      .dropdown-arrow-guests {
+        position: relative;
+        left: 4px;
+        top: 2px;
+      }
+
+      .room-card__comment {
+        display: flex;
+        align-items: center;
+      }
+
+      .filter-price_description {
+        position: relative;
+        left: -10px;
+        font-size: 12px;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .search-room-filter-price {
+        margin-top: 19px;
+        margin-left: 12px;
+      }
+
+      .search-room-checkbox-list_rich {
+        width: 266px;
+        margin-top: 22px;
+      }
+      .search-room-checkbox-list {
+        margin-top: 20px;
+      }
+      .search-room-added-checkbox-list {
+        margin-top: 20px;
+      }
+
+      .search-room__pagination {
+        position: relative;
+        left: 753px;
+        top: -14px;
+      }
+      .search-page__footer {
+        position: relative;
+        top: -95px;
+        box-shadow: 1px -5px 4px -3px rgb(31 32 65 / 10%);
+      }
+
+      .dropdown__arrow_checkbox {
+        position: relative;
+        left: -88px;
+        top: 4px;
+      }
+
+      .dropdown__arrow_comfort {
+        display: inline-block;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .dropdown__input_guests {
+        width: 266px;
+        height: 119px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 2px;
+        margin-top: -1px;
+      }
+
+      .dropdown__input_guests-expanded-apply {
+        height: 159px;
+      }
+
+      .apply-btn_narrow {
+        position: relative;
+        width: 84px;
+        height: 15px;
+        left: 175px;
+        bottom: -10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      .input.calendar.calendar_long {
+        width: 266px;
+      }
+
+      .search-room__body .apply-btn {
+        position: relative;
+        left: 175px;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      @media (max-width: 1200px) {
+        .search-room__cards {
+          display: grid;
+        }
+
+        .search-room__body {
+          margin-left: 20px;
+        }
+
+        .search-room__pagination.search-room__pagination {
+          position: relative;
+          left: 377px;
+          top: -14px;
+        }
+
+        .search-room__pagination .pagination {
+          margin-top: 40px;
+          margin-bottom: 90px;
+        }
+
+        .footer-item__sub {
+          margin-top: -8px;
+          margin-left: 20px;
+        }
+      }
+      $footerTextColor: #1f2041;
+
+      .footer {
+        padding: 4rem;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10.5rem;
+        padding-right: 15rem;
+        &-item__sub {
+          width: 260px;
+        }
+        &-item {
+          max-width: 200px;
+          margin-top: -8px;
+          &__slogan {
+            position: relative;
+            left: 23px;
+            width: 260px;
+            line-height: 24px;
+            color: rgba(31, 32, 65, 0.75);
+          }
+          &__head {
+            font-size: 12px;
+            color: #1f2041;
+          }
+        }
+        &-list {
+          list-style: none;
+          padding-left: 0;
+
+          &__link {
+            text-decoration: none;
+            display: block;
+            margin-top: 22px;
+          }
+        }
+      }
+
+      .footer-item__sub {
+        margin-top: -8px;
+      }
+
+      .footer-list__item-sub {
+        display: block;
+        width: 260px;
+        height: 48px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .subscribe-field {
+        margin-top: 22px;
+      }
+
+      .footer-item__input {
+        width: 260px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        color: rgba(31, 32, 65, 0.25);
+      }
+
+      .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        text-transform: none;
+      }
+
+      .footer-item__subscribe-field-arrow {
+        position: relative;
+        left: 226px;
+        top: -33px;
+        font-size: 24px;
+        color: #bc9cff;
+      }
+
+      .footer_copyright-txt {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .footer__social-icons {
+        display: flex;
+        width: 120px;
+        justify-content: space-around;
+        margin-right: 15px;
+      }
+
+      .social-logo {
+        width: 24px;
+        height: 24px;
+      }
+
+      .footer-bottom {
+        margin-top: 46px;
+        padding: 0 132px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        box-shadow: 0px -2px rgb(31 32 65 / 13%);
+      }
+
+      @media (max-width: 1200px) {
+        .footer {
+          display: grid;
+          padding-left: 3rem;
+        }
+
+        .footer-item {
+          margin-left: 20px;
+        }
+
+        .headers-and-footer-page__mobile-footer {
+          margin-left: 0px;
+        }
+      }
+      .cards-page__wrapper {
+        background-color: #e5e5e5;
+        height: 1350px;
+      }
+
+      .card-page-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        column-gap: 35px;
+        margin-left: 145px;
+      }
+
+      .cards-page__cards {
+        margin-left: -10px;
+        margin-top: -106px;
+      }
+
+      .card-page__sign-in-from {
+        margin-top: 38px;
+      }
+
+      .cards-page__search-form {
+        display: grid;
+        height: 374px;
+        background-color: #fff;
+        box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+        border-radius: 4px;
+      }
+
+      .card-page__booking-form {
+        width: 380px;
+        height: 512px;
+        padding-top: 24px;
+        padding-left: 28px;
+        padding-right: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        background-color: #fff;
+      }
+
+      .card-page__registration-from {
+        margin-top: -136px;
+      }
+
+      .cards-page__form .registration-form_sing-up h1 {
+        position: relative;
+        left: 29px;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1f2041;
+        margin-bottom: 21px;
+      }
+
+      .cards-page__form .mixed-fields {
+        margin-left: 30px;
+        margin-bottom: -2px;
+      }
+
+      .cards-page__form .registration__radio-buttons-items {
+        margin-bottom: 14px;
+        margin-left: 31px;
+      }
+
+      .cards-page__form .registration__date-fields {
+        margin-bottom: 15px;
+        margin-left: 25px;
+      }
+
+      .field .label-date {
+        position: relative;
+        left: 6px;
+        top: 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #1f2041;
+        margin-bottom: 13px;
+      }
+
+      .mixed-fields .label-entries {
+        position: relative;
+        width: 211px;
+        height: 15px;
+        left: 0px;
+        top: 6px;
+        margin-bottom: 11px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #1f2041;
+      }
+
+      .registration-form_sing-up .registration__toggle-block {
+        position: relative;
+        left: 33px;
+        top: -19px;
+      }
+
+      .registration-form_sing-up .registration__buttons__item {
+        position: relative;
+        left: -4px;
+        top: 4px;
+      }
+
+      .registration-form_sing-up .sign-in-block {
+        position: relative;
+        display: flex;
+        width: 320px;
+        left: 27px;
+        top: 7px;
+      }
+
+      .cards-page__form .sign-in-form {
+        margin-top: 0px;
+        width: 380px;
+        height: 358px;
+        left: 140px;
+        top: 564px;
+        background-color: #fff;
+        padding-top: 23px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+        border-radius: 4px;
+      }
+
+      .sign-in-form .sign-in-form__data h1 {
+        position: relative;
+        left: 28px;
+      }
+
+      .sign-in-form__data .sign-in__mixed-fields {
+        position: relative;
+        left: 28px;
+      }
+
+      .sign-in-form__data .registration__buttons__item {
+        position: relative;
+        left: 0px;
+        margin-right: -1px;
+        margin-bottom: 43px;
+      }
+
+      .sign-in-form__data .sign-in-block {
+        position: relative;
+        left: 29px;
+        top: 2px;
+      }
+
+      .dropdown__input_guests.dropdown__input_guests {
+        width: 320px;
+        background-color: #fff;
+        border: 1px px solid rgba(31, 32, 65, 0.25);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .material-icons.dropdown__arrow_comfort {
+        position: relative;
+        left: 158px;
+        top: 1px;
+      }
+
+      .material-icons.dropdown-arrow-guests {
+        position: relative;
+        left: 169px;
+        top: 1px;
+      }
+
+      .sign-in__btn-lg.search-button {
+        position: relative;
+        top: 30px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      }
+
+      .sign-in__arrow.search-arrow {
+        left: 73px;
+      }
+
+      .sign-in__arrow.book-arrow {
+        position: relative;
+        left: 79px;
+        top: 0px;
+      }
+      .calendar.calendar_long.form-control.input {
+        width: 320px;
+      }
+
+      .total-info {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .card-from.room-card-number {
+        font-size: 24px;
+        color: #1f2041;
+      }
+
+      h2.price-sum {
+        font-size: 19px;
+        color: #1f2041;
+      }
+
+      .card-page.room-card-info__price {
+        position: relative;
+        left: 91px;
+        top: 3px;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .total-info-options {
+        display: flex;
+        justify-content: space-between;
+        height: 15px;
+      }
+
+      .total-info-summary {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: -35px;
+      }
+
+      .summary-order-info {
+        margin-top: 4px;
+        display: grid;
+        row-gap: 25px;
+      }
+
+      .total-info_long {
+        width: 200px;
+      }
+
+      .visible-calendar.form-control.input {
+        display: none;
+      }
+
+      .calendar-form {
+        margin-top: -15px;
+      }
+
+      .cards-page__cards .search-room__main-col {
+        margin-bottom: 47px;
+        width: 270px;
+      }
+
+      @media (max-width: 1200px) {
+        .cards-page__wrapper {
+          background-color: #e5e5e5;
+          height: 100%;
+        }
+
+        .card-page-grid {
+          display: grid;
+          height: 100%;
+          grid-template-columns: 12fr;
+          column-gap: 35px;
+          row-gap: 30px;
+          margin-left: 145px;
+        }
+
+        .cards-page__search-form {
+          width: 380px;
+        }
+
+        .card-page-grid .calendar-form {
+          margin-top: -15px;
+          margin-bottom: 110px;
+        }
+
+        .cards-page__cards {
+          margin-left: -10px;
+          margin-top: 10px;
+        }
+      }
+      .landing-page__main-bgi {
+        position: relative;
+        top: -60px;
+        left: -8px;
+        display: block;
+        height: 888px;
+        background-image: url('src/images/bg-image3.png');
+      }
+
+      .landing-page__header {
+        position: relative;
+        z-index: 2;
+      }
+
+      .landing-page__search-form {
+        position: relative;
+        display: grid;
+        top: 127px;
+        left: 140px;
+        width: 380px;
+        height: 374px;
+        background-color: #fff;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+      }
+
+      .search-form__header {
+        width: 320px;
+        height: 59px;
+        font-size: 24px;
+        margin-top: 40px;
+      }
+
+      .search-form__date-pickers {
+        display: flex;
+        width: 321px;
+        margin-top: -5px;
+      }
+
+      .landing-page__search-form-elements {
+        margin-left: 30px;
+      }
+
+      .dropdown__input_expanded.dropdown__input_expanded-apply {
+        background-color: #fff;
+      }
+
+      .dropdown-arrow {
+        position: relative;
+        top: 0px;
+        left: 160px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .landing-page__main .sign-in__btn-lg.search-button {
+        position: relative;
+        width: 320px;
+        top: 30px;
+        left: 0px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+      }
+
+      .landing-page__main .sign-in__arrow.search-arrow {
+        position: relative;
+        left: 73px;
+        top: 0px;
+      }
+
+      .dropdown__input_expanded.dropdown-landing-guests.dropdown__input_expanded-apply {
+        position: absolute;
+        z-index: 2;
+      }
+
+      .material-icons.dropdown-arrow-guests {
+        position: relative;
+        left: 169px;
+        top: 1px;
+      }
+
+      .dropdown__input_guests.dropdown__input_guests {
+        width: 320px;
+        background-color: #fff;
+        border: 1px px solid rgba(31, 32, 65, 0.25);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 1;
+      }
+      .registration-page__main-bgi {
+        position: relative;
+        text-align: -webkit-center;
+        top: -60px;
+        left: -8px;
+        width: 1440px;
+        background-image: url('src/images/bg-image4.png');
+        height: 722px;
+      }
+
+      .sign-in-page__wrapper .sign-in-form {
+        position: relative;
+        margin-top: 61px;
+        left: 0px;
+        top: 175px;
+      }
+
+      .registration__radio-buttons-items {
+        width: 345px;
+        display: flex;
+        margin-bottom: 14px;
+        margin-left: 20px;
+      }
+
+      .registration-page__main-bgi .registration__toggle-block {
+        margin-bottom: -5px;
+        margin-top: 10px;
+        margin-left: -50px;
+      }
+
+      @media (max-width: 1200px) {
+        .registration-page__main-bgi {
+          text-align: initial;
+        }
+
+        .registration-form {
+          text-align: center;
+          margin-left: 30px;
+        }
+
+        .registration-form_sing-up .label-date {
+          left: -16px;
+        }
+
+        .registration-form_sing-up .label-entries {
+          left: 30px;
+        }
+
+        .sign-in-block {
+          margin-left: 30px;
+        }
+
+        .sign-in-page__wrapper .sign-in-form {
+          left: 48px;
+          text-align: -webkit-center;
+        }
+      }
+      .header-page__logo {
+        margin-bottom: 15px;
+        height: 140px;
+      }
+
+      .header-footer-page__footer {
+        height: 443px;
+        background-color: #fff;
+      }
+
+      .header-footer-page__wrapper {
+        background-color: #e5e5e5;
+      }
+
+      .footer__content {
+        position: relative;
+        top: 60px;
+      }
+
+      .landing-page__footer {
+      }
+
+      .header-page__header {
+        position: relative;
+        margin-bottom: 38px;
+      }
+
+      .header-page__logged-in-header {
+        margin-bottom: 40px;
+      }
+
+      .headers-and-footer-page__mobile-footer {
+        width: 768px;
+        height: 367px;
+        background-color: #fff;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        margin: 0 auto;
+        padding-top: 1px;
+        margin-top: 42px;
+        margin-bottom: 120px;
+      }
+
+      .header__logged-in-menu {
+        margin-bottom: 10px;
+      }
+
+      .stroke {
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        left: -25px;
+        margin-left: 23px;
+        margin-right: 0px;
+        width: 1px;
+        height: 30px;
+        background: rgba(31, 32, 65, 0.1);
+      }
+
+      .btn_dark-violet {
+        color: #bc9cff;
+      }
+
+      .footer-bottom-mobile {
+        margin-top: 3px;
+        padding: 0 132px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+      }
+
+      .footer__social-mobile-icons {
+        margin-left: 120px;
+        display: flex;
+        width: 134px;
+        justify-content: space-around;
+        margin-right: 15px;
+      }
+
+      .footer_mobile-copyright-txt {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 25px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .header__mobile-text-logo {
+        position: relative;
+        margin: 0 auto;
+        width: 106px;
+        margin-top: 119px;
+      }
+
+      @media (max-width: 1200px) {
+        .header-footer-page__footer {
+          height: 1200px;
+          background-color: #fff;
+        }
+      }
+      .sign-in-form {
+        width: 380px;
+        height: 358px;
+        background-color: #fff;
+        padding-top: 23px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+        border-radius: 4px;
+      }
+
+      .sign-in-form__data h1 {
+        margin-left: 27px;
+        text-align: left;
+        font-size: 24px;
+        color: #1f2041;
+        margin-bottom: 21px;
+      }
+
+      .sign-in__mixed-fields {
+        margin-bottom: -9px;
+      }
+
+      .sign-in__btn-lg {
+        position: relative;
+        width: 320px;
+        top: 14px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+      }
+
+      .sign-in__btn-lg-text {
+        position: relative;
+        left: 11px;
+        top: 1px;
+      }
+
+      .sign-in__arrow {
+        position: relative;
+        left: 114px;
+        top: 0px;
+      }
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="1024">
+    </style>
+    <div class="room-details-wrapper">
+      <div class="header-page__header">
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <style>
+              $headerTextColor: #1f2041;
+              $secondaryColor: rgb(79, 47, 74);
+
+              .header-wrapper {
+                margin-top: -19px;
+              }
+
+              .header {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                color: $headerTextColor;
+                height: 70px;
+                margin-top: 20px;
+                margin-left: -8px;
+                background-color: #ffffff;
+                &__text-logo {
+                  position: relative;
+                  left: 23px;
+                  &-img {
+                    width: 106px;
+                    height: 40px;
+                  }
+                }
+                &__nav-bar {
+                  display: flex;
+                  margin-left: 73px;
+                }
+                &__nav {
+                  display: flex;
+                  align-items: baseline;
+                  list-style: none;
+                  padding-left: 0;
+                  &-item {
+                    margin-right: 20px;
+                  }
+                  &-link {
+                    text-decoration: none;
+                    transition: 0.1s;
+                  }
+                  &-link:hover {
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              .header__buttons-items {
+                display: flex;
+                align-items: center;
+              }
+
+              .header__button {
+                margin-right: 20px;
+              }
+
+              .header__btn_small {
+                border: 2px solid;
+                outline: none;
+                text-align: center;
+                margin: 0;
+                border-radius: 22px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+                width: 87px;
+                height: 34px;
+              }
+
+              .header__btn_long {
+                border: 2px solid;
+                outline: none;
+                text-align: center;
+                margin: 0;
+                border-radius: 22px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+              }
+
+              .header__btn_fill-light-violet {
+                background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+                opacity: 0.5;
+                color: #ffffff;
+                width: 199px;
+                height: 38px;
+                align-items: center;
+              }
+
+              .header__arrow {
+                position: relative;
+              }
+
+              @media (max-width: 1200px) {
+                .header {
+                  display: grid;
+                  justify-content: start;
+                  height: 250px;
+                }
+
+                .header__nav-bar {
+                  display: grid;
+                  margin-left: 73px;
+                  margin-top: -10px;
+                }
+
+                .header__nav {
+                  display: grid;
+                }
+              }
+              .field {
+                margin-bottom: 12px;
+              }
+
+              .input.input_focus {
+                border: 1px solid rgba(31, 32, 65, 0.5);
+                color: rgba(31, 32, 65, 0.75);
+              }
+
+              .field-label {
+                display: flex;
+                justify-content: space-between;
+              }
+
+              .buttons__label {
+                margin-bottom: 10px;
+              }
+
+              .buttons__item {
+                margin-right: 13px;
+                margin-bottom: 27px;
+              }
+
+              .btn {
+                border: 2px solid;
+                outline: none;
+                height: 44px;
+                border-radius: 22px;
+                font-family: Montserrat;
+                font-weight: bold;
+                font-size: 12px;
+                text-transform: uppercase;
+              }
+
+              .buttons__items {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 220px;
+                height: 200px;
+              }
+
+              .radio-buttons-block {
+                margin-top: 33px;
+              }
+
+              .pagination {
+                margin-top: 40px;
+                margin-bottom: 228px;
+              }
+
+              .buttons {
+                margin-bottom: 68px;
+              }
+
+              .btn_lg {
+                position: relative;
+                width: 320px;
+                left: -118px;
+                top: 14px;
+                background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+                color: #ffffff;
+              }
+
+              img {
+                width: 12px;
+                height: 12px;
+              }
+
+              .material-icons {
+                vertical-align: middle;
+                font-family: 'Material Icons';
+                align-items: right;
+                font-size: 24px;
+              }
+
+              .checkbox-list_close {
+                margin-bottom: 26px;
+              }
+
+              .checkbox-block {
+                margin-top: 42px;
+              }
+
+              .expand-arrow {
+                color: rgba(31, 32, 65, 0.5);
+              }
+
+              .expand-arrow__reverse {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                writing-mode: lr-tb;
+              }
+
+              .checkbox-list_rich {
+                margin-top: 90px;
+              }
+              .checkbox-list_options {
+                display: grid;
+                gap: 10px;
+              }
+
+              .bullet-list {
+                margin-top: 90px;
+              }
+
+              .bullet-list__items {
+                padding-left: 18px;
+                margin: 0px;
+              }
+
+              .stars-block {
+                display: flex;
+                align-items: flex-start;
+                align-self: flex-start;
+                justify-content: space-between;
+                height: 100%;
+                align-content: space-between;
+                width: 258px;
+              }
+
+              .rating-block {
+                margin-top: 32px;
+                margin-bottom: 185px;
+              }
+
+              .like-block {
+                margin-top: 31px;
+              }
+
+              .like-buttons {
+                margin-top: 11px;
+                display: flex;
+              }
+
+              .like {
+                font-size: 10px;
+                line-height: 9px;
+                align-items: center;
+                text-align: center;
+                color: rgba(31, 32, 65, 0.25);
+                margin-left: 4px;
+              }
+
+              .radio {
+                margin-left: 10px;
+              }
+
+              .avatar {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+              }
+              .avatar_small {
+                width: 160%;
+                height: 160%;
+
+                float: left;
+              }
+
+              .user-name {
+                display: inline-block;
+                padding-left: 20px;
+              }
+
+              .comment-text .room-privilege__description-text {
+                width: 653px;
+                height: 72px;
+              }
+
+              .comment-block {
+                margin-top: 25px;
+              }
+
+              .comment {
+                padding-left: 10px;
+              }
+
+              .comment .like-button_color {
+                float: left;
+              }
+
+              .comment-text {
+                display: inline-block;
+                padding-left: 10px;
+              }
+
+              .toggle-block {
+                margin-top: 34px;
+              }
+
+              .toggle {
+                opacity: 0;
+              }
+
+              .toggle + .toggle-label {
+                position: relative;
+                padding: 0 0 0 52px;
+                cursor: pointer;
+              }
+
+              .toggle-label {
+                line-height: 24px;
+                color: rgba(31, 32, 65, 0.75);
+                user-select: none;
+              }
+
+              .input_middle {
+                width: 267px;
+              }
+
+              .subscribe-arrow {
+                position: relative;
+                left: 233px;
+                top: -31px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 24px;
+                align-items: center;
+                text-align: center;
+                color: #bc9cff;
+              }
+              .subscribe-arrow {
+                position: relative;
+                left: 233px;
+                top: -2px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 24px;
+                align-items: center;
+                text-align: center;
+                color: #bc9cff;
+              }
+
+              .subscribe-field-arrow {
+                position: relative;
+                left: -36px;
+                color: #bc9cff;
+              }
+
+              .dropdown__input_default {
+                display: flex;
+                width: 266px;
+                padding-right: 9px;
+                height: 44px;
+                border: 1px solid rgba(31, 32, 65, 0.25);
+                border-radius: 5px;
+                margin-top: 4px;
+                cursor: pointer;
+                align-items: center;
+              }
+
+              .dropdown__input-text {
+                display: flex;
+                position: relative;
+                left: 10px;
+                width: 295px;
+                height: 40px;
+                color: rgba(31, 32, 65, 0.75);
+                align-items: center;
+                justify-content: space-between;
+              }
+
+              .dropdown-block__label {
+                margin-bottom: -5px;
+                display: flex;
+                justify-content: space-between;
+              }
+
+              .dropdown-block {
+                margin-top: 12px;
+              }
+
+              .forms-elements-page .dropdown__arrow {
+                display: inline-block;
+              }
+
+              .dropdown__input_expanded {
+                width: 266px;
+                height: 119px;
+                border: 1px solid rgba(31, 32, 65, 0.25);
+                border-radius: 2px;
+                margin-top: -1px;
+              }
+
+              .dropdown__input_expanded-apply {
+                width: 320px;
+                height: 159px;
+              }
+              .dropdown__input_wide {
+                display: flex;
+                width: 320px;
+                padding-right: 177px;
+              }
+
+              .calendar_apply-btn.apply-btn {
+                display: inline-block;
+                left: 50px;
+                top: -7px;
+              }
+
+              .calendar_clear-btn.clear-btn {
+                display: inline-block;
+                left: -58px;
+                top: -7px;
+              }
+
+              .date-pickers {
+                display: flex;
+                width: 343px;
+                margin-top: 30px;
+              }
+
+              input::-webkit-outer-spin-button,
+              input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+
+              input[type='number'] {
+                -moz-appearance: textfield;
+              }
+
+              .filter-price {
+                margin-bottom: 32px;
+              }
+
+              .filter-price__label {
+                display: flex;
+                height: 15px;
+              }
+
+              .filter-price__head {
+                display: flex;
+                width: 266px;
+                margin-bottom: 20px;
+                margin-left: -12px;
+              }
+
+              .filter-price__text {
+                font-size: 12px;
+                line-height: 15px;
+                color: rgba(31, 32, 65, 0.5);
+              }
+
+              .filter-price__text-max {
+                position: relative;
+                text-align: left;
+                left: -11px;
+                float: left;
+              }
+
+              .filter-price__input-min {
+                font-family: 'Montserrat';
+                border: none;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: right;
+                color: rgba(31, 32, 65, 0.5);
+              }
+
+              .filter-price__input-max {
+                font-family: 'Montserrat';
+                border: none;
+                font-size: 12px;
+                line-height: 15px;
+                color: rgba(31, 32, 65, 0.5);
+              }
+
+              .filter-price__inputs {
+                position: relative;
+                top: 11px;
+                left: 23px;
+                width: 100px;
+                display: flex;
+                justify-content: space-between;
+              }
+              .filter-price__slider {
+                width: 267px;
+                margin-left: -12px;
+              }
+
+              .noUi-target {
+                background: #ffffff !important;
+                border-radius: 100px !important;
+                box-shadow: none !important;
+                border: 1px solid rgba(31, 32, 65, 0.25) !important;
+                height: 6px !important;
+              }
+
+              .noUi-connect {
+                background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+                box-shadow: none;
+                height: 5px;
+                border: none;
+              }
+
+              .noUi-handle:after,
+              .noUi-handle:before {
+                display: none !important;
+              }
+
+              .noUi-handle {
+                box-shadow: none !important;
+                border-radius: 20px !important;
+                background: linear-gradient(
+                  180deg,
+                  #6fcf97 0%,
+                  #66d2ea 100%
+                ) !important;
+                border: 2px solid #ffffff !important;
+              }
+
+              .noUi-horizontal .noUi-handle {
+                width: 16px !important;
+                height: 16px !important;
+                right: -10px !important;
+                top: -6px !important;
+              }
+
+              .noUi-horizontal .noUi-handle-upper {
+                right: -2px !important;
+              }
+
+              .flatpickr-current-month .flatpickr-monthDropdown-months {
+                appearance: none !important;
+                -webkit-appearance: none !important;
+                -moz-appearance: none !important;
+                font-family: 'Montserrat' !important;
+                font-style: normal !important;
+                font-weight: 700 !important;
+                font-size: 19px !important;
+                line-height: 23px !important;
+                color: #1f2041 !important;
+                text-align: center;
+                margin: 0 auto;
+                text-align: center;
+                width: 283px;
+              }
+
+              .flatpickr-current-month input.cur-year {
+                -webkit-appearance: none !important;
+                margin: 0 !important;
+                -webkit-appearance: none !important;
+                -moz-appearance: none !important;
+                font-family: 'Montserrat' !important;
+                font-style: normal !important;
+                font-weight: 700 !important;
+                font-size: 19px !important;
+                line-height: 23px !important;
+                text-align: left !important;
+                color: #1f2041 !important;
+              }
+              .numInputWrapper input,
+              .numInputWrapper span {
+                display: none !important;
+              }
+
+              .flatpickr-current-month {
+                left: 20px !important;
+                margin-bottom: 30px !important;
+              }
+              .flatpickr-months {
+                margin-top: 15px !important;
+              }
+
+              .flatpickr-month {
+                margin-bottom: 30px !important;
+              }
+
+              span.flatpickr-weekday {
+                font-family: 'Montserrat' !important;
+                font-style: normal !important;
+                font-weight: 700 !important;
+                font-size: 12px !important;
+                line-height: 15px !important;
+                display: flex !important;
+                align-items: center !important;
+                text-align: center !important;
+                color: #bc9cff !important;
+                margin: 12px !important;
+              }
+
+              .flatpickr-day {
+                font-family: 'Montserrat' !important;
+                font-style: normal !important;
+                font-weight: 400 !important;
+                font-size: 12px !important;
+                line-height: 15px !important;
+                display: flex !important;
+                align-items: center !important;
+                text-align: center !important;
+                color: rgba(31, 32, 65, 0.5) !important;
+              }
+
+              .flatpickr-current-month span.cur-month {
+                font-family: 'Montserrat' !important;
+                font-style: normal !important;
+                font-weight: 700 !important;
+                font-size: 19px !important;
+                line-height: 23px !important;
+                text-align: center !important;
+                color: #1f2041 !important;
+              }
+
+              .flatpickr-day.selected {
+                width: 39.88px !important;
+                height: 40px !important;
+                background: linear-gradient(
+                  180deg,
+                  #6fcf97 0%,
+                  #66d2ea 100%
+                ) !important;
+                border-radius: 22px !important;
+              }
+
+              .flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
+              .flatpickr-months .flatpickr-next-month.flatpickr-next-month {
+                right: 0 !important;
+                top: 13px !important;
+              }
+
+              .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
+              .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
+                left: 0 !important;
+                top: 13px !important;
+              }
+
+              .date-filter_arrow {
+                position: relative !important;
+                left: -33px !important;
+                top: -1px !important;
+              }
+
+              .date-filter {
+                margin-top: 20px !important;
+              }
+
+              .subscribe-field {
+                margin-top: 34px;
+              }
+
+              .head__logo-img {
+                height: 48px;
+                width: 48px;
+              }
+
+              .header__logo {
+                display: inline-block;
+                position: relative;
+                top: 28px;
+                left: 18%;
+              }
+
+              .subcribe-input {
+                display: flex;
+                align-items: center;
+              }
+
+              .dropdown-options {
+                user-select: none;
+              }
+
+              .dropdown__input {
+                user-select: none;
+              }
+
+              .btn_dark-violet {
+                color: #bc9cff;
+              }
+            </style>
+            <div class="header-wrapper">
+              <div class="header">
+                <div class="header__text-logo">
+                  <a href="index.html"
+                    ><img
+                      class="header__text-logo-img"
+                      src="src/images/logo.png"
+                      alt="Logo"
+                  /></a>
+                </div>
+                <div class="header__nav-bar">
+                  <nav class="header__menu">
+                    <ul class="header__nav">
+                      <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">О нас</a>
+                      </li>
+                      <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Услуги </a
+                        ><span class="material-icons expand-arrow header__arrow"
+                          >expand_more</span
+                        >
+                      </li>
+                      <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Вакансии</a>
+                      </li>
+                      <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Новости</a>
+                      </li>
+                      <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Соглашения</a
+                        ><span class="material-icons expand-arrow header__arrow"
+                          >expand_more</span
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="header__buttons-items">
+                    <div class="header__button">
+                      <button class="header__btn_small btn_dark-violet">
+                        войти
+                      </button>
+                    </div>
+                    <div class="header__button">
+                      <button
+                        class="header__btn_long header__btn_fill-light-violet"
+                      >
+                        зарегистрироваться
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script defer="defer" src="755.52307dbfb21fd8529785.js"></script>
+            <script defer="defer" src="441.26cf6d4bb562cbf06ea0.js"></script>
+            <script
+              defer="defer"
+              src="scripts.69c141cdf0c96affabf4.js"
+            ></script>
+            <script defer="defer" src="user.468cd42f063739eb6b2f.js"></script>
+            <link href="scripts.a751f45186deecbd1acc.css" rel="stylesheet" />
+          </head>
+        </html>
+      </div>
+      <div class="room-details__background-images">
+        <div class="room-details__img-item_big">
+          <img
+            class="background-image-item_size_big"
+            src="src/images/room-details01.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="room-details__img-items_small">
+          <div class="room-details__img-item">
+            <img
+              class="background-image-item1"
+              src="src/images/room-details02.jpg"
+              alt="image"
+            />
+          </div>
+          <div class="room-details__img-item">
+            <img
+              class="background-image-item2"
+              src="src/images/room-details03.jpg"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="room-details__content">
+        <div class="room-details__main">
+          <div class="room-details-common-info">
+            <div class="room-details__info-about-room">
+              <h1 class="room-details__label">Сведения о номере</h1>
+              <style>
+                .room-privilege-block {
+                  margin-top: 25px;
+                }
+
+                .material-icons.room-privilege-img {
+                  font-size: 48px;
+                  align-items: center;
+                  color: transparent;
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  background-image: linear-gradient(
+                    to bottom,
+                    #bc9cff,
+                    #8ba4f9
+                  );
+                }
+
+                .room-privilege__description-label {
+                  font-weight: bold;
+                  line-height: 24px;
+                  color: rgba(31, 32, 65, 0.75);
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                }
+
+                .room-privilege__description-text {
+                  line-height: 24px;
+                  color: rgba(31, 32, 65, 0.75);
+                  margin-top: 0px;
+                }
+
+                .room-privilege__image {
+                  float: left;
+                }
+
+                .room-privilege__description {
+                  display: inline-block;
+                  padding-left: 10px;
+                }
+              </style>
+              <div class="room-privilege-block">
+                <div class="room-privilege__image">
+                  <span class="material-icons room-privilege-img"
+                    >insert_emoticon</span
+                  >
+                </div>
+                <div class="room-privilege__description">
+                  <p class="room-privilege__description-label">Комфорт</p>
+                  <p class="room-privilege__description-text">
+                    Шумопоглощающие стены
+                  </p>
+                </div>
+              </div>
+              <style>
+                .room-privilege-block {
+                  margin-top: 25px;
+                }
+
+                .material-icons.room-privilege-img {
+                  font-size: 48px;
+                  align-items: center;
+                  color: transparent;
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  background-image: linear-gradient(
+                    to bottom,
+                    #bc9cff,
+                    #8ba4f9
+                  );
+                }
+
+                .room-privilege__description-label {
+                  font-weight: bold;
+                  line-height: 24px;
+                  color: rgba(31, 32, 65, 0.75);
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                }
+
+                .room-privilege__description-text {
+                  line-height: 24px;
+                  color: rgba(31, 32, 65, 0.75);
+                  margin-top: 0px;
+                }
+
+                .room-privilege__image {
+                  float: left;
+                }
+
+                .room-privilege__description {
+                  display: inline-block;
+                  padding-left: 10px;
+                }
+              </style>
+              <div class="room-privilege-block">
+                <div class="room-privilege__image">
+                  <span class="material-icons room-privilege-img"
+                    >location_city</span
+                  >
+                </div>
+                <div class="room-privilege__description">
+                  <p class="room-privilege__description-label">Удобство</p>
+                  <p class="room-privilege__description-text">
+                    Окно в каждой из спален
+                  </p>
+                </div>
+              </div>
+              <style>
+                .room-privilege-block {
+                  margin-top: 25px;
+                }
+
+                .material-icons.room-privilege-img {
+                  font-size: 48px;
+                  align-items: center;
+                  color: transparent;
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  background-image: linear-gradient(
+                    to bottom,
+                    #bc9cff,
+                    #8ba4f9
+                  );
+                }
+
+                .room-privilege__description-label {
+                  font-weight: bold;
+                  line-height: 24px;
+                  color: rgba(31, 32, 65, 0.75);
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                }
+
+                .room-privilege__description-text {
+                  line-height: 24px;
+                  color: rgba(31, 32, 65, 0.75);
+                  margin-top: 0px;
+                }
+
+                .room-privilege__image {
+                  float: left;
+                }
+
+                .room-privilege__description {
+                  display: inline-block;
+                  padding-left: 10px;
+                }
+              </style>
+              <div class="room-privilege-block">
+                <div class="room-privilege__image">
+                  <span class="material-icons room-privilege-img"
+                    >whatshot</span
+                  >
+                </div>
+                <div class="room-privilege__description">
+                  <p class="room-privilege__description-label">Уют</p>
+                  <p class="room-privilege__description-text">
+                    Номер оснащён камином
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="chart-block">
+              <h1 class="room-details__label">Впечатления от номера</h1>
+              <style>
+                .cancel-info-block {
+                  width: 341px;
+                  line-height: 24px;
+                  color: rgba(31, 32, 65, 0.75);
+                }
+                .chart {
+                  position: relative;
+                  width: 200px;
+                  height: 200px;
+                }
+
+                .total-value-count {
+                  position: absolute;
+                  font-size: 24px;
+                  align-items: center;
+                  color: #bc9cff;
+                  top: 62px;
+                  left: 77px;
+                }
+
+                .total-value-vote {
+                  position: absolute;
+                  font-weight: 700;
+                  font-size: 12px;
+                  text-transform: uppercase;
+                  color: #bc9cff;
+                  top: 100px;
+                  left: 68px;
+                }
+
+                .chart-block__list-item {
+                  font-size: 14px;
+                  line-height: 24px;
+                  color: rgba(31, 32, 65, 0.75);
+                }
+
+                .chart-block__list-ul {
+                  list-style-type: none;
+                  font-size: 120%;
+                  padding-left: 0px;
+                  margin-left: -10px;
+                  z-index: 2;
+                }
+
+                .chart-block__list-ul li::before {
+                  content: '';
+                  display: inline-block;
+                  border-radius: 5px;
+                  width: 10px;
+                  height: 10px;
+                  margin-right: 6px;
+                }
+
+                .chart-block__list-item.chart-block__list-item_color_orange::before {
+                  background-image: -webkit-linear-gradient(
+                    180deg,
+                    #ffe39c 0%,
+                    #ffba9c 100%
+                  );
+                }
+
+                .chart-block__list-item.chart-block__list-item_color_green::before {
+                  background-image: -webkit-linear-gradient(
+                    180deg,
+                    #6fcf97 0%,
+                    #66d2ea 100%
+                  );
+                }
+
+                .chart-block__list-item.chart-block__list-item_color_violet::before {
+                  background-image: -webkit-linear-gradient(
+                    180deg,
+                    #bc9cff 0%,
+                    #8ba4f9 100%
+                  );
+                }
+
+                .chart-block__list-item.chart-block__list-item_color_dark::before {
+                  background-image: -webkit-linear-gradient(
+                    180deg,
+                    #919191 0%,
+                    #3d4975 100%
+                  );
+                }
+
+                .chart-block__content {
+                  position: relative;
+                  top: -35px;
+                  left: -40px;
+                  display: inline-flex;
+                  align-items: flex-end;
+                }
+
+                .chart__diagram {
+                  position: relative;
+                  z-index: -1;
+                }
+              </style>
+              <div class="chart-block__content">
+                <div class="chart">
+                  <div class="chart__total-value">
+                    <h2 class="total-value-count">260</h2>
+                    <p class="total-value-vote">голосов</p>
+                  </div>
+                  <div class="chart__diagram">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </div>
+                <div class="chart-block__list">
+                  <ul class="chart-block__list-ul">
+                    <li
+                      class="chart-block__list-item chart-block__list-item_color_orange"
+                    >
+                      Великолепно
+                    </li>
+                    <li
+                      class="chart-block__list-item chart-block__list-item_color_green"
+                    >
+                      Хорошо
+                    </li>
+                    <li
+                      class="chart-block__list-item chart-block__list-item_color_violet"
+                    >
+                      Удовлетворительно
+                    </li>
+                    <li
+                      class="chart-block__list-item chart-block__list-item_color_dark"
+                    >
+                      Разочарован
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div class="comments__header">
+              <h1 class="room-details__label">Отзывы посетителей номера</h1>
+              <p class="comments__count">2 отзыва</p>
+            </div>
+            <div class="comment-block">
+              <div class="user-info">
+                <div class="avatar">
+                  <img
+                    class="avatar_small"
+                    src="src/images/avatar.svg"
+                    alt="avatar"
+                  />
+                </div>
+                <div class="user-name">
+                  <p class="room-privilege__description-label">
+                    Мурад Сарафанов
+                  </p>
+                  <p class="room-privilege__description-text">5 дней назад</p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="like-button like-button_color">
+                  <span class="material-icons like like-fill">favorite</span>
+                  <span class="like-quantity like-quantity_color">12</span>
+                </div>
+                <div class="comment-text">
+                  <p class="room-privilege__description-text">
+                    Великолепный матрас на кровати в основной спальне! А пуфик
+                    вообще потрясающий. И стены, действительно, шумоподавляющие.
+                    Выкрикивал комплименты повару — никто не жаловался из
+                    соседей.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="comment-block">
+              <div class="user-info">
+                <div class="avatar">
+                  <img
+                    class="avatar_small"
+                    src="src/images/avatar2.svg"
+                    alt="avatar"
+                  />
+                </div>
+                <div class="user-name">
+                  <p class="room-privilege__description-label">
+                    Патрисия Стёклышкова
+                  </p>
+                  <p class="room-privilege__description-text">Неделю назад</p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="like-button like-button_color">
+                  <span class="material-icons like like-fill">favorite</span>
+                  <span class="like-quantity like-quantity_color">2</span>
+                </div>
+                <div class="comment-text">
+                  <p class="room-privilege__description-text">
+                    Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в
+                    номер советую заказать, каждый день новое блюдо и десерт как
+                    комплимент
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="room-details-rules">
+            <div class="bullet-list">
+              <h1 class="room-details__label">Правила</h1>
+              <ul class="bullet-list__items">
+                <style>
+                  .bullet-list__item {
+                    list-style-image: url('./src/assets/Ellipse.png');
+                    line-height: 24px;
+                    color: rgba(31, 32, 65, 0.75);
+                    padding-top: 10px;
+                  }
+                </style>
+                <li class="bullet-list__item">Нельзя с питомцами</li>
+                <style>
+                  .bullet-list__item {
+                    list-style-image: url('./src/assets/Ellipse.png');
+                    line-height: 24px;
+                    color: rgba(31, 32, 65, 0.75);
+                    padding-top: 10px;
+                  }
+                </style>
+                <li class="bullet-list__item">Без вечеринок и мероприятий</li>
+                <style>
+                  .bullet-list__item {
+                    list-style-image: url('./src/assets/Ellipse.png');
+                    line-height: 24px;
+                    color: rgba(31, 32, 65, 0.75);
+                    padding-top: 10px;
+                  }
+                </style>
+                <li class="bullet-list__item">
+                  Время прибытия — после 13:00, а выезд до 12:00
+                </li>
+              </ul>
+            </div>
+            <div class="cancel-info-block">
+              <h1 class="room-details__label">Отмена</h1>
+              <p class="cancel-info-block">
+                Бесплатная отмена в течение 48 ч. После этого при отмене не
+                позднее чем за 5 дн. до прибытия вы получите полный возврат за
+                вычетом сбора за услуги.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="room-details__aside">
+          <div class="card-page__booking-form">
+            <html>
+              <head>
+                <style>
+                  .card-page__room-card-info {
+                    margin-bottom: 5px;
+                  }
+
+                  .room-card-info__text {
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    width: 233px;
+                  }
+
+                  .room-card-info__number {
+                    position: relative;
+                    left: 5px;
+                    top: 3px;
+                    display: flex;
+                    align-items: baseline;
+                  }
+
+                  .room-card-sign-number {
+                    font-weight: 700;
+                    color: #1f2041;
+                  }
+
+                  .card-from.room-card-number {
+                    font-size: 24px;
+                    color: #1f2041;
+                  }
+
+                  .luxe-attr {
+                    position: relative;
+                    left: 9px;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: #bc9cff;
+                  }
+
+                  .card-page.room-card-info__price {
+                    position: relative;
+                    left: 91px;
+                    top: 3px;
+                    color: rgba(31, 32, 65, 0.5);
+                  }
+
+                  .room-price {
+                    font-weight: 700;
+                  }
+
+                  .price-per {
+                    font-size: 12px;
+                  }
+
+                  .search-form__date-pickers {
+                    display: flex;
+                    width: 321px;
+                    margin-top: -5px;
+                  }
+
+                  .summary-order-info {
+                    margin-top: 4px;
+                    display: grid;
+                    row-gap: 25px;
+                  }
+                </style>
+                <div class="card-page__room-card-info">
+                  <div class="room-card-info__text">
+                    <div class="room-card-info__number">
+                      <p class="room-card-sign-number">№</p>
+                      <h2 class="card-from room-card-number">888</h2>
+                      <h3 class="luxe-attr">ЛЮКС</h3>
+                    </div>
+                    <div class="card-page room-card-info__price">
+                      <span class="room-price">9 990₽</span
+                      ><span class="price-per">&nbsp в сутки</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-form__date-pickers">
+                  <div class="field">
+                    <style>
+                      .label {
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                        text-transform: uppercase;
+                        color: #1f2041;
+                        display: inline-block;
+                      }
+                    </style>
+                    <h2 class="label">прибытие</h2>
+                    <style>
+                      .input {
+                        width: 320px;
+                        height: 44px;
+                        padding-left: 15px;
+                        border: 1px solid rgba(31, 32, 65, 0.25);
+                        border-radius: 4px;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        color: rgba(31, 32, 65, 0.25);
+                      }
+
+                      .input.calendar {
+                        width: 150px;
+                      }
+
+                      .date-filter__input {
+                        width: 267px !important;
+                      }</style
+                    ><input
+                      class="input calendar"
+                      type="date"
+                      placeholder="ДД.ММ.ГГГГ"
+                    />
+                  </div>
+                  <div class="field">
+                    <style>
+                      .label {
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                        text-transform: uppercase;
+                        color: #1f2041;
+                        display: inline-block;
+                      }
+                    </style>
+                    <h2 class="label">выезд</h2>
+                    <style>
+                      .input {
+                        width: 320px;
+                        height: 44px;
+                        padding-left: 15px;
+                        border: 1px solid rgba(31, 32, 65, 0.25);
+                        border-radius: 4px;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        color: rgba(31, 32, 65, 0.25);
+                      }
+
+                      .input.calendar {
+                        width: 150px;
+                      }
+
+                      .date-filter__input {
+                        width: 267px !important;
+                      }</style
+                    ><input
+                      class="input calendar"
+                      type="date"
+                      placeholder="ДД.ММ.ГГГГ"
+                    />
+                  </div>
+                </div>
+                <div class="search-form__dropdown-block">
+                  <div class="dropdown-block__label">
+                    <style>
+                      .label {
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                        text-transform: uppercase;
+                        color: #1f2041;
+                        display: inline-block;
+                      }
+                    </style>
+                    <h2 class="label">гости</h2>
+                  </div>
+                  <div class="dropdown__input">
+                    <div class="dropdown__input_default dropdown__input_wide">
+                      <span class="dropdown__input-text">Сколько гостей</span
+                      ><span
+                        class="material-icons expand-arrow dropdown-arrow dropdown__arrow_comfort dropdown__arrow_checkbox"
+                        >expand_more</span
+                      >
+                    </div>
+                    <div
+                      class="dropdown__input_guests dropdown__input_guests-expanded-apply search-room-added-checkbox-list hidden"
+                    >
+                      <style>
+                        .dropdown-options {
+                          user-select: none;
+                        }
+
+                        .dropdown-item {
+                          display: flex;
+                          justify-content: space-between;
+                          margin-top: 5px;
+                        }
+
+                        .dropdown-option {
+                          padding-left: 12px;
+                        }
+
+                        .dropdown-counter {
+                          position: relative;
+                          width: 92px;
+                          display: flex;
+                          justify-content: space-between;
+                          right: 8px;
+                        }
+
+                        .dropdown-counter__btn {
+                          width: 30px;
+                          border: 1px solid rgba(31, 32, 65, 0.25);
+                          border-radius: 22px;
+                          text-align: center;
+                        }
+
+                        .dropdown-counter__value {
+                          position: relative;
+                          top: 6px;
+                          font-weight: 700;
+                        }
+
+                        .dropdown-counter__btn span {
+                          position: relative;
+                          top: 2px;
+                          font-size: 18px;
+                          color: rgba(31, 32, 65, 0.5);
+                        }
+
+                        .apply-btn {
+                          position: relative;
+                          left: 223px;
+                          bottom: -10px;
+                          font-weight: bold;
+                          font-size: 12px;
+                          text-transform: uppercase;
+                          color: #bc9cff;
+                        }
+
+                        .clear-btn {
+                          position: relative;
+                          left: 10px;
+                          bottom: 15px;
+                          font-weight: bold;
+                          font-size: 12px;
+                          text-transform: uppercase;
+                          color: #bc9cff;
+                        }
+                      </style>
+                      <div class="dropdown-options">
+                        <div class="dropdown-item">
+                          <h2 class="dropdown-option label">взрослые</h2>
+                          <div class="dropdown-counter">
+                            <div
+                              class="dropdown-counter__btn"
+                              data-direction="minus"
+                            >
+                              <span>-</span>
+                            </div>
+                            <div class="dropdown-counter__value label">0</div>
+                            <div
+                              class="dropdown-counter__btn"
+                              data-direction="plus"
+                            >
+                              <span>+</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-item">
+                          <h2 class="dropdown-option label">дети</h2>
+                          <div class="dropdown-counter">
+                            <div
+                              class="dropdown-counter__btn"
+                              data-direction="minus"
+                            >
+                              <span>-</span>
+                            </div>
+                            <div class="dropdown-counter__value label">0</div>
+                            <div
+                              class="dropdown-counter__btn"
+                              data-direction="plus"
+                            >
+                              <span>+</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-item">
+                          <h2 class="dropdown-option label">младенцы</h2>
+                          <div class="dropdown-counter">
+                            <div
+                              class="dropdown-counter__btn"
+                              data-direction="minus"
+                            >
+                              <span>-</span>
+                            </div>
+                            <div class="dropdown-counter__value label">0</div>
+                            <div
+                              class="dropdown-counter__btn"
+                              data-direction="plus"
+                            >
+                              <span>+</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-buttons">
+                          <p class="apply-btn">применить</p>
+                          <p class="clear-btn">очистить</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="summary-order-info">
+                    <style>
+                      .total-info-options {
+                        display: flex;
+                        justify-content: space-between;
+                        height: 15px;
+                      }
+
+                      .total-info {
+                        color: rgba(31, 32, 65, 0.75);
+                      }
+
+                      .total-info_long {
+                        width: 200px;
+                      }
+
+                      h2.price-sum {
+                        font-size: 19px;
+                        color: #1f2041;
+                      }
+                    </style>
+                    <div class="total-info-options">
+                      <p class="total-info">
+                        <span>9 990</span><span>₽ х&nbsp;</span><span>4</span
+                        ><span>&nbsp;суток</span>
+                      </p>
+                      <p class="total-info">
+                        <span>39 960</span><span>₽</span>
+                      </p>
+                    </div>
+                    <div class="total-info-options">
+                      <p class="total-info">
+                        <span>Сбор за услуги: скидка&nbsp;</span
+                        ><span>2 179</span><span>₽</span>
+                      </p>
+                      <p class="total-info"><span>0</span><span>₽</span></p>
+                    </div>
+                    <div class="total-info-options">
+                      <p class="total-info total-info_long">
+                        Сбор за дополнительные услуги
+                      </p>
+                      <p class="total-info"><span>300</span><span>₽</span></p>
+                    </div>
+                    <div class="total-info-summary">
+                      <h2 class="price-sum">
+                        Итого
+                        <h2 class="price-sum">
+                          <span>38 081</span><span>₽</span>
+                        </h2>
+                      </h2>
+                    </div>
+                    <div class="registration__buttons__item">
+                      <button class="btn sign-in__btn-lg">
+                        <span class="sign-in__btn-lg-text">забронировать</span
+                        ><span class="material-icons sign-in__arrow book-arrow"
+                          >arrow_forward</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </head>
+            </html>
+          </div>
+        </div>
+      </div>
+      <div class="header-footer-page__footer">
+        <div class="footer__content">
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <style>
+                $footerTextColor: #1f2041;
+
+                .footer {
+                  padding: 4rem;
+                  display: flex;
+                  justify-content: space-between;
+                  padding-left: 10.5rem;
+                  padding-right: 15rem;
+                  &-item__sub {
+                    width: 260px;
+                  }
+                  &-item {
+                    max-width: 200px;
+                    margin-top: -8px;
+                    &__slogan {
+                      position: relative;
+                      left: 23px;
+                      width: 260px;
+                      line-height: 24px;
+                      color: rgba(31, 32, 65, 0.75);
+                    }
+                    &__head {
+                      font-size: 12px;
+                      color: #1f2041;
+                    }
+                  }
+                  &-list {
+                    list-style: none;
+                    padding-left: 0;
+
+                    &__link {
+                      text-decoration: none;
+                      display: block;
+                      margin-top: 22px;
+                    }
+                  }
+                }
+
+                .footer-item__sub {
+                  margin-top: -8px;
+                }
+
+                .footer-list__item-sub {
+                  display: block;
+                  width: 260px;
+                  height: 48px;
+                  color: rgba(31, 32, 65, 0.75);
+                }
+
+                .subscribe-field {
+                  margin-top: 22px;
+                }
+
+                .footer-item__input {
+                  width: 260px;
+                  height: 44px;
+                  padding-left: 15px;
+                  border: 1px solid rgba(31, 32, 65, 0.25);
+                  border-radius: 4px;
+                  font-family: Montserrat;
+                  color: rgba(31, 32, 65, 0.25);
+                }
+
+                .material-icons {
+                  font-family: 'Material Icons';
+                  font-weight: normal;
+                  text-transform: none;
+                }
+
+                .footer-item__subscribe-field-arrow {
+                  position: relative;
+                  left: 226px;
+                  top: -33px;
+                  font-size: 24px;
+                  color: #bc9cff;
+                }
+
+                .footer_copyright-txt {
+                  color: rgba(31, 32, 65, 0.75);
+                }
+
+                .footer__social-icons {
+                  display: flex;
+                  width: 120px;
+                  justify-content: space-around;
+                  margin-right: 15px;
+                }
+
+                .social-logo {
+                  width: 24px;
+                  height: 24px;
+                }
+
+                .footer-bottom {
+                  margin-top: 46px;
+                  padding: 0 132px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  height: 70px;
+                  box-shadow: 0px -2px rgb(31 32 65 / 13%);
+                }
+
+                @media (max-width: 1200px) {
+                  .footer {
+                    display: grid;
+                    padding-left: 3rem;
+                  }
+
+                  .footer-item {
+                    margin-left: 20px;
+                  }
+
+                  .headers-and-footer-page__mobile-footer {
+                    margin-left: 0px;
+                  }
+                }
+              </style>
+              <div class="footer">
+                <div class="footer-item__logo">
+                  <div class="header__text-logo">
+                    <a href="#"
+                      ><img
+                        class="header__text-logo-img"
+                        src="src/images/logo.png"
+                        alt="Logo"
+                    /></a>
+                  </div>
+                  <p class="footer-item__slogan">
+                    Бронирование номеров в лучшем отеле 2019 года по версии
+                    ассоциации «Отельные взгляды»
+                  </p>
+                </div>
+                <div class="footer-item">
+                  <h3 class="footer-item__head">НАВИГАЦИЯ</h3>
+                  <ul class="footer-list">
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">О нас</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Новости</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Служба поддержки</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Услуги</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-item">
+                  <h3 class="footer-item__head">О НАС</h3>
+                  <ul class="footer-list">
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">О сервисе</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Наша команда</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Вакансии</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Инвесторы</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-item">
+                  <h3 class="footer-item__head">СЛУЖБА ПОДДЕРЖКИ</h3>
+                  <ul class="footer-list">
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Соглашения</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Сообщества</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="#">Связь с нами</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-item__sub">
+                  <h3 class="footer-item__head">ПОДПИСКА</h3>
+                  <ul class="footer-list">
+                    <li class="footer-list__item-sub">
+                      Получайте специальные предложения и новости сервиса
+                    </li>
+                    <div class="subscribe-field">
+                      <div class="field">
+                        <input
+                          class="footer-item__input"
+                          placeholder="   Email"
+                        /><span
+                          class="material-icons footer-item__subscribe-field-arrow"
+                          >arrow_forward</span
+                        >
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <p class="footer_copyright-txt">
+                  Copyright © 2018 Toxin отель. Все права защищены.
+                </p>
+                <div class="footer__social-icons">
+                  <div class="social-icon_item">
+                    <img
+                      class="social-logo"
+                      src="src/images/twitter.svg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="social-icon_item">
+                    <img
+                      class="social-logo"
+                      src="src/images/FB.svg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="social-icon_item">
+                    <img
+                      class="social-logo"
+                      src="src/images/instagram.svg"
+                      alt="avatar"
+                    />
+                  </div>
+                </div>
+              </div>
+            </head>
+          </html>
+        </div>
+      </div>
+    </div>
+  </head>
+</html>

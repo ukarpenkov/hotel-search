@@ -253,7 +253,7 @@ if (showSingUpPageBtn) {
   showSingUpPageBtn.addEventListener('click', () => hideAndShowPage('.registration-page__wrapper'))
 }
 
-let showSingInPageBtn = document.querySelector('.navigate-item-link_page_sing-in')
+let showSingInPageBtn = document.querySelector('.navigate-item-link_page_sign-in')
 
 if (showSingInPageBtn) {
   showSingInPageBtn.addEventListener('click', () => hideAndShowPage('.sign-in-page__wrapper'))
