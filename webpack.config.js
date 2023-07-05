@@ -38,7 +38,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'cards-page.html',
-      template: "./src/pug/pages/cards-page.pug"
+      template: "./src/pug/pages/cards-page/cards-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'headers-and-footer-page.html',
