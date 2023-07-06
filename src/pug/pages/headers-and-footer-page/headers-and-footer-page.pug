@@ -7,19 +7,19 @@ html
     link(rel='icon', sizes='image/svg+xml', href='src/assets/favicon.svg')
     link(rel="icon" type="image/png" href="src/assets/favicon.png")
     style
-      include ../components/form-elements.scss
+      include ./../../components/form-elements.scss
       include headers-and-footer-page.scss
-      include ../components/header/head.scss    
-      include landing-page.scss 
-      include registration-page.scss
-      include ../components/footer/footer.scss
+      include ./../../components/header/head.scss    
+      include ./../landing-page.scss
+      include ./../registration-page.scss
+      include ./../../components/footer/footer.scss
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <meta name="viewport" content="1024">
   .header-footer-page__wrapper
     .header-page__logo
-      include ../blocks/header-logo/header-img-logo.pug
+      include ./../../blocks/header-logo/header-img-logo.pug
     .header-page__header
-      include ../components/header/head
+      include ./../../components/header/head
     .header-page__logged-in-header
       .header
         .header__text-logo
@@ -45,12 +45,11 @@ html
                 a(href="#").header__nav-link Юлий Цезарь
     .header-footer-page__footer
       .footer__content
-        include ../components/footer/footer
+        include ./../../components/footer/footer
     .headers-and-footer-page__mobile-footer
       .header__mobile-text-logo
         a(href="index.html")
             img(src="src/images/logo.png", alt="Logo").header__text-logo-img
-
       .footer-bottom-mobile
         p.footer_mobile-copyright-txt Copyright © 2018 Toxin отель. Все права защищены.
         .footer__social-mobile-icons 

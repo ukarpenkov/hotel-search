@@ -34,7 +34,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'form-elements-page.html',
-      template: "./src/pug/pages/form-elements-page.pug"
+      template: "./src/pug/pages/form-elements-page/form-elements-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'cards-page.html',
@@ -42,7 +42,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'headers-and-footer-page.html',
-      template: "./src/pug/pages/headers-and-footer-page.pug"
+      template: "./src/pug/pages/headers-and-footer-page/headers-and-footer-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'landing-page.html',

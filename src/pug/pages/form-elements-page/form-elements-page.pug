@@ -7,19 +7,19 @@ html
     link(rel='icon', sizes='image/svg+xml', href='src/assets/favicon.svg')
     link(rel="icon" type="image/png" href="src/assets/favicon.png")
     style
-      include ../components/form-elements.scss
+      include ./../../components/form-elements.scss
       include form-elements-page.scss
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   .forms-elements-page
-    include ../blocks/header-logo/header-img-logo.pug
-    include ../blocks/label-h2/label.pug
-    include ../blocks/input/input.pug
-    include ../blocks/input-condition/input-condition.pug
-    include ../blocks/dropdown-condition/dropdown-condition.pug
-    include ../blocks/room-privilege/room-privilege.pug
-    include ../blocks/dropdown-options/dropdown-options.pug
-    include ../blocks/comment/comment.pug
-    include ../blocks/button/button.pug
+    include ./../../blocks/header-logo/header-img-logo.pug
+    include ./../../blocks/label-h2/label.pug
+    include ./../../blocks/input/input.pug
+    include ./../../blocks/input-condition/input-condition.pug
+    include ./../../blocks/dropdown-condition/dropdown-condition.pug
+    include ./../../blocks/room-privilege/room-privilege.pug
+    include ./../../blocks/dropdown-options/dropdown-options.pug
+    include ./../../blocks/comment/comment.pug
+    include ./../../blocks/button/button.pug
     .forms-elements 
       .col-1
         .form
@@ -86,7 +86,7 @@ html
                   +label("expandable checkbox list")
                   span.material-icons.expand-arrow expand_more
                 .checkbox-list_options
-                  include ../blocks/checkbox/checkbox.pug
+                  include ./../../blocks/checkbox/checkbox.pug
                   +checkbox('Завтрак')
                   +checkbox('Письменный стол', true)
                   +checkbox('Стул для кормления', true)
@@ -103,22 +103,22 @@ html
             +checkbox('Можно пригласить гостей (до 10 человек)', true)
           .radio-buttons-block
             +label("Radio Buttons")  
-            include ../blocks/radio-btns/radio-btns.pug
+            include ./../../blocks/radio-btns/radio-btns.pug
           .toggle-block
             +label("TOGGLE")   
-            include ../blocks/toggle/toggle.pug
+            include ./../../blocks/toggle/toggle.pug
             +toggle('checked')
             +toggle('notChecked')
           .like-block
             +label("like button")  
             .like-buttons
-              include ../blocks/like-btn/like-btn.pug
+              include ./../../blocks/like-btn/like-btn.pug
               +like-btn(true, 2)
               +like-btn(false, 12)
           .rating-block 
             +label("rate button")
             .stars-block
-              include ../blocks/rating-stars/rating-stars.pug
+              include ./../../blocks/rating-stars/rating-stars.pug
               +ratingStars(1)
               +ratingStars(10)
           .dropdown-block
@@ -134,7 +134,7 @@ html
             .checkbox-list__label
               +label("rich Checkbox Buttons")  
             .checkbox-list_options 
-              include ../blocks/rich-checkbox/rich-checkbox.pug
+              include ./../../blocks/rich-checkbox/rich-checkbox.pug
               +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
               +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
       .col-3
@@ -170,7 +170,7 @@ html
         .pagination
           +label("pagination") 
           br
-          include ../blocks/pagination/pagination.pug
+          include ./../../blocks/pagination/pagination.pug
         .dropdown-block
           .dropdown-block__label
             +label("dropdown")  
@@ -183,7 +183,7 @@ html
         .bullet-list
           +label("bullet list") 
           ul.bullet-list__items
-            include ../blocks/list-item/list-item.pug
+            include ./../../blocks/list-item/list-item.pug
             +list-item("Нельзя с питомцами")
             +list-item("Без вечеринок и мероприятий")
             +list-item("Время прибытия — после 13:00, а выезд до 12:00")
