@@ -46,7 +46,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'landing-page.html',
-      template: "./src/pug/pages/landing-page.pug"
+      template: "./src/pug/pages/landing-page/landing-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'registration-page.html',
