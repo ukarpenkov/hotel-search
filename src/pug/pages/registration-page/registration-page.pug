@@ -7,22 +7,22 @@ html
     link(rel='icon', sizes='image/svg+xml', href='src/assets/favicon.svg')
     link(rel="icon" type="image/png" href="src/assets/favicon.png")
     style
-      include ../components/form-elements.scss
-      include ../components/header/head.scss    
-      include ./landing-page/landing-page.scss
-      include registration-page.scss
-      include ../components/footer/footer.scss
+      include ./../../components/form-elements.scss
+      include ./../../components/header/head.scss
+      include ./../landing-page/landing-page.scss
+      include ./registration-page.scss
+      include ./../../components/footer/footer.scss
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <meta name="viewport" content="1024">
   .registration-page__wrapper
     .landing-page__header 
-      include ../components/header/head
+      include ./../../components/header/head.pug
     .landing-page__main
       .registration-page__main-bgi
         h2 Регистрация аккаунта
-        include   ../components/registration-form/registration-form
+        include   ./../../components/registration-form/registration-form
     .landing-page__footer 
-      include ../components/footer/footer
+      include ./../../components/footer/footer
 
                 
                 

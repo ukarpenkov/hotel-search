@@ -30,7 +30,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: "./src/pug/pages/navigation-page.pug"
+      template: "./src/pug/pages/navigation-page/navigation-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'form-elements-page.html',
@@ -50,7 +50,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'registration-page.html',
-      template: "./src/pug/pages/registration-page.pug"
+      template: "./src/pug/pages/registration-page/registration-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'room-details-page.html',
