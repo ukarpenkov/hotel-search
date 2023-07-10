@@ -8,24 +8,23 @@ html
     link(rel="icon" type="image/png" href="src/assets/favicon.png")
     style
       include room-details-page.scss
-      include ../components/form-elements.scss
-      include ../pages/form-elements-page/form-elements-page.scss
-      include ../components/header/head.scss    
-      include search-room-page.scss
-      include ../components/footer/footer.scss
-      include ./cards-page/cards-page.scss
-      include ./landing-page/landing-page.scss
-      include ./registration-page/registration-page.pug
-      include ./../pages/headers-and-footer-page/headers-and-footer-page.scss
-      include ../components/sign-in-form/sign-in-form.scss
+      include ./../../components/form-elements.scss
+      include ./../form-elements-page/form-elements-page.scss
+      include ./../../components/header/head.scss
+      include ./../search-room-page/search-room-page.scss
+      include ./../../components/footer/footer.scss
+      include ./../cards-page/cards-page.scss
+      include ./../landing-page/landing-page.scss
+      include ./../headers-and-footer-page/headers-and-footer-page.scss
+      include ./../../components/sign-in-form/sign-in-form.scss
   .room-details-wrapper
-    include ../blocks/dropdown-options/dropdown-options.pug
-    include ../blocks/label-h2/label.pug
-    include ../blocks/input/input.pug
-    include ../blocks/summary-order/summary-order.pug
-    include ../blocks/dropdown-options/dropdown-options.pug
+    include ./../../blocks/dropdown-options/dropdown-options.pug
+    include ./../../blocks/label-h2/label.pug
+    include ./../../blocks/input/input.pug
+    include ./../../blocks/summary-order/summary-order.pug
+    include ./../../blocks/dropdown-options/dropdown-options.pug
     .header-page__header
-      include ../components/header/head
+      include ./../../components/header/head
     .room-details__background-images
       .room-details__img-item_big
         img(src="src/images/room-details01.jpg", alt="image").background-image-item_size_big
@@ -39,13 +38,13 @@ html
         .room-details-common-info 
           .room-details__info-about-room
             h1.room-details__label Сведения о номере
-            include ../blocks/room-privilege/room-privilege.pug
+            include ./../../blocks/room-privilege/room-privilege.pug
             +room-privilege("Комфорт", "insert_emoticon", "Шумопоглощающие стены")
             +room-privilege("Удобство", "location_city", "Окно в каждой из спален ")    
             +room-privilege("Уют", "whatshot", "Номер оснащён камином ")    
           .chart-block 
             h1.room-details__label Впечатления от номера
-            include ../components/chart/chart.pug
+            include ./../../components/chart/chart.pug
             +chart(260)
         .comments 
           .comments__header
@@ -79,7 +78,7 @@ html
           .bullet-list 
               h1.room-details__label Правила
               ul.bullet-list__items
-                include ../blocks/list-item/list-item.pug 
+                include ./../../blocks/list-item/list-item.pug 
                 +list-item("Нельзя с питомцами")
                 +list-item("Без вечеринок и мероприятий")
                 +list-item("Время прибытия — после 13:00, а выезд до 12:00")
@@ -88,7 +87,7 @@ html
             p.cancel-info-block Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
       .room-details__aside   
         .card-page__booking-form
-          include ../components/booking-form/booking-form.pug
+          include ./../../components/booking-form/booking-form.pug
     .header-footer-page__footer
       .footer__content
-        include ../components/footer/footer
+        include ./../../components/footer/footer

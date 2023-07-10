@@ -54,19 +54,19 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'room-details-page.html',
-      template: "./src/pug/pages/room-details-page.pug"
+      template: "./src/pug/pages/room-details-page/room-details-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'search-room-page.html',
-      template: "./src/pug/pages/search-room-page.pug"
+      template: "./src/pug/pages/search-room-page/search-room-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'search-room-page.html',
-      template: "./src/pug/pages/search-room-page.pug"
+      template: "./src/pug/pages/search-room-page/search-room-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'sign-in-page.html',
-      template: "./src/pug/pages/sign-in-page.pug"
+      template: "./src/pug/pages/sign-in-page/sign-in-page.pug"
     }),
     new HtmlWebpackPlugin({
       filename: 'colors-and-type.html',
