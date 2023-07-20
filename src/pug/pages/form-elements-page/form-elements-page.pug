@@ -35,7 +35,10 @@ html
               input(type="text" placeholder="This is pretty awesome").input.input_focus
             .field 
               +label("Dropdown")
-              +input("select")
+              .dropdown__input
+                .dropdown__input_default.dropdown__input_wide  
+                  div.dropdown__input-text  Сколько гостей  
+                  span.material-icons.expand-arrow.dropdown__arrow_wide expand_more
             .field
               +label("masked text field")
               +input("text", "ДД.ММ.ГГГГ", "wide")
@@ -190,18 +193,5 @@ html
       .room-privilege
         +room-privilege("Комфорт", "insert_emoticon", "Шумопоглощающие стены")
         +room-privilege("Удобство", "location_city", "Окно в каждой из спален")
-      +comment-block("Мурад Сарафанов","5 дней назад", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из сосе")
-
-
-
-        
-
-
-
-
-
-
-            
-
-        
+      +comment-block("Мурад Сарафанов","5 дней назад", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей")
 
