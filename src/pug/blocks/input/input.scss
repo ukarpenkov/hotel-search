@@ -10,9 +10,13 @@
   &::placeholder {
     color: #d9d9d9;
   }
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
 }
 
-.input.calendar {
+input .input.calendar {
   cursor: pointer;
   width: 150px;
   &::placeholder {
