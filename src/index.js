@@ -34,6 +34,7 @@ function counter() {
 
 
 
+
 counterButtons.forEach(btn => {
   btn.addEventListener('click', counter)
 })
@@ -72,6 +73,8 @@ if (rangeSlider) {
   })
 
 }
+
+
 
 var arrowForward = document.createElement('span')
 arrowForward.innerHTML = 'arrow_forward'
@@ -258,4 +261,5 @@ let showSingInPageBtn = document.querySelector('.navigate-item-link_page_sign-in
 if (showSingInPageBtn) {
   showSingInPageBtn.addEventListener('click', () => hideAndShowPage('.sign-in-page__wrapper'))
 }
+
 

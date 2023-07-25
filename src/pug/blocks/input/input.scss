@@ -16,12 +16,20 @@
   }
 }
 
-input .input.calendar {
+.input.calendar {
   cursor: pointer;
   width: 150px;
   &::placeholder {
     color: rgba(31, 32, 65, 0.75);
   }
+}
+
+.input_middle {
+  width: 267px;
+}
+
+.calendar.calendar_long {
+  width: 320px;
 }
 
 .date-filter__input {
