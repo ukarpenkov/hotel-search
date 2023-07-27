@@ -6,7 +6,7 @@ html
     title= 'TOXIN'
     link(rel='icon', sizes='image/svg+xml', href='src/assets/favicon.svg')
     link(rel="icon" type="image/png" href="src/assets/favicon.png")
-    script(src='./../../blocks/input/input.js')
+    script(src='src/pug/blocks/input/input.js' defer="defer")
     style
       include ./../../components/form-elements.scss
       include form-elements-page.scss
@@ -42,7 +42,7 @@ html
                   span.material-icons.expand-arrow.dropdown__arrow_wide expand_more
             .field
               +label("masked text field")
-              +input("text", "ДД.ММ.ГГГГ", "wide")
+              +input("masked-text", "ДД.ММ.ГГГГ", "wide")
           .date-pickers
             .field
               +label("date Dropdown")

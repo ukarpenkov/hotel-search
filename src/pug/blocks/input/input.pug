@@ -19,8 +19,6 @@ mixin input(type, placeholder, width)
       option(value="") 1
       option(value="") 2
       option(value="") 3
-  if type=="password"
-    input(type=type placeholder=placeholder).input
-  if type=="masked-text"
+  if type==="masked-text"
     input(type="text" placeholder=placeholder maxlength="10").input.js-date-input
 

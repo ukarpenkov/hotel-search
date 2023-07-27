@@ -139,7 +139,6 @@ const myChart = new Chart(ctx, {
 
 var calendar = document.querySelectorAll('.flatpickr-calendar')
 
-console.log(calendar)
 calendar.forEach(item => {
   let applyBtn = document.createElement('p')
   applyBtn.classList.add('calendar_apply-btn', 'apply-btn')
