@@ -6,26 +6,26 @@ mixin dropdown-block(item1, item2, item3, btn1, btn2)
       h2.dropdown-option.label= item1
       .dropdown-counter
         .dropdown-counter__btn(data-direction="minus") 
-          span -
+          span.dropdown-counter__btn-text -
         .dropdown-counter__value.label 0
         .dropdown-counter__btn(data-direction="plus")  
-          span +
+          span.dropdown-counter__btn-text +
     .dropdown-item 
       h2.dropdown-option.label= item2
       .dropdown-counter
         .dropdown-counter__btn(data-direction="minus") 
-          span -
+          span.dropdown-counter__btn-text -
         .dropdown-counter__value.label 0
         .dropdown-counter__btn(data-direction="plus") 
-          span  +
+          span.dropdown-counter__btn-text  +
     .dropdown-item 
       h2.dropdown-option.label= item3
       .dropdown-counter
         .dropdown-counter__btn(data-direction="minus") 
-          span -
+          span.dropdown-counter__btn-text -
         .dropdown-counter__value.label 0
         .dropdown-counter__btn(data-direction="plus") 
-          span  +
+          span.dropdown-counter__btn-text  +
     .dropdown-buttons
       p.apply-btn= btn1
       p.clear-btn= btn2
