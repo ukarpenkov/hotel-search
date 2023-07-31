@@ -17,5 +17,5 @@ mixin room-card(img, number, price, luxe, commentCount)
           include ../../blocks/rating-stars/rating-stars.pug
           +ratingStars(number+price)
         .room-card__comment
-          p.comment-text= commentCount
+          p.comment-counts= commentCount
           span.comment-text-attr &nbspОтзывов
