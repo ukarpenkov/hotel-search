@@ -16,7 +16,7 @@
   }
 }
 
-.input.calendar {
+.calendar {
   cursor: pointer;
   width: 150px;
   &::placeholder {
@@ -28,7 +28,7 @@
   width: 267px;
 }
 
-.calendar.calendar_long {
+.calendar_long {
   width: 320px;
 }
 
