@@ -155,7 +155,6 @@ img {
 .avatar_small {
   width: 160%;
   height: 160%;
-
   float: left;
 }
 
@@ -164,7 +163,7 @@ img {
   padding-left: 20px;
 }
 
-.comment-text .room-privilege__description-text {
+.comment-text {
   width: 653px;
   height: 72px;
 }
@@ -177,7 +176,7 @@ img {
   padding-left: 10px;
 }
 
-.comment .like-button_color {
+.like-button_color {
   float: left;
 }
 
@@ -210,18 +209,6 @@ img {
   width: 267px;
 }
 
-.subscribe-arrow {
-  position: relative;
-  left: 233px;
-  top: -31px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
 .subscribe-arrow {
   position: relative;
   left: 233px;
@@ -275,17 +262,17 @@ img {
   margin-top: 12px;
 }
 
-.forms-elements-page .dropdown__arrow {
+.dropdown__arrow {
   display: inline-block;
 }
 
-.forms-elements-page .dropdown__arrow_wide {
+.dropdown__arrow_wide {
   position: relative;
   left: 165px;
   display: inline-block;
 }
 
-.forms-elements-page .dropdown__arrow_narrow {
+.dropdown__arrow_narrow {
   position: relative;
   left: 122px;
   top: -32px;
