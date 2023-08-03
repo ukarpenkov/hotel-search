@@ -42,3 +42,29 @@
   -moz-appearance: none;
   appearance: none;
 }
+
+.apply-btn {
+  position: relative;
+  bottom: -10px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  cursor: pointer;
+  display: inline-block;
+  left: 50px;
+  top: -7px;
+}
+
+.clear-btn {
+  display: inline-block;
+  left: -63px;
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  top: -7px;
+}
