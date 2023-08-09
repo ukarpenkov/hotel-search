@@ -1,11 +1,16 @@
 .registration-page__main-bgi {
+  display: grid;
+  justify-content: center;
   position: relative;
-  text-align: -webkit-center;
   top: -60px;
   left: -8px;
   width: 1440px;
   background-image: url('src/images/bg-image4.png');
   height: 722px;
+}
+
+.registration-form_sing-up {
+  padding-left: 30px;
 }
 
 .sign-in-page__wrapper .sign-in-form {
@@ -19,13 +24,11 @@
   width: 345px;
   display: flex;
   margin-bottom: 14px;
-  margin-left: 20px;
 }
 
 .registration-page__main-bgi .registration__toggle-block {
   margin-bottom: -5px;
   margin-top: 10px;
-  margin-left: -50px;
 }
 
 @media (max-width: 1200px) {

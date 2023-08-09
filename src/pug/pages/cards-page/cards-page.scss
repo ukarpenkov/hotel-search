@@ -43,18 +43,10 @@
   margin-top: -136px;
 }
 
-// .cards-page__form .registration-form_sing-up h1 {
-//   position: relative;
-//   left: 29px;
-//   font-size: 24px;
-//   line-height: 29px;
-//   color: #1f2041;
-//   margin-bottom: 21px;
-// }
-
 .registration-form_sing-up__h1 {
   position: relative;
   font-size: 24px;
+  padding-left: 30px;
   line-height: 29px;
   color: #1f2041;
   margin-bottom: 21px;
@@ -75,45 +67,19 @@
   margin-left: 25px;
 }
 
-.label-date {
-  position: relative;
-  left: 6px;
-  top: 10px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #1f2041;
-  margin-bottom: 13px;
-}
-
-.label-entries {
-  position: relative;
-  width: 211px;
-  height: 15px;
-  left: 0px;
-  top: 6px;
-  margin-bottom: 11px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #1f2041;
-}
-
-.registration-form_sing-up {
-  display: grid;
-}
-
-.registration-form_sing-up .registration__toggle-block {
+.registration__toggle-block {
   position: relative;
   left: 33px;
   top: -19px;
 }
 
-.registration-form_sing-up .registration__buttons__item {
+.registration__buttons__item {
   position: relative;
   left: -4px;
   top: 4px;
 }
 
-.registration-form_sing-up .sign-in-block {
+.sign-in-block {
   position: relative;
   display: flex;
   width: 320px;
@@ -121,7 +87,7 @@
   top: 7px;
 }
 
-.cards-page__form .sign-in-form {
+.sign-in-form {
   margin-top: 0px;
   width: 380px;
   height: 358px;
