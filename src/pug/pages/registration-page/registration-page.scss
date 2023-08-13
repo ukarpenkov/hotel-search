@@ -18,6 +18,11 @@
   margin-top: 61px;
   left: 0px;
   top: 175px;
+  text-align: -webkit-center;
+}
+
+.sign-in-page__wrapper .sign-in-block {
+  margin-left: 30px;
 }
 
 .registration__radio-buttons-items {
@@ -47,10 +52,6 @@
 
   .registration-form_sing-up .label-entries {
     left: 30px;
-  }
-
-  .sign-in-block {
-    margin-left: 30px;
   }
 
   .sign-in-page__wrapper .sign-in-form {

@@ -101,27 +101,9 @@
   border-radius: 4px;
 }
 
-.sign-in-form .sign-in-form__data h1 {
+.sign-in__mixed-fields {
   position: relative;
   left: 28px;
-}
-
-.sign-in-form__data .sign-in__mixed-fields {
-  position: relative;
-  left: 28px;
-}
-
-.sign-in-form__data .registration__buttons__item {
-  position: relative;
-  left: 0px;
-  margin-right: -1px;
-  margin-bottom: 43px;
-}
-
-.sign-in-form__data .sign-in-block {
-  position: relative;
-  left: 29px;
-  top: 2px;
 }
 
 .dropdown__input_guests.dropdown__input_guests {
@@ -145,7 +127,7 @@
   top: 1px;
 }
 
-.sign-in__btn-lg.search-button {
+.search-button {
   position: relative;
   top: 30px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
