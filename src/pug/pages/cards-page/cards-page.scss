@@ -115,56 +115,18 @@
   z-index: 1;
 }
 
-.material-icons.dropdown__arrow_comfort {
-  position: relative;
-  left: 158px;
-  top: 1px;
-}
-
-.material-icons.dropdown-arrow-guests {
-  position: relative;
-  left: 169px;
-  top: 1px;
-}
-
 .search-button {
   position: relative;
   top: 30px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
-.sign-in__arrow.search-arrow {
-  left: 73px;
-}
-
-.sign-in__arrow.book-arrow {
-  position: relative;
-  left: 79px;
-  top: 0px;
-}
 .calendar.calendar_long.form-control.input {
   width: 320px;
 }
 
 .total-info {
   color: rgba(31, 32, 65, 0.75);
-}
-
-.card-from.room-card-number {
-  font-size: 24px;
-  color: #1f2041;
-}
-
-h2.price-sum {
-  font-size: 19px;
-  color: #1f2041;
-}
-
-.card-page.room-card-info__price {
-  position: relative;
-  left: 91px;
-  top: 3px;
-  color: rgba(31, 32, 65, 0.5);
 }
 
 .total-info-options {
@@ -195,7 +157,7 @@ h2.price-sum {
   width: 200px;
 }
 
-.visible-calendar.form-control.input {
+.visible-calendar {
   display: none;
 }
 
@@ -203,7 +165,7 @@ h2.price-sum {
   margin-top: -15px;
 }
 
-.cards-page__cards .search-room__main-col {
+.search-room__main-col {
   margin-bottom: 47px;
   width: 270px;
 }
