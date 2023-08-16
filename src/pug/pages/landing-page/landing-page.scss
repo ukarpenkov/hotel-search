@@ -41,10 +41,6 @@
   margin-left: 30px;
 }
 
-.dropdown__input_expanded.dropdown__input_expanded-apply {
-  background-color: #fff;
-}
-
 .dropdown-arrow {
   position: relative;
   top: 0px;
@@ -55,7 +51,7 @@
   display: none;
 }
 
-.landing-page__main .sign-in__btn-lg.search-button {
+.search-button {
   position: relative;
   width: 320px;
   top: 30px;
@@ -64,27 +60,22 @@
   color: #ffffff;
 }
 
-.landing-page__main .sign-in__arrow.search-arrow {
+.sign-in__arrow.search-arrow {
   position: relative;
   left: 73px;
   top: 0px;
 }
 
-.dropdown__input_expanded.dropdown-landing-guests.dropdown__input_expanded-apply {
-  position: absolute;
-  z-index: 2;
-}
-
-.material-icons.dropdown-arrow-guests {
+.dropdown-arrow-guests {
   position: relative;
   left: 169px;
   top: 1px;
 }
 
-.dropdown__input_guests.dropdown__input_guests {
+.dropdown__input_guests {
   width: 320px;
   background-color: #fff;
-  border: 1px px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 2px;
   position: absolute;
   z-index: 1;
