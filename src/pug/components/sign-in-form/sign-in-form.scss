@@ -9,8 +9,8 @@
 }
 
 .sign-in-form__data_h1 {
-  margin-left: 27px;
-  text-align: left;
+  position: relative;
+  left: 30px;
   font-size: 24px;
   color: #1f2041;
   margin-bottom: 21px;
@@ -18,8 +18,9 @@
 
 .sign-in__mixed-fields {
   margin-bottom: -9px;
+  position: relative;
+  left: 34px;
 }
-
 .sign-in__btn-lg {
   position: relative;
   width: 320px;
@@ -38,8 +39,4 @@
   position: relative;
   left: 114px;
   top: 0px;
-}
-
-.sign-in-form__data {
-  display: grid;
 }

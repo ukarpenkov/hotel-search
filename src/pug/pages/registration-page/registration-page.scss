@@ -7,18 +7,11 @@
   width: 1440px;
   background-image: url('src/images/bg-image4.png');
   height: 722px;
+  align-items: center;
 }
 
 .registration-form_sing-up {
   padding-left: 30px;
-}
-
-.sign-in-form {
-  position: relative;
-  margin-top: 61px;
-  left: 0px;
-  top: 175px;
-  text-align: -webkit-center;
 }
 
 .sign-in-page__wrapper {
@@ -29,11 +22,6 @@
   width: 345px;
   display: flex;
   margin-bottom: 14px;
-}
-
-.registration-page__main-bgi .registration__toggle-block {
-  margin-bottom: -5px;
-  margin-top: 10px;
 }
 
 @media (max-width: 1200px) {
