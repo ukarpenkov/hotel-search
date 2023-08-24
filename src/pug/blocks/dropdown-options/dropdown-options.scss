@@ -41,10 +41,16 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.dropdown__apply-btn {
+.dropdown-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
   position: relative;
-  left: 223px;
-  bottom: -10px;
+  top: 15px;
+}
+
+.dropdown__apply-btn {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
@@ -54,9 +60,6 @@
 
 .dropdown__clear-btn {
   cursor: pointer;
-  position: relative;
-  left: 10px;
-  bottom: 15px;
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;

@@ -51,15 +51,6 @@
   justify-content: space-between;
 }
 
-.comments .comment-block {
-  margin-top: -1px;
-  margin-left: -16px;
-}
-
-.room-details__info-about-room .room-privilege-block {
-  margin-top: 24px;
-}
-
 .room-details__main {
   margin-left: 132px;
   margin-top: 27px;
@@ -74,26 +65,18 @@
   width: 686px;
   justify-content: space-between;
   margin-left: 15px;
+  margin-top: 0px;
 }
 
-.room-details-rules .bullet-list {
-  margin-top: 0;
+.room-details_bullet-list-mt {
+  margin-top: -75px;
 }
 
-.bullet-list .bullet-list__items {
-  padding-left: 0;
-}
-
-.bullet-list .room-details__label {
-  margin-bottom: 9px;
-}
-
-.cancel-info-block .room-details__label {
-  margin-bottom: 19px;
+.room-details__label {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.bullet-list .bullet-list__items:last-child {
+.bullet-list__items:last-child {
   width: 237px;
 }
 
@@ -102,6 +85,7 @@
   width: 709px;
   justify-content: space-between;
 }
+
 .room-details__content {
   display: flex;
   width: 1440px;
@@ -110,7 +94,7 @@
   padding-right: 146px;
 }
 
-.room-details__aside .card-page__booking-form {
+.card-page__booking-form {
   margin-top: 40px;
 }
 
@@ -120,7 +104,7 @@
   left: 0px;
 }
 
-.room-details-wrapper .header-footer-page__footer {
+.header-footer-page__footer {
   margin-top: 72px;
   box-shadow: 0px -1px 0px 0px rgb(31 32 65 / 24%);
 }
@@ -130,7 +114,7 @@
     display: grid;
   }
 
-  .room-details__aside .card-page__booking-form {
+  .card-page__booking-form {
     margin-left: 120px;
   }
 }

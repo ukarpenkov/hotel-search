@@ -75,13 +75,14 @@ html
               .comment-text 
                 p.room-privilege__description-text Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
         .room-details-rules
-          .bullet-list 
-              h1.room-details__label Правила
-              ul.bullet-list__items
-                include ./../../blocks/list-item/list-item.pug 
-                +list-item("Нельзя с питомцами")
-                +list-item("Без вечеринок и мероприятий")
-                +list-item("Время прибытия — после 13:00, а выезд до 12:00")
+          .room-details_bullet-list-mt
+            .bullet-list 
+                h1.room-details__label Правила
+                ul.bullet-list__items
+                  include ./../../blocks/list-item/list-item.pug 
+                  +list-item("Нельзя с питомцами")
+                  +list-item("Без вечеринок и мероприятий")
+                  +list-item("Время прибытия — после 13:00, а выезд до 12:00")
           .cancel-info-block 
             h1.room-details__label Отмена
             p.cancel-info-block Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
