@@ -12,11 +12,12 @@ html
           +input("email","Email","wide")
         .field 
           +input("password", "Пароль", "wide") 
-      .registration__buttons__item
-        button.btn.sign-in__btn-lg 
-          span.sign-in__btn-lg-text Войти
-          span.material-icons.sign-in__arrow arrow_forward
-      .sign-in-block
-        span.sign-in-form__info Нет аккаунта на Toxin?
-        include ./../../blocks/button/button.pug
-        +button("border-dark", "СОЗДАТЬ")
+      .sign-in__bts-block
+        .registration__buttons__item
+          button.btn.sign-in__btn-lg 
+            span.sign-in__btn-lg-text Войти
+            span.material-icons.sign-in__arrow arrow_forward
+        .sign-in-block
+          span.sign-in-form__info Нет аккаунта на Toxin?
+          include ./../../blocks/button/button.pug
+          +button("border-dark", "СОЗДАТЬ")
