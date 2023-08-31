@@ -18,8 +18,9 @@
 }
 
 .buttons__item {
-  margin-right: 13px;
-  margin-bottom: 27px;
+  margin-right: 18px;
+  margin-bottom: 20px;
+  margin-top: 8px;
 }
 
 .btn {
@@ -51,6 +52,7 @@
 }
 
 .buttons {
+  margin-left: -4px;
   margin-bottom: 68px;
 }
 
@@ -322,7 +324,7 @@ input::-webkit-inner-spin-button {
 .filter-price__head {
   display: flex;
   width: 266px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   margin-left: -12px;
 }
 
