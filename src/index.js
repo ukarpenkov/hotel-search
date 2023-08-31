@@ -164,23 +164,23 @@ var addOptionsArrow = document.querySelector('.dropdown__arrow_checkbox')
 var guestsArrowLanding = document.querySelector('.dropdown-arrow-guests-lp')
 
 
-function hideAndShowElement(element) {
+function changeVisibleElement(element) {
   element.classList.toggle('hidden')
 }
 
 if (comfortArrow) {
-  comfortArrow.addEventListener('click', () => hideAndShowElement(dropdownMenu))
+  comfortArrow.addEventListener('click', () => changeVisibleElement(dropdownMenu))
 }
 
 if (guestsArrow) {
-  guestsArrow.addEventListener('click', () => hideAndShowElement(dropdownGuestsMenu))
+  guestsArrow.addEventListener('click', () => changeVisibleElement(dropdownGuestsMenu))
 }
 
 if (addOptionsArrow) {
-  addOptionsArrow.addEventListener('click', () => hideAndShowElement(dropdownCheckboxMenu))
+  addOptionsArrow.addEventListener('click', () => changeVisibleElement(dropdownCheckboxMenu))
 }
 if (guestsArrowLanding) {
-  guestsArrowLanding.addEventListener('click', () => hideAndShowElement(dropdownGuestsMenuLanding))
+  guestsArrowLanding.addEventListener('click', () => changeVisibleElement(dropdownGuestsMenuLanding))
 }
 
 
@@ -199,7 +199,7 @@ let pageClassesList = [
 ]
 
 
-function hideAndShowPage(pageClass) {
+function changeVisiblePage(pageClass) {
   let page = document.querySelector(pageClass)
   for (let i = 0; i < pageClassesList.length; i++) {
     document.querySelector(pageClassesList[i]).classList.add('hidden-page')
@@ -210,55 +210,55 @@ function hideAndShowPage(pageClass) {
 let showColorAndTypesPageBtn = document.querySelector('.navigate-item-link_page_color-type')
 
 if (showColorAndTypesPageBtn) {
-  showColorAndTypesPageBtn.addEventListener('click', () => hideAndShowPage('.color-and-type'))
+  showColorAndTypesPageBtn.addEventListener('click', () => changeVisiblePage('.color-and-type'))
 }
 
 let showFormElPageBtn = document.querySelector('.navigate-item-link_page_form-elements')
 
 if (showFormElPageBtn) {
-  showFormElPageBtn.addEventListener('click', () => hideAndShowPage('.forms-elements-page'))
+  showFormElPageBtn.addEventListener('click', () => changeVisiblePage('.forms-elements-page'))
 }
 
 let showCardsPageBtn = document.querySelector('.navigate-item-link_page_cards')
 
 if (showCardsPageBtn) {
-  showCardsPageBtn.addEventListener('click', () => hideAndShowPage('.cards-page__wrapper'))
+  showCardsPageBtn.addEventListener('click', () => changeVisiblePage('.cards-page__wrapper'))
 }
 
 let showHeadersAndFooterBtn = document.querySelector('.navigate-item-link_page_header-footer')
 
 if (showHeadersAndFooterBtn) {
-  showHeadersAndFooterBtn.addEventListener('click', () => hideAndShowPage('.header-footer-page__wrapper'))
+  showHeadersAndFooterBtn.addEventListener('click', () => changeVisiblePage('.header-footer-page__wrapper'))
 }
 
 let showLandingPageBtn = document.querySelector('.navigate-item-link_page_landing')
 
 if (showLandingPageBtn) {
-  showLandingPageBtn.addEventListener('click', () => hideAndShowPage('.landing-page__wrapper'))
+  showLandingPageBtn.addEventListener('click', () => changeVisiblePage('.landing-page__wrapper'))
 }
 
 let showSearchRoomPageBtn = document.querySelector('.navigate-item-link_page_search')
 
 if (showSearchRoomPageBtn) {
-  showSearchRoomPageBtn.addEventListener('click', () => hideAndShowPage('.search-room__wrapper'))
+  showSearchRoomPageBtn.addEventListener('click', () => changeVisiblePage('.search-room__wrapper'))
 }
 
 let showRoomDetailsPageBtn = document.querySelector('.navigate-item-link_page_room-details')
 
 if (showRoomDetailsPageBtn) {
-  showRoomDetailsPageBtn.addEventListener('click', () => hideAndShowPage('.room-details-wrapper'))
+  showRoomDetailsPageBtn.addEventListener('click', () => changeVisiblePage('.room-details-wrapper'))
 }
 
 let showSingUpPageBtn = document.querySelector('.navigate-item-link_page_sing-up')
 
 if (showSingUpPageBtn) {
-  showSingUpPageBtn.addEventListener('click', () => hideAndShowPage('.registration-page__wrapper'))
+  showSingUpPageBtn.addEventListener('click', () => changeVisiblePage('.registration-page__wrapper'))
 }
 
 let showSingInPageBtn = document.querySelector('.navigate-item-link_page_sign-in')
 
 if (showSingInPageBtn) {
-  showSingInPageBtn.addEventListener('click', () => hideAndShowPage('.sign-in-page__wrapper'))
+  showSingInPageBtn.addEventListener('click', () => changeVisiblePage('.sign-in-page__wrapper'))
 }
 
 
