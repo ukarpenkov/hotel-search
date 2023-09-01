@@ -1,5 +1,11 @@
 .field {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.field_mt-1 {
+  position: relative;
+  top: 1px;
+  margin-bottom: 10px;
 }
 
 .input.input_focus {
@@ -246,8 +252,9 @@ img {
 .dropdown__input-text {
   display: flex;
   position: relative;
-  left: 10px;
   width: 295px;
+  left: 15px;
+  bottom: 1px;
   height: 40px;
   color: rgba(31, 32, 65, 0.75);
   align-items: center;
@@ -270,13 +277,13 @@ img {
 
 .dropdown__arrow_wide {
   position: relative;
-  left: 165px;
+  left: 168px;
   display: inline-block;
 }
 
 .dropdown__arrow_narrow {
   position: relative;
-  left: 122px;
+  left: 116px;
   top: -32px;
   display: inline-block;
   cursor: pointer;
@@ -519,11 +526,13 @@ span.flatpickr-weekday {
 }
 
 .date-filter {
-  margin-top: 20px !important;
+  position: relative;
+  bottom: 3px;
 }
 
 .subscribe-field {
-  margin-top: 34px;
+  position: relative;
+  top: 6px;
 }
 
 .head__logo-img {

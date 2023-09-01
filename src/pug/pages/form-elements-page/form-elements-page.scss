@@ -35,6 +35,11 @@
   margin-left: 130px;
 }
 
+.dropdown__input_mt-1 {
+  position: relative;
+  bottom: 3px;
+}
+
 @media (max-width: 1200px) {
   .forms-elements {
     grid-template-columns: repeat(1, 1fr);
