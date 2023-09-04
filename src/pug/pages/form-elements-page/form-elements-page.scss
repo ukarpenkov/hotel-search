@@ -40,6 +40,26 @@
   bottom: 3px;
 }
 
+.dropdown-block {
+  margin-top: 40px;
+}
+
+.dropdown-block_mt_default {
+  position: relative;
+  top: 29px;
+}
+
+.checkbox-list__expand {
+  position: relative;
+  top: 23px;
+}
+
+.checkbox-expand-arrow {
+  position: relative;
+  left: 34px;
+  top: 3px;
+}
+
 @media (max-width: 1200px) {
   .forms-elements {
     grid-template-columns: repeat(1, 1fr);

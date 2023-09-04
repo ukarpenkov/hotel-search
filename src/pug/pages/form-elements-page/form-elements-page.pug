@@ -63,7 +63,7 @@ html
               .subcribe-input
                 +input("text", "Email", "middle")
                 span.material-icons.subscribe-field-arrow arrow_forward 
-        .dropdown-block
+        .dropdown-block_mt_default
           .dropdown-block__label
             +label("dropdown")
             +dropdown-condition("DEFAULT")
@@ -85,11 +85,11 @@ html
             .checkbox-list_close
               .checkbox-list__label 
                 +label("expandable checkbox list")
-                span.material-icons.expand-arrow expand_more
-              .checkbox-list
+                span.material-icons.expand-arrow.checkbox-expand-arrow  expand_more
+              .checkbox-list__expand
                 .checkbox-list__label 
                   +label("expandable checkbox list")
-                  span.material-icons.expand-arrow expand_more
+                  span.material-icons.expand-arrow.checkbox-expand-arrow  expand_more
                 .checkbox-list_options
                   include ./../../blocks/checkbox/checkbox.pug
                   +checkbox('Завтрак')
