@@ -5,7 +5,7 @@ mixin comment-block(userName, date, text)
       .avatar  
         img(src="src/images/avatar.svg", alt="avatar").avatar_small
       .user-name
-        p.room-privilege__description-label= name
+        p.room-privilege__description-label= userName
         p.room-privilege__description-text= date
     .comment
       .like-button.like-button_color
