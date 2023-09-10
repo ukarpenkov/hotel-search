@@ -115,6 +115,8 @@ img {
 }
 
 .stars-block {
+  position: relative;
+  top: 3px;
   display: flex;
   align-items: flex-start;
   align-self: flex-start;
@@ -125,12 +127,12 @@ img {
 }
 
 .rating-block {
-  margin-top: 32px;
-  margin-bottom: 176px;
+  margin-top: 30px;
+  margin-bottom: 183px;
 }
 
 .like-block {
-  margin-top: 31px;
+  margin-top: 28px;
 }
 
 .like-buttons {
@@ -213,6 +215,7 @@ img {
   position: relative;
   padding: 0 0 0 52px;
   cursor: pointer;
+  bottom: 2px;
 }
 
 .toggle-label {
