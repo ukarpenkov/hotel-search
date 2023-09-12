@@ -64,6 +64,83 @@
   top: 3px;
 }
 
+.buttons__item {
+  position: relative;
+}
+
+.buttons__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'btn1 btn2'
+    'btn3 btn4'
+    'btn5 btn6'
+    'btn7 btn7';
+  width: 220px;
+  height: 200px;
+}
+
+.buttons__item_fill_dark-purple {
+  grid-area: btn1;
+}
+
+.buttons__item_fill_light-purple {
+  grid-area: btn2;
+}
+
+.buttons__item_border_dark-purple {
+  grid-area: btn3;
+}
+
+.buttons__item_border_light-purple {
+  grid-area: btn4;
+}
+
+.buttons__item_no-border_light {
+  grid-area: btn5;
+}
+
+.buttons__item_no-border_dark {
+  grid-area: btn6;
+}
+
+.buttons__item_width_long {
+  grid-area: btn7;
+  position: relative;
+  bottom: 28px;
+  left: 119px;
+}
+
+.buttons__item_fill_dark-purple {
+  top: 1px;
+  left: 1px;
+}
+
+.buttons__item_fill_light-purple {
+  top: 1px;
+  left: 1px;
+}
+
+.buttons__item_border_dark-purple {
+  top: 1px;
+  left: 1px;
+}
+
+.buttons__item_border_light-purple {
+  top: 1px;
+  left: 1px;
+}
+.buttons__item_no-border_light {
+  top: 1px;
+  left: 1px;
+}
+
+.buttons__item_no-border_dark {
+  top: 1px;
+  left: 1px;
+}
+
 @media (max-width: 1200px) {
   .forms-elements {
     grid-template-columns: repeat(1, 1fr);

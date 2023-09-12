@@ -159,19 +159,20 @@ html
           .buttons__label
             +label("buttons")  
             .buttons__items
-              .buttons__item
+              .buttons__item.buttons__item_fill_dark-purple
                 +button("fill-dark", "CLICK ME")
-              .buttons__item
+              .buttons__item.buttons__item_fill_light-purple
                 +button("fill-light", "CLICK ME")
-              .buttons__item
+              .buttons__item.buttons__item_border_dark-purple
                 +button("border-dark", "CLICK ME")
-              .buttons__item
+              .buttons__item.buttons__item_border_light-purple
                 +button("border-light", "CLICK ME")
-              .buttons__item
+              .buttons__item.buttons__item_no-border_light
                 +button("light", "CLICK ME")
-              .buttons__item
+              .buttons__item.buttons__item_no-border_dark
                 +button("dark", "CLICK ME")
-                button.btn.btn_lg  <span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span>
+              .buttons__item.buttons__item_width_long 
+                button.btn.btn_lg <span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span>
         .pagination
           +label("pagination") 
           br
