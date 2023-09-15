@@ -141,6 +141,12 @@
   left: 1px;
 }
 
+.pagination__items {
+  position: relative;
+  top: 14px;
+  right: 2px;
+}
+
 @media (max-width: 1200px) {
   .forms-elements {
     grid-template-columns: repeat(1, 1fr);

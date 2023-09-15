@@ -174,9 +174,10 @@ html
               .buttons__item.buttons__item_width_long 
                 button.btn.btn_lg <span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span>
         .pagination
-          +label("pagination") 
-          br
-          include ./../../blocks/pagination/pagination.pug
+          .pagination__items
+            +label("pagination") 
+            br
+            include ./../../blocks/pagination/pagination.pug
         .dropdown-block
           .dropdown-block__label
             +label("dropdown")  
