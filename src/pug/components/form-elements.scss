@@ -93,9 +93,17 @@ img {
 .checkbox-list_rich {
   margin-top: 90px;
 }
+
 .checkbox-list_options {
   display: grid;
   gap: 10px;
+  position: relative;
+  bottom: 3px;
+}
+
+.checkbox-list_options_rich {
+  position: relative;
+  bottom: 1px;
 }
 
 .bullet-list {
@@ -121,7 +129,7 @@ img {
 
 .rating-block {
   margin-top: 30px;
-  margin-bottom: 183px;
+  margin-bottom: 186px;
 }
 
 .like-block {
@@ -208,7 +216,7 @@ img {
   position: relative;
   padding: 0 0 0 52px;
   cursor: pointer;
-  bottom: 2px;
+  top: 1px;
 }
 
 .toggle-label {

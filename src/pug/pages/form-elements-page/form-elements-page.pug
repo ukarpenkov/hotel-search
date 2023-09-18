@@ -138,10 +138,11 @@ html
           .checkbox-list_rich 
             .checkbox-list__label
               +label("rich Checkbox Buttons")  
-            .checkbox-list_options 
-              include ./../../blocks/rich-checkbox/rich-checkbox.pug
-              +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
-              +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
+            .checkbox-list_options
+              .checkbox-list_options_rich 
+                include ./../../blocks/rich-checkbox/rich-checkbox.pug
+                +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+                +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
       .col-3
         .filter-price
           .filter-price__head
