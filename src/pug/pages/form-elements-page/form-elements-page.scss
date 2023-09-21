@@ -145,10 +145,28 @@
   left: -3px;
 }
 
+.dropdown-block_with-buttons_apply-clr {
+  position: relative;
+  bottom: 2px;
+  right: 3px;
+}
+
 .pagination__items {
   position: relative;
   top: 12px;
   right: 2px;
+}
+
+.bullet-list {
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+}
+
+.bullet-list__items {
+  position: relative;
+  bottom: 2px;
+  left: 1px;
 }
 
 @media (max-width: 1200px) {
