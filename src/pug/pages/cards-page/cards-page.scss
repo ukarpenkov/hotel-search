@@ -12,7 +12,8 @@
 
 .search-form__dropdown-block {
   position: relative;
-  top: 3px;
+  top: 1px;
+  margin-bottom: 18px;
 }
 
 .card-page-grid {
@@ -116,7 +117,7 @@
   left: 28px;
 }
 
-.dropdown__input_guests.dropdown__input_guests {
+.dropdown__input_guests {
   width: 320px;
   background-color: #fff;
   border: 1px px solid rgba(31, 32, 65, 0.25);
