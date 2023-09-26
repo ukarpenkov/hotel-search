@@ -78,12 +78,14 @@
 }
 
 .registration__date-fields {
-  margin-bottom: 15px;
+  margin-bottom: -2px;
+  position: relative;
+  bottom: 7px;
 }
 
 .registration__toggle-block {
   position: relative;
-  margin-top: 10px;
+  margin-top: 65px;
 }
 
 .registration__buttons__item {
@@ -175,6 +177,10 @@
 .search-room__main-col {
   margin-bottom: 47px;
   width: 270px;
+}
+
+.registration-form_sing-up {
+  padding-right: 4px;
 }
 
 @media (max-width: 1200px) {
