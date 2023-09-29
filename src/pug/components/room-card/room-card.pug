@@ -1,4 +1,6 @@
 mixin room-card(img, number, price, luxe, commentCount)
+  style 
+    include ./room-card.scss
   .room-card
     .room-card-img
       img.room-picture(src=`src/images/${img}`, alt="room interior")
@@ -8,8 +10,8 @@ mixin room-card(img, number, price, luxe, commentCount)
           p.room-card-sign-number № 
           h2.room-card-number= number
         .special-offer
-          h3.luxe-attr= luxe 
-        .room-card-info__price 
+          h3.room-card__luxe= luxe 
+        .room-card-info__price
           span.room-price= price
           span.price-per &nbsp в сутки
       .room-card-rating
