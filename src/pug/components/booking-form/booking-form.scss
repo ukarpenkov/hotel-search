@@ -1,5 +1,5 @@
 .card-page__room-card-info {
-  margin-bottom: -8px;
+  margin-bottom: -7px;
 }
 
 .room-card-info__text {
@@ -17,9 +17,12 @@
   align-items: baseline;
 }
 
-.room-card-sign-number {
+.forms-sign-number {
   font-weight: 700;
   color: #1f2041;
+  position: relative;
+  bottom: 1px;
+  right: 4px;
 }
 
 .room-card-number_form_booking {

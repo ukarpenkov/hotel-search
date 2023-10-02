@@ -47,6 +47,8 @@
   font-size: 19px;
   line-height: 17px;
   color: #1f2041;
+  position: relative;
+  left: 4px;
 }
 
 .luxe-attr {
@@ -64,6 +66,8 @@
 
 .room-card-info {
   margin-left: 20px;
+  position: relative;
+  bottom: 3px;
 }
 
 .room-card-info__number {
@@ -106,8 +110,10 @@
   width: 230px;
   box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
   justify-content: space-around;
+  position: relative;
+  right: 6px;
+  top: 1px;
 }
-
 .stars-block {
   width: 120px;
 }
@@ -137,6 +143,9 @@
 .room-card__comment {
   display: flex;
   align-items: center;
+  position: relative;
+  left: 11px;
+  top: 2px;
 }
 
 .filter-price_description {

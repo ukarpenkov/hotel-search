@@ -1,14 +1,10 @@
-.special-offer {
-  position: relative;
-
-  right: 14px;
-}
-
 .room-card__luxe {
   position: relative;
   font-size: 12px;
   text-transform: uppercase;
   color: #bc9cff;
+  top: 3px;
+  right: 8px;
 }
 
 .room-card-info__block {
@@ -25,4 +21,9 @@
   position: relative;
   top: 3px;
   left: 6px;
+}
+
+.room-card-sign-number {
+  font-weight: 700;
+  color: #1f2041;
 }
