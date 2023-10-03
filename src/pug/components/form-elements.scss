@@ -463,13 +463,42 @@ input::-webkit-inner-spin-button {
 .flatpickr-current-month {
   left: 20px !important;
   margin-bottom: 30px !important;
+  margin-top: 10px;
 }
 .flatpickr-months {
   margin-top: 15px !important;
 }
 
+.flatpickr-innerContainer {
+  margin-left: 18px;
+}
+
+.flatpickr-weekdays {
+  width: 91% !important;
+}
+
+.dayContainer {
+  justify-content: flex-start !important;
+  height: 205px;
+}
+
+.flatpickr-days {
+  left: 3px;
+  top: 5px;
+  margin-bottom: 12px;
+}
+
+.calendar_apply-btn {
+  position: relative;
+  left: 62px !important;
+}
+
 .flatpickr-month {
-  margin-bottom: 30px !important;
+  margin-bottom: 40px !important;
+}
+
+.flatpickr-months .flatpickr-month {
+  height: 37px !important;
 }
 
 span.flatpickr-weekday {
@@ -512,18 +541,19 @@ span.flatpickr-weekday {
   height: 40px !important;
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
   border-radius: 22px !important;
+  z-index: 1;
 }
 
 .flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
 .flatpickr-months .flatpickr-next-month.flatpickr-next-month {
-  right: 0 !important;
-  top: 13px !important;
+  right: 9px !important;
+  top: 9px !important;
 }
 
 .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
 .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
-  left: 0 !important;
-  top: 13px !important;
+  left: 9px !important;
+  top: 10px !important;
 }
 
 .date-filter_arrow {

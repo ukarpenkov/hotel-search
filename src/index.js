@@ -126,7 +126,6 @@ const data = {
       '#FFE39C'
     ],
     hoverOffset: 0,
-
   }]
 };
 const myChart = new Chart(ctx, {
@@ -134,7 +133,6 @@ const myChart = new Chart(ctx, {
   data: data,
 
 });
-
 
 
 var calendar = document.querySelectorAll('.flatpickr-calendar')
