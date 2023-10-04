@@ -1,6 +1,13 @@
 .header-page__logo {
   margin-bottom: 15px;
-  height: 140px;
+  height: 138px;
+  padding-left: 10px;
+}
+
+.header-footer-page__wrapper {
+  background-color: #e5e5e5;
+  width: 100%;
+  margin-left: -8px;
 }
 
 .header-footer-page__footer {
@@ -9,7 +16,7 @@
 }
 
 .header-footer-page__wrapper {
-  background-color: #e5e5e5;
+  background-color: rgba(31, 32, 65, 0.1);
 }
 
 .footer__content {
@@ -23,6 +30,7 @@
 .header-page__header {
   position: relative;
   margin-bottom: 38px;
+  padding-left: 7px;
 }
 
 .header-page__logged-in-header {
@@ -42,6 +50,8 @@
 
 .header__logged-in-menu {
   margin-bottom: 10px;
+  position: relative;
+  left: 48px;
 }
 
 .stroke {
