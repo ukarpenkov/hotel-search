@@ -43,13 +43,24 @@ $footerTextColor: #1f2041;
 
 .footer-list__item {
   display: block;
+  margin-bottom: -2px;
 }
 
 .footer-list__item-sub {
   display: block;
   width: 260px;
-  height: 48px;
   color: rgba(31, 32, 65, 0.75);
+  position: relative;
+  left: -8px;
+  top: 15px;
+  height: 6px;
+  line-height: 22px;
+}
+
+.footer-list__subscribe-field {
+  position: relative;
+  top: 56px;
+  left: -8px;
 }
 
 .subscribe-field {
@@ -82,13 +93,19 @@ $footerTextColor: #1f2041;
 
 .footer_copyright-txt {
   color: rgba(31, 32, 65, 0.75);
+  position: relative;
+  top: 2px;
+  left: -3px;
 }
 
 .footer__social-icons {
   display: flex;
-  width: 120px;
+  width: 129px;
   justify-content: space-around;
-  margin-right: 15px;
+  margin-right: 22px;
+  position: relative;
+  top: 5px;
+  left: 23px;
 }
 
 .social-logo {
@@ -108,25 +125,25 @@ $footerTextColor: #1f2041;
 
 .footer-item__nav {
   position: relative;
-  left: 4px;
+  left: 0px;
   top: 1px;
 }
 
 .footer-item__about {
   position: relative;
-  left: 4px;
+  left: -7px;
   top: 1px;
 }
 
 .footer-item__service {
   position: relative;
-  left: 4px;
+  left: 22px;
   top: 1px;
 }
 
 .footer-item__sub {
   position: relative;
-  left: 4px;
+  left: 9px;
   top: 1px;
 }
 
