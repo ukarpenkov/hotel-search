@@ -3,13 +3,19 @@
   top: -60px;
   left: -8px;
   display: block;
-  height: 888px;
+  height: 845px;
   background-image: url('src/images/bg-image3.png');
+}
+
+.landing-page__main {
+  margin-left: -2px;
+  margin-top: 2px;
 }
 
 .landing-page__header {
   position: relative;
   z-index: 2;
+  margin-left: -5px;
 }
 
 .landing-page__search-form {
