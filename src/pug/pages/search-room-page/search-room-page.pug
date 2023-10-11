@@ -75,7 +75,8 @@ html
           +checkbox('Телевизор') 
           +checkbox('Шампунь')                      
     .search-room__main
-        +label("Номера, которые мы для вас подобрали")     
+        .search-room-page__header-wrapper
+          h1.search-room-page__header Номера, которые мы для вас подобрали    
         .search-room__cards
           .search-room__main-col
             +room-card("room888.png", "888", "9 990₽", "ЛЮКС", "145")
