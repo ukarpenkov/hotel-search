@@ -32,7 +32,7 @@ html
       .search-form__dropdown-block
         .dropdown-block__label 
           h2.label гости
-        .dropdown__input
+        .dropdown__input.searching-room__guest-filter
           .dropdown__input_default.dropdown__input_middle
             span.dropdown__input-text  Сколько гостей  
             <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
@@ -50,7 +50,7 @@ html
       .search-room-checkbox-list_rich 
         .checkbox-list__label
           +label("доступность")   
-        .checkbox-list_options 
+        .checkbox-list__options_with_discribe
           +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
           +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
       .dropdown-block
@@ -63,7 +63,7 @@ html
           .dropdown__input_expanded.hidden
             +dropdown-block("спальни", "кровати", "ванные комнаты", "","")                      
       .dropdown-block
-        .dropdown-block__label
+        .dropdown-block__label_expand_true
           +label("дополнительные удобства")   
           span(class="material-icons expand-arrow dropdown__arrow_checkbox") expand_more
       .search-room-added-checkbox-list.hidden

@@ -67,6 +67,11 @@
   left: 4px;
 }
 
+.searching-room__guest-filter {
+  position: relative;
+  top: 2px;
+}
+
 .luxe-attr {
   position: relative;
   left: 9px;
@@ -172,8 +177,23 @@
 }
 
 .search-room-filter-price {
-  margin-top: 19px;
+  margin-top: 23px;
   margin-left: 12px;
+}
+
+.checkbox-list__options_with_discribe {
+  display: grid;
+  gap: 0px;
+  position: relative;
+  bottom: 4px;
+}
+
+.dropdown-block__label_expand_true {
+  margin-bottom: -5px;
+  display: flex;
+  align-items: center;
+  width: 261px;
+  justify-content: space-between;
 }
 
 .search-room-checkbox-list_rich {
