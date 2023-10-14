@@ -40,6 +40,14 @@
   margin-top: -13px;
 }
 
+.dropdown-block__comfort {
+  margin-top: 3px;
+}
+
+.dropdown-block__additional-amenities {
+  margin-top: 19px;
+}
+
 .search-room__main {
   margin-left: -29px;
   margin-top: 16px;
@@ -199,7 +207,7 @@
   margin-bottom: -5px;
   display: flex;
   align-items: center;
-  width: 261px;
+  width: 256px;
   justify-content: space-between;
 }
 
@@ -222,7 +230,7 @@
 
 .search-page__footer {
   position: relative;
-  top: -95px;
+  bottom: 119px;
   box-shadow: 1px -5px 4px -3px rgb(31 32 65 / 10%);
 }
 

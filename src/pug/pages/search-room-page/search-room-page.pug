@@ -53,7 +53,7 @@ html
         .checkbox-list__options_with_discribe
           +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
           +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера. ")
-      .dropdown-block
+      .dropdown-block__comfort
         .dropdown-block__label
           +label("Удобства номера")                          
         .dropdown__input 
@@ -62,7 +62,7 @@ html
             span(class="material-icons expand-arrow dropdown__arrow_comfort") expand_more
           .dropdown__input_expanded.hidden
             +dropdown-block("спальни", "кровати", "ванные комнаты", "","")                      
-      .dropdown-block
+      .dropdown-block__additional-amenities
         .dropdown-block__label_expand_true
           +label("дополнительные удобства")   
           span(class="material-icons expand-arrow dropdown__arrow_checkbox") expand_more
