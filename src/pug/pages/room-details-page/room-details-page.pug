@@ -56,7 +56,7 @@ html
                 img(src="src/images/avatar.svg", alt="avatar").avatar_small
               .user-name
                 p.room-privilege__description-label Мурад Сарафанов
-                p.room-privilege__description-text 5 дней назад
+                p.room-privilege__description-date 5 дней назад
             .comment
               .like-button.like-button_color
                 <span class="material-icons like like-fill">favorite</span> <span class=" like-quantity like-quantity_color">12</span>
@@ -68,7 +68,7 @@ html
                 img(src="src/images/avatar2.svg", alt="avatar").avatar_small
               .user-name
                 p.room-privilege__description-label Патрисия Стёклышкова
-                p.room-privilege__description-text Неделю назад
+                p.room-privilege__description-date Неделю назад
             .comment
               .like-button.like-button_color
                 <span class="material-icons like like-fill">favorite</span> <span class=" like-quantity like-quantity_color">2</span> 
@@ -78,11 +78,12 @@ html
           .room-details_bullet-list-mt
             .bullet-list 
                 h1.room-details__label Правила
-                ul.bullet-list__items
-                  include ./../../blocks/list-item/list-item.pug 
-                  +list-item("Нельзя с питомцами")
-                  +list-item("Без вечеринок и мероприятий")
-                  +list-item("Время прибытия — после 13:00, а выезд до 12:00")
+                .room-details__bullet-lis-items
+                  ul.bullet-list__items
+                    include ./../../blocks/list-item/list-item.pug 
+                    +list-item("Нельзя с питомцами")
+                    +list-item("Без вечеринок и мероприятий")
+                    +list-item("Время прибытия — после 13:00, а выезд до 12:00")
           .cancel-info-block 
             h1.room-details__label Отмена
             p.cancel-info-block Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
