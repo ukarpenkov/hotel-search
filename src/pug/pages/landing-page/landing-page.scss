@@ -3,7 +3,7 @@
   top: -60px;
   left: -8px;
   display: block;
-  height: 845px;
+  height: 885px;
   background-image: url('src/images/bg-image3.png');
 }
 
@@ -85,4 +85,8 @@
   border-radius: 2px;
   position: absolute;
   z-index: 1;
+}
+
+.landing-page__footer {
+  margin-left: 2px;
 }

@@ -32,7 +32,7 @@
 .comments {
   display: block;
   width: 712px;
-  margin-bottom: -23px;
+  margin-bottom: 9px;
 }
 
 .comments__count {
@@ -52,8 +52,8 @@
 }
 
 .room-details__main {
-  margin-left: 132px;
-  margin-top: 27px;
+  margin-left: 140px;
+  margin-top: 24px;
 }
 
 .room-details__info-about-room {
@@ -62,10 +62,14 @@
 
 .room-details-rules {
   display: flex;
-  width: 686px;
+  width: 680px;
   justify-content: space-between;
-  margin-left: 15px;
+  margin-left: 22px;
   margin-top: 0px;
+}
+
+.room-details__comment-block {
+  margin-bottom: -15px;
 }
 
 .room-details_bullet-list-mt {
@@ -76,14 +80,26 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
+.bullet-list__items {
+  position: relative;
+  top: -6px;
+  left: -18px;
+}
+
 .bullet-list__items:last-child {
   width: 237px;
 }
 
 .room-details-common-info {
   display: flex;
-  width: 709px;
+  width: 713px;
   justify-content: space-between;
+}
+
+.room-details__aside {
+  position: relative;
+  top: 37px;
+  left: 5px;
 }
 
 .room-details__content {
@@ -102,6 +118,10 @@
   position: relative;
   top: -16px;
   left: 0px;
+}
+
+.comments__header {
+  margin-bottom: -25px;
 }
 
 .header-footer-page__footer {
