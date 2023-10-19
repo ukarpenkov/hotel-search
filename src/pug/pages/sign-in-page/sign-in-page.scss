@@ -1,0 +1,25 @@
+.sing-in-component {
+  position: relative;
+  top: 143px;
+  right: 3px;
+  height: 400px;
+}
+
+.sing-in__main-bgi {
+  display: grid;
+  justify-content: center;
+  position: relative;
+  top: -60px;
+  left: -8px;
+  width: 1440px;
+  background-image: url('src/images/bg-image4.png');
+  height: 722px;
+}
+
+.sign-in-page__main {
+  padding-top: 39px;
+}
+
+.sign-in-page__footer {
+  margin-top: 0px;
+}
