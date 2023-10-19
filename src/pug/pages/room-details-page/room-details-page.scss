@@ -32,10 +32,13 @@
 .comments {
   display: block;
   width: 712px;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 .comments__count {
+  position: relative;
+  right: 2px;
+  bottom: 2px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
