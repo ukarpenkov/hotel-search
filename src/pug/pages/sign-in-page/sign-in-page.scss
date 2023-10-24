@@ -1,6 +1,6 @@
 .sing-in-component {
   position: relative;
-  top: 143px;
+  top: 193px;
   right: 3px;
   height: 400px;
 }
@@ -9,19 +9,15 @@
   display: grid;
   justify-content: center;
   position: relative;
-  top: -60px;
+  top: -109px;
   left: -8px;
   width: 1440px;
   background-image: url('src/images/bg-image4.png');
-  height: 722px;
+  height: 771px;
 }
 
 .sign-in-page__main {
   padding-top: 39px;
-}
-
-.sign-in-page__footer {
-  margin-top: 0px;
 }
 
 .sign-in__bts-block {
@@ -31,4 +27,32 @@
 .header__nav-bar {
   position: relative;
   right: 8px;
+}
+
+.sign-in-page__footer {
+  margin-top: -49px;
+  .footer-item__logo {
+    position: relative;
+    left: 2px;
+  }
+  .footer-item__nav {
+    position: relative;
+    left: -2px;
+    top: 1px;
+  }
+  .footer-item__about {
+    position: relative;
+    left: -11px;
+    top: 1px;
+  }
+  .footer-item__service {
+    position: relative;
+    left: 15px;
+    top: 1px;
+  }
+  .footer-item__sub {
+    position: relative;
+    left: 4px;
+    top: 1px;
+  }
 }
