@@ -479,7 +479,7 @@ input::-webkit-inner-spin-button {
 
 .dayContainer {
   justify-content: flex-start !important;
-  height: 205px;
+  height: 195px;
 }
 
 .flatpickr-days {
@@ -491,6 +491,12 @@ input::-webkit-inner-spin-button {
 .calendar_apply-btn {
   position: relative;
   left: 62px !important;
+  top: 3px !important;
+}
+
+.calendar_clear-btn {
+  position: relative;
+  top: 3px !important;
 }
 
 .flatpickr-month {
