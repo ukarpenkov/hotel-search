@@ -55,6 +55,9 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #fff;
+  .calendar_clear-btn {
+    top: 4px !important;
+  }
 }
 
 .card-page__registration-from {

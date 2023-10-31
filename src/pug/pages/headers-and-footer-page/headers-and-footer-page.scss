@@ -79,6 +79,13 @@
   align-items: center;
   height: 70px;
 }
+.header-page__logged-in-header {
+  .header__text-logo_login_true {
+    position: relative;
+    left: -17px;
+    top: 2px;
+  }
+}
 
 .footer__social-mobile-icons {
   margin-left: 120px;
