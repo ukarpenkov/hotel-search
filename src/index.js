@@ -128,6 +128,7 @@ const data = {
     hoverOffset: 0,
   }]
 };
+
 const myChart = new Chart(ctx, {
   type: 'doughnut',
   data: data,
@@ -150,20 +151,20 @@ calendar.forEach(item => {
 
 
 
-var dropdownMenu = document.querySelector('.dropdown__input_expanded')
-var dropdownGuestsMenu = document.querySelector('.dropdown__input_guests')
-var dropdownCheckboxMenu = document.querySelector('.search-room-added-checkbox-list')
-var dropdownGuestsMenuLanding = document.querySelector('.dropdown-landing-guests')
+var dropdownMenu = document.querySelector('.js-dropdown__input_expanded')
+var dropdownGuestsMenu = document.querySelector('.js-dropdown__input_guests')
+var dropdownCheckboxMenu = document.querySelector('.js-search-room-added-checkbox-list')
+// var dropdownGuestsMenuLanding = document.querySelector('.dropdown-landing-guests')
 
 
-var comfortArrow = document.querySelector('.dropdown__arrow_comfort')
-var guestsArrow = document.querySelector('.dropdown-arrow-guests')
-var addOptionsArrow = document.querySelector('.dropdown__arrow_checkbox')
+var comfortArrow = document.querySelector('.js-dropdown__arrow_comfort')
+var guestsArrow = document.querySelector('.js-dropdown-arrow-guests')
+var addOptionsArrow = document.querySelector('.js-dropdown__arrow_checkbox')
 var guestsArrowLanding = document.querySelector('.dropdown-arrow-guests-lp')
 
 
 function changeVisibleElement(element) {
-  element.classList.toggle('hidden')
+  element.classList.toggle('.js-hidden')
 }
 
 if (comfortArrow) {
@@ -184,16 +185,16 @@ if (guestsArrowLanding) {
 
 
 let pageClassesList = [
-  '.color-and-type',
-  '.forms-elements-page',
-  '.cards-page__wrapper',
-  '.header-footer-page__wrapper',
-  '.landing-page__wrapper',
-  '.search-room__wrapper',
-  '.room-details-wrapper',
-  '.registration-page__wrapper',
-  '.sign-in-page__wrapper',
-  '.navigate-wrapper'
+  '.js-color-and-type',
+  '.js-forms-elements-page',
+  '.js-cards-page__wrapper',
+  '.js-header-footer-page__wrapper',
+  '.js-landing-page__wrapper',
+  '.js-search-room__wrapper',
+  '.js-room-details-wrapper',
+  '.js-registration-page__wrapper',
+  '.js-sign-in-page__wrapper',
+  '.js-navigate-wrapper'
 ]
 
 
@@ -205,31 +206,31 @@ function changeVisiblePage(pageClass) {
   page.classList.toggle('hidden-page')
 }
 
-let showColorAndTypesPageBtn = document.querySelector('.navigate-item-link_page_color-type')
+let showColorAndTypesPageBtn = document.querySelector('.js-navigate-item-link_page_color-type')
 
 if (showColorAndTypesPageBtn) {
-  showColorAndTypesPageBtn.addEventListener('click', () => changeVisiblePage('.color-and-type'))
+  showColorAndTypesPageBtn.addEventListener('click', () => changeVisiblePage('.js-color-and-type'))
 }
 
-let showFormElPageBtn = document.querySelector('.navigate-item-link_page_form-elements')
+let showFormElPageBtn = document.querySelector('.js-navigate-item-link_page_form-elements')
 
 if (showFormElPageBtn) {
-  showFormElPageBtn.addEventListener('click', () => changeVisiblePage('.forms-elements-page'))
+  showFormElPageBtn.addEventListener('click', () => changeVisiblePage('.js-forms-elements-page'))
 }
 
-let showCardsPageBtn = document.querySelector('.navigate-item-link_page_cards')
+let showCardsPageBtn = document.querySelector('.js-navigate-item-link_page_cards')
 
 if (showCardsPageBtn) {
-  showCardsPageBtn.addEventListener('click', () => changeVisiblePage('.cards-page__wrapper'))
+  showCardsPageBtn.addEventListener('click', () => changeVisiblePage('.js-cards-page__wrapper'))
 }
 
-let showHeadersAndFooterBtn = document.querySelector('.navigate-item-link_page_header-footer')
+let showHeadersAndFooterBtn = document.querySelector('.js-navigate-item-link_page_header-footer')
 
 if (showHeadersAndFooterBtn) {
-  showHeadersAndFooterBtn.addEventListener('click', () => changeVisiblePage('.header-footer-page__wrapper'))
+  showHeadersAndFooterBtn.addEventListener('click', () => changeVisiblePage('.js-header-footer-page__wrapper'))
 }
 
-let showLandingPageBtn = document.querySelector('.navigate-item-link_page_landing')
+let showLandingPageBtn = document.querySelector('.js-navigate-item-link_page_landing')
 
 if (showLandingPageBtn) {
   showLandingPageBtn.addEventListener('click', () => changeVisiblePage('.landing-page__wrapper'))

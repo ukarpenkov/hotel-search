@@ -13,7 +13,7 @@ html
       include ./../../components/header/head.scss    
       include ./../../components/footer/footer.scss
       include search-room-page.scss
-  .search-room__wrapper
+  .search-room__wrapper.js-search-room__wrapper
     include ./../../blocks/input/input.pug
     include ./../../components/room-card/room-card.pug
     include ./../../blocks/checkbox/checkbox.pug
@@ -36,7 +36,7 @@ html
           .dropdown__input_default.dropdown__input_middle
             span.dropdown__input-text  Сколько гостей  
             <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
-          .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden
+          .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden.js-dropdown__input_guests.js-hidden
             +dropdown-block("взрослые", "дети", "младенцы", "очистить","применить")
       .search-room-filter-price
         include ./../../components/range_slider/range_slider.pug
@@ -60,13 +60,13 @@ html
           .dropdown__input_default
             span.dropdown__input-text  2 спальни, 2 кровати
             span(class="material-icons expand-arrow dropdown__arrow_comfort") expand_more
-          .dropdown__input_expanded.hidden
+          .dropdown__input_expanded.hidden.js-dropdown__input_expanded.js-hidden
             +dropdown-block("спальни", "кровати", "ванные комнаты", "","")                      
       .dropdown-block__additional-amenities
         .dropdown-block__label_expand_true
           +label("дополнительные удобства")   
           span(class="material-icons expand-arrow dropdown__arrow_checkbox") expand_more
-      .search-room-added-checkbox-list.hidden
+      .search-room-added-checkbox-list.hidden.js-search-room-added-checkbox-list.js-hidden
         .checkbox-list_options
           +checkbox('Завтрак') 
           +checkbox('Письменный стол') 

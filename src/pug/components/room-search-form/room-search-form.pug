@@ -19,8 +19,8 @@ html
       .dropdown__input
         .dropdown__input_default.dropdown__input_wide  
           span.dropdown__input-text  Сколько гостей  
-          span.material-icons.expand-arrow.dropdown-arrow-guests expand_more
-        .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden
+          span.material-icons.expand-arrow.dropdown-arrow-guests.js-dropdown-arrow-guests expand_more
+        .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden.js-dropdown__input_guests.js-hidden
           include ../../blocks/dropdown-options/dropdown-options.pug
           +dropdown-block("взрослые", "дети", "младенцы", "применить","очистить")
     .search-button

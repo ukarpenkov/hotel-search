@@ -10,7 +10,7 @@ html
     style
       include ./../../components/form-elements.scss
       include form-elements-page.scss
-  .forms-elements-page
+  .forms-elements-page.js-forms-elements-page
     include ./../../blocks/header-logo/header-img-logo.pug
     include ./../../blocks/label-h2/label.pug
     include ./../../blocks/input/input.pug
@@ -79,7 +79,7 @@ html
             .dropdown__input_default 
               div.dropdown__input-text  2 спальни
               span.material-icons.expand-arrow.dropdown__arrow expand_more
-            .dropdown__input_expanded
+            .dropdown__input_expanded.js-dropdown__input_expanded
               +dropdown-block("спальни", "кровати", "ванные комнаты", "","")
           .checkbox-block
             .checkbox-list_close
@@ -133,7 +133,7 @@ html
               .dropdown__input_default.dropdown__input_wide  
                 div.dropdown__input-text  Сколько гостей
                 span.material-icons.expand-arrow.dropdown__arrow_wide expand_more
-              .dropdown__input_expanded.dropdown__input_expanded-apply
+              .dropdown__input_expanded.dropdown__input_expanded-apply.js-dropdown__input_expanded
                 +dropdown-block("взрослые", "дети", "младенцы", "","применить")
           .checkbox-list_rich 
             .checkbox-list__label
@@ -186,7 +186,7 @@ html
             .dropdown__input_default.dropdown__input_wide  
               div.dropdown__input-text  Сколько гостей  
               span.material-icons.expand-arrow.dropdown__arrow_wide expand_more
-            .dropdown__input_expanded.dropdown__input_expanded-apply
+            .dropdown__input_expanded.dropdown__input_expanded-apply.js-dropdown__input_expanded
               +dropdown-block("взрослые", "дети", "младенцы", "очистить","применить")
         .bullet-list
           +label("bullet list") 
