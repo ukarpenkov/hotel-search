@@ -7,12 +7,12 @@ import { Russian } from "flatpickr/dist/l10n/ru.js"
 import Chart from 'chart.js/auto';
 
 
-let counterButtons = document.querySelectorAll('.dropdown-counter__btn')
-let inputs = document.querySelectorAll('.dropdown__input-text')
+let counterButtons = document.querySelectorAll('.js-dropdown-counter__btn')
+let inputs = document.querySelectorAll('.js-dropdown__input-text')
 
 function counter() {
   let direction = this.dataset.direction
-  let value = this.parentElement.querySelector('.dropdown-counter__value')
+  let value = this.parentElement.querySelector('.js-dropdown-counter__value')
 
   let currentValue = +value.innerHTML
   let newValue
@@ -233,31 +233,31 @@ if (showHeadersAndFooterBtn) {
 let showLandingPageBtn = document.querySelector('.js-navigate-item-link_page_landing')
 
 if (showLandingPageBtn) {
-  showLandingPageBtn.addEventListener('click', () => changeVisiblePage('.landing-page__wrapper'))
+  showLandingPageBtn.addEventListener('click', () => changeVisiblePage('.js-landing-page__wrapper'))
 }
 
-let showSearchRoomPageBtn = document.querySelector('.navigate-item-link_page_search')
+let showSearchRoomPageBtn = document.querySelector('.js-navigate-item-link_page_search')
 
 if (showSearchRoomPageBtn) {
-  showSearchRoomPageBtn.addEventListener('click', () => changeVisiblePage('.search-room__wrapper'))
+  showSearchRoomPageBtn.addEventListener('click', () => changeVisiblePage('.js-search-room__wrapper'))
 }
 
-let showRoomDetailsPageBtn = document.querySelector('.navigate-item-link_page_room-details')
+let showRoomDetailsPageBtn = document.querySelector('.js-navigate-item-link_page_room-details')
 
 if (showRoomDetailsPageBtn) {
-  showRoomDetailsPageBtn.addEventListener('click', () => changeVisiblePage('.room-details-wrapper'))
+  showRoomDetailsPageBtn.addEventListener('click', () => changeVisiblePage('.js-room-details-wrapper'))
 }
 
-let showSingUpPageBtn = document.querySelector('.navigate-item-link_page_sing-up')
+let showSingUpPageBtn = document.querySelector('.js-navigate-item-link_page_sing-up')
 
 if (showSingUpPageBtn) {
-  showSingUpPageBtn.addEventListener('click', () => changeVisiblePage('.registration-page__wrapper'))
+  showSingUpPageBtn.addEventListener('click', () => changeVisiblePage('.js-registration-page__wrapper'))
 }
 
-let showSingInPageBtn = document.querySelector('.navigate-item-link_page_sign-in')
+let showSingInPageBtn = document.querySelector('.js-navigate-item-link_page_sign-in')
 
 if (showSingInPageBtn) {
-  showSingInPageBtn.addEventListener('click', () => changeVisiblePage('.sign-in-page__wrapper'))
+  showSingInPageBtn.addEventListener('click', () => changeVisiblePage('.js-sign-in-page__wrapper'))
 }
 
 

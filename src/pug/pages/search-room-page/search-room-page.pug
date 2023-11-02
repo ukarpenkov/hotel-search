@@ -34,7 +34,7 @@ html
           h2.label гости
         .dropdown__input.searching-room__guest-filter
           .dropdown__input_default.dropdown__input_middle
-            span.dropdown__input-text  Сколько гостей  
+            span.dropdown__input-text.js-dropdown__input-text  Сколько гостей  
             <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
           .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden.js-dropdown__input_guests.js-hidden
             +dropdown-block("взрослые", "дети", "младенцы", "очистить","применить")
@@ -58,7 +58,7 @@ html
           +label("Удобства номера")                          
         .dropdown__input 
           .dropdown__input_default
-            span.dropdown__input-text  2 спальни, 2 кровати
+            span.dropdown__input-text.js-dropdown__input-text  2 спальни, 2 кровати
             span(class="material-icons expand-arrow dropdown__arrow_comfort") expand_more
           .dropdown__input_expanded.hidden.js-dropdown__input_expanded.js-hidden
             +dropdown-block("спальни", "кровати", "ванные комнаты", "","")                      

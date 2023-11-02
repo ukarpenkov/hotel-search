@@ -38,7 +38,7 @@ html
               +label("Dropdown")
               .dropdown__input_mt-1
                 .dropdown__input_default.dropdown__input_wide  
-                  div.dropdown__input-text  Сколько гостей  
+                  div.dropdown__input-text.js-dropdown__input-text  Сколько гостей  
                   span.material-icons.expand-arrow.dropdown__arrow_wide expand_more
             .field
               +label("masked text field")
@@ -69,7 +69,7 @@ html
             +dropdown-condition("DEFAULT")
           .dropdown__input
             .dropdown__input_default
-              div.dropdown__input-text  2 спальни
+              div.dropdown__input-text.js-dropdown__input-text  2 спальни
               span(class="material-icons expand-arrow dropdown__arrow") expand_more
         .dropdown-block
           .dropdown-block__label
@@ -77,7 +77,7 @@ html
             +dropdown-condition("EXPANDED")
           .dropdown__input
             .dropdown__input_default 
-              div.dropdown__input-text  2 спальни
+              div.dropdown__input-text.js-dropdown__input-text  2 спальни
               span.material-icons.expand-arrow.dropdown__arrow expand_more
             .dropdown__input_expanded.js-dropdown__input_expanded
               +dropdown-block("спальни", "кровати", "ванные комнаты", "","")
@@ -131,7 +131,7 @@ html
               +label("dropdown") 
             .dropdown__input
               .dropdown__input_default.dropdown__input_wide  
-                div.dropdown__input-text  Сколько гостей
+                div.dropdown__input-text.js-dropdown__input-text  Сколько гостей
                 span.material-icons.expand-arrow.dropdown__arrow_wide expand_more
               .dropdown__input_expanded.dropdown__input_expanded-apply.js-dropdown__input_expanded
                 +dropdown-block("взрослые", "дети", "младенцы", "","применить")
@@ -184,7 +184,7 @@ html
             +label("dropdown")  
           .dropdown__input
             .dropdown__input_default.dropdown__input_wide  
-              div.dropdown__input-text  Сколько гостей  
+              div.dropdown__input-text.js-dropdown__input-text  Сколько гостей  
               span.material-icons.expand-arrow.dropdown__arrow_wide expand_more
             .dropdown__input_expanded.dropdown__input_expanded-apply.js-dropdown__input_expanded
               +dropdown-block("взрослые", "дети", "младенцы", "очистить","применить")
