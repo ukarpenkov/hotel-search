@@ -1,11 +1,10 @@
 import './styles/index.scss'
+
 import $ from "jquery"
 import noUiSlider from 'nouislider'
 import flatpickr from 'flatpickr'
 import { Russian } from "flatpickr/dist/l10n/ru.js"
-
 import Chart from 'chart.js/auto';
-
 
 let counterButtons = document.querySelectorAll('.js-dropdown-counter__btn')
 let inputs = document.querySelectorAll('.js-dropdown__input-text')
@@ -13,7 +12,6 @@ let inputs = document.querySelectorAll('.js-dropdown__input-text')
 function counter() {
   let direction = this.dataset.direction
   let value = this.parentElement.querySelector('.js-dropdown-counter__value')
-
   let currentValue = +value.innerHTML
   let newValue
 
@@ -29,7 +27,6 @@ function counter() {
     }
   }
   value.innerHTML = newValue
-
 }
 
 
