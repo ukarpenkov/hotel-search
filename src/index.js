@@ -6,6 +6,7 @@ import flatpickr from 'flatpickr'
 import { Russian } from "flatpickr/dist/l10n/ru.js"
 import Chart from 'chart.js/auto';
 
+
 let counterButtons = document.querySelectorAll('.js-dropdown-counter__btn')
 let inputs = document.querySelectorAll('.js-dropdown__input-text')
 
@@ -28,8 +29,6 @@ function counter() {
   }
   value.innerHTML = newValue
 }
-
-
 
 
 counterButtons.forEach(btn => {
@@ -78,28 +77,7 @@ arrowForward.innerHTML = 'arrow_forward'
 arrowForward.classList.add('material-icons', 'subscribe-arrow')
 
 
-flatpickr(".calendar", {
-  mode: 'multiple',
-  altInput: true,
-  altFormat: "d.m.Y",
-  dateFormat: "Y-m-d\\Z",
-  "locale": Russian,
-  nextArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_forward</span>`,
-  prevArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_back</span>`
-}
-);
 
-flatpickr(".visible-calendar", {
-  inline: true,
-  mode: "range",
-  altInput: true,
-  altFormat: "d.m.Y",
-  dateFormat: "Y-m-d\\Z",
-  "locale": Russian,
-  nextArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_forward</span>`,
-  prevArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_back</span>`
-}
-);
 let ctx
 if ($('#myChart').length) {
   ctx = document.getElementById('myChart').getContext('2d');
@@ -132,10 +110,32 @@ const myChart = new Chart(ctx, {
 
 });
 
+flatpickr(".calendar", {
+  mode: 'multiple',
+  altInput: true,
+  altFormat: "d.m.Y",
+  dateFormat: "Y-m-d\\Z",
+  "locale": Russian,
+  nextArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_forward</span>`,
+  prevArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_back</span>`
+}
+);
 
-var calendar = document.querySelectorAll('.flatpickr-calendar')
+flatpickr(".visible-calendar", {
+  inline: true,
+  mode: "range",
+  altInput: true,
+  altFormat: "d.m.Y",
+  dateFormat: "Y-m-d\\Z",
+  "locale": Russian,
+  nextArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_forward</span>`,
+  prevArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_back</span>`
+}
+);
 
-calendar.forEach(item => {
+var calendarInput = document.querySelectorAll('.flatpickr-calendar')
+
+calendarInput.forEach(item => {
   let applyBtn = document.createElement('p')
   applyBtn.classList.add('calendar_apply-btn', 'apply-btn')
   applyBtn.innerHTML = 'ПРИМЕНИТЬ'
