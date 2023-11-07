@@ -5,69 +5,24 @@ import noUiSlider from 'nouislider'
 import flatpickr from 'flatpickr'
 import { Russian } from "flatpickr/dist/l10n/ru.js"
 import Chart from 'chart.js/auto';
+import { counter } from './scripts/counter'
+import { setSlider } from './scripts/slider'
 
 
 let counterButtons = document.querySelectorAll('.js-dropdown-counter__btn')
 let inputs = document.querySelectorAll('.js-dropdown__input-text')
 
-function counter() {
-  let direction = this.dataset.direction
-  let value = this.parentElement.querySelector('.js-dropdown-counter__value')
-  let currentValue = +value.innerHTML
-  let newValue
 
-  if (direction === 'plus') {
-    newValue = currentValue + 1
-    console.log('+++')
-  }
-  else {
-    newValue = currentValue - 1
-    console.log('--')
-    if (currentValue === 0) {
-      newValue = 0
-    }
-  }
-  value.innerHTML = newValue
-}
 
 
 counterButtons.forEach(btn => {
   btn.addEventListener('click', counter)
 })
 
+
 var rangeSlider = document.getElementById('range-slider')
-
 if (rangeSlider) {
-  noUiSlider.create(rangeSlider, {
-    start: [0, 100000],
-    connect: true,
-    step: 1,
-    range: {
-      'min': [0],
-      'max': 100000
-    }
-  });
-
-  const input0 = document.getElementById('input-0')
-  const input1 = document.getElementById('input-1')
-  let inputs = [input0, input1]
-  rangeSlider.noUiSlider.on('update', function (values, handle) {
-    inputs[handle].value = Math.round(values[handle])
-  })
-
-  var setRangeSlider = (i, value) => {
-    let arr = [null, null]
-    arr[i] = value
-
-    rangeSlider.noUiSlider.set(arr)
-  }
-
-  inputs.forEach((el, index) => {
-    el.addEventListener('change', (e) => {
-      setRangeSlider(index, e.currentTarget.value)
-    })
-  })
-
+  setSlider(rangeSlider)
 }
 
 
