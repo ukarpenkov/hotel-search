@@ -107,7 +107,7 @@ calendarInput.forEach(item => {
 var dropdownMenu = document.querySelector('.js-dropdown__input_expanded')
 var dropdownGuestsMenu = document.querySelector('.js-dropdown__input_guests')
 var dropdownCheckboxMenu = document.querySelector('.js-search-room-added-checkbox-list')
-// var dropdownGuestsMenuLanding = document.querySelector('.dropdown-landing-guests')
+var dropdownGuestsMenuLanding = document.querySelector('.dropdown-landing-guests')
 
 
 var comfortArrow = document.querySelector('.js-dropdown__arrow_comfort')
@@ -122,8 +122,6 @@ if (comfortArrow) {
 }
 
 if (guestsArrow) {
-  console.log(guestsArrow)
-  console.log(dropdownGuestsMenu)
   guestsArrow.addEventListener('click', () => changeVisibleElement(dropdownGuestsMenu))
 }
 
@@ -136,80 +134,82 @@ if (guestsArrowLanding) {
 
 
 
-let pageClassesList = [
-  '.js-color-and-type',
-  '.js-forms-elements-page',
-  '.js-cards-page__wrapper',
-  '.js-header-footer-page__wrapper',
-  '.js-landing-page__wrapper',
-  '.js-search-room__wrapper',
-  '.js-room-details-wrapper',
-  '.js-registration-page__wrapper',
-  '.js-sign-in-page__wrapper',
-  '.js-navigate-wrapper'
-]
+// let pageClassesList = [
+//   '.js-color-and-type',
+//   '.js-forms-elements-page',
+//   '.js-cards-page__wrapper',
+//   '.js-header-footer-page__wrapper',
+//   '.js-landing-page__wrapper',
+//   '.js-search-room__wrapper',
+//   '.js-room-details-wrapper',
+//   '.js-registration-page__wrapper',
+//   '.js-sign-in-page__wrapper',
+//   '.js-navigate-wrapper'
+// ]
 
 
-function changeVisiblePage(pageClass) {
-  let page = document.querySelector(pageClass)
-  for (let i = 0; i < pageClassesList.length; i++) {
-    document.querySelector(pageClassesList[i]).classList.add('hidden-page')
-  }
-  page.classList.toggle('hidden-page')
-}
 
-let showColorAndTypesPageBtn = document.querySelector('.js-navigate-item-link_page_color-type')
+// let showColorAndTypesPageBtn = document.querySelector('.js-navigate-item-link_page_color-type')
 
-if (showColorAndTypesPageBtn) {
-  showColorAndTypesPageBtn.addEventListener('click', () => changeVisiblePage('.js-color-and-type'))
-}
+// function changeVisiblePage(pageClass) {
+//   let page = document.querySelector(pageClass)
+//   for (let i = 0; i < pageClassesList.length; i++) {
+//     document.querySelector(pageClassesList[i]).classList.add('hidden-page')
+//   }
+//   page.classList.toggle('hidden-page')
+// }
 
-let showFormElPageBtn = document.querySelector('.js-navigate-item-link_page_form-elements')
 
-if (showFormElPageBtn) {
-  showFormElPageBtn.addEventListener('click', () => changeVisiblePage('.js-forms-elements-page'))
-}
+// if (showColorAndTypesPageBtn) {
+//   showColorAndTypesPageBtn.addEventListener('click', () => changeVisiblePage('.js-color-and-type'))
+// }
 
-let showCardsPageBtn = document.querySelector('.js-navigate-item-link_page_cards')
+// let showFormElPageBtn = document.querySelector('.js-navigate-item-link_page_form-elements')
 
-if (showCardsPageBtn) {
-  showCardsPageBtn.addEventListener('click', () => changeVisiblePage('.js-cards-page__wrapper'))
-}
+// if (showFormElPageBtn) {
+//   showFormElPageBtn.addEventListener('click', () => changeVisiblePage('.js-forms-elements-page'))
+// }
 
-let showHeadersAndFooterBtn = document.querySelector('.js-navigate-item-link_page_header-footer')
+// let showCardsPageBtn = document.querySelector('.js-navigate-item-link_page_cards')
 
-if (showHeadersAndFooterBtn) {
-  showHeadersAndFooterBtn.addEventListener('click', () => changeVisiblePage('.js-header-footer-page__wrapper'))
-}
+// if (showCardsPageBtn) {
+//   showCardsPageBtn.addEventListener('click', () => changeVisiblePage('.js-cards-page__wrapper'))
+// }
 
-let showLandingPageBtn = document.querySelector('.js-navigate-item-link_page_landing')
+// let showHeadersAndFooterBtn = document.querySelector('.js-navigate-item-link_page_header-footer')
 
-if (showLandingPageBtn) {
-  showLandingPageBtn.addEventListener('click', () => changeVisiblePage('.js-landing-page__wrapper'))
-}
+// if (showHeadersAndFooterBtn) {
+//   showHeadersAndFooterBtn.addEventListener('click', () => changeVisiblePage('.js-header-footer-page__wrapper'))
+// }
 
-let showSearchRoomPageBtn = document.querySelector('.js-navigate-item-link_page_search')
+// let showLandingPageBtn = document.querySelector('.js-navigate-item-link_page_landing')
 
-if (showSearchRoomPageBtn) {
-  showSearchRoomPageBtn.addEventListener('click', () => changeVisiblePage('.js-search-room__wrapper'))
-}
+// if (showLandingPageBtn) {
+//   showLandingPageBtn.addEventListener('click', () => changeVisiblePage('.js-landing-page__wrapper'))
+// }
 
-let showRoomDetailsPageBtn = document.querySelector('.js-navigate-item-link_page_room-details')
+// let showSearchRoomPageBtn = document.querySelector('.js-navigate-item-link_page_search')
 
-if (showRoomDetailsPageBtn) {
-  showRoomDetailsPageBtn.addEventListener('click', () => changeVisiblePage('.js-room-details-wrapper'))
-}
+// if (showSearchRoomPageBtn) {
+//   showSearchRoomPageBtn.addEventListener('click', () => changeVisiblePage('.js-search-room__wrapper'))
+// }
 
-let showSingUpPageBtn = document.querySelector('.js-navigate-item-link_page_sing-up')
+// let showRoomDetailsPageBtn = document.querySelector('.js-navigate-item-link_page_room-details')
 
-if (showSingUpPageBtn) {
-  showSingUpPageBtn.addEventListener('click', () => changeVisiblePage('.js-registration-page__wrapper'))
-}
+// if (showRoomDetailsPageBtn) {
+//   showRoomDetailsPageBtn.addEventListener('click', () => changeVisiblePage('.js-room-details-wrapper'))
+// }
 
-let showSingInPageBtn = document.querySelector('.js-navigate-item-link_page_sign-in')
+// let showSingUpPageBtn = document.querySelector('.js-navigate-item-link_page_sing-up')
 
-if (showSingInPageBtn) {
-  showSingInPageBtn.addEventListener('click', () => changeVisiblePage('.js-sign-in-page__wrapper'))
-}
+// if (showSingUpPageBtn) {
+//   showSingUpPageBtn.addEventListener('click', () => changeVisiblePage('.js-registration-page__wrapper'))
+// }
+
+// let showSingInPageBtn = document.querySelector('.js-navigate-item-link_page_sign-in')
+
+// if (showSingInPageBtn) {
+//   showSingInPageBtn.addEventListener('click', () => changeVisiblePage('.js-sign-in-page__wrapper'))
+// }
 
 
