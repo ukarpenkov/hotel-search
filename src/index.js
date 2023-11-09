@@ -7,6 +7,7 @@ import { Russian } from "flatpickr/dist/l10n/ru.js"
 import Chart from 'chart.js/auto';
 import { counter } from './scripts/counter'
 import { setSlider } from './scripts/slider'
+import { changeVisibleElement } from './scripts/changeVisibleElement'
 
 
 let counterButtons = document.querySelectorAll('.js-dropdown-counter__btn')
@@ -115,15 +116,14 @@ var addOptionsArrow = document.querySelector('.js-dropdown__arrow_checkbox')
 var guestsArrowLanding = document.querySelector('.dropdown-arrow-guests-lp')
 
 
-function changeVisibleElement(element) {
-  element.classList.toggle('.js-hidden')
-}
 
 if (comfortArrow) {
   comfortArrow.addEventListener('click', () => changeVisibleElement(dropdownMenu))
 }
 
 if (guestsArrow) {
+  console.log(guestsArrow)
+  console.log(dropdownGuestsMenu)
   guestsArrow.addEventListener('click', () => changeVisibleElement(dropdownGuestsMenu))
 }
 
