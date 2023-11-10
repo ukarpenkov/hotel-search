@@ -1,38 +1,28 @@
 import './styles/index.scss'
 
 import $ from "jquery"
-import noUiSlider from 'nouislider'
-import flatpickr from 'flatpickr'
-import { Russian } from "flatpickr/dist/l10n/ru.js"
+
 import Chart from 'chart.js/auto';
 import { counter } from './scripts/counter'
 import { setSlider } from './scripts/slider'
 import { changeVisibleElement } from './scripts/changeVisibleElement'
+import { setCalendar } from './scripts/calendar'
+import { chartData } from './scripts/chartSettings';
 
 
 let counterButtons = document.querySelectorAll('.js-dropdown-counter__btn')
-let inputs = document.querySelectorAll('.js-dropdown__input-text')
-
-
-
-
 counterButtons.forEach(btn => {
   btn.addEventListener('click', counter)
 })
 
-
-var rangeSlider = document.getElementById('range-slider')
+let rangeSlider = document.getElementById('range-slider')
 if (rangeSlider) {
   setSlider(rangeSlider)
 }
 
-
-
-var arrowForward = document.createElement('span')
+let arrowForward = document.createElement('span')
 arrowForward.innerHTML = 'arrow_forward'
 arrowForward.classList.add('material-icons', 'subscribe-arrow')
-
-
 
 let ctx
 if ($('#myChart').length) {
@@ -40,80 +30,24 @@ if ($('#myChart').length) {
 } else {
   ctx = null
 }
-const data = {
-  labels: [],
-  datasets: [{
-    label: 'My First Dataset',
-    data: [25, 25, 50],
-    borderWidth: 35,
-    borderJoinStyle: 'miter',
-    spacing: 1,
-    hoverBorderWidth: 30,
 
-    hoverBorderColor: 'white',
-    backgroundColor: [
-      '#bc9cff',
-      '#6FCF97',
-      '#FFE39C'
-    ],
-    hoverOffset: 0,
-  }]
-};
-
-const myChart = new Chart(ctx, {
+new Chart(ctx, {
   type: 'doughnut',
-  data: data,
-
+  data: chartData,
 });
 
-flatpickr(".calendar", {
-  mode: 'multiple',
-  altInput: true,
-  altFormat: "d.m.Y",
-  dateFormat: "Y-m-d\\Z",
-  "locale": Russian,
-  nextArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_forward</span>`,
-  prevArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_back</span>`
-}
-);
+setCalendar()
 
-flatpickr(".visible-calendar", {
-  inline: true,
-  mode: "range",
-  altInput: true,
-  altFormat: "d.m.Y",
-  dateFormat: "Y-m-d\\Z",
-  "locale": Russian,
-  nextArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_forward</span>`,
-  prevArrow: `<span class='material-icons subscribe-arrow' style='left:0px' >arrow_back</span>`
-}
-);
-
-var calendarInput = document.querySelectorAll('.flatpickr-calendar')
-
-calendarInput.forEach(item => {
-  let applyBtn = document.createElement('p')
-  applyBtn.classList.add('calendar_apply-btn', 'apply-btn')
-  applyBtn.innerHTML = 'ПРИМЕНИТЬ'
-  let clearBtn = document.createElement('p')
-  clearBtn.classList.add('calendar_clear-btn', 'clear-btn')
-  clearBtn.innerHTML = 'ОЧИСТИТЬ'
-  item.appendChild(clearBtn)
-  item.appendChild(applyBtn)
-})
+let dropdownMenu = document.querySelector('.js-dropdown__input_expanded')
+let dropdownGuestsMenu = document.querySelector('.js-dropdown__input_guests')
+let dropdownCheckboxMenu = document.querySelector('.js-search-room-added-checkbox-list')
+let dropdownGuestsMenuLanding = document.querySelector('.dropdown-landing-guests')
 
 
-
-var dropdownMenu = document.querySelector('.js-dropdown__input_expanded')
-var dropdownGuestsMenu = document.querySelector('.js-dropdown__input_guests')
-var dropdownCheckboxMenu = document.querySelector('.js-search-room-added-checkbox-list')
-var dropdownGuestsMenuLanding = document.querySelector('.dropdown-landing-guests')
-
-
-var comfortArrow = document.querySelector('.js-dropdown__arrow_comfort')
-var guestsArrow = document.querySelector('.js-dropdown-arrow-guests')
-var addOptionsArrow = document.querySelector('.js-dropdown__arrow_checkbox')
-var guestsArrowLanding = document.querySelector('.dropdown-arrow-guests-lp')
+let comfortArrow = document.querySelector('.js-dropdown__arrow_comfort').parentNode
+let guestsArrow = document.querySelector('.js-dropdown-arrow-guests').parentNode
+let addOptionsArrow = document.querySelector('.js-dropdown__arrow_checkbox').parentNode
+// let guestsArrowLanding = document.querySelector('.dropdown-arrow-guests-lp')
 
 
 
@@ -128,9 +62,9 @@ if (guestsArrow) {
 if (addOptionsArrow) {
   addOptionsArrow.addEventListener('click', () => changeVisibleElement(dropdownCheckboxMenu))
 }
-if (guestsArrowLanding) {
-  guestsArrowLanding.addEventListener('click', () => changeVisibleElement(dropdownGuestsMenuLanding))
-}
+// if (guestsArrowLanding) {
+//   guestsArrowLanding.addEventListener('click', () => changeVisibleElement(dropdownGuestsMenuLanding))
+// }
 
 
 

@@ -28,14 +28,14 @@ html
         .field
           +label("даты пребывания в отеле")
           +input("date", "ДД.ММ.ГГГГ", "middle")
-          <span class="material-icons expand-arrow dropdown-arrow-calendar">expand_more</span>
+          span.material-icons.expand-arrow.dropdown-arrow-calendar expand_more
       .search-form__dropdown-block
         .dropdown-block__label 
           h2.label гости
         .dropdown__input.searching-room__guest-filter
           .dropdown__input_default.dropdown__input_middle
             span.dropdown__input-text.js-dropdown__input-text  Сколько гостей  
-            <span class="material-icons expand-arrow dropdown-arrow-guests">expand_more</span>
+            span.material-icons.expand-arrow.dropdown-arrow-guests.js-dropdown-arrow-guests expand_more
           .dropdown__input_guests.dropdown__input_guests-expanded-apply.hidden.js-dropdown__input_guests.js-hidden
             +dropdown-block("взрослые", "дети", "младенцы", "очистить","применить")
       .search-room-filter-price
