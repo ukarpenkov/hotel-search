@@ -41,31 +41,26 @@ setCalendar()
 let dropdownMenu = document.querySelector('.js-dropdown__input_expanded')
 let dropdownGuestsMenu = document.querySelector('.js-dropdown__input_guests')
 let dropdownCheckboxMenu = document.querySelector('.js-search-room-added-checkbox-list')
-let dropdownGuestsMenuLanding = document.querySelector('.dropdown-landing-guests')
 
 
-let comfortArrow = document.querySelector('.js-dropdown__arrow_comfort').parentNode
-let guestsArrow = document.querySelector('.js-dropdown-arrow-guests').parentNode
-let addOptionsArrow = document.querySelector('.js-dropdown__arrow_checkbox').parentNode
-// let guestsArrowLanding = document.querySelector('.dropdown-arrow-guests-lp')
+let comfortArrow = document.querySelector('.js-dropdown__arrow_comfort')
+let guestsArrow = document.querySelector('.js-dropdown-arrow-guests')
+let addOptionsArrow = document.querySelector('.js-dropdown__arrow_checkbox')
+
 
 
 
 if (comfortArrow) {
-  comfortArrow.addEventListener('click', () => changeVisibleElement(dropdownMenu))
+  comfortArrow.parentNode.addEventListener('click', () => changeVisibleElement(dropdownMenu))
 }
 
 if (guestsArrow) {
-  guestsArrow.addEventListener('click', () => changeVisibleElement(dropdownGuestsMenu))
+  guestsArrow.parentNode.addEventListener('click', () => changeVisibleElement(dropdownGuestsMenu))
 }
 
 if (addOptionsArrow) {
-  addOptionsArrow.addEventListener('click', () => changeVisibleElement(dropdownCheckboxMenu))
+  addOptionsArrow.parentNode.addEventListener('click', () => changeVisibleElement(dropdownCheckboxMenu))
 }
-// if (guestsArrowLanding) {
-//   guestsArrowLanding.addEventListener('click', () => changeVisibleElement(dropdownGuestsMenuLanding))
-// }
-
 
 
 // let pageClassesList = [
