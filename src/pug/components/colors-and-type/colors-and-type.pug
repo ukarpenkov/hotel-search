@@ -1,11 +1,9 @@
-mixin color-block(BackgroundColor, colorDescription, colorValue)
+mixin color-block(BackgroundColor="background: #1F2041", colorDescription="Dark Shade 100%", colorValue="#1F2041")
   .color-block  
     .color-block__color(style= BackgroundColor) 
     .color-block__description 
       h2.color-block__description_head= colorDescription
       p.color-block__description_value= colorValue
-
-
 html
   head
     style

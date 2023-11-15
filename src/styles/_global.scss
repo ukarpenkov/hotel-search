@@ -4,9 +4,9 @@
 @use './libs/item-quantity-dropdown.min.css';
 @use './libs/flatpickr.min.css';
 @use './../fonts/woff2/_fonts.css';
-$primaryColor: #ffffff;
-
 @import url(./../fonts/woff2/_fonts.css);
+
+$primaryColor: #ffffff;
 
 html {
   font-size: 10px;

@@ -1,14 +1,13 @@
-import './styles/index.scss'
-
 import $ from "jquery"
-
 import Chart from 'chart.js/auto';
+
 import { counter } from './scripts/counter'
 import { setSlider } from './scripts/slider'
 import { changeVisibleElement } from './scripts/changeVisibleElement'
 import { setCalendar } from './scripts/calendar'
 import { chartData } from './scripts/chartSettings';
 
+import './styles/index.scss'
 
 let counterButtons = document.querySelectorAll('.js-dropdown-counter__btn')
 counterButtons.forEach(btn => {
@@ -42,13 +41,9 @@ let dropdownMenu = document.querySelector('.js-dropdown__input_expanded')
 let dropdownGuestsMenu = document.querySelector('.js-dropdown__input_guests')
 let dropdownCheckboxMenu = document.querySelector('.js-search-room-added-checkbox-list')
 
-
 let comfortArrow = document.querySelector('.js-dropdown__arrow_comfort')
 let guestsArrow = document.querySelector('.js-dropdown-arrow-guests')
 let addOptionsArrow = document.querySelector('.js-dropdown__arrow_checkbox')
-
-
-
 
 if (comfortArrow) {
   comfortArrow.parentNode.addEventListener('click', () => changeVisibleElement(dropdownMenu))
