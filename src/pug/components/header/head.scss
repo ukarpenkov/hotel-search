@@ -45,6 +45,10 @@ $secondaryColor: rgb(79, 47, 74);
   }
 }
 
+button {
+  cursor: pointer;
+}
+
 .header__buttons-items {
   display: flex;
   align-items: center;
