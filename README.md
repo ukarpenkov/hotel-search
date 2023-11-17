@@ -1,4 +1,4 @@
-# ![alt text](https://thumb.cloud.mail.ru/thumb/xw1/123.jpg 'Logo TOXIN') TOXIN Hotel search
+# ![alt text](https://i.ibb.co/xFbGym9/123.jpg 'Logo TOXIN') TOXIN Hotel search
 
 ## [**GitHub Pages Link**](https://ukarpenkov.github.io/hotel-search/dist/index.html)
 
