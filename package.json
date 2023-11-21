@@ -20,6 +20,7 @@
   },
   "homepage": "https://ukarpenkov.github.io/hotel-search/",
   "devDependencies": {
+    "eslint": "8.54.0",
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "babel-loader": "^8.2.2",

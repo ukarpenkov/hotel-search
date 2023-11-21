@@ -1,4 +1,0 @@
-{
-  "plugins": ["fsd"],
-  "extends": ["plugin:fsd/all"]
-}
