@@ -1,8 +1,15 @@
-<!doctype html><html><head><title>TOXIN</title><link rel="icon" sizes="image/svg+xml" href="src/assets/favicon.svg"><link rel="icon" type="image/png" href="src/assets/favicon.png"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><style>.field {
-  margin-bottom: 12px;
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>TOXIN</title><link rel="icon" sizes="image/svg+xml" href="src/assets/favicon.svg"><link rel="icon" type="image/png" href="src/assets/favicon.png"><script src="src/pug/blocks/input/input.js" defer="defer"></script><style>.field {
+  margin-bottom: 10px;
+}
+
+.field_mt-1 {
+  position: relative;
+  top: 1px;
+  margin-bottom: 10px;
 }
 
 .input.input_focus {
+  outline: none;
   border: 1px solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75);
 }
@@ -17,8 +24,9 @@
 }
 
 .buttons__item {
-  margin-right: 13px;
-  margin-bottom: 27px;
+  margin-right: 18px;
+  margin-bottom: 20px;
+  margin-top: 8px;
 }
 
 .btn {
@@ -30,17 +38,7 @@
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
-}
-
-.buttons__items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 220px;
-  height: 200px;
-}
-
-.radio-buttons-block {
-  margin-top: 33px;
+  cursor: pointer;
 }
 
 .pagination {
@@ -49,6 +47,7 @@
 }
 
 .buttons {
+  margin-left: -4px;
   margin-bottom: 68px;
 }
 
@@ -94,9 +93,17 @@ img {
 .checkbox-list_rich {
   margin-top: 90px;
 }
+
 .checkbox-list_options {
   display: grid;
   gap: 10px;
+  position: relative;
+  bottom: 3px;
+}
+
+.checkbox-list_options_rich {
+  position: relative;
+  bottom: 1px;
 }
 
 .bullet-list {
@@ -109,6 +116,8 @@ img {
 }
 
 .stars-block {
+  position: relative;
+  top: 3px;
   display: flex;
   align-items: flex-start;
   align-self: flex-start;
@@ -119,12 +128,12 @@ img {
 }
 
 .rating-block {
-  margin-top: 32px;
-  margin-bottom: 185px;
+  margin-top: 30px;
+  margin-bottom: 186px;
 }
 
 .like-block {
-  margin-top: 31px;
+  margin-top: 28px;
 }
 
 .like-buttons {
@@ -145,26 +154,29 @@ img {
   margin-left: 10px;
 }
 
+.radio_female {
+  position: relative;
+  left: 4px;
+}
+
 .avatar {
   display: inline-block;
   width: 50px;
   height: 50px;
+  position: relative;
+  right: 21px;
+  bottom: 3px;
 }
-.avatar_small {
-  width: 160%;
-  height: 160%;
 
+.avatar_small {
+  width: 180%;
+  height: 180%;
   float: left;
 }
 
 .user-name {
   display: inline-block;
-  padding-left: 20px;
-}
-
-.comment-text .room-privilege__description-text {
-  width: 653px;
-  height: 72px;
+  padding-left: 9px;
 }
 
 .comment-block {
@@ -173,15 +185,23 @@ img {
 
 .comment {
   padding-left: 10px;
+  position: relative;
+  right: 14px;
+  bottom: 3px;
 }
 
-.comment .like-button_color {
+.like-button_color {
   float: left;
 }
 
 .comment-text {
+  width: 653px;
+  height: 72px;
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 1px;
+
+  position: relative;
+  left: 13px;
 }
 
 .toggle-block {
@@ -196,6 +216,7 @@ img {
   position: relative;
   padding: 0 0 0 52px;
   cursor: pointer;
+  top: 1px;
 }
 
 .toggle-label {
@@ -208,18 +229,6 @@ img {
   width: 267px;
 }
 
-.subscribe-arrow {
-  position: relative;
-  left: 233px;
-  top: -31px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #bc9cff;
-}
 .subscribe-arrow {
   position: relative;
   left: 233px;
@@ -237,6 +246,7 @@ img {
   position: relative;
   left: -36px;
   color: #bc9cff;
+  cursor: pointer;
 }
 
 .dropdown__input_default {
@@ -254,8 +264,9 @@ img {
 .dropdown__input-text {
   display: flex;
   position: relative;
-  left: 10px;
   width: 295px;
+  left: 15px;
+  bottom: 1px;
   height: 40px;
   color: rgba(31, 32, 65, 0.75);
   align-items: center;
@@ -268,12 +279,22 @@ img {
   justify-content: space-between;
 }
 
-.dropdown-block {
-  margin-top: 12px;
+.dropdown__arrow {
+  display: inline-block;
 }
 
-.forms-elements-page .dropdown__arrow {
+.dropdown__arrow_wide {
+  position: relative;
+  left: 168px;
   display: inline-block;
+}
+
+.dropdown__arrow_narrow {
+  position: relative;
+  left: 116px;
+  top: -32px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .dropdown__input_expanded {
@@ -294,18 +315,6 @@ img {
   padding-right: 177px;
 }
 
-.calendar_apply-btn.apply-btn {
-  display: inline-block;
-  left: 50px;
-  top: -7px;
-}
-
-.calendar_clear-btn.clear-btn {
-  display: inline-block;
-  left: -58px;
-  top: -7px;
-}
-
 .date-pickers {
   display: flex;
   width: 343px;
@@ -316,10 +325,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-input[type='number'] {
-  -moz-appearance: textfield;
 }
 
 .filter-price {
@@ -334,7 +339,7 @@ input[type='number'] {
 .filter-price__head {
   display: flex;
   width: 266px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   margin-left: -12px;
 }
 
@@ -376,6 +381,7 @@ input[type='number'] {
   display: flex;
   justify-content: space-between;
 }
+
 .filter-price__slider {
   width: 267px;
   margin-left: -12px;
@@ -448,6 +454,7 @@ input[type='number'] {
   text-align: left !important;
   color: #1f2041 !important;
 }
+
 .numInputWrapper input,
 .numInputWrapper span {
   display: none !important;
@@ -456,13 +463,48 @@ input[type='number'] {
 .flatpickr-current-month {
   left: 20px !important;
   margin-bottom: 30px !important;
+  margin-top: 10px;
 }
 .flatpickr-months {
   margin-top: 15px !important;
 }
 
+.flatpickr-innerContainer {
+  margin-left: 18px;
+}
+
+.flatpickr-weekdays {
+  width: 91% !important;
+}
+
+.dayContainer {
+  justify-content: flex-start !important;
+  height: 240px;
+}
+
+.flatpickr-days {
+  left: 3px;
+  top: 5px;
+  margin-bottom: 12px;
+}
+
+.calendar_apply-btn {
+  position: relative;
+  left: 62px !important;
+  top: -14px !important;
+}
+
+.calendar_clear-btn {
+  position: relative;
+  top: -14px !important;
+}
+
 .flatpickr-month {
-  margin-bottom: 30px !important;
+  margin-bottom: 14px !important;
+}
+
+.flatpickr-months .flatpickr-month {
+  height: 37px !important;
 }
 
 span.flatpickr-weekday {
@@ -505,32 +547,36 @@ span.flatpickr-weekday {
   height: 40px !important;
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
   border-radius: 22px !important;
+  z-index: 1;
 }
 
 .flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
 .flatpickr-months .flatpickr-next-month.flatpickr-next-month {
-  right: 0 !important;
-  top: 13px !important;
+  right: 9px !important;
+  top: 9px !important;
 }
 
 .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
 .flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
-  left: 0 !important;
-  top: 13px !important;
+  left: 9px !important;
+  top: 10px !important;
 }
 
 .date-filter_arrow {
+  cursor: pointer;
   position: relative !important;
   left: -33px !important;
   top: -1px !important;
 }
 
 .date-filter {
-  margin-top: 20px !important;
+  position: relative;
+  bottom: 3px;
 }
 
 .subscribe-field {
-  margin-top: 34px;
+  position: relative;
+  top: 6px;
 }
 
 .head__logo-img {
@@ -573,9 +619,11 @@ span.flatpickr-weekday {
 
 .col-1 {
   width: 320px;
+  margin-left: 3px;
 }
+
 .col-1 .form {
-  margin-bottom: 98px;
+  margin-bottom: 68px;
 }
 
 .col-2 {
@@ -585,19 +633,149 @@ span.flatpickr-weekday {
 
 .col-3 {
   width: 320px;
-  margin-left: -123px;
+  margin-left: -122px;
+  margin-top: 2px;
 }
 
 .row-1 {
   display: flex;
   width: 1158px;
   justify-content: space-between;
-  margin-top: 77px;
-  margin-left: 130px;
+  margin-top: 68px;
+  margin-left: 132px;
 }
 
-.forms-elements-page .header__logo {
-  margin-left: -16%;
+.dropdown__input_mt-1 {
+  position: relative;
+  bottom: 3px;
+}
+
+.dropdown-block {
+  margin-top: 40px;
+}
+
+.dropdown-block_mt_default {
+  position: relative;
+  top: 29px;
+}
+
+.checkbox-list__expand {
+  position: relative;
+  top: 19px;
+}
+
+.radio-buttons-block {
+  margin-top: 29px;
+}
+
+.checkbox-list_options_rich {
+}
+
+.checkbox-expand-arrow {
+  position: relative;
+  left: 34px;
+  top: 3px;
+}
+
+.buttons__item {
+  position: relative;
+}
+
+.buttons__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'btn1 btn2'
+    'btn3 btn4'
+    'btn5 btn6'
+    'btn7 btn7';
+  width: 220px;
+  height: 200px;
+}
+
+.buttons__item_fill_dark-purple {
+  grid-area: btn1;
+}
+
+.buttons__item_fill_light-purple {
+  grid-area: btn2;
+}
+
+.buttons__item_border_dark-purple {
+  grid-area: btn3;
+}
+
+.buttons__item_border_light-purple {
+  grid-area: btn4;
+}
+
+.buttons__item_no-border_light {
+  grid-area: btn5;
+}
+
+.buttons__item_no-border_dark {
+  grid-area: btn6;
+}
+
+.buttons__item_width_long {
+  grid-area: btn7;
+  position: relative;
+  bottom: 28px;
+  left: 119px;
+}
+
+.buttons__item_fill_dark-purple {
+  top: 3px;
+  left: 1px;
+}
+
+.buttons__item_fill_light-purple {
+  top: 3px;
+  left: -1px;
+}
+
+.buttons__item_border_dark-purple {
+  top: 3px;
+  left: 3px;
+}
+
+.buttons__item_border_light-purple {
+  top: 3px;
+  left: -1px;
+}
+.buttons__item_no-border_light {
+  top: 1px;
+  left: 1px;
+}
+
+.buttons__item_no-border_dark {
+  top: 1px;
+  left: -3px;
+}
+
+.dropdown-block_with-buttons_apply-clr {
+  position: relative;
+  bottom: 2px;
+  right: 3px;
+}
+
+.pagination__items {
+  position: relative;
+  top: 12px;
+  right: 2px;
+}
+
+.bullet-list {
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+}
+
+.bullet-list__items {
+  position: relative;
+  bottom: 2px;
+  left: 1px;
 }
 
 @media (max-width: 1200px) {
@@ -629,12 +807,11 @@ span.flatpickr-weekday {
     display: grid;
     margin-left: 60px;
   }
-}
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></style><div class="forms-elements-page"><!doctype html><html><head><style>.header__logo-img {
+}</style><script defer="defer" src="755.52307dbfb21fd8529785.js"></script><script defer="defer" src="441.26cf6d4bb562cbf06ea0.js"></script><script defer="defer" src="scripts.f3a0d5fde84e73601d64.js"></script><script defer="defer" src="user.468cd42f063739eb6b2f.js"></script><link href="scripts.1ead063b4d48155bd28e.css" rel="stylesheet"></head><div class="forms-elements-page js-forms-elements-page"><!doctype html><html><head><style>.header__logo-img {
   position: relative;
   top: 28px;
   left: 20px;
-}</style><div class="header__logo-img"><a href="index.html"><img class="head__logo-img" src="src/images/only_logo.png" alt="Logo"></a></div><script defer="defer" src="755.52307dbfb21fd8529785.js"></script><script defer="defer" src="441.26cf6d4bb562cbf06ea0.js"></script><script defer="defer" src="scripts.69c141cdf0c96affabf4.js"></script><script defer="defer" src="user.468cd42f063739eb6b2f.js"></script><link href="scripts.a751f45186deecbd1acc.css" rel="stylesheet"></head></html><div class="forms-elements"><div class="col-1"><div class="form"><div class="mixed-fields"><div class="field"><div class="field-label"><style>.label {
+}</style></head><div class="header__logo-img"><a href="index.html"><img class="head__logo-img" src="src/images/only-logo.png" alt="Logo"></a></div></html><div class="forms-elements"><div class="col-1"><div class="form"><div class="mixed-fields"><div class="field"><div class="field-label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -654,16 +831,68 @@ span.flatpickr-weekday {
   border-radius: 4px;
   font-family: Montserrat;
   font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+  &::placeholder {
+    color: #d9d9d9;
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
 }
 
-.input.calendar {
+.calendar {
+  cursor: pointer;
   width: 150px;
+  &::placeholder {
+    color: rgba(31, 32, 65, 0.75);
+  }
+}
+
+.input_middle {
+  width: 267px;
+}
+
+.calendar_long {
+  width: 320px;
 }
 
 .date-filter__input {
   width: 267px !important;
-}</style><input class="input" placeholder="Email"></div><div class="field"><div class="field-label"><style>.label {
+}
+
+.select-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.apply-btn {
+  position: relative;
+  bottom: -10px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  cursor: pointer;
+  display: inline-block;
+  left: 50px;
+  top: -7px;
+}
+
+.clear-btn {
+  display: inline-block;
+  left: -63px;
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  top: -7px;
+}</style><input class="input" placeholder="Email"></div><div class="field_mt-1"><div class="field-label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -681,24 +910,7 @@ span.flatpickr-weekday {
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
-}</style><h2 class="label">Dropdown</h2><style>.input {
-  width: 320px;
-  height: 44px;
-  padding-left: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  font-family: Montserrat;
-  font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.input.calendar {
-  width: 150px;
-}
-
-.date-filter__input {
-  width: 267px !important;
-}</style><select class="input"><option value="">Сколько гостей</option><option value="">1</option><option value="">2</option><option value="">3</option></select></div><div class="field"><style>.label {
+}</style><h2 class="label">Dropdown</h2><div class="dropdown__input_mt-1"><div class="dropdown__input_default dropdown__input_wide"><div class="dropdown__input-text js-dropdown__input-text">Сколько гостей</div><span class="material-icons expand-arrow dropdown__arrow_wide">expand_more</span></div></div></div><div class="field"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -712,16 +924,68 @@ span.flatpickr-weekday {
   border-radius: 4px;
   font-family: Montserrat;
   font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+  &::placeholder {
+    color: #d9d9d9;
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
 }
 
-.input.calendar {
+.calendar {
+  cursor: pointer;
   width: 150px;
+  &::placeholder {
+    color: rgba(31, 32, 65, 0.75);
+  }
+}
+
+.input_middle {
+  width: 267px;
+}
+
+.calendar_long {
+  width: 320px;
 }
 
 .date-filter__input {
   width: 267px !important;
-}</style><input class="input" placeholder="ДД.ММ.ГГГГ"></div></div><div class="date-pickers"><div class="field"><style>.label {
+}
+
+.select-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.apply-btn {
+  position: relative;
+  bottom: -10px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  cursor: pointer;
+  display: inline-block;
+  left: 50px;
+  top: -7px;
+}
+
+.clear-btn {
+  display: inline-block;
+  left: -63px;
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  top: -7px;
+}</style><input class="input js-date-input" placeholder="ДД.ММ.ГГГГ" maxlength="10"></div></div><div class="date-pickers"><div class="field"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -735,16 +999,68 @@ span.flatpickr-weekday {
   border-radius: 4px;
   font-family: Montserrat;
   font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+  &::placeholder {
+    color: #d9d9d9;
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
 }
 
-.input.calendar {
+.calendar {
+  cursor: pointer;
   width: 150px;
+  &::placeholder {
+    color: rgba(31, 32, 65, 0.75);
+  }
+}
+
+.input_middle {
+  width: 267px;
+}
+
+.calendar_long {
+  width: 320px;
 }
 
 .date-filter__input {
   width: 267px !important;
-}</style><input class="input calendar" type="date" placeholder="ДД.ММ.ГГГГ"></div><div class="field"><style>.label {
+}
+
+.select-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.apply-btn {
+  position: relative;
+  bottom: -10px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  cursor: pointer;
+  display: inline-block;
+  left: 50px;
+  top: -7px;
+}
+
+.clear-btn {
+  display: inline-block;
+  left: -63px;
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  top: -7px;
+}</style><input class="input calendar" type="date" placeholder="ДД.ММ.ГГГГ"><span class="material-icons expand-arrow dropdown__arrow_narrow">expand_more</span></div><div class="field"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -758,16 +1074,68 @@ span.flatpickr-weekday {
   border-radius: 4px;
   font-family: Montserrat;
   font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+  &::placeholder {
+    color: #d9d9d9;
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
 }
 
-.input.calendar {
+.calendar {
+  cursor: pointer;
   width: 150px;
+  &::placeholder {
+    color: rgba(31, 32, 65, 0.75);
+  }
+}
+
+.input_middle {
+  width: 267px;
+}
+
+.calendar_long {
+  width: 320px;
 }
 
 .date-filter__input {
   width: 267px !important;
-}</style><input class="input calendar" type="date" placeholder="19.08.2019"></div></div><div class="date-filter"><div class="field"><style>.label {
+}
+
+.select-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.apply-btn {
+  position: relative;
+  bottom: -10px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  cursor: pointer;
+  display: inline-block;
+  left: 50px;
+  top: -7px;
+}
+
+.clear-btn {
+  display: inline-block;
+  left: -63px;
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  top: -7px;
+}</style><input class="input calendar" type="date" placeholder="19.08.2019"><span class="material-icons expand-arrow dropdown__arrow_narrow">expand_more</span></div></div><div class="date-filter"><div class="field"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -781,15 +1149,67 @@ span.flatpickr-weekday {
   border-radius: 4px;
   font-family: Montserrat;
   font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+  &::placeholder {
+    color: #d9d9d9;
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
 }
 
-.input.calendar {
+.calendar {
+  cursor: pointer;
   width: 150px;
+  &::placeholder {
+    color: rgba(31, 32, 65, 0.75);
+  }
+}
+
+.input_middle {
+  width: 267px;
+}
+
+.calendar_long {
+  width: 320px;
 }
 
 .date-filter__input {
   width: 267px !important;
+}
+
+.select-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.apply-btn {
+  position: relative;
+  bottom: -10px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  cursor: pointer;
+  display: inline-block;
+  left: 50px;
+  top: -7px;
+}
+
+.clear-btn {
+  display: inline-block;
+  left: -63px;
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  top: -7px;
 }</style><input class="input calendar date-filter__input" type="date" placeholder="19 авг - 23 авг"><span class="material-icons expand-arrow date-filter_arrow">expand_more</span></div></div><div class="subscribe-field"><div class="field"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
@@ -804,16 +1224,68 @@ span.flatpickr-weekday {
   border-radius: 4px;
   font-family: Montserrat;
   font-size: 14px;
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
+  &::placeholder {
+    color: #d9d9d9;
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
 }
 
-.input.calendar {
+.calendar {
+  cursor: pointer;
   width: 150px;
+  &::placeholder {
+    color: rgba(31, 32, 65, 0.75);
+  }
+}
+
+.input_middle {
+  width: 267px;
+}
+
+.calendar_long {
+  width: 320px;
 }
 
 .date-filter__input {
   width: 267px !important;
-}</style><input class="input input_middle" placeholder="Email"><span class="material-icons subscribe-field-arrow">arrow_forward</span></div></div></div></div><div class="dropdown-block"><div class="dropdown-block__label"><style>.label {
+}
+
+.select-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.apply-btn {
+  position: relative;
+  bottom: -10px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  cursor: pointer;
+  display: inline-block;
+  left: 50px;
+  top: -7px;
+}
+
+.clear-btn {
+  display: inline-block;
+  left: -63px;
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  top: -7px;
+}</style><input class="input input_middle" placeholder="Email"><span class="material-icons subscribe-field-arrow">arrow_forward</span></div></div></div></div><div class="dropdown-block_mt_default"><div class="dropdown-block__label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -826,7 +1298,7 @@ span.flatpickr-weekday {
   font-size: 12px;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
-}</style><span class="dropdown-condition">DEFAULT</span></div><div class="dropdown__input"><div class="dropdown__input_default"><div class="dropdown__input-text">2 спальни</div><span class="material-icons expand-arrow dropdown__arrow">expand_more</span></div></div></div><div class="dropdown-block"><div class="dropdown-block__label"><style>.label {
+}</style><span class="dropdown-condition">DEFAULT</span></div><div class="dropdown__input"><div class="dropdown__input_default"><div class="dropdown__input-text js-dropdown__input-text">2 спальни</div><span class="material-icons expand-arrow dropdown__arrow">expand_more</span></div></div></div><div class="dropdown-block"><div class="dropdown-block__label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -839,8 +1311,11 @@ span.flatpickr-weekday {
   font-size: 12px;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
-}</style><span class="dropdown-condition">EXPANDED</span></div><div class="dropdown__input"><div class="dropdown__input_default"><div class="dropdown__input-text">2 спальни</div><span class="material-icons expand-arrow dropdown__arrow">expand_more</span></div><div class="dropdown__input_expanded"><style>.dropdown-options {
+}</style><span class="dropdown-condition">EXPANDED</span></div><div class="dropdown__input"><div class="dropdown__input_default"><div class="dropdown__input-text js-dropdown__input-text">2 спальни</div><span class="material-icons expand-arrow dropdown__arrow">expand_more</span></div><div class="dropdown__input_expanded js-dropdown__input_expanded"><style>.dropdown-options {
   user-select: none;
+  display: grid;
+  grid-gap: 2px;
+  position: relative;
 }
 
 .dropdown-item {
@@ -851,6 +1326,11 @@ span.flatpickr-weekday {
 
 .dropdown-option {
   padding-left: 12px;
+}
+
+.dropdown-option:first-child {
+  position: relative;
+  bottom: 3px;
 }
 
 .dropdown-counter {
@@ -866,6 +1346,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 22px;
   text-align: center;
+  cursor: pointer;
 }
 
 .dropdown-counter__value {
@@ -874,44 +1355,50 @@ span.flatpickr-weekday {
   font-weight: 700;
 }
 
-.dropdown-counter__btn span {
+.dropdown-counter__btn-text {
   position: relative;
   top: 2px;
   font-size: 18px;
   color: rgba(31, 32, 65, 0.5);
 }
 
-.apply-btn {
+.dropdown-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
   position: relative;
-  left: 223px;
-  bottom: -10px;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
+  top: 7px;
+  right: 3px;
 }
 
-.clear-btn {
-  position: relative;
-  left: 10px;
-  bottom: 15px;
+.dropdown__apply-btn {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
   color: #bc9cff;
-}</style><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">спальни</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">кровати</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">ванные комнаты</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-buttons"><p class="apply-btn"></p><p class="clear-btn"></p></div></div></div></div><div class="checkbox-block"><div class="checkbox-list_close"><div class="checkbox-list__label"><style>.label {
+  cursor: pointer;
+}
+
+.dropdown__clear-btn {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}</style><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">спальни</h2><div class="dropdown-counter"><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="minus"><span class="dropdown-counter__btn-text">-</span></div><div class="dropdown-counter__value label js-dropdown-counter__value">0</div><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="plus"><span class="dropdown-counter__btn-text">+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">кровати</h2><div class="dropdown-counter"><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="minus"><span class="dropdown-counter__btn-text">-</span></div><div class="dropdown-counter__value label js-dropdown-counter__value">0</div><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="plus"><span class="dropdown-counter__btn-text">+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">ванные комнаты</h2><div class="dropdown-counter"><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="minus"><span class="dropdown-counter__btn-text">-</span></div><div class="dropdown-counter__value label js-dropdown-counter__value">0</div><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="plus"><span class="dropdown-counter__btn-text">+</span></div></div></div><div class="dropdown-buttons"><p class="dropdown__apply-btn"></p><p class="dropdown__clear-btn"></p></div></div></div></div><div class="checkbox-block"><div class="checkbox-list_close"><div class="checkbox-list__label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
-}</style><h2 class="label">expandable checkbox list</h2><span class="material-icons expand-arrow">expand_more</span></div></div><div class="checkbox-list"><div class="checkbox-list__label"><style>.label {
+}</style><h2 class="label">expandable checkbox list</h2><span class="material-icons expand-arrow checkbox-expand-arrow">expand_more</span></div><div class="checkbox-list__expand"><div class="checkbox-list__label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
-}</style><h2 class="label">expandable checkbox list</h2><span class="material-icons expand-arrow">expand_more</span></div><div class="checkbox-list_options"><style>.checkbox {
+}</style><h2 class="label">expandable checkbox list</h2><span class="material-icons expand-arrow checkbox-expand-arrow">expand_more</span></div><div class="checkbox-list_options"><style>.checkbox {
   display: none;
 }
 
@@ -922,6 +1409,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .visible-checkbox-label::before {
@@ -958,6 +1446,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .visible-checkbox-label::before {
@@ -994,6 +1483,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .visible-checkbox-label::before {
@@ -1030,6 +1520,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .visible-checkbox-label::before {
@@ -1066,6 +1557,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .visible-checkbox-label::before {
@@ -1102,6 +1594,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .visible-checkbox-label::before {
@@ -1127,7 +1620,7 @@ span.flatpickr-weekday {
   vertical-align: text-top;
   width: 226px;
   display: inline-block;
-}</style><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label">Шампунь</span></label></div></div></div></div></div><div class="col-2"><div class="checkbox-list"><div class="checkbox-list__label"><style>.label {
+}</style><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label">Шампунь</span></label></div></div></div></div></div></div><div class="col-2"><div class="checkbox-list"><div class="checkbox-list__label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -1144,6 +1637,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .visible-checkbox-label::before {
@@ -1180,6 +1674,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .visible-checkbox-label::before {
@@ -1216,6 +1711,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .visible-checkbox-label::before {
@@ -1241,7 +1737,7 @@ span.flatpickr-weekday {
   vertical-align: text-top;
   width: 226px;
   display: inline-block;
-}</style><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement" checked="checked"><span class="visible-checkbox-label"></span><span class="checkbox-label">Можно пригласить гостей (до 10 человек)</span></label></div></div><div class="radio-buttons-block"><style>.label {
+}</style><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement" checked="checked"><span class="visible-checkbox-label"></span><span class="checkbox-label">Можно пригласить гостей (до 10 человек)</span></label></div><div class="radio-buttons-block"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -1253,8 +1749,8 @@ span.flatpickr-weekday {
 }
 
 .radio__input {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border: 1px solid #bc9cff;
   border-radius: 10px;
   appearance: none;
@@ -1270,8 +1766,8 @@ span.flatpickr-weekday {
 }
 
 .radio__label:before {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   position: absolute;
   border: 1px solid #ccc;
@@ -1286,16 +1782,16 @@ span.flatpickr-weekday {
   height: 12px;
   opacity: 0;
   position: absolute;
-  top: 6px;
-  left: 8px;
+  top: 7px;
+  left: 9px;
   transition: opacity 0.1s linear;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 10px;
 }
 
 .radio-buttons-items {
-  justify-content: flex-start;
-  margin-top: 12px;
+  display: flex;
+  margin-top: 9px;
   margin-left: -15px;
 }
 
@@ -1305,7 +1801,7 @@ span.flatpickr-weekday {
 
 .radio__input:checked + .radio__label:after {
   opacity: 1;
-}</style><div class="radio-buttons-items"><div class="radio"><input class="radio__input" type="radio" name="gender" id="1"><label class="radio__label" for="1">Мужчина</label></div><div class="radio"><input class="radio__input" type="radio" name="gender" id="2"><label class="radio__label" for="2">Женщина</label></div></div></head></html></div><div class="toggle-block"><style>.label {
+}</style></head><div class="radio-buttons-items"><div class="radio"><input class="radio__input" type="radio" name="gender" id="1"><label class="radio__label" for="1">Мужчина</label></div><div class="radio radio_female"><input class="radio__input" type="radio" name="gender" id="2"><label class="radio__label" for="2">Женщина</label></div></div></html></div><div class="toggle-block"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -1345,9 +1841,12 @@ span.flatpickr-weekday {
 }
 
 .toggle-item {
+  position: relative;
   margin-bottom: 12px;
+  bottom: 2px;
+  right: 2px;
   margin-left: -19px;
-  margin-top: 9px;
+  margin-top: 10px;
 }</style><div class="toggle-item"><input class="toggle" type="checkbox" id="check1" checked="checked"><label class="toggle-label" for="check1">Получать спецпредложения</label></div><style>.toggle + .toggle-label:before {
   content: '';
   position: absolute;
@@ -1382,9 +1881,12 @@ span.flatpickr-weekday {
 }
 
 .toggle-item {
+  position: relative;
   margin-bottom: 12px;
+  bottom: 2px;
+  right: 2px;
   margin-left: -19px;
-  margin-top: 9px;
+  margin-top: 10px;
 }</style><div class="toggle-item"><input class="toggle" type="checkbox" id="check2"><label class="toggle-label" for="check2">Получать спецпредложения</label></div></div><div class="like-block"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
@@ -1398,10 +1900,7 @@ span.flatpickr-weekday {
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 10px;
-}
-
-.material-icons.like {
-  font-size: 12px;
+  cursor: pointer;
 }
 
 .like-quantity {
@@ -1409,6 +1908,8 @@ span.flatpickr-weekday {
   line-height: 12px;
   color: rgba(31, 32, 65, 0.25);
   margin-left: 3px;
+  position: relative;
+  right: -3px;
 }
 
 .like-button_color {
@@ -1435,10 +1936,7 @@ span.flatpickr-weekday {
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 10px;
-}
-
-.material-icons.like {
-  font-size: 12px;
+  cursor: pointer;
 }
 
 .like-quantity {
@@ -1446,6 +1944,8 @@ span.flatpickr-weekday {
   line-height: 12px;
   color: rgba(31, 32, 65, 0.25);
   margin-left: 3px;
+  position: relative;
+  right: -3px;
 }
 
 .like-button_color {
@@ -1471,7 +1971,7 @@ span.flatpickr-weekday {
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
-}</style><h2 class="label">rate button</h2><div class="stars-block"><!doctype html><html><head><style>.rating {
+}</style><h2 class="label">rate button</h2><div class="stars-block"><style>.rating {
   position: relative;
   font-size: 29px;
   display: inline-block;
@@ -1524,7 +2024,7 @@ span.flatpickr-weekday {
   font-family: 'Material Icons';
   font-weight: normal;
   text-transform: none;
-}</style><div class="rating"><div class="rating-stars"><input class="rating__star" id="rating__5" type="radio" name="rating" value="5"><label class="rating__label" for="rating__5"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__4" type="radio" name="rating" value="4"><label class="rating__label" for="rating__4"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__3" type="radio" name="rating" value="3"><label class="rating__label" for="rating__3"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__2" type="radio" name="rating" value="2"><label class="rating__label" for="rating__2"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__1" type="radio" name="rating" value="1"><label class="rating__label" for="rating__1"><span class="material-icons">star_border</span></label></div></div></head></html><!doctype html><html><head><style>.rating {
+}</style><div class="rating"><div class="rating-stars"><input class="rating__star" id="rating__5" type="radio" name="rating__1" value="5"><label class="rating__label" for="rating__5"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__4" type="radio" name="rating__1" value="4"><label class="rating__label" for="rating__4"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__3" type="radio" name="rating__1" value="3"><label class="rating__label" for="rating__3"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__2" type="radio" name="rating__1" value="2"><label class="rating__label" for="rating__2"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__1" type="radio" name="rating__1" value="1"><label class="rating__label" for="rating__1"><span class="material-icons">star_border</span></label></div></div><style>.rating {
   position: relative;
   font-size: 29px;
   display: inline-block;
@@ -1577,14 +2077,17 @@ span.flatpickr-weekday {
   font-family: 'Material Icons';
   font-weight: normal;
   text-transform: none;
-}</style><div class="rating"><div class="rating-stars"><input class="rating__star" id="rating__5" type="radio" name="rating" value="5"><label class="rating__label" for="rating__5"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__4" type="radio" name="rating" value="4"><label class="rating__label" for="rating__4"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__3" type="radio" name="rating" value="3"><label class="rating__label" for="rating__3"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__2" type="radio" name="rating" value="2"><label class="rating__label" for="rating__2"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__1" type="radio" name="rating" value="1"><label class="rating__label" for="rating__1"><span class="material-icons">star_border</span></label></div></div></head></html></div></div><div class="dropdown-block"><div class="dropdown-block__label"><style>.label {
+}</style><div class="rating"><div class="rating-stars"><input class="rating__star" id="rating__14" type="radio" name="rating__10" value="14"><label class="rating__label" for="rating__14"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__13" type="radio" name="rating__10" value="13"><label class="rating__label" for="rating__13"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__12" type="radio" name="rating__10" value="12"><label class="rating__label" for="rating__12"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__11" type="radio" name="rating__10" value="11"><label class="rating__label" for="rating__11"><span class="material-icons">star_border</span></label><input class="rating__star" id="rating__10" type="radio" name="rating__10" value="10"><label class="rating__label" for="rating__10"><span class="material-icons">star_border</span></label></div></div></div></div><div class="dropdown-block"><div class="dropdown-block__label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
-}</style><h2 class="label">dropdown</h2></div><div class="dropdown__input"><div class="dropdown__input_default dropdown__input_wide"><div class="dropdown__input-text">Сколько гостей <span class="material-icons expand-arrow dropdown__arrow">expand_more</span></div></div><div class="dropdown__input_expanded dropdown__input_expanded-apply"><style>.dropdown-options {
+}</style><h2 class="label">dropdown</h2></div><div class="dropdown__input"><div class="dropdown__input_default dropdown__input_wide"><div class="dropdown__input-text js-dropdown__input-text">Сколько гостей</div><span class="material-icons expand-arrow dropdown__arrow_wide">expand_more</span></div><div class="dropdown__input_expanded dropdown__input_expanded-apply js-dropdown__input_expanded"><style>.dropdown-options {
   user-select: none;
+  display: grid;
+  grid-gap: 2px;
+  position: relative;
 }
 
 .dropdown-item {
@@ -1595,6 +2098,11 @@ span.flatpickr-weekday {
 
 .dropdown-option {
   padding-left: 12px;
+}
+
+.dropdown-option:first-child {
+  position: relative;
+  bottom: 3px;
 }
 
 .dropdown-counter {
@@ -1610,6 +2118,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 22px;
   text-align: center;
+  cursor: pointer;
 }
 
 .dropdown-counter__value {
@@ -1618,38 +2127,44 @@ span.flatpickr-weekday {
   font-weight: 700;
 }
 
-.dropdown-counter__btn span {
+.dropdown-counter__btn-text {
   position: relative;
   top: 2px;
   font-size: 18px;
   color: rgba(31, 32, 65, 0.5);
 }
 
-.apply-btn {
+.dropdown-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
   position: relative;
-  left: 223px;
-  bottom: -10px;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
+  top: 7px;
+  right: 3px;
 }
 
-.clear-btn {
-  position: relative;
-  left: 10px;
-  bottom: 15px;
+.dropdown__apply-btn {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
   color: #bc9cff;
-}</style><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">взрослые</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">дети</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">младенцы</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-buttons"><p class="apply-btn">применить</p><p class="clear-btn"></p></div></div></div></div><div class="checkbox-list_rich"><div class="checkbox-list__label"><style>.label {
+  cursor: pointer;
+}
+
+.dropdown__clear-btn {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}</style><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">взрослые</h2><div class="dropdown-counter"><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="minus"><span class="dropdown-counter__btn-text">-</span></div><div class="dropdown-counter__value label js-dropdown-counter__value">0</div><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="plus"><span class="dropdown-counter__btn-text">+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">дети</h2><div class="dropdown-counter"><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="minus"><span class="dropdown-counter__btn-text">-</span></div><div class="dropdown-counter__value label js-dropdown-counter__value">0</div><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="plus"><span class="dropdown-counter__btn-text">+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">младенцы</h2><div class="dropdown-counter"><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="minus"><span class="dropdown-counter__btn-text">-</span></div><div class="dropdown-counter__value label js-dropdown-counter__value">0</div><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="plus"><span class="dropdown-counter__btn-text">+</span></div></div></div><div class="dropdown-buttons"><p class="dropdown__apply-btn"></p><p class="dropdown__clear-btn">применить</p></div></div></div></div></div><div class="checkbox-list_rich"><div class="checkbox-list__label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
-}</style><h2 class="label">rich Checkbox Buttons</h2></div><div class="checkbox-list_options"><style>.checkbox {
+}</style><h2 class="label">rich Checkbox Buttons</h2></div><div class="checkbox-list_options"><div class="checkbox-list_options_rich"><style>.checkbox {
   display: none;
 }
 
@@ -1663,7 +2178,7 @@ span.flatpickr-weekday {
 }
 
 .checkbox-list__label {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .visible-checkbox-label::before {
@@ -1721,7 +2236,7 @@ span.flatpickr-weekday {
 }
 
 .checkbox-list__label {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .visible-checkbox-label::before {
@@ -1765,19 +2280,19 @@ span.flatpickr-weekday {
 
 .checkbox-list_options-item {
   vertical-align: middle;
-}</style><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label checkbox-label-rich">Помощник для инвалидов</span><p class="checkbox-label-describe">На 1 этаже вас встретит специалист и проводит до номера.</p></label></div></div></div></div><div class="col-3"><div class="filter-price"><div class="filter-price__head"><style>.label {
+}</style><label class="checkbox-list_options-items"><input class="checkbox" type="checkbox" name="agreement"><span class="visible-checkbox-label"></span><span class="checkbox-label checkbox-label-rich">Помощник для инвалидов</span><p class="checkbox-label-describe">На 1 этаже вас встретит специалист и проводит до номера.</p></label></div></div></div></div></div><div class="col-3"><div class="filter-price"><div class="filter-price__head"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
-}</style><h2 class="label">range slider</h2><div class="filter-price__inputs"><label class="filter-price__label filter-price__label-min"><input class="filter-price__input-min" type="number" min="0" max="100000" placeholder="0" id="input-0"><span class="filter-price__text">₽-</span><span class="filter-price__text"></span></label><label class="filter-price__label filter-price__label-max"><input class="filter-price__input-max" type="number" min="0" max="100000" placeholder="10&amp;nbsp0000" id="input-1"><span class="filter-price__text filter-price__text-max">₽</span></label></div></div><div class="filter-price__slider" id="range-slider"></div></div><div class="buttons"><div class="buttons__label"><style>.label {
+}</style><h2 class="label">range slider</h2><div class="filter-price__inputs"><label class="filter-price__label filter-price__label-min"><input class="filter-price__input-min" type="number" min="0" max="100000" placeholder="0" id="input-0" disabled="disabled"><span class="filter-price__text">₽-</span><span class="filter-price__text"></span></label><label class="filter-price__label filter-price__label-max"><input class="filter-price__input-max" type="number" min="0" max="100000" placeholder="10&amp;nbsp0000" id="input-1" disabled="disabled"><span class="filter-price__text filter-price__text-max">₽</span></label></div></div><div class="filter-price__slider" id="range-slider"></div></div><div class="buttons"><div class="buttons__label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
-}</style><h2 class="label">buttons</h2></div><div class="buttons__items"><div class="buttons__item"><style>.btn {
+}</style><h2 class="label">buttons</h2><div class="buttons__items"><div class="buttons__item buttons__item_fill_dark-purple"><style>.btn {
   border: 2px solid;
   outline: none;
   height: 44px;
@@ -1786,6 +2301,7 @@ span.flatpickr-weekday {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn_small {
@@ -1829,13 +2345,13 @@ span.flatpickr-weekday {
   margin-left: -18px;
 }
 
-.btn_small.btn_no-border-dark {
+.btn_no-border-dark {
   color: rgba(31, 32, 65, 0.5);
   border: none;
   background: #ffffff;
   margin-top: -9px;
   margin-left: -53px;
-}</style><button class="btn btn_small btn_fill-dark-violet">CLICK ME</button></div><div class="buttons__item"><style>.btn {
+}</style><button class="btn btn_small btn_fill-dark-violet">CLICK ME</button></div><div class="buttons__item buttons__item_fill_light-purple"><style>.btn {
   border: 2px solid;
   outline: none;
   height: 44px;
@@ -1844,6 +2360,7 @@ span.flatpickr-weekday {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn_small {
@@ -1887,13 +2404,13 @@ span.flatpickr-weekday {
   margin-left: -18px;
 }
 
-.btn_small.btn_no-border-dark {
+.btn_no-border-dark {
   color: rgba(31, 32, 65, 0.5);
   border: none;
   background: #ffffff;
   margin-top: -9px;
   margin-left: -53px;
-}</style><button class="btn btn_small btn_fill-light-violet">CLICK ME</button></div><div class="buttons__item"><style>.btn {
+}</style><button class="btn btn_small btn_fill-light-violet">CLICK ME</button></div><div class="buttons__item buttons__item_border_dark-purple"><style>.btn {
   border: 2px solid;
   outline: none;
   height: 44px;
@@ -1902,6 +2419,7 @@ span.flatpickr-weekday {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn_small {
@@ -1945,13 +2463,13 @@ span.flatpickr-weekday {
   margin-left: -18px;
 }
 
-.btn_small.btn_no-border-dark {
+.btn_no-border-dark {
   color: rgba(31, 32, 65, 0.5);
   border: none;
   background: #ffffff;
   margin-top: -9px;
   margin-left: -53px;
-}</style><button class="btn btn_small btn_dark-violet">CLICK ME</button></div><div class="buttons__item"><style>.btn {
+}</style><button class="btn btn_small btn_dark-violet">CLICK ME</button></div><div class="buttons__item buttons__item_border_light-purple"><style>.btn {
   border: 2px solid;
   outline: none;
   height: 44px;
@@ -1960,6 +2478,7 @@ span.flatpickr-weekday {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn_small {
@@ -2003,13 +2522,13 @@ span.flatpickr-weekday {
   margin-left: -18px;
 }
 
-.btn_small.btn_no-border-dark {
+.btn_no-border-dark {
   color: rgba(31, 32, 65, 0.5);
   border: none;
   background: #ffffff;
   margin-top: -9px;
   margin-left: -53px;
-}</style><button class="btn btn_small btn_light-violet">CLICK ME</button></div><div class="buttons__item"><style>.btn {
+}</style><button class="btn btn_small btn_light-violet">CLICK ME</button></div><div class="buttons__item buttons__item_no-border_light"><style>.btn {
   border: 2px solid;
   outline: none;
   height: 44px;
@@ -2018,6 +2537,7 @@ span.flatpickr-weekday {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn_small {
@@ -2061,13 +2581,13 @@ span.flatpickr-weekday {
   margin-left: -18px;
 }
 
-.btn_small.btn_no-border-dark {
+.btn_no-border-dark {
   color: rgba(31, 32, 65, 0.5);
   border: none;
   background: #ffffff;
   margin-top: -9px;
   margin-left: -53px;
-}</style><button class="btn btn_small btn_no-border-violet">CLICK ME</button></div><div class="buttons__item"><style>.btn {
+}</style><button class="btn btn_small btn_no-border-violet">CLICK ME</button></div><div class="buttons__item buttons__item_no-border_dark"><style>.btn {
   border: 2px solid;
   outline: none;
   height: 44px;
@@ -2076,6 +2596,7 @@ span.flatpickr-weekday {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn_small {
@@ -2119,13 +2640,13 @@ span.flatpickr-weekday {
   margin-left: -18px;
 }
 
-.btn_small.btn_no-border-dark {
+.btn_no-border-dark {
   color: rgba(31, 32, 65, 0.5);
   border: none;
   background: #ffffff;
   margin-top: -9px;
   margin-left: -53px;
-}</style><button class="btn btn_small btn_no-border-dark">CLICK ME</button><button class="btn btn_lg"><span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span></button></div></div></div><div class="pagination"><style>.label {
+}</style><button class="btn btn_small btn_no-border-dark">CLICK ME</button></div><div class="buttons__item buttons__item_width_long"><button class="btn btn_lg"><span>ПЕРЕЙТИ К ОПЛАТЕ</span> <span class="material-icons">arrow_forward</span></button></div></div></div></div><div class="pagination"><div class="pagination__items"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -2156,14 +2677,17 @@ span.flatpickr-weekday {
   top: -6px;
   left: 4px;
   color: rgba(31, 32, 65, 0.75);
-}</style><div class="pagination__btns"><button class="btn btn-pagination btn-pagination_active">1</button><button class="btn btn-pagination btn-pagination">2</button><button class="btn btn-pagination btn-pagination">3</button><button class="btn btn-pagination btn-pagination">...</button><button class="btn btn-pagination btn-pagination">15</button><button class="btn btn-pagination btn-pagination_next"><span class="material-icons">arrow_forward</span></button><p class="pagination-text">1 – 12 из 100+ вариантов аренды</p></div></head></html></div><div class="dropdown-block"><div class="dropdown-block__label"><style>.label {
+}</style></head><div class="pagination__btns"><button class="btn btn-pagination btn-pagination_active">1</button><button class="btn btn-pagination btn-pagination">2</button><button class="btn btn-pagination btn-pagination">3</button><button class="btn btn-pagination btn-pagination">...</button><button class="btn btn-pagination btn-pagination">15</button><button class="btn btn-pagination btn-pagination_next"><span class="material-icons">arrow_forward</span></button><p class="pagination-text">1 – 12 из 100+ вариантов аренды</p></div></html></div></div><div class="dropdown-block dropdown-block_with-buttons_apply-clr"><div class="dropdown-block__label"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
-}</style><h2 class="label">dropdown</h2></div><div class="dropdown__input"><div class="dropdown__input_default dropdown__input_wide"><div class="dropdown__input-text">Сколько гостей</div><span class="material-icons expand-arrow dropdown__arrow">expand_more</span></div><div class="dropdown__input_expanded dropdown__input_expanded-apply"><style>.dropdown-options {
+}</style><h2 class="label">dropdown</h2></div><div class="dropdown__input"><div class="dropdown__input_default dropdown__input_wide"><div class="dropdown__input-text js-dropdown__input-text">Сколько гостей</div><span class="material-icons expand-arrow dropdown__arrow_wide">expand_more</span></div><div class="dropdown__input_expanded dropdown__input_expanded-apply js-dropdown__input_expanded"><style>.dropdown-options {
   user-select: none;
+  display: grid;
+  grid-gap: 2px;
+  position: relative;
 }
 
 .dropdown-item {
@@ -2174,6 +2698,11 @@ span.flatpickr-weekday {
 
 .dropdown-option {
   padding-left: 12px;
+}
+
+.dropdown-option:first-child {
+  position: relative;
+  bottom: 3px;
 }
 
 .dropdown-counter {
@@ -2189,6 +2718,7 @@ span.flatpickr-weekday {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 22px;
   text-align: center;
+  cursor: pointer;
 }
 
 .dropdown-counter__value {
@@ -2197,57 +2727,66 @@ span.flatpickr-weekday {
   font-weight: 700;
 }
 
-.dropdown-counter__btn span {
+.dropdown-counter__btn-text {
   position: relative;
   top: 2px;
   font-size: 18px;
   color: rgba(31, 32, 65, 0.5);
 }
 
-.apply-btn {
+.dropdown-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
   position: relative;
-  left: 223px;
-  bottom: -10px;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #bc9cff;
+  top: 7px;
+  right: 3px;
 }
 
-.clear-btn {
-  position: relative;
-  left: 10px;
-  bottom: 15px;
+.dropdown__apply-btn {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
   color: #bc9cff;
-}</style><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">взрослые</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">дети</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">младенцы</h2><div class="dropdown-counter"><div class="dropdown-counter__btn" data-direction="minus"><span>-</span></div><div class="dropdown-counter__value label">0</div><div class="dropdown-counter__btn" data-direction="plus"><span>+</span></div></div></div><div class="dropdown-buttons"><p class="apply-btn">применить</p><p class="clear-btn">очистить</p></div></div></div></div></div><div class="bullet-list"><style>.label {
+  cursor: pointer;
+}
+
+.dropdown__clear-btn {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}</style><div class="dropdown-options"><div class="dropdown-item"><h2 class="dropdown-option label">взрослые</h2><div class="dropdown-counter"><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="minus"><span class="dropdown-counter__btn-text">-</span></div><div class="dropdown-counter__value label js-dropdown-counter__value">0</div><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="plus"><span class="dropdown-counter__btn-text">+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">дети</h2><div class="dropdown-counter"><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="minus"><span class="dropdown-counter__btn-text">-</span></div><div class="dropdown-counter__value label js-dropdown-counter__value">0</div><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="plus"><span class="dropdown-counter__btn-text">+</span></div></div></div><div class="dropdown-item"><h2 class="dropdown-option label">младенцы</h2><div class="dropdown-counter"><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="minus"><span class="dropdown-counter__btn-text">-</span></div><div class="dropdown-counter__value label js-dropdown-counter__value">0</div><div class="dropdown-counter__btn js-dropdown-counter__btn" data-direction="plus"><span class="dropdown-counter__btn-text">+</span></div></div></div><div class="dropdown-buttons"><p class="dropdown__apply-btn">очистить</p><p class="dropdown__clear-btn">применить</p></div></div></div></div></div><div class="bullet-list"><style>.label {
     font-size: 12px;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #1f2041;
     display: inline-block;
 }</style><h2 class="label">bullet list</h2><ul class="bullet-list__items"><style>.bullet-list__item {
-  list-style-image: url('./src/assets/Ellipse.png');
+  list-style-image: url('./src/assets/ellipse.png');
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   padding-top: 10px;
+  width: 237px;
 }</style><li class="bullet-list__item">Нельзя с питомцами</li><style>.bullet-list__item {
-  list-style-image: url('./src/assets/Ellipse.png');
+  list-style-image: url('./src/assets/ellipse.png');
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   padding-top: 10px;
+  width: 237px;
 }</style><li class="bullet-list__item">Без вечеринок и мероприятий</li><style>.bullet-list__item {
-  list-style-image: url('./src/assets/Ellipse.png');
+  list-style-image: url('./src/assets/ellipse.png');
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   padding-top: 10px;
+  width: 237px;
 }</style><li class="bullet-list__item">Время прибытия — после 13:00, а выезд до 12:00</li></ul></div></div></div><div class="row-1"><div class="room-privilege"><style>.room-privilege-block {
   margin-top: 25px;
 }
 
-.material-icons.room-privilege-img {
+.room-privilege-img {
   font-size: 48px;
   align-items: center;
   color: transparent;
@@ -2281,7 +2820,7 @@ span.flatpickr-weekday {
   margin-top: 25px;
 }
 
-.material-icons.room-privilege-img {
+.room-privilege-img {
   font-size: 48px;
   align-items: center;
   color: transparent;
@@ -2311,17 +2850,14 @@ span.flatpickr-weekday {
 .room-privilege__description {
   display: inline-block;
   padding-left: 10px;
-}</style><div class="room-privilege-block"><div class="room-privilege__image"><span class="material-icons room-privilege-img">location_city</span></div><div class="room-privilege__description"><p class="room-privilege__description-label">Удобство</p><p class="room-privilege__description-text">Окно в каждой из спален</p></div></div></div><div class="comment-block"><div class="user-info"><div class="avatar"><img class="avatar_small" src="src/images/avatar.svg" alt="avatar"></div><div class="user-name"><p class="room-privilege__description-label"></p><p class="room-privilege__description-text">5 дней назад</p></div></div><div class="comment"><div class="like-button like-button_color"><style>.like-button {
+}</style><div class="room-privilege-block"><div class="room-privilege__image"><span class="material-icons room-privilege-img">location_city</span></div><div class="room-privilege__description"><p class="room-privilege__description-label">Удобство</p><p class="room-privilege__description-text">Окно в каждой из спален</p></div></div></div><div class="comment-block"><div class="user-info"><div class="avatar"><img class="avatar_small" src="src/images/avatar.svg" alt="avatar"></div><div class="user-name"><p class="room-privilege__description-label">Мурад Сарафанов</p><p class="room-privilege__description-text">5 дней назад</p></div></div><div class="comment"><div class="like-button like-button_color"><style>.like-button {
   display: flex;
   align-items: center;
   width: 40px;
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 10px;
-}
-
-.material-icons.like {
-  font-size: 12px;
+  cursor: pointer;
 }
 
 .like-quantity {
@@ -2329,6 +2865,8 @@ span.flatpickr-weekday {
   line-height: 12px;
   color: rgba(31, 32, 65, 0.25);
   margin-left: 3px;
+  position: relative;
+  right: -3px;
 }
 
 .like-button_color {
@@ -2348,4 +2886,4 @@ span.flatpickr-weekday {
 
 .like-quantity_color {
   color: #bc9cff;
-}</style><div class="like-button"><span class="material-icons like">favorite_border</span><span class="like-quantity">12</span></div></div><div class="comment-text"><p class="room-privilege__description-text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из сосе</p></div></div></div></div></div></head></html>
+}</style><div class="like-button"><span class="material-icons like">favorite_border</span><span class="like-quantity">12</span></div></div><div class="comment-text"><p class="room-privilege__description-text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей</p></div></div></div></div></div></html>

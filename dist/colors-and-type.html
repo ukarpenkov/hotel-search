@@ -1,234 +1,146 @@
-<html>
-  <head>
-    <style>
-      .color-block__color {
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-      }
+<html><head><link rel="icon" sizes="image/svg+xml" href="src/assets/favicon.svg"><link rel="icon" type="image/png" href="src/assets/favicon.png"><style>.color-and-type {
+  margin-top: 31px;
+  .header__logo-img {
+    left: 22px;
+    top: 0px;
+  }
+}
+.color-block__color {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
 
-      .color-block__description_head {
-        font-weight: bold;
-        font-size: 19px;
-        color: #1f2041;
-        margin: 0;
-      }
+.color-block__description_head {
+  font-weight: bold;
+  font-size: 19px;
+  color: #1f2041;
+  margin: 0;
+}
 
-      .color-block__description_value {
-        font-size: 19px;
-        color: #1f2041;
-        margin: 0;
-        margin-top: 5px;
-      }
+.color-block__description_value {
+  font-size: 19px;
+  color: #1f2041;
+  margin: 0;
+  margin-top: 5px;
+}
 
-      .color-block {
-        display: flex;
-      }
+.color-block {
+  display: flex;
+}
 
-      .color-blocks {
-        margin-left: 141px;
-        margin-top: 65px;
-        display: grid;
-        gap: 20px;
-      }
+.color-blocks {
+  margin-left: 141px;
+  margin-top: 65px;
+  display: grid;
+  gap: 20px;
+}
 
-      .color-block__description {
-        position: relative;
-        left: 41px;
-        top: 10px;
-      }
+.color-block__description {
+  position: relative;
+  left: 41px;
+  top: 10px;
+}
 
-      .color-and-type_wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-      }
+.color-and-type_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-      .type-block_type_h1 {
-        font-weight: 400;
-        font-size: 24px;
-        text-align: right;
-        color: rgba(31, 32, 65, 0.25);
-      }
+.type-block_type_h1 {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
 
-      .type-block_type_h2 {
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 23px;
-        text-align: right;
-        color: rgba(31, 32, 65, 0.25);
-      }
+.type-block_type_h2 {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
 
-      .type-block_type_h3 {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        text-align: right;
-        text-transform: uppercase;
-        color: rgba(31, 32, 65, 0.25);
-      }
+.type-block_type_h3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.25);
+}
 
-      .type-block_type_body {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        text-align: right;
-        color: rgba(31, 32, 65, 0.25);
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
+.type-block_type_body {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-      .type-block__description_type_h1 {
-        font-size: 24px;
-        line-height: 29px;
-        color: #1f2041;
-      }
+.type-block__description_type_h1 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #1f2041;
+}
 
-      .type-block__description_type_h2 {
-        font-size: 19px;
-        line-height: 23px;
-        color: #1f2041;
-      }
+.type-block__description_type_h2 {
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
 
-      .type-block__description_type_h3 {
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: #1f2041;
-      }
+.type-block__description_type_h3 {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
 
-      .type-block__description_type_body {
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
+.type-block__description_type_body {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-      .type-block {
-        display: flex;
-        margin-bottom: 1px;
-      }
+.type-block {
+  display: flex;
+  margin-bottom: 1px;
+}
 
-      .type-blocks {
-        display: grid;
-        justify-items: end;
-        margin-top: 40px;
-        margin-right: 160px;
-        align-content: center;
-        gap: 26px;
-      }
+.type-blocks {
+  display: grid;
+  justify-items: end;
+  margin-top: 50px;
+  margin-right: 167px;
+  align-content: center;
+  gap: 26px;
+}
 
-      .type-block__description {
-        margin-left: 30px;
-        width: 369px;
-      }
-    </style>
-    <div class="color-and-type">
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <style>
-            .header__logo-img {
-              position: relative;
-              top: 28px;
-              left: 20px;
-            }
-          </style>
-          <div class="header__logo-img">
-            <a href="index.html"
-              ><img
-                class="head__logo-img"
-                src="src/images/only_logo.png"
-                alt="Logo"
-            /></a>
-          </div>
-          <script defer="defer" src="755.52307dbfb21fd8529785.js"></script>
-          <script defer="defer" src="441.26cf6d4bb562cbf06ea0.js"></script>
-          <script defer="defer" src="scripts.69c141cdf0c96affabf4.js"></script>
-          <script defer="defer" src="user.468cd42f063739eb6b2f.js"></script>
-          <link href="scripts.a751f45186deecbd1acc.css" rel="stylesheet" />
-        </head>
-      </html>
-      <div class="color-and-type_wrapper">
-        <div class="color-blocks">
-          <div class="color-block">
-            <div class="color-block__color" style="background: #1f2041"></div>
-            <div class="color-block__description">
-              <h2 class="color-block__description_head">Dark Shade 100%</h2>
-              <p class="color-block__description_value">#1F2041</p>
-            </div>
-          </div>
-          <div class="color-block">
-            <div class="color-block__color" style="background: #1f2041bf"></div>
-            <div class="color-block__description">
-              <h2 class="color-block__description_head">Dark Shade 75%</h2>
-              <p class="color-block__description_value">#1F2041</p>
-            </div>
-          </div>
-          <div class="color-block">
-            <div class="color-block__color" style="background: #1f204180"></div>
-            <div class="color-block__description">
-              <h2 class="color-block__description_head">Dark Shade 50%</h2>
-              <p class="color-block__description_value">#1F2041</p>
-            </div>
-          </div>
-          <div class="color-block">
-            <div class="color-block__color" style="background: #1f204140"></div>
-            <div class="color-block__description">
-              <h2 class="color-block__description_head">Dark Shade 25%</h2>
-              <p class="color-block__description_value">#1F2041</p>
-            </div>
-          </div>
-          <div class="color-block">
-            <div class="color-block__color" style="background: #1f20410d"></div>
-            <div class="color-block__description">
-              <h2 class="color-block__description_head">Dark Shade 5%</h2>
-              <p class="color-block__description_value">#1F2041</p>
-            </div>
-          </div>
-          <div class="color-block">
-            <div class="color-block__color" style="background: #bc9cff"></div>
-            <div class="color-block__description">
-              <h2 class="color-block__description_head">Purple</h2>
-              <p class="color-block__description_value">#BC9CFF</p>
-            </div>
-          </div>
-          <div class="color-block">
-            <div class="color-block__color" style="background: #6fcf97"></div>
-            <div class="color-block__description">
-              <h2 class="color-block__description_head">Green</h2>
-              <p class="color-block__description_value">#6FCF97</p>
-            </div>
-          </div>
-        </div>
-        <div class="type-blocks">
-          <div class="type-block">
-            <h1 class="type-block_type_h1">H1</h1>
-            <h1 class="type-block__description type-block__description_type_h1">
-              This one is the sub-section or widget title
-            </h1>
-          </div>
-          <div class="type-block">
-            <h2 class="type-block_type_h2">H2</h2>
-            <h2 class="type-block__description type-block__description_type_h2">
-              Next one is the item title inside widgets
-            </h2>
-          </div>
-          <div class="type-block">
-            <h3 class="type-block_type_h3">H3</h3>
-            <h3 class="type-block__description type-block__description_type_h3">
-              This is a label or CTA text
-            </h3>
-          </div>
-          <div class="type-block">
-            <span class="type-block_type_body">Body </span
-            ><span
-              class="type-block__description type-block__description_type_body"
-              >This is the body text which is used for most of the design, like
-              paragraphs, lists, etc.</span
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </head>
-</html>
+.type-block__description {
+  margin-left: 30px;
+  width: 369px;
+}
+
+.type-block__h2 {
+  position: relative;
+  bottom: 7px;
+}
+
+.type-block__h3 {
+  position: relative;
+  bottom: 10px;
+}
+
+.type-block__body {
+  position: relative;
+  bottom: 2px;
+}</style><script defer="defer" src="755.52307dbfb21fd8529785.js"></script><script defer="defer" src="441.26cf6d4bb562cbf06ea0.js"></script><script defer="defer" src="scripts.f3a0d5fde84e73601d64.js"></script><script defer="defer" src="user.468cd42f063739eb6b2f.js"></script><link href="scripts.1ead063b4d48155bd28e.css" rel="stylesheet"></head><div class="color-and-type js-color-and-type"><!doctype html><html><head><style>.header__logo-img {
+  position: relative;
+  top: 28px;
+  left: 20px;
+}</style></head><div class="header__logo-img"><a href="index.html"><img class="head__logo-img" src="src/images/only-logo.png" alt="Logo"></a></div></html><div class="color-and-type_wrapper"><div class="color-blocks"><div class="color-block"><div class="color-block__color" style="background: #1F2041"></div><div class="color-block__description"><h2 class="color-block__description_head">Dark Shade 100%</h2><p class="color-block__description_value">#1F2041</p></div></div><div class="color-block"><div class="color-block__color" style="background: #1F2041BF"></div><div class="color-block__description"><h2 class="color-block__description_head">Dark Shade 75%</h2><p class="color-block__description_value">#1F2041</p></div></div><div class="color-block"><div class="color-block__color" style="background: #1F204180"></div><div class="color-block__description"><h2 class="color-block__description_head">Dark Shade 50%</h2><p class="color-block__description_value">#1F2041</p></div></div><div class="color-block"><div class="color-block__color" style="background: #1F204140"></div><div class="color-block__description"><h2 class="color-block__description_head">Dark Shade 25%</h2><p class="color-block__description_value">#1F2041</p></div></div><div class="color-block"><div class="color-block__color" style="background: #1F20410D"></div><div class="color-block__description"><h2 class="color-block__description_head">Dark Shade 5%</h2><p class="color-block__description_value">#1F2041</p></div></div><div class="color-block"><div class="color-block__color" style="background: #BC9CFF"></div><div class="color-block__description"><h2 class="color-block__description_head">Purple</h2><p class="color-block__description_value">#BC9CFF</p></div></div><div class="color-block"><div class="color-block__color" style="background: #6FCF97"></div><div class="color-block__description"><h2 class="color-block__description_head">Green</h2><p class="color-block__description_value">#6FCF97</p></div></div></div><div class="type-blocks"><div class="type-block type-block__h1"><h1 class="type-block_type_h1">H1</h1><h1 class="type-block__description type-block__description_type_h1">This one is the sub-section or widget title</h1></div><div class="type-block type-block__h2"><h2 class="type-block_type_h2">H2</h2><h2 class="type-block__description type-block__description_type_h2">Next one is the item title inside widgets</h2></div><div class="type-block type-block__h3"><h3 class="type-block_type_h3">H3</h3><h3 class="type-block__description type-block__description_type_h3">This is a label or CTA text</h3></div><div class="type-block type-block__body"><span class="type-block_type_body">Body </span><span class="type-block__description type-block__description_type_body">This is the body text which is used for most of the design, like paragraphs, lists, etc.</span></div></div></div></div></html>
