@@ -10,10 +10,10 @@
 4. запустить build проекта командой "set NODE_ENV=production&&webpack"
 
 Версии плагинов
-"@mui/icons-material": "^5.3.1",
-"@popperjs/core": "^2.10.2",
-"chart.js": "^3.7.1",
-"flatpickr": "^4.6.11",
-"item-quantity-dropdown": "^2.1.0",
-"jquery": "^3.6.0",
+"@mui/icons-material": "^5.3.1";
+"@popperjs/core": "^2.10.2";
+"chart.js": "^3.7.1";
+"flatpickr": "^4.6.11";
+"item-quantity-dropdown": "^2.1.0";
+"jquery": "^3.6.0";
 "nouislider": "^15.5.1"
