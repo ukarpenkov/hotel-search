@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -11,6 +11,7 @@
     <link rel="icon" sizes="image/svg+xml" href="../src/assets/favicon.svg" />
     <link rel="icon" type="image/png" href="../src/assets/favicon.png" />
     <style>
+      @charset "UTF-8";
       .field {
         margin-bottom: 10px;
       }
@@ -212,7 +213,6 @@
         height: 72px;
         display: inline-block;
         padding-left: 1px;
-
         position: relative;
         left: 13px;
       }
@@ -322,6 +322,7 @@
         width: 320px;
         height: 159px;
       }
+
       .dropdown__input_wide {
         display: flex;
         width: 320px;
@@ -482,6 +483,7 @@
         margin-bottom: 30px !important;
         margin-top: 10px;
       }
+
       .flatpickr-months {
         margin-top: 15px !important;
       }
@@ -628,6 +630,7 @@
       .btn_dark-violet {
         color: #bc9cff;
       }
+
       .header-page__logo {
         margin-bottom: 15px;
         height: 138px;
@@ -653,9 +656,6 @@
       .footer__content {
         position: relative;
         top: 60px;
-      }
-
-      .landing-page__footer {
       }
 
       .header-page__header {
@@ -709,12 +709,11 @@
         align-items: center;
         height: 70px;
       }
-      .header-page__logged-in-header {
-        .header__text-logo_login_true {
-          position: relative;
-          left: -17px;
-          top: 2px;
-        }
+
+      .header-page__logged-in-header .header__text-logo_login_true {
+        position: relative;
+        left: -17px;
+        top: 2px;
       }
 
       .footer__social-mobile-icons {
@@ -750,7 +749,6 @@
           background-color: #fff;
         }
       }
-
       .header-wrapper {
         margin-top: -19px;
       }
@@ -764,35 +762,35 @@
         margin-top: 20px;
         margin-left: -8px;
         background-color: #ffffff;
-        &__text-logo {
-          position: relative;
-          left: 23px;
-          &-img {
-            width: 106px;
-            height: 40px;
-          }
-        }
-        &__nav-bar {
-          display: flex;
-          margin-left: 73px;
-        }
-        &__nav {
-          display: flex;
-          align-items: baseline;
-          list-style: none;
-          padding-left: 0;
-          &-item {
-            margin-right: 20px;
-          }
-          &-link {
-            text-decoration: none;
-            transition: 0.1s;
-            color: #1f204180;
-          }
-          &-link:hover {
-            font-weight: bold;
-          }
-        }
+      }
+      .header__text-logo {
+        position: relative;
+        left: 23px;
+      }
+      .header__text-logo-img {
+        width: 106px;
+        height: 40px;
+      }
+      .header__nav-bar {
+        display: flex;
+        margin-left: 73px;
+      }
+      .header__nav {
+        display: flex;
+        align-items: baseline;
+        list-style: none;
+        padding-left: 0;
+      }
+      .header__nav-item {
+        margin-right: 20px;
+      }
+      .header__nav-link {
+        text-decoration: none;
+        transition: 0.1s;
+        color: rgba(31, 32, 65, 0.5019607843);
+      }
+      .header__nav-link:hover {
+        font-weight: bold;
       }
 
       button {
@@ -857,13 +855,11 @@
           justify-content: start;
           height: 250px;
         }
-
         .header__nav-bar {
           display: grid;
           margin-left: 73px;
           margin-top: -10px;
         }
-
         .header__nav {
           display: grid;
         }
@@ -899,9 +895,9 @@
         background-color: #fff;
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        .search-button {
-          top: 32px;
-        }
+      }
+      .landing-page__search-form .search-button {
+        top: 32px;
       }
 
       .search-form__header {
@@ -963,30 +959,31 @@
 
       .landing-page__footer {
         margin-left: 2px;
-        .footer-item__nav {
-          position: relative;
-          left: -2px;
-          top: 2px;
-        }
-        .footer-item__about {
-          position: relative;
-          left: -11px;
-          top: 1px;
-        }
-        .footer-item__service {
-          position: relative;
-          left: 15px;
-          top: 1px;
-        }
-        .footer-item__sub {
-          position: relative;
-          left: 4px;
-          top: 1px;
-        }
-        .footer__social-icons {
-          left: 13px;
-        }
       }
+      .landing-page__footer .footer-item__nav {
+        position: relative;
+        left: -2px;
+        top: 2px;
+      }
+      .landing-page__footer .footer-item__about {
+        position: relative;
+        left: -11px;
+        top: 1px;
+      }
+      .landing-page__footer .footer-item__service {
+        position: relative;
+        left: 15px;
+        top: 1px;
+      }
+      .landing-page__footer .footer-item__sub {
+        position: relative;
+        left: 4px;
+        top: 1px;
+      }
+      .landing-page__footer .footer__social-icons {
+        left: 13px;
+      }
+
       .registration-page__main-bgi {
         display: grid;
         justify-content: center;
@@ -996,80 +993,97 @@
         width: 1440px;
         background-image: url('../src/images/bg-image4.png');
         height: 755px;
-        .registration-form {
-          margin-top: 88px;
-          margin-left: 5px;
-          display: grid;
-          width: 380px;
-          height: 646px;
-          background-color: #fff;
-          padding-top: 23px;
-          border: 1px solid rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-          border-radius: 4px;
-          justify-content: end;
-          .registration-form_sing-up {
-            position: relative;
-            right: 4px;
-            .registration__radio-buttons-items {
-              margin-bottom: -4px;
-            }
-            .registration__date-fields {
-              margin-bottom: 16px;
-            }
-            .registration__toggle-block {
-              position: relative;
-              top: 0px;
-              left: 1px;
-            }
-            .mixed-fields {
-              margin-bottom: -1px;
-            }
-            .registration__buttons__item {
-              margin-bottom: 46px;
-              margin-top: -6px;
-            }
-          }
-        }
+      }
+      .registration-page__main-bgi .registration-form {
+        margin-top: 88px;
+        margin-left: 5px;
+        display: grid;
+        width: 380px;
+        height: 646px;
+        background-color: #fff;
+        padding-top: 23px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        justify-content: end;
+      }
+      .registration-page__main-bgi
+        .registration-form
+        .registration-form_sing-up {
+        position: relative;
+        right: 4px;
+      }
+      .registration-page__main-bgi
+        .registration-form
+        .registration-form_sing-up
+        .registration__radio-buttons-items {
+        margin-bottom: -4px;
+      }
+      .registration-page__main-bgi
+        .registration-form
+        .registration-form_sing-up
+        .registration__date-fields {
+        margin-bottom: 16px;
+      }
+      .registration-page__main-bgi
+        .registration-form
+        .registration-form_sing-up
+        .registration__toggle-block {
+        position: relative;
+        top: 0px;
+        left: 1px;
+      }
+      .registration-page__main-bgi
+        .registration-form
+        .registration-form_sing-up
+        .mixed-fields {
+        margin-bottom: -1px;
+      }
+      .registration-page__main-bgi
+        .registration-form
+        .registration-form_sing-up
+        .registration__buttons__item {
+        margin-bottom: 46px;
+        margin-top: -6px;
       }
 
       .registration-page__footer {
         margin-left: 2px;
-        .footer-item__nav {
-          position: relative;
-          left: -2px;
-          top: 2px;
-        }
-        .footer-item__about {
-          position: relative;
-          left: -11px;
-          top: 1px;
-        }
-        .footer-item__service {
-          position: relative;
-          left: 15px;
-          top: 1px;
-        }
-        .footer-item__sub {
-          position: relative;
-          left: 4px;
-          top: 1px;
-        }
-        .footer__social-icons {
-          left: 13px;
-        }
+      }
+      .registration-page__footer .footer-item__nav {
+        position: relative;
+        left: -2px;
+        top: 2px;
+      }
+      .registration-page__footer .footer-item__about {
+        position: relative;
+        left: -11px;
+        top: 1px;
+      }
+      .registration-page__footer .footer-item__service {
+        position: relative;
+        left: 15px;
+        top: 1px;
+      }
+      .registration-page__footer .footer-item__sub {
+        position: relative;
+        left: 4px;
+        top: 1px;
+      }
+      .registration-page__footer .footer__social-icons {
+        left: 13px;
       }
 
       .registration-page__header {
         position: relative;
         z-index: 2;
         margin-left: -5px;
-        .header__nav-bar {
-          margin-left: 49px;
-        }
-        .header__text-logo {
-          left: 19px;
-        }
+      }
+      .registration-page__header .header__nav-bar {
+        margin-left: 49px;
+      }
+      .registration-page__header .header__text-logo {
+        left: 19px;
       }
 
       .registration-page__main {
@@ -1090,7 +1104,6 @@
           text-align: initial;
           justify-content: start;
         }
-
         .registration-form {
           margin-left: 30px;
         }
@@ -1254,6 +1267,7 @@
       .search-room__cards {
         display: flex;
       }
+
       .search-room__main-col {
         margin-left: 12px;
       }
@@ -1312,9 +1326,11 @@
         width: 266px;
         margin-top: 22px;
       }
+
       .search-room-checkbox-list {
         margin-top: 20px;
       }
+
       .search-room-added-checkbox-list {
         margin-top: 20px;
       }
@@ -1328,7 +1344,7 @@
       .search-page__footer {
         position: relative;
         bottom: 119px;
-        box-shadow: 1px -5px 4px -3px rgb(31 32 65 / 10%);
+        box-shadow: 1px -5px 4px -3px rgba(31, 32, 65, 0.1);
       }
 
       .dropdown__arrow_comfort {
@@ -1379,58 +1395,53 @@
         .search-room__cards {
           display: grid;
         }
-
         .search-room__body {
           margin-left: 20px;
         }
-
         .search-room__pagination {
           position: relative;
           left: 377px;
           top: -14px;
         }
-
         .footer-item__sub {
           margin-top: -8px;
           margin-left: 20px;
         }
       }
-
       .footer {
         padding: 4rem;
         display: flex;
         justify-content: space-between;
         padding-left: 10.5rem;
         padding-right: 15rem;
-        &-item__sub {
-          width: 260px;
-        }
-        &-item {
-          max-width: 200px;
-          margin-top: -8px;
-          &__slogan {
-            position: relative;
-            left: 23px;
-            width: 260px;
-            line-height: 24px;
-            color: rgba(31, 32, 65, 0.75);
-          }
-          &__head {
-            font-size: 12px;
-            color: #1f2041;
-          }
-        }
-        &-list {
-          list-style: none;
-          padding-left: 0;
-
-          &__link {
-            text-decoration: none;
-            display: block;
-            margin-top: 22px;
-            color: #1f204180;
-          }
-        }
+      }
+      .footer-item__sub {
+        width: 260px;
+      }
+      .footer-item {
+        max-width: 200px;
+        margin-top: -8px;
+      }
+      .footer-item__slogan {
+        position: relative;
+        left: 23px;
+        width: 260px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .footer-item__head {
+        font-size: 12px;
+        color: #1f2041;
+      }
+      .footer-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      .footer-list__link {
+        text-decoration: none;
+        display: block;
+        margin-top: 22px;
+        color: rgba(31, 32, 65, 0.5019607843);
       }
 
       .footer-item__sub {
@@ -1515,7 +1526,7 @@
         justify-content: space-between;
         align-items: center;
         height: 70px;
-        box-shadow: 0px -2px rgb(31 32 65 / 13%);
+        box-shadow: 0px -2px rgba(31, 32, 65, 0.13);
       }
 
       .footer-item__nav {
@@ -1547,11 +1558,9 @@
           display: grid;
           padding-left: 3rem;
         }
-
         .footer-item {
           margin-left: 20px;
         }
-
         .headers-and-footer-page__mobile-footer {
           margin-left: 0px;
         }
@@ -1597,7 +1606,7 @@
         display: grid;
         height: 374px;
         background-color: #fff;
-        box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
       }
 
@@ -1613,9 +1622,9 @@
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
         background-color: #fff;
-        .calendar_clear-btn {
-          top: 4px !important;
-        }
+      }
+      .card-page__booking-form .calendar_clear-btn {
+        top: 4px !important;
       }
 
       .card-page__registration-from {
@@ -1644,11 +1653,9 @@
         bottom: 7px;
       }
 
-      .cards-page__form {
-        .registration__toggle-block {
-          position: relative;
-          margin-top: 11px;
-        }
+      .cards-page__form .registration__toggle-block {
+        position: relative;
+        margin-top: 11px;
       }
 
       .registration__buttons__item {
@@ -1674,7 +1681,7 @@
         padding-top: 23px;
         border: 1px solid rgba(0, 0, 0, 0.12);
         box-sizing: border-box;
-        box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
       }
 
@@ -1751,12 +1758,1775 @@
         height: 366px !important;
       }
 
+      .header__logo-img {
+        position: relative;
+        top: 28px;
+        left: 20px;
+      }
+
+      .search-button {
+        position: relative;
+        width: 320px;
+        top: 37px;
+        left: 0px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+      }
+
+      .label {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: #1f2041;
+        display: inline-block;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .label {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: #1f2041;
+        display: inline-block;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .label {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: #1f2041;
+        display: inline-block;
+      }
+
+      .dropdown-options {
+        user-select: none;
+        display: grid;
+        grid-gap: 2px;
+        position: relative;
+      }
+
+      .dropdown-item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+      }
+
+      .dropdown-option {
+        padding-left: 12px;
+      }
+
+      .dropdown-option:first-child {
+        position: relative;
+        bottom: 3px;
+      }
+
+      .dropdown-counter {
+        position: relative;
+        width: 92px;
+        display: flex;
+        justify-content: space-between;
+        right: 8px;
+      }
+
+      .dropdown-counter__btn {
+        width: 30px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 22px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .dropdown-counter__value {
+        position: relative;
+        top: 6px;
+        font-weight: 700;
+      }
+
+      .dropdown-counter__btn-text {
+        position: relative;
+        top: 2px;
+        font-size: 18px;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .dropdown-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 7px;
+        padding-right: 7px;
+        position: relative;
+        top: 7px;
+        right: 3px;
+      }
+
+      .dropdown__apply-btn {
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+      }
+
+      .dropdown__clear-btn {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      .card-page__room-card-info {
+        margin-bottom: -7px;
+      }
+
+      .room-card-info__text {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 233px;
+      }
+
+      .room-card-info__number {
+        position: relative;
+        left: 5px;
+        top: 3px;
+        display: flex;
+        align-items: baseline;
+      }
+
+      .forms-sign-number {
+        font-weight: 700;
+        color: #1f2041;
+        position: relative;
+        bottom: 1px;
+        right: 4px;
+      }
+
+      .room-card-number_form_booking {
+        font-size: 24px;
+        color: #1f2041;
+      }
+
+      .luxe-attr {
+        position: relative;
+        left: 9px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      .room-card-info__price_form_booking {
+        position: relative;
+        left: 91px;
+        top: 3px;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .room-price {
+        font-weight: 700;
+      }
+
+      .price-per {
+        font-size: 12px;
+      }
+
+      .search-form__date-pickers {
+        display: flex;
+        width: 321px;
+        margin-top: -5px;
+      }
+
+      .summary-order-info {
+        margin-top: 7px;
+        display: grid;
+        row-gap: 25px;
+      }
+
+      .booking-buttons__item {
+        margin-top: 29px;
+      }
+
+      .label {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: #1f2041;
+        display: inline-block;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .label {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: #1f2041;
+        display: inline-block;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .label {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: #1f2041;
+        display: inline-block;
+      }
+
+      .dropdown-options {
+        user-select: none;
+        display: grid;
+        grid-gap: 2px;
+        position: relative;
+      }
+
+      .dropdown-item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+      }
+
+      .dropdown-option {
+        padding-left: 12px;
+      }
+
+      .dropdown-option:first-child {
+        position: relative;
+        bottom: 3px;
+      }
+
+      .dropdown-counter {
+        position: relative;
+        width: 92px;
+        display: flex;
+        justify-content: space-between;
+        right: 8px;
+      }
+
+      .dropdown-counter__btn {
+        width: 30px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 22px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .dropdown-counter__value {
+        position: relative;
+        top: 6px;
+        font-weight: 700;
+      }
+
+      .dropdown-counter__btn-text {
+        position: relative;
+        top: 2px;
+        font-size: 18px;
+        color: rgba(31, 32, 65, 0.5);
+      }
+
+      .dropdown-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 7px;
+        padding-right: 7px;
+        position: relative;
+        top: 7px;
+        right: 3px;
+      }
+
+      .dropdown__apply-btn {
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+      }
+
+      .dropdown__clear-btn {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      .total-info-options {
+        display: flex;
+        justify-content: space-between;
+        height: 10px;
+      }
+
+      .total-info {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .total-info_long {
+        width: 200px;
+      }
+
+      h2.price-sum {
+        font-size: 19px;
+        color: #1f2041;
+      }
+
+      .registration-form {
+        margin-top: 36px;
+        display: grid;
+        width: 380px;
+        height: 646px;
+        background-color: #fff;
+        padding-top: 23px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        justify-content: end;
+      }
+
+      .registration-form_sing-up__h1 {
+        position: relative;
+        font-size: 24px;
+        color: #1f2041;
+        margin-bottom: 21px;
+      }
+
+      .label-date {
+        position: relative;
+        width: 211px;
+        height: 15px;
+        top: 8px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #1f2041;
+        margin-bottom: 13px;
+      }
+
+      .label-entries {
+        display: block;
+        position: relative;
+        width: 211px;
+        height: 15px;
+        top: 5px;
+        margin-bottom: 11px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #1f2041;
+      }
+
+      .registration__arrow {
+        position: relative;
+        left: 58px;
+        top: 0px;
+      }
+
+      .registration__buttons__item {
+        margin-bottom: 43px;
+        margin-top: -10px;
+      }
+
+      .toggle-promo + .toggle-label {
+        cursor: pointer;
+        position: relative;
+        left: -29px;
+        top: -29px;
+      }
+
+      .apply-btn {
+        position: relative;
+        left: 223px;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+      }
+
+      .clear-btn {
+        cursor: pointer;
+        position: relative;
+        left: 10px;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      .registration__radio-buttons-items {
+        width: 345px;
+        display: flex;
+        margin-bottom: 14px;
+      }
+
+      .registration__date-fields {
+        margin-bottom: -2px;
+      }
+
+      .sign-in-form__info {
+        display: flex;
+        width: 222px;
+        margin-top: 10px;
+      }
+
+      .sign-in-block {
+        position: relative;
+        display: flex;
+        width: 320px;
+      }
+
+      .registration__btn-lg {
+        position: relative;
+        width: 320px;
+        top: 14px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .radio {
+        display: inline-block;
+        position: relative;
+      }
+
+      .radio__input {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #bc9cff;
+        border-radius: 10px;
+        appearance: none;
+        position: absolute;
+      }
+
+      .radio__label {
+        color: rgba(31, 32, 65, 0.5);
+        cursor: pointer;
+        display: inline-block;
+        padding-left: 35px;
+        padding-top: 3px;
+      }
+
+      .radio__label:before {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        border: 1px solid #ccc;
+        left: 5px;
+        z-index: 1;
+        transition: border 0.1s linear;
+      }
+
+      .radio__label:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        opacity: 0;
+        position: absolute;
+        top: 7px;
+        left: 9px;
+        transition: opacity 0.1s linear;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        border-radius: 10px;
+      }
+
+      .radio-buttons-items {
+        display: flex;
+        margin-top: 9px;
+        margin-left: -15px;
+      }
+
+      .radio__input:checked + .radio__label:before {
+        border-color: #bc9cff;
+      }
+
+      .radio__input:checked + .radio__label:after {
+        opacity: 1;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .toggle + .toggle-label:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 0;
+        width: 40px;
+        height: 20px;
+        border-radius: 13px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        transition: 0.2s;
+      }
+
+      .toggle + .toggle-label:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 10px;
+        background: rgba(31, 32, 65, 0.25);
+        transition: 0.2s;
+      }
+
+      .toggle:checked + .toggle-label:after {
+        left: 25px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      }
+
+      .toggle:checked + .toggle-label:before {
+        border: 1px solid #bc9cff;
+      }
+
+      .toggle-item {
+        position: relative;
+        margin-bottom: 12px;
+        bottom: 2px;
+        right: 2px;
+        margin-left: -19px;
+        margin-top: 10px;
+      }
+
+      .btn {
+        border: 2px solid;
+        outline: none;
+        height: 44px;
+        border-radius: 22px;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .btn_small {
+        width: 99px;
+        left: 980px;
+        top: 262px;
+      }
+
+      .btn_fill-dark-violet {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+        width: 102px;
+        height: 46px;
+      }
+
+      .btn_fill-light-violet {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        opacity: 0.5;
+        color: #ffffff;
+        width: 102px;
+        height: 46px;
+      }
+
+      .btn_dark-violet {
+        color: #bc9cff;
+      }
+
+      .btn_light-violet {
+        color: #bc9cff;
+        border: 2px solid;
+        border-color: linear-gradient(180deg, #bc9cff 100%, #8ba4f9 100%);
+        opacity: 0.5;
+      }
+
+      .btn_no-border-violet {
+        color: #bc9cff;
+        border: none;
+        background: #ffffff;
+        padding-bottom: 10px;
+        margin-top: -5px;
+        margin-left: -18px;
+      }
+
+      .btn_no-border-dark {
+        color: rgba(31, 32, 65, 0.5);
+        border: none;
+        background: #ffffff;
+        margin-top: -9px;
+        margin-left: -53px;
+      }
+
+      .registration-form {
+        margin-top: 36px;
+        display: grid;
+        width: 380px;
+        height: 646px;
+        background-color: #fff;
+        padding-top: 23px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        justify-content: end;
+      }
+
+      .registration-form_sing-up__h1 {
+        position: relative;
+        font-size: 24px;
+        color: #1f2041;
+        margin-bottom: 21px;
+      }
+
+      .label-date {
+        position: relative;
+        width: 211px;
+        height: 15px;
+        top: 8px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #1f2041;
+        margin-bottom: 13px;
+      }
+
+      .label-entries {
+        display: block;
+        position: relative;
+        width: 211px;
+        height: 15px;
+        top: 5px;
+        margin-bottom: 11px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #1f2041;
+      }
+
+      .registration__arrow {
+        position: relative;
+        left: 58px;
+        top: 0px;
+      }
+
+      .registration__buttons__item {
+        margin-bottom: 43px;
+        margin-top: -10px;
+      }
+
+      .toggle-promo + .toggle-label {
+        cursor: pointer;
+        position: relative;
+        left: -29px;
+        top: -29px;
+      }
+
+      .apply-btn {
+        position: relative;
+        left: 223px;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+      }
+
+      .clear-btn {
+        cursor: pointer;
+        position: relative;
+        left: 10px;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+      }
+
+      .registration__radio-buttons-items {
+        width: 345px;
+        display: flex;
+        margin-bottom: 14px;
+      }
+
+      .registration__date-fields {
+        margin-bottom: -2px;
+      }
+
+      .sign-in-form__info {
+        display: flex;
+        width: 222px;
+        margin-top: 10px;
+      }
+
+      .sign-in-block {
+        position: relative;
+        display: flex;
+        width: 320px;
+      }
+
+      .registration__btn-lg {
+        position: relative;
+        width: 320px;
+        top: 14px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .sign-in-form {
+        width: 380px;
+        height: 358px;
+        background-color: #fff;
+        padding-top: 23px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+      }
+
+      .sign-in-form__data_h1 {
+        position: relative;
+        left: 30px;
+        font-size: 24px;
+        color: #1f2041;
+        margin-bottom: 21px;
+      }
+
+      .sign-in__mixed-fields {
+        margin-bottom: -9px;
+        position: relative;
+        left: 29px;
+      }
+
+      .sign-in__btn-lg {
+        position: relative;
+        width: 320px;
+        top: 14px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+      }
+
+      .sign-in__btn-lg-text {
+        position: relative;
+        left: 11px;
+        top: 1px;
+      }
+
+      .sign-in__arrow {
+        position: relative;
+        left: 114px;
+        top: 0px;
+      }
+
+      .sign-in__bts-block {
+        margin-left: 30px;
+      }
+
+      .sing-in-component {
+        margin-top: 50px;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .input {
+        width: 320px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+      .input::placeholder {
+        color: #d9d9d9;
+      }
+      .input:focus {
+        outline: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+      }
+
+      .calendar {
+        cursor: pointer;
+        width: 150px;
+      }
+      .calendar::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+      .input_middle {
+        width: 267px;
+      }
+
+      .calendar_long {
+        width: 320px;
+      }
+
+      .date-filter__input {
+        width: 267px !important;
+      }
+
+      .select-input {
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .apply-btn {
+        position: relative;
+        bottom: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        left: 50px;
+        top: -7px;
+      }
+
+      .clear-btn {
+        display: inline-block;
+        left: -63px;
+        cursor: pointer;
+        position: relative;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: -7px;
+      }
+
+      .btn {
+        border: 2px solid;
+        outline: none;
+        height: 44px;
+        border-radius: 22px;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .btn_small {
+        width: 99px;
+        left: 980px;
+        top: 262px;
+      }
+
+      .btn_fill-dark-violet {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        color: #ffffff;
+        width: 102px;
+        height: 46px;
+      }
+
+      .btn_fill-light-violet {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        opacity: 0.5;
+        color: #ffffff;
+        width: 102px;
+        height: 46px;
+      }
+
+      .btn_dark-violet {
+        color: #bc9cff;
+      }
+
+      .btn_light-violet {
+        color: #bc9cff;
+        border: 2px solid;
+        border-color: linear-gradient(180deg, #bc9cff 100%, #8ba4f9 100%);
+        opacity: 0.5;
+      }
+
+      .btn_no-border-violet {
+        color: #bc9cff;
+        border: none;
+        background: #ffffff;
+        padding-bottom: 10px;
+        margin-top: -5px;
+        margin-left: -18px;
+      }
+
+      .btn_no-border-dark {
+        color: rgba(31, 32, 65, 0.5);
+        border: none;
+        background: #ffffff;
+        margin-top: -9px;
+        margin-left: -53px;
+      }
+
+      .room-card__luxe {
+        position: relative;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: 3px;
+        right: 8px;
+      }
+
+      .room-card-info__block {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 233px;
+        position: relative;
+        top: 3px;
+        right: 5px;
+      }
+
+      .room-card-info__price {
+        position: relative;
+        top: 3px;
+        left: 6px;
+      }
+
+      .room-card-sign-number {
+        font-weight: 700;
+        color: #1f2041;
+      }
+
+      .rating {
+        position: relative;
+        font-size: 29px;
+        display: inline-block;
+      }
+
+      .rating::before {
+        content: '★★★★★';
+        display: block;
+      }
+
+      .rating-stars {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+      }
+
+      .rating__star {
+        position: absolute;
+        visibility: hidden;
+      }
+
+      .rating__label {
+        cursor: pointer;
+        color: #ceced4;
+      }
+
+      .rating__label::before {
+        content: '★';
+        display: block;
+        transition: color 0.3s ease 0s;
+      }
+
+      .rating__star:checked,
+      .rating__star:checked ~ .rating__label {
+        color: #bc9cff;
+      }
+
+      .rating__label:hover,
+      .rating__label:hover ~ .rating__label,
+      .rating__label:checked ~ .rating__label:hover {
+        color: #bc9cff;
+      }
+
+      .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        text-transform: none;
+      }
+
+      .room-card__luxe {
+        position: relative;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        top: 3px;
+        right: 8px;
+      }
+
+      .room-card-info__block {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 233px;
+        position: relative;
+        top: 3px;
+        right: 5px;
+      }
+
+      .room-card-info__price {
+        position: relative;
+        top: 3px;
+        left: 6px;
+      }
+
+      .room-card-sign-number {
+        font-weight: 700;
+        color: #1f2041;
+      }
+
+      .rating {
+        position: relative;
+        font-size: 29px;
+        display: inline-block;
+      }
+
+      .rating::before {
+        content: '★★★★★';
+        display: block;
+      }
+
+      .rating-stars {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+      }
+
+      .rating__star {
+        position: absolute;
+        visibility: hidden;
+      }
+
+      .rating__label {
+        cursor: pointer;
+        color: #ceced4;
+      }
+
+      .rating__label::before {
+        content: '★';
+        display: block;
+        transition: color 0.3s ease 0s;
+      }
+
+      .rating__star:checked,
+      .rating__star:checked ~ .rating__label {
+        color: #bc9cff;
+      }
+
+      .rating__label:hover,
+      .rating__label:hover ~ .rating__label,
+      .rating__label:checked ~ .rating__label:hover {
+        color: #bc9cff;
+      }
+
+      .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        text-transform: none;
+      }
+
       @media (max-width: 1200px) {
         .cards-page__wrapper {
           background-color: #e5e5e5;
           height: 100%;
         }
-
         .card-page-grid {
           display: grid;
           height: 100%;
@@ -1765,16 +3535,13 @@
           row-gap: 30px;
           margin-left: 145px;
         }
-
         .cards-page__search-form {
           width: 380px;
         }
-
         .card-page-grid .calendar-form {
           margin-top: -15px;
           margin-bottom: 110px;
         }
-
         .cards-page__cards {
           margin-left: -10px;
           margin-top: 10px;
@@ -1789,675 +3556,31 @@
   </head>
   <div class="cards-page__wrapper js-cards-page__wrapper">
     <div class="header-page__logo">
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <style>
-            .header__logo-img {
-              position: relative;
-              top: 28px;
-              left: 20px;
-            }
-          </style>
-        </head>
-        <div class="header__logo-img">
-          <a href="index.html"
-            ><img
-              class="head__logo-img"
-              src="../src/images/only-logo.png"
-              alt="Logo"
-          /></a>
-        </div>
-      </html>
+      <div class="header__logo-img">
+        <a href="index.html"
+          ><img
+            class="head__logo-img"
+            src="../src/images/only-logo.png"
+            alt="Logo"
+        /></a>
+      </div>
     </div>
     <div class="card-page-grid">
       <div class="cards-page__search-form">
-        <html>
-          <head></head
-          ><style>
-            .search-button {
-              position: relative;
-              width: 320px;
-              top: 37px;
-              left: 0px;
-              background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-              color: #ffffff;
-            }
-
-            .search-button {
-            }
-          </style>
-          <div class="landing-page__search-form-elements">
-            <h1 class="search-form__header">
-              Найдём номера под ваши пожелания
-            </h1>
-            <div class="search-form__date-pickers">
-              <div class="field">
-                <style>
-                  .label {
-                    font-size: 12px;
-                    margin-bottom: 5px;
-                    text-transform: uppercase;
-                    color: #1f2041;
-                    display: inline-block;
-                  }
-                </style>
-                <h2 class="label">прибытие</h2>
-                <style>
-                  .input {
-                    width: 320px;
-                    height: 44px;
-                    padding-left: 15px;
-                    border: 1px solid rgba(31, 32, 65, 0.25);
-                    border-radius: 4px;
-                    font-family: Montserrat;
-                    font-size: 14px;
-                    color: rgba(31, 32, 65, 0.75);
-                    &::placeholder {
-                      color: #d9d9d9;
-                    }
-                    &:focus {
-                      outline: none;
-                      border: 1px solid rgba(31, 32, 65, 0.5);
-                    }
-                  }
-
-                  .calendar {
-                    cursor: pointer;
-                    width: 150px;
-                    &::placeholder {
-                      color: rgba(31, 32, 65, 0.75);
-                    }
-                  }
-
-                  .input_middle {
-                    width: 267px;
-                  }
-
-                  .calendar_long {
-                    width: 320px;
-                  }
-
-                  .date-filter__input {
-                    width: 267px !important;
-                  }
-
-                  .select-input {
-                    cursor: pointer;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
-                  }
-
-                  .apply-btn {
-                    position: relative;
-                    bottom: -10px;
-                    font-weight: bold;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    color: #bc9cff;
-                    cursor: pointer;
-                    display: inline-block;
-                    left: 50px;
-                    top: -7px;
-                  }
-
-                  .clear-btn {
-                    display: inline-block;
-                    left: -63px;
-                    cursor: pointer;
-                    position: relative;
-                    bottom: 15px;
-                    font-weight: bold;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    color: #bc9cff;
-                    top: -7px;
-                  }</style
-                ><input
-                  class="input calendar"
-                  type="date"
-                  placeholder="ДД.ММ.ГГГГ"
-                />
-              </div>
-              <div class="field">
-                <style>
-                  .label {
-                    font-size: 12px;
-                    margin-bottom: 5px;
-                    text-transform: uppercase;
-                    color: #1f2041;
-                    display: inline-block;
-                  }
-                </style>
-                <h2 class="label">выезд</h2>
-                <style>
-                  .input {
-                    width: 320px;
-                    height: 44px;
-                    padding-left: 15px;
-                    border: 1px solid rgba(31, 32, 65, 0.25);
-                    border-radius: 4px;
-                    font-family: Montserrat;
-                    font-size: 14px;
-                    color: rgba(31, 32, 65, 0.75);
-                    &::placeholder {
-                      color: #d9d9d9;
-                    }
-                    &:focus {
-                      outline: none;
-                      border: 1px solid rgba(31, 32, 65, 0.5);
-                    }
-                  }
-
-                  .calendar {
-                    cursor: pointer;
-                    width: 150px;
-                    &::placeholder {
-                      color: rgba(31, 32, 65, 0.75);
-                    }
-                  }
-
-                  .input_middle {
-                    width: 267px;
-                  }
-
-                  .calendar_long {
-                    width: 320px;
-                  }
-
-                  .date-filter__input {
-                    width: 267px !important;
-                  }
-
-                  .select-input {
-                    cursor: pointer;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
-                  }
-
-                  .apply-btn {
-                    position: relative;
-                    bottom: -10px;
-                    font-weight: bold;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    color: #bc9cff;
-                    cursor: pointer;
-                    display: inline-block;
-                    left: 50px;
-                    top: -7px;
-                  }
-
-                  .clear-btn {
-                    display: inline-block;
-                    left: -63px;
-                    cursor: pointer;
-                    position: relative;
-                    bottom: 15px;
-                    font-weight: bold;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    color: #bc9cff;
-                    top: -7px;
-                  }</style
-                ><input
-                  class="input calendar"
-                  type="date"
-                  placeholder="ДД.ММ.ГГГГ"
-                />
-              </div>
-            </div>
-            <div class="search-form__dropdown-block">
-              <div class="dropdown-block__label">
-                <style>
-                  .label {
-                    font-size: 12px;
-                    margin-bottom: 5px;
-                    text-transform: uppercase;
-                    color: #1f2041;
-                    display: inline-block;
-                  }
-                </style>
-                <h2 class="label">гости</h2>
-              </div>
-              <div class="dropdown__input">
-                <div class="dropdown__input_default dropdown__input_wide">
-                  <span class="dropdown__input-text js-dropdown__input-text"
-                    >Сколько гостей </span
-                  ><span
-                    class="material-icons expand-arrow dropdown-arrow-guests js-dropdown-arrow-guests"
-                    >expand_more</span
-                  >
-                </div>
-                <div
-                  class="dropdown__input_guests dropdown__input_guests-expanded-apply hidden js-dropdown__input_guests js-hidden"
-                >
-                  <style>
-                    .dropdown-options {
-                      user-select: none;
-                      display: grid;
-                      grid-gap: 2px;
-                      position: relative;
-                    }
-
-                    .dropdown-item {
-                      display: flex;
-                      justify-content: space-between;
-                      margin-top: 5px;
-                    }
-
-                    .dropdown-option {
-                      padding-left: 12px;
-                    }
-
-                    .dropdown-option:first-child {
-                      position: relative;
-                      bottom: 3px;
-                    }
-
-                    .dropdown-counter {
-                      position: relative;
-                      width: 92px;
-                      display: flex;
-                      justify-content: space-between;
-                      right: 8px;
-                    }
-
-                    .dropdown-counter__btn {
-                      width: 30px;
-                      border: 1px solid rgba(31, 32, 65, 0.25);
-                      border-radius: 22px;
-                      text-align: center;
-                      cursor: pointer;
-                    }
-
-                    .dropdown-counter__value {
-                      position: relative;
-                      top: 6px;
-                      font-weight: 700;
-                    }
-
-                    .dropdown-counter__btn-text {
-                      position: relative;
-                      top: 2px;
-                      font-size: 18px;
-                      color: rgba(31, 32, 65, 0.5);
-                    }
-
-                    .dropdown-buttons {
-                      display: flex;
-                      justify-content: space-between;
-                      padding-left: 7px;
-                      padding-right: 7px;
-                      position: relative;
-                      top: 7px;
-                      right: 3px;
-                    }
-
-                    .dropdown__apply-btn {
-                      font-weight: bold;
-                      font-size: 12px;
-                      text-transform: uppercase;
-                      color: #bc9cff;
-                      cursor: pointer;
-                    }
-
-                    .dropdown__clear-btn {
-                      cursor: pointer;
-                      font-weight: bold;
-                      font-size: 12px;
-                      text-transform: uppercase;
-                      color: #bc9cff;
-                    }
-                  </style>
-                  <div class="dropdown-options">
-                    <div class="dropdown-item">
-                      <h2 class="dropdown-option label">взрослые</h2>
-                      <div class="dropdown-counter">
-                        <div
-                          class="dropdown-counter__btn js-dropdown-counter__btn"
-                          data-direction="minus"
-                        >
-                          <span class="dropdown-counter__btn-text">-</span>
-                        </div>
-                        <div
-                          class="dropdown-counter__value label js-dropdown-counter__value"
-                        >
-                          0
-                        </div>
-                        <div
-                          class="dropdown-counter__btn js-dropdown-counter__btn"
-                          data-direction="plus"
-                        >
-                          <span class="dropdown-counter__btn-text">+</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item">
-                      <h2 class="dropdown-option label">дети</h2>
-                      <div class="dropdown-counter">
-                        <div
-                          class="dropdown-counter__btn js-dropdown-counter__btn"
-                          data-direction="minus"
-                        >
-                          <span class="dropdown-counter__btn-text">-</span>
-                        </div>
-                        <div
-                          class="dropdown-counter__value label js-dropdown-counter__value"
-                        >
-                          0
-                        </div>
-                        <div
-                          class="dropdown-counter__btn js-dropdown-counter__btn"
-                          data-direction="plus"
-                        >
-                          <span class="dropdown-counter__btn-text">+</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item">
-                      <h2 class="dropdown-option label">младенцы</h2>
-                      <div class="dropdown-counter">
-                        <div
-                          class="dropdown-counter__btn js-dropdown-counter__btn"
-                          data-direction="minus"
-                        >
-                          <span class="dropdown-counter__btn-text">-</span>
-                        </div>
-                        <div
-                          class="dropdown-counter__value label js-dropdown-counter__value"
-                        >
-                          0
-                        </div>
-                        <div
-                          class="dropdown-counter__btn js-dropdown-counter__btn"
-                          data-direction="plus"
-                        >
-                          <span class="dropdown-counter__btn-text">+</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-buttons">
-                      <p class="dropdown__apply-btn">применить</p>
-                      <p class="dropdown__clear-btn">очистить</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="search-button"></div>
-            <button class="btn sign-in__btn-lg search-button">
-              <span class="sign-in__btn-lg-text">подобрать номер</span
-              ><span class="material-icons sign-in__arrow search-arrow"
-                >arrow_forward</span
-              >
-            </button>
-          </div>
-        </html>
-      </div>
-      <div class="card-page__booking-form">
-        <html>
-          <head>
-            <style>
-              .card-page__room-card-info {
-                margin-bottom: -7px;
-              }
-
-              .room-card-info__text {
-                display: flex;
-                align-items: baseline;
-                justify-content: space-between;
-                width: 233px;
-              }
-
-              .room-card-info__number {
-                position: relative;
-                left: 5px;
-                top: 3px;
-                display: flex;
-                align-items: baseline;
-              }
-
-              .forms-sign-number {
-                font-weight: 700;
-                color: #1f2041;
-                position: relative;
-                bottom: 1px;
-                right: 4px;
-              }
-
-              .room-card-number_form_booking {
-                font-size: 24px;
-                color: #1f2041;
-              }
-
-              .luxe-attr {
-                position: relative;
-                left: 9px;
-                font-size: 12px;
-                text-transform: uppercase;
-                color: #bc9cff;
-              }
-
-              .room-card-info__price_form_booking {
-                position: relative;
-                left: 91px;
-                top: 3px;
-                color: rgba(31, 32, 65, 0.5);
-              }
-
-              .room-price {
-                font-weight: 700;
-              }
-
-              .price-per {
-                font-size: 12px;
-              }
-
-              .search-form__date-pickers {
-                display: flex;
-                width: 321px;
-                margin-top: -5px;
-              }
-
-              .summary-order-info {
-                margin-top: 7px;
-                display: grid;
-                row-gap: 25px;
-              }
-
-              .booking-buttons__item {
-                margin-top: 29px;
-              }
-            </style>
-          </head>
-          <div class="card-page__room-card-info">
-            <div class="room-card-info__text">
-              <div class="room-card-info__number">
-                <p class="forms-sign-number">№</p>
-                <h2 class="card-from room-card-number_form_booking">888</h2>
-                <h3 class="luxe-attr">ЛЮКС</h3>
-              </div>
-              <div class="card-page room-card-info__price_form_booking">
-                <span class="room-price">9 990₽</span
-                ><span class="price-per">&nbsp в сутки</span>
-              </div>
-            </div>
-          </div>
+        <div class="landing-page__search-form-elements">
+          <h1 class="search-form__header">Найдём номера под ваши пожелания</h1>
           <div class="search-form__date-pickers">
             <div class="field">
-              <style>
-                .label {
-                  font-size: 12px;
-                  margin-bottom: 5px;
-                  text-transform: uppercase;
-                  color: #1f2041;
-                  display: inline-block;
-                }
-              </style>
               <h2 class="label">прибытие</h2>
-              <style>
-                .input {
-                  width: 320px;
-                  height: 44px;
-                  padding-left: 15px;
-                  border: 1px solid rgba(31, 32, 65, 0.25);
-                  border-radius: 4px;
-                  font-family: Montserrat;
-                  font-size: 14px;
-                  color: rgba(31, 32, 65, 0.75);
-                  &::placeholder {
-                    color: #d9d9d9;
-                  }
-                  &:focus {
-                    outline: none;
-                    border: 1px solid rgba(31, 32, 65, 0.5);
-                  }
-                }
-
-                .calendar {
-                  cursor: pointer;
-                  width: 150px;
-                  &::placeholder {
-                    color: rgba(31, 32, 65, 0.75);
-                  }
-                }
-
-                .input_middle {
-                  width: 267px;
-                }
-
-                .calendar_long {
-                  width: 320px;
-                }
-
-                .date-filter__input {
-                  width: 267px !important;
-                }
-
-                .select-input {
-                  cursor: pointer;
-                  -webkit-appearance: none;
-                  -moz-appearance: none;
-                  appearance: none;
-                }
-
-                .apply-btn {
-                  position: relative;
-                  bottom: -10px;
-                  font-weight: bold;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #bc9cff;
-                  cursor: pointer;
-                  display: inline-block;
-                  left: 50px;
-                  top: -7px;
-                }
-
-                .clear-btn {
-                  display: inline-block;
-                  left: -63px;
-                  cursor: pointer;
-                  position: relative;
-                  bottom: 15px;
-                  font-weight: bold;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #bc9cff;
-                  top: -7px;
-                }</style
-              ><input
+              <input
                 class="input calendar"
                 type="date"
                 placeholder="ДД.ММ.ГГГГ"
               />
             </div>
             <div class="field">
-              <style>
-                .label {
-                  font-size: 12px;
-                  margin-bottom: 5px;
-                  text-transform: uppercase;
-                  color: #1f2041;
-                  display: inline-block;
-                }
-              </style>
               <h2 class="label">выезд</h2>
-              <style>
-                .input {
-                  width: 320px;
-                  height: 44px;
-                  padding-left: 15px;
-                  border: 1px solid rgba(31, 32, 65, 0.25);
-                  border-radius: 4px;
-                  font-family: Montserrat;
-                  font-size: 14px;
-                  color: rgba(31, 32, 65, 0.75);
-                  &::placeholder {
-                    color: #d9d9d9;
-                  }
-                  &:focus {
-                    outline: none;
-                    border: 1px solid rgba(31, 32, 65, 0.5);
-                  }
-                }
-
-                .calendar {
-                  cursor: pointer;
-                  width: 150px;
-                  &::placeholder {
-                    color: rgba(31, 32, 65, 0.75);
-                  }
-                }
-
-                .input_middle {
-                  width: 267px;
-                }
-
-                .calendar_long {
-                  width: 320px;
-                }
-
-                .date-filter__input {
-                  width: 267px !important;
-                }
-
-                .select-input {
-                  cursor: pointer;
-                  -webkit-appearance: none;
-                  -moz-appearance: none;
-                  appearance: none;
-                }
-
-                .apply-btn {
-                  position: relative;
-                  bottom: -10px;
-                  font-weight: bold;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #bc9cff;
-                  cursor: pointer;
-                  display: inline-block;
-                  left: 50px;
-                  top: -7px;
-                }
-
-                .clear-btn {
-                  display: inline-block;
-                  left: -63px;
-                  cursor: pointer;
-                  position: relative;
-                  bottom: 15px;
-                  font-weight: bold;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #bc9cff;
-                  top: -7px;
-                }</style
-              ><input
+              <input
                 class="input calendar"
                 type="date"
                 placeholder="ДД.ММ.ГГГГ"
@@ -2466,107 +3589,20 @@
           </div>
           <div class="search-form__dropdown-block">
             <div class="dropdown-block__label">
-              <style>
-                .label {
-                  font-size: 12px;
-                  margin-bottom: 5px;
-                  text-transform: uppercase;
-                  color: #1f2041;
-                  display: inline-block;
-                }
-              </style>
               <h2 class="label">гости</h2>
             </div>
             <div class="dropdown__input">
               <div class="dropdown__input_default dropdown__input_wide">
                 <span class="dropdown__input-text js-dropdown__input-text"
-                  >Сколько гостей</span
+                  >Сколько гостей </span
                 ><span
-                  class="material-icons expand-arrow dropdown-arrow dropdown__arrow_comfort dropdown__arrow_checkbox js-dropdown__arrow_comfort js-dropdown__arrow_checkbox"
+                  class="material-icons expand-arrow dropdown-arrow-guests js-dropdown-arrow-guests"
                   >expand_more</span
                 >
               </div>
               <div
-                class="dropdown__input_guests dropdown__input_guests-expanded-apply search-room-added-checkbox-list hidden js-dropdown__input_guests js-search-room-added-checkbox-list js-hidden"
+                class="dropdown__input_guests dropdown__input_guests-expanded-apply hidden js-dropdown__input_guests js-hidden"
               >
-                <style>
-                  .dropdown-options {
-                    user-select: none;
-                    display: grid;
-                    grid-gap: 2px;
-                    position: relative;
-                  }
-
-                  .dropdown-item {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 5px;
-                  }
-
-                  .dropdown-option {
-                    padding-left: 12px;
-                  }
-
-                  .dropdown-option:first-child {
-                    position: relative;
-                    bottom: 3px;
-                  }
-
-                  .dropdown-counter {
-                    position: relative;
-                    width: 92px;
-                    display: flex;
-                    justify-content: space-between;
-                    right: 8px;
-                  }
-
-                  .dropdown-counter__btn {
-                    width: 30px;
-                    border: 1px solid rgba(31, 32, 65, 0.25);
-                    border-radius: 22px;
-                    text-align: center;
-                    cursor: pointer;
-                  }
-
-                  .dropdown-counter__value {
-                    position: relative;
-                    top: 6px;
-                    font-weight: 700;
-                  }
-
-                  .dropdown-counter__btn-text {
-                    position: relative;
-                    top: 2px;
-                    font-size: 18px;
-                    color: rgba(31, 32, 65, 0.5);
-                  }
-
-                  .dropdown-buttons {
-                    display: flex;
-                    justify-content: space-between;
-                    padding-left: 7px;
-                    padding-right: 7px;
-                    position: relative;
-                    top: 7px;
-                    right: 3px;
-                  }
-
-                  .dropdown__apply-btn {
-                    font-weight: bold;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    color: #bc9cff;
-                    cursor: pointer;
-                  }
-
-                  .dropdown__clear-btn {
-                    cursor: pointer;
-                    font-weight: bold;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    color: #bc9cff;
-                  }
-                </style>
                 <div class="dropdown-options">
                   <div class="dropdown-item">
                     <h2 class="dropdown-option label">взрослые</h2>
@@ -2641,1273 +3677,292 @@
                 </div>
               </div>
             </div>
-            <div class="summary-order-info">
-              <style>
-                .total-info-options {
-                  display: flex;
-                  justify-content: space-between;
-                  height: 10px;
-                }
-
-                .total-info {
-                  color: rgba(31, 32, 65, 0.75);
-                }
-
-                .total-info_long {
-                  width: 200px;
-                }
-
-                h2.price-sum {
-                  font-size: 19px;
-                  color: #1f2041;
-                }
-              </style>
-              <div class="total-info-options">
-                <p class="total-info">
-                  <span>9 990</span><span>₽ х&nbsp;</span><span>4</span
-                  ><span>&nbsp;суток</span>
-                </p>
-                <p class="total-info"><span>39 960</span><span>₽</span></p>
-              </div>
-              <div class="total-info-options">
-                <p class="total-info">
-                  <span>Сбор за услуги: скидка&nbsp;</span><span>2 179</span
-                  ><span>₽</span>
-                </p>
-                <p class="total-info"><span>0</span><span>₽</span></p>
-              </div>
-              <div class="total-info-options">
-                <p class="total-info total-info_long">
-                  Сбор за дополнительные услуги
-                </p>
-                <p class="total-info"><span>300</span><span>₽</span></p>
-              </div>
-              <div class="total-info-summary">
-                <h2 class="price-sum">Итого</h2>
-                <h2 class="price-sum"><span>38 081</span><span>₽</span></h2>
-              </div>
+          </div>
+          <div class="search-button"></div>
+          <button class="btn sign-in__btn-lg search-button">
+            <span class="sign-in__btn-lg-text">подобрать номер</span
+            ><span class="material-icons sign-in__arrow search-arrow"
+              >arrow_forward</span
+            >
+          </button>
+        </div>
+      </div>
+      <div class="card-page__booking-form">
+        <div class="card-page__room-card-info">
+          <div class="room-card-info__text">
+            <div class="room-card-info__number">
+              <p class="forms-sign-number">№</p>
+              <h2 class="card-from room-card-number_form_booking">888</h2>
+              <h3 class="luxe-attr">ЛЮКС</h3>
             </div>
-            <div class="booking-buttons__item">
-              <button class="btn sign-in__btn-lg">
-                <span class="sign-in__btn-lg-text">забронировать</span
-                ><span class="material-icons sign-in__arrow book-arrow"
-                  >arrow_forward</span
-                >
-              </button>
+            <div class="card-page room-card-info__price_form_booking">
+              <span class="room-price">9 990₽</span
+              ><span class="price-per">&nbsp в сутки</span>
             </div>
           </div>
-        </html>
+        </div>
+        <div class="search-form__date-pickers">
+          <div class="field">
+            <h2 class="label">прибытие</h2>
+            <input
+              class="input calendar"
+              type="date"
+              placeholder="ДД.ММ.ГГГГ"
+            />
+          </div>
+          <div class="field">
+            <h2 class="label">выезд</h2>
+            <input
+              class="input calendar"
+              type="date"
+              placeholder="ДД.ММ.ГГГГ"
+            />
+          </div>
+        </div>
+        <div class="search-form__dropdown-block">
+          <div class="dropdown-block__label">
+            <h2 class="label">гости</h2>
+          </div>
+          <div class="dropdown__input">
+            <div class="dropdown__input_default dropdown__input_wide">
+              <span class="dropdown__input-text js-dropdown__input-text"
+                >Сколько гостей</span
+              ><span
+                class="material-icons expand-arrow dropdown-arrow dropdown__arrow_comfort dropdown__arrow_checkbox js-dropdown__arrow_comfort js-dropdown__arrow_checkbox"
+                >expand_more</span
+              >
+            </div>
+            <div
+              class="dropdown__input_guests dropdown__input_guests-expanded-apply search-room-added-checkbox-list hidden js-dropdown__input_guests js-search-room-added-checkbox-list js-hidden"
+            >
+              <div class="dropdown-options">
+                <div class="dropdown-item">
+                  <h2 class="dropdown-option label">взрослые</h2>
+                  <div class="dropdown-counter">
+                    <div
+                      class="dropdown-counter__btn js-dropdown-counter__btn"
+                      data-direction="minus"
+                    >
+                      <span class="dropdown-counter__btn-text">-</span>
+                    </div>
+                    <div
+                      class="dropdown-counter__value label js-dropdown-counter__value"
+                    >
+                      0
+                    </div>
+                    <div
+                      class="dropdown-counter__btn js-dropdown-counter__btn"
+                      data-direction="plus"
+                    >
+                      <span class="dropdown-counter__btn-text">+</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-item">
+                  <h2 class="dropdown-option label">дети</h2>
+                  <div class="dropdown-counter">
+                    <div
+                      class="dropdown-counter__btn js-dropdown-counter__btn"
+                      data-direction="minus"
+                    >
+                      <span class="dropdown-counter__btn-text">-</span>
+                    </div>
+                    <div
+                      class="dropdown-counter__value label js-dropdown-counter__value"
+                    >
+                      0
+                    </div>
+                    <div
+                      class="dropdown-counter__btn js-dropdown-counter__btn"
+                      data-direction="plus"
+                    >
+                      <span class="dropdown-counter__btn-text">+</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-item">
+                  <h2 class="dropdown-option label">младенцы</h2>
+                  <div class="dropdown-counter">
+                    <div
+                      class="dropdown-counter__btn js-dropdown-counter__btn"
+                      data-direction="minus"
+                    >
+                      <span class="dropdown-counter__btn-text">-</span>
+                    </div>
+                    <div
+                      class="dropdown-counter__value label js-dropdown-counter__value"
+                    >
+                      0
+                    </div>
+                    <div
+                      class="dropdown-counter__btn js-dropdown-counter__btn"
+                      data-direction="plus"
+                    >
+                      <span class="dropdown-counter__btn-text">+</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-buttons">
+                  <p class="dropdown__apply-btn">применить</p>
+                  <p class="dropdown__clear-btn">очистить</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="summary-order-info">
+            <div class="total-info-options">
+              <p class="total-info">
+                <span>9 990</span><span>₽ х&nbsp;</span><span>4</span
+                ><span>&nbsp;суток</span>
+              </p>
+              <p class="total-info"><span>39 960</span><span>₽</span></p>
+            </div>
+            <div class="total-info-options">
+              <p class="total-info">
+                <span>Сбор за услуги: скидка&nbsp;</span><span>2 179</span
+                ><span>₽</span>
+              </p>
+              <p class="total-info"><span>0</span><span>₽</span></p>
+            </div>
+            <div class="total-info-options">
+              <p class="total-info total-info_long">
+                Сбор за дополнительные услуги
+              </p>
+              <p class="total-info"><span>300</span><span>₽</span></p>
+            </div>
+            <div class="total-info-summary">
+              <h2 class="price-sum">Итого</h2>
+              <h2 class="price-sum"><span>38 081</span><span>₽</span></h2>
+            </div>
+          </div>
+          <div class="booking-buttons__item">
+            <button class="btn sign-in__btn-lg">
+              <span class="sign-in__btn-lg-text">забронировать</span
+              ><span class="material-icons sign-in__arrow book-arrow"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+        </div>
       </div>
       <div class="calendar-form"><div class="visible-calendar"></div></div>
       <div class="card-page__registration-from">
         <div class="cards-page__form">
-          <html>
-            <head>
-              <style>
-                .registration-form {
-                  margin-top: 36px;
-                  display: grid;
-                  width: 380px;
-                  height: 646px;
-                  background-color: #fff;
-                  padding-top: 23px;
-                  border: 1px solid rgba(0, 0, 0, 0.12);
-                  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-                  border-radius: 4px;
-                  justify-content: end;
-                }
-
-                .registration-form_sing-up__h1 {
-                  position: relative;
-                  font-size: 24px;
-                  color: #1f2041;
-                  margin-bottom: 21px;
-                }
-
-                .label-date {
-                  position: relative;
-                  width: 211px;
-                  height: 15px;
-                  top: 8px;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #1f2041;
-                  margin-bottom: 13px;
-                }
-
-                .label-entries {
-                  display: block;
-                  position: relative;
-                  width: 211px;
-                  height: 15px;
-                  top: 5px;
-                  margin-bottom: 11px;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #1f2041;
-                }
-
-                .registration__arrow {
-                  position: relative;
-                  left: 58px;
-                  top: 0px;
-                }
-
-                .registration__buttons__item {
-                  margin-bottom: 43px;
-                  margin-top: -10px;
-                }
-
-                .toggle-promo + .toggle-label {
-                  cursor: pointer;
-                  position: relative;
-                  left: -29px;
-                  top: -29px;
-                }
-
-                .apply-btn {
-                  position: relative;
-                  left: 223px;
-                  bottom: -10px;
-                  font-weight: bold;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #bc9cff;
-                  cursor: pointer;
-                }
-
-                .clear-btn {
-                  cursor: pointer;
-                  position: relative;
-                  left: 10px;
-                  bottom: 15px;
-                  font-weight: bold;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #bc9cff;
-                }
-
-                .registration__radio-buttons-items {
-                  width: 345px;
-                  display: flex;
-                  margin-bottom: 14px;
-                }
-
-                .registration__date-fields {
-                  margin-bottom: -2px;
-                }
-
-                .sign-in-form__info {
-                  display: flex;
-                  width: 222px;
-                  margin-top: 10px;
-                }
-
-                .sign-in-block {
-                  position: relative;
-                  display: flex;
-                  width: 320px;
-                }
-
-                .registration__btn-lg {
-                  position: relative;
-                  width: 320px;
-                  top: 14px;
-                  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-                  color: #ffffff;
-                  display: inline-block;
-                  vertical-align: middle;
-                }
-                /* <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> */
-              </style>
-            </head>
-            <form class="form registration-form">
-              <div class="registration-form_sing-up">
-                <h1 class="registration-form_sing-up__h1">
-                  Регистрация аккаунта
-                </h1>
-                <div class="mixed-fields">
-                  <div class="field">
-                    <style>
-                      .input {
-                        width: 320px;
-                        height: 44px;
-                        padding-left: 15px;
-                        border: 1px solid rgba(31, 32, 65, 0.25);
-                        border-radius: 4px;
-                        font-family: Montserrat;
-                        font-size: 14px;
-                        color: rgba(31, 32, 65, 0.75);
-                        &::placeholder {
-                          color: #d9d9d9;
-                        }
-                        &:focus {
-                          outline: none;
-                          border: 1px solid rgba(31, 32, 65, 0.5);
-                        }
-                      }
-
-                      .calendar {
-                        cursor: pointer;
-                        width: 150px;
-                        &::placeholder {
-                          color: rgba(31, 32, 65, 0.75);
-                        }
-                      }
-
-                      .input_middle {
-                        width: 267px;
-                      }
-
-                      .calendar_long {
-                        width: 320px;
-                      }
-
-                      .date-filter__input {
-                        width: 267px !important;
-                      }
-
-                      .select-input {
-                        cursor: pointer;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                      }
-
-                      .apply-btn {
-                        position: relative;
-                        bottom: -10px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        cursor: pointer;
-                        display: inline-block;
-                        left: 50px;
-                        top: -7px;
-                      }
-
-                      .clear-btn {
-                        display: inline-block;
-                        left: -63px;
-                        cursor: pointer;
-                        position: relative;
-                        bottom: 15px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        top: -7px;
-                      }</style
-                    ><input class="input" placeholder="Имя" />
-                  </div>
-                  <div class="field">
-                    <style>
-                      .input {
-                        width: 320px;
-                        height: 44px;
-                        padding-left: 15px;
-                        border: 1px solid rgba(31, 32, 65, 0.25);
-                        border-radius: 4px;
-                        font-family: Montserrat;
-                        font-size: 14px;
-                        color: rgba(31, 32, 65, 0.75);
-                        &::placeholder {
-                          color: #d9d9d9;
-                        }
-                        &:focus {
-                          outline: none;
-                          border: 1px solid rgba(31, 32, 65, 0.5);
-                        }
-                      }
-
-                      .calendar {
-                        cursor: pointer;
-                        width: 150px;
-                        &::placeholder {
-                          color: rgba(31, 32, 65, 0.75);
-                        }
-                      }
-
-                      .input_middle {
-                        width: 267px;
-                      }
-
-                      .calendar_long {
-                        width: 320px;
-                      }
-
-                      .date-filter__input {
-                        width: 267px !important;
-                      }
-
-                      .select-input {
-                        cursor: pointer;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                      }
-
-                      .apply-btn {
-                        position: relative;
-                        bottom: -10px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        cursor: pointer;
-                        display: inline-block;
-                        left: 50px;
-                        top: -7px;
-                      }
-
-                      .clear-btn {
-                        display: inline-block;
-                        left: -63px;
-                        cursor: pointer;
-                        position: relative;
-                        bottom: 15px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        top: -7px;
-                      }</style
-                    ><input class="input" placeholder="Фамилия" />
-                  </div>
+          <form class="form registration-form">
+            <div class="registration-form_sing-up">
+              <h1 class="registration-form_sing-up__h1">
+                Регистрация аккаунта
+              </h1>
+              <div class="mixed-fields">
+                <div class="field">
+                  <input class="input" placeholder="Имя" />
                 </div>
-                <div class="registration__radio-buttons-items">
-                  <!DOCTYPE html>
-                  <html>
-                    <head>
-                      <style>
-                        .radio {
-                          display: inline-block;
-                          position: relative;
-                        }
-
-                        .radio__input {
-                          width: 20px;
-                          height: 20px;
-                          border: 1px solid #bc9cff;
-                          border-radius: 10px;
-                          appearance: none;
-                          position: absolute;
-                        }
-
-                        .radio__label {
-                          color: rgba(31, 32, 65, 0.5);
-                          cursor: pointer;
-                          display: inline-block;
-                          padding-left: 35px;
-                          padding-top: 3px;
-                        }
-
-                        .radio__label:before {
-                          width: 20px;
-                          height: 20px;
-                          border-radius: 50%;
-                          position: absolute;
-                          border: 1px solid #ccc;
-                          left: 5px;
-                          z-index: 1;
-                          transition: border 0.1s linear;
-                        }
-
-                        .radio__label:after {
-                          content: '';
-                          width: 12px;
-                          height: 12px;
-                          opacity: 0;
-                          position: absolute;
-                          top: 7px;
-                          left: 9px;
-                          transition: opacity 0.1s linear;
-                          background: linear-gradient(
-                            180deg,
-                            #bc9cff 0%,
-                            #8ba4f9 100%
-                          );
-                          border-radius: 10px;
-                        }
-
-                        .radio-buttons-items {
-                          display: flex;
-                          margin-top: 9px;
-                          margin-left: -15px;
-                        }
-
-                        .radio__input:checked + .radio__label:before {
-                          border-color: #bc9cff;
-                        }
-
-                        .radio__input:checked + .radio__label:after {
-                          opacity: 1;
-                        }
-                      </style>
-                    </head>
-                    <div class="radio-buttons-items">
-                      <div class="radio">
-                        <input
-                          class="radio__input"
-                          type="radio"
-                          name="gender"
-                          id="1"
-                        /><label class="radio__label" for="1">Мужчина</label>
-                      </div>
-                      <div class="radio radio_female">
-                        <input
-                          class="radio__input"
-                          type="radio"
-                          name="gender"
-                          id="2"
-                        /><label class="radio__label" for="2">Женщина</label>
-                      </div>
-                    </div>
-                  </html>
+                <div class="field">
+                  <input class="input" placeholder="Фамилия" />
                 </div>
-                <div class="registration__date-fields">
-                  <div class="field">
-                    <h2 class="label-date">дата рождения</h2>
-                    <style>
-                      .input {
-                        width: 320px;
-                        height: 44px;
-                        padding-left: 15px;
-                        border: 1px solid rgba(31, 32, 65, 0.25);
-                        border-radius: 4px;
-                        font-family: Montserrat;
-                        font-size: 14px;
-                        color: rgba(31, 32, 65, 0.75);
-                        &::placeholder {
-                          color: #d9d9d9;
-                        }
-                        &:focus {
-                          outline: none;
-                          border: 1px solid rgba(31, 32, 65, 0.5);
-                        }
-                      }
-
-                      .calendar {
-                        cursor: pointer;
-                        width: 150px;
-                        &::placeholder {
-                          color: rgba(31, 32, 65, 0.75);
-                        }
-                      }
-
-                      .input_middle {
-                        width: 267px;
-                      }
-
-                      .calendar_long {
-                        width: 320px;
-                      }
-
-                      .date-filter__input {
-                        width: 267px !important;
-                      }
-
-                      .select-input {
-                        cursor: pointer;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                      }
-
-                      .apply-btn {
-                        position: relative;
-                        bottom: -10px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        cursor: pointer;
-                        display: inline-block;
-                        left: 50px;
-                        top: -7px;
-                      }
-
-                      .clear-btn {
-                        display: inline-block;
-                        left: -63px;
-                        cursor: pointer;
-                        position: relative;
-                        bottom: 15px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        top: -7px;
-                      }</style
-                    ><input
-                      class="calendar calendar_long"
-                      type="date"
-                      placeholder="ДД.ММ.ГГГГ"
-                    />
-                  </div>
-                </div>
-                <div class="mixed-fields">
-                  <h2 class="label-entries">данные для входа в сервис</h2>
-                  <div class="field">
-                    <style>
-                      .input {
-                        width: 320px;
-                        height: 44px;
-                        padding-left: 15px;
-                        border: 1px solid rgba(31, 32, 65, 0.25);
-                        border-radius: 4px;
-                        font-family: Montserrat;
-                        font-size: 14px;
-                        color: rgba(31, 32, 65, 0.75);
-                        &::placeholder {
-                          color: #d9d9d9;
-                        }
-                        &:focus {
-                          outline: none;
-                          border: 1px solid rgba(31, 32, 65, 0.5);
-                        }
-                      }
-
-                      .calendar {
-                        cursor: pointer;
-                        width: 150px;
-                        &::placeholder {
-                          color: rgba(31, 32, 65, 0.75);
-                        }
-                      }
-
-                      .input_middle {
-                        width: 267px;
-                      }
-
-                      .calendar_long {
-                        width: 320px;
-                      }
-
-                      .date-filter__input {
-                        width: 267px !important;
-                      }
-
-                      .select-input {
-                        cursor: pointer;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                      }
-
-                      .apply-btn {
-                        position: relative;
-                        bottom: -10px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        cursor: pointer;
-                        display: inline-block;
-                        left: 50px;
-                        top: -7px;
-                      }
-
-                      .clear-btn {
-                        display: inline-block;
-                        left: -63px;
-                        cursor: pointer;
-                        position: relative;
-                        bottom: 15px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        top: -7px;
-                      }</style
-                    ><input class="input" placeholder="Email" />
-                  </div>
-                  <div class="field">
-                    <style>
-                      .input {
-                        width: 320px;
-                        height: 44px;
-                        padding-left: 15px;
-                        border: 1px solid rgba(31, 32, 65, 0.25);
-                        border-radius: 4px;
-                        font-family: Montserrat;
-                        font-size: 14px;
-                        color: rgba(31, 32, 65, 0.75);
-                        &::placeholder {
-                          color: #d9d9d9;
-                        }
-                        &:focus {
-                          outline: none;
-                          border: 1px solid rgba(31, 32, 65, 0.5);
-                        }
-                      }
-
-                      .calendar {
-                        cursor: pointer;
-                        width: 150px;
-                        &::placeholder {
-                          color: rgba(31, 32, 65, 0.75);
-                        }
-                      }
-
-                      .input_middle {
-                        width: 267px;
-                      }
-
-                      .calendar_long {
-                        width: 320px;
-                      }
-
-                      .date-filter__input {
-                        width: 267px !important;
-                      }
-
-                      .select-input {
-                        cursor: pointer;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                      }
-
-                      .apply-btn {
-                        position: relative;
-                        bottom: -10px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        cursor: pointer;
-                        display: inline-block;
-                        left: 50px;
-                        top: -7px;
-                      }
-
-                      .clear-btn {
-                        display: inline-block;
-                        left: -63px;
-                        cursor: pointer;
-                        position: relative;
-                        bottom: 15px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        top: -7px;
-                      }</style
-                    ><input
-                      class="input"
-                      type="password"
-                      placeholder="Пароль"
-                    />
-                  </div>
-                </div>
-                <div class="registration__toggle-block">
-                  <style>
-                    .toggle + .toggle-label:before {
-                      content: '';
-                      position: absolute;
-                      top: -2px;
-                      left: 0;
-                      width: 40px;
-                      height: 20px;
-                      border-radius: 13px;
-                      border: 1px solid rgba(31, 32, 65, 0.25);
-                      transition: 0.2s;
-                    }
-
-                    .toggle + .toggle-label:after {
-                      content: '';
-                      position: absolute;
-                      top: 2px;
-                      left: 5px;
-                      width: 12px;
-                      height: 12px;
-                      border-radius: 10px;
-                      background: rgba(31, 32, 65, 0.25);
-                      transition: 0.2s;
-                    }
-
-                    .toggle:checked + .toggle-label:after {
-                      left: 25px;
-                      background: linear-gradient(
-                        180deg,
-                        #bc9cff 0%,
-                        #8ba4f9 100%
-                      );
-                    }
-
-                    .toggle:checked + .toggle-label:before {
-                      border: 1px solid #bc9cff;
-                    }
-
-                    .toggle-item {
-                      position: relative;
-                      margin-bottom: 12px;
-                      bottom: 2px;
-                      right: 2px;
-                      margin-left: -19px;
-                      margin-top: 10px;
-                    }
-                  </style>
-                  <div class="toggle-item">
+              </div>
+              <div class="registration__radio-buttons-items">
+                <div class="radio-buttons-items">
+                  <div class="radio">
                     <input
-                      class="toggle"
-                      type="checkbox"
-                      id="check1"
-                      checked="checked"
-                    /><label class="toggle-label" for="check1"
-                      >Получать спецпредложения</label
-                    >
+                      class="radio__input"
+                      type="radio"
+                      name="gender"
+                      id="1"
+                    /><label class="radio__label" for="1">Мужчина</label>
+                  </div>
+                  <div class="radio radio_female">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      name="gender"
+                      id="2"
+                    /><label class="radio__label" for="2">Женщина</label>
                   </div>
                 </div>
+              </div>
+              <div class="registration__date-fields">
+                <div class="field">
+                  <h2 class="label-date">дата рождения</h2>
+                  <input
+                    class="calendar calendar_long"
+                    type="date"
+                    placeholder="ДД.ММ.ГГГГ"
+                  />
+                </div>
+              </div>
+              <div class="mixed-fields">
+                <h2 class="label-entries">данные для входа в сервис</h2>
+                <div class="field">
+                  <input class="input" placeholder="Email" />
+                </div>
+                <div class="field">
+                  <input class="input" type="password" placeholder="Пароль" />
+                </div>
+              </div>
+              <div class="registration__toggle-block">
+                <div class="toggle-item">
+                  <input
+                    class="toggle"
+                    type="checkbox"
+                    id="check1"
+                    checked="checked"
+                  /><label class="toggle-label" for="check1"
+                    >Получать спецпредложения</label
+                  >
+                </div>
+              </div>
+              <div class="registration__buttons__item">
+                <button class="btn registration__btn-lg">
+                  зарегистрироваться<span
+                    class="material-icons registration__arrow"
+                    >arrow_forward</span
+                  >
+                </button>
+              </div>
+              <div class="sign-in-block">
+                <span class="sign-in-form__info">Уже есть аккаунт на Toxin</span
+                ><button class="btn btn_small btn_dark-violet">войти</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card-page__sign-in-from">
+        <div class="cards-page__form">
+          <form class="form sign-in-form">
+            <div class="sign-in-form__data">
+              <h1 class="sign-in-form__data_h1">Войти</h1>
+              <div class="sign-in__mixed-fields">
+                <div class="field">
+                  <input class="input" type="email" placeholder="Email" />
+                </div>
+                <div class="field">
+                  <input class="input" type="password" placeholder="Пароль" />
+                </div>
+              </div>
+              <div class="sign-in__bts-block">
                 <div class="registration__buttons__item">
-                  <button class="btn registration__btn-lg">
-                    зарегистрироваться<span
-                      class="material-icons registration__arrow"
+                  <button class="btn sign-in__btn-lg">
+                    <span class="sign-in__btn-lg-text">Войти</span
+                    ><span class="material-icons sign-in__arrow"
                       >arrow_forward</span
                     >
                   </button>
                 </div>
                 <div class="sign-in-block">
-                  <span class="sign-in-form__info"
-                    >Уже есть аккаунт на Toxin</span
-                  ><style>
-                    .btn {
-                      border: 2px solid;
-                      outline: none;
-                      height: 44px;
-                      border-radius: 22px;
-                      font-family: Montserrat;
-                      font-weight: bold;
-                      font-size: 12px;
-                      text-transform: uppercase;
-                      cursor: pointer;
-                    }
-
-                    .btn_small {
-                      width: 99px;
-                      left: 980px;
-                      top: 262px;
-                    }
-
-                    .btn_fill-dark-violet {
-                      background: linear-gradient(
-                        180deg,
-                        #bc9cff 0%,
-                        #8ba4f9 100%
-                      );
-                      color: #ffffff;
-                      width: 102px;
-                      height: 46px;
-                    }
-
-                    .btn_fill-light-violet {
-                      background: linear-gradient(
-                        180deg,
-                        #bc9cff 0%,
-                        #8ba4f9 100%
-                      );
-                      opacity: 0.5;
-                      color: #ffffff;
-                      width: 102px;
-                      height: 46px;
-                    }
-
-                    .btn_dark-violet {
-                      color: #bc9cff;
-                    }
-
-                    .btn_light-violet {
-                      color: #bc9cff;
-                      border: 2px solid;
-                      border-color: linear-gradient(
-                        180deg,
-                        #bc9cff 100%,
-                        #8ba4f9 100%
-                      );
-                      opacity: 0.5;
-                    }
-
-                    .btn_no-border-violet {
-                      color: #bc9cff;
-                      border: none;
-                      background: #ffffff;
-                      padding-bottom: 10px;
-                      margin-top: -5px;
-                      margin-left: -18px;
-                    }
-
-                    .btn_no-border-dark {
-                      color: rgba(31, 32, 65, 0.5);
-                      border: none;
-                      background: #ffffff;
-                      margin-top: -9px;
-                      margin-left: -53px;
-                    }</style
-                  ><button class="btn btn_small btn_dark-violet">войти</button>
+                  <span class="sign-in-form__info">Нет аккаунта на Toxin?</span
+                  ><button class="btn btn_small btn_dark-violet">
+                    СОЗДАТЬ
+                  </button>
                 </div>
               </div>
-            </form>
-          </html>
-        </div>
-      </div>
-      <div class="card-page__sign-in-from">
-        <div class="cards-page__form">
-          <html>
-            <head>
-              <style>
-                .registration-form {
-                  margin-top: 36px;
-                  display: grid;
-                  width: 380px;
-                  height: 646px;
-                  background-color: #fff;
-                  padding-top: 23px;
-                  border: 1px solid rgba(0, 0, 0, 0.12);
-                  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-                  border-radius: 4px;
-                  justify-content: end;
-                }
-
-                .registration-form_sing-up__h1 {
-                  position: relative;
-                  font-size: 24px;
-                  color: #1f2041;
-                  margin-bottom: 21px;
-                }
-
-                .label-date {
-                  position: relative;
-                  width: 211px;
-                  height: 15px;
-                  top: 8px;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #1f2041;
-                  margin-bottom: 13px;
-                }
-
-                .label-entries {
-                  display: block;
-                  position: relative;
-                  width: 211px;
-                  height: 15px;
-                  top: 5px;
-                  margin-bottom: 11px;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #1f2041;
-                }
-
-                .registration__arrow {
-                  position: relative;
-                  left: 58px;
-                  top: 0px;
-                }
-
-                .registration__buttons__item {
-                  margin-bottom: 43px;
-                  margin-top: -10px;
-                }
-
-                .toggle-promo + .toggle-label {
-                  cursor: pointer;
-                  position: relative;
-                  left: -29px;
-                  top: -29px;
-                }
-
-                .apply-btn {
-                  position: relative;
-                  left: 223px;
-                  bottom: -10px;
-                  font-weight: bold;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #bc9cff;
-                  cursor: pointer;
-                }
-
-                .clear-btn {
-                  cursor: pointer;
-                  position: relative;
-                  left: 10px;
-                  bottom: 15px;
-                  font-weight: bold;
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  color: #bc9cff;
-                }
-
-                .registration__radio-buttons-items {
-                  width: 345px;
-                  display: flex;
-                  margin-bottom: 14px;
-                }
-
-                .registration__date-fields {
-                  margin-bottom: -2px;
-                }
-
-                .sign-in-form__info {
-                  display: flex;
-                  width: 222px;
-                  margin-top: 10px;
-                }
-
-                .sign-in-block {
-                  position: relative;
-                  display: flex;
-                  width: 320px;
-                }
-
-                .registration__btn-lg {
-                  position: relative;
-                  width: 320px;
-                  top: 14px;
-                  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-                  color: #ffffff;
-                  display: inline-block;
-                  vertical-align: middle;
-                }
-                .sign-in-form {
-                  width: 380px;
-                  height: 358px;
-                  background-color: #fff;
-                  padding-top: 23px;
-                  border: 1px solid rgba(0, 0, 0, 0.12);
-                  box-shadow: 0px 0px 25px rgb(0 0 0 / 20%);
-                  border-radius: 4px;
-                }
-
-                .sign-in-form__data_h1 {
-                  position: relative;
-                  left: 30px;
-                  font-size: 24px;
-                  color: #1f2041;
-                  margin-bottom: 21px;
-                }
-
-                .sign-in__mixed-fields {
-                  margin-bottom: -9px;
-                  position: relative;
-                  left: 29px;
-                }
-                .sign-in__btn-lg {
-                  position: relative;
-                  width: 320px;
-                  top: 14px;
-                  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-                  color: #ffffff;
-                }
-
-                .sign-in__btn-lg-text {
-                  position: relative;
-                  left: 11px;
-                  top: 1px;
-                }
-
-                .sign-in__arrow {
-                  position: relative;
-                  left: 114px;
-                  top: 0px;
-                }
-
-                .sign-in__bts-block {
-                  margin-left: 30px;
-                }
-
-                .sing-in-component {
-                  margin-top: 50px;
-                }
-              </style>
-            </head>
-            <form class="form sign-in-form">
-              <div class="sign-in-form__data">
-                <h1 class="sign-in-form__data_h1">Войти</h1>
-                <div class="sign-in__mixed-fields">
-                  <div class="field">
-                    <style>
-                      .input {
-                        width: 320px;
-                        height: 44px;
-                        padding-left: 15px;
-                        border: 1px solid rgba(31, 32, 65, 0.25);
-                        border-radius: 4px;
-                        font-family: Montserrat;
-                        font-size: 14px;
-                        color: rgba(31, 32, 65, 0.75);
-                        &::placeholder {
-                          color: #d9d9d9;
-                        }
-                        &:focus {
-                          outline: none;
-                          border: 1px solid rgba(31, 32, 65, 0.5);
-                        }
-                      }
-
-                      .calendar {
-                        cursor: pointer;
-                        width: 150px;
-                        &::placeholder {
-                          color: rgba(31, 32, 65, 0.75);
-                        }
-                      }
-
-                      .input_middle {
-                        width: 267px;
-                      }
-
-                      .calendar_long {
-                        width: 320px;
-                      }
-
-                      .date-filter__input {
-                        width: 267px !important;
-                      }
-
-                      .select-input {
-                        cursor: pointer;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                      }
-
-                      .apply-btn {
-                        position: relative;
-                        bottom: -10px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        cursor: pointer;
-                        display: inline-block;
-                        left: 50px;
-                        top: -7px;
-                      }
-
-                      .clear-btn {
-                        display: inline-block;
-                        left: -63px;
-                        cursor: pointer;
-                        position: relative;
-                        bottom: 15px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        top: -7px;
-                      }</style
-                    ><input class="input" type="email" placeholder="Email" />
-                  </div>
-                  <div class="field">
-                    <style>
-                      .input {
-                        width: 320px;
-                        height: 44px;
-                        padding-left: 15px;
-                        border: 1px solid rgba(31, 32, 65, 0.25);
-                        border-radius: 4px;
-                        font-family: Montserrat;
-                        font-size: 14px;
-                        color: rgba(31, 32, 65, 0.75);
-                        &::placeholder {
-                          color: #d9d9d9;
-                        }
-                        &:focus {
-                          outline: none;
-                          border: 1px solid rgba(31, 32, 65, 0.5);
-                        }
-                      }
-
-                      .calendar {
-                        cursor: pointer;
-                        width: 150px;
-                        &::placeholder {
-                          color: rgba(31, 32, 65, 0.75);
-                        }
-                      }
-
-                      .input_middle {
-                        width: 267px;
-                      }
-
-                      .calendar_long {
-                        width: 320px;
-                      }
-
-                      .date-filter__input {
-                        width: 267px !important;
-                      }
-
-                      .select-input {
-                        cursor: pointer;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                      }
-
-                      .apply-btn {
-                        position: relative;
-                        bottom: -10px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        cursor: pointer;
-                        display: inline-block;
-                        left: 50px;
-                        top: -7px;
-                      }
-
-                      .clear-btn {
-                        display: inline-block;
-                        left: -63px;
-                        cursor: pointer;
-                        position: relative;
-                        bottom: 15px;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #bc9cff;
-                        top: -7px;
-                      }</style
-                    ><input
-                      class="input"
-                      type="password"
-                      placeholder="Пароль"
-                    />
-                  </div>
-                </div>
-                <div class="sign-in__bts-block">
-                  <div class="registration__buttons__item">
-                    <button class="btn sign-in__btn-lg">
-                      <span class="sign-in__btn-lg-text">Войти</span
-                      ><span class="material-icons sign-in__arrow"
-                        >arrow_forward</span
-                      >
-                    </button>
-                  </div>
-                  <div class="sign-in-block">
-                    <span class="sign-in-form__info"
-                      >Нет аккаунта на Toxin?</span
-                    ><style>
-                      .btn {
-                        border: 2px solid;
-                        outline: none;
-                        height: 44px;
-                        border-radius: 22px;
-                        font-family: Montserrat;
-                        font-weight: bold;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        cursor: pointer;
-                      }
-
-                      .btn_small {
-                        width: 99px;
-                        left: 980px;
-                        top: 262px;
-                      }
-
-                      .btn_fill-dark-violet {
-                        background: linear-gradient(
-                          180deg,
-                          #bc9cff 0%,
-                          #8ba4f9 100%
-                        );
-                        color: #ffffff;
-                        width: 102px;
-                        height: 46px;
-                      }
-
-                      .btn_fill-light-violet {
-                        background: linear-gradient(
-                          180deg,
-                          #bc9cff 0%,
-                          #8ba4f9 100%
-                        );
-                        opacity: 0.5;
-                        color: #ffffff;
-                        width: 102px;
-                        height: 46px;
-                      }
-
-                      .btn_dark-violet {
-                        color: #bc9cff;
-                      }
-
-                      .btn_light-violet {
-                        color: #bc9cff;
-                        border: 2px solid;
-                        border-color: linear-gradient(
-                          180deg,
-                          #bc9cff 100%,
-                          #8ba4f9 100%
-                        );
-                        opacity: 0.5;
-                      }
-
-                      .btn_no-border-violet {
-                        color: #bc9cff;
-                        border: none;
-                        background: #ffffff;
-                        padding-bottom: 10px;
-                        margin-top: -5px;
-                        margin-left: -18px;
-                      }
-
-                      .btn_no-border-dark {
-                        color: rgba(31, 32, 65, 0.5);
-                        border: none;
-                        background: #ffffff;
-                        margin-top: -9px;
-                        margin-left: -53px;
-                      }</style
-                    ><button class="btn btn_small btn_dark-violet">
-                      СОЗДАТЬ
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </html>
+            </div>
+          </form>
         </div>
       </div>
       <div class="cards-page__cards">
         <div class="search-room__main-col">
-          <style>
-            .room-card__luxe {
-              position: relative;
-              font-size: 12px;
-              text-transform: uppercase;
-              color: #bc9cff;
-              top: 3px;
-              right: 8px;
-            }
-
-            .room-card-info__block {
-              display: flex;
-              align-items: baseline;
-              justify-content: space-between;
-              width: 233px;
-              position: relative;
-              top: 3px;
-              right: 5px;
-            }
-
-            .room-card-info__price {
-              position: relative;
-              top: 3px;
-              left: 6px;
-            }
-
-            .room-card-sign-number {
-              font-weight: 700;
-              color: #1f2041;
-            }
-          </style>
           <div class="room-card">
             <div class="room-card-img">
               <img
@@ -3932,62 +3987,6 @@
               </div>
               <div class="room-card-rating">
                 <div class="stars-block">
-                  <style>
-                    .rating {
-                      position: relative;
-                      font-size: 29px;
-                      display: inline-block;
-                    }
-
-                    .rating::before {
-                      content: '★★★★★';
-                      display: block;
-                    }
-
-                    .rating-stars {
-                      position: absolute;
-                      width: 100%;
-                      height: 100%;
-                      top: 0;
-                      left: 0;
-                      display: flex;
-                      flex-direction: row-reverse;
-                      overflow: hidden;
-                    }
-
-                    .rating__star {
-                      position: absolute;
-                      visibility: hidden;
-                    }
-
-                    .rating__label {
-                      cursor: pointer;
-                      color: #ceced4;
-                    }
-
-                    .rating__label::before {
-                      content: '★';
-                      display: block;
-                      transition: color 0.3s ease 0s;
-                    }
-
-                    .rating__star:checked,
-                    .rating__star:checked ~ .rating__label {
-                      color: #bc9cff;
-                    }
-
-                    .rating__label:hover,
-                    .rating__label:hover ~ .rating__label,
-                    .rating__label:checked ~ .rating__label:hover {
-                      color: #bc9cff;
-                    }
-
-                    .material-icons {
-                      font-family: 'Material Icons';
-                      font-weight: normal;
-                      text-transform: none;
-                    }
-                  </style>
                   <div class="rating">
                     <div class="rating-stars">
                       <input
@@ -4043,37 +4042,6 @@
           </div>
         </div>
         <div class="search-room__main-col">
-          <style>
-            .room-card__luxe {
-              position: relative;
-              font-size: 12px;
-              text-transform: uppercase;
-              color: #bc9cff;
-              top: 3px;
-              right: 8px;
-            }
-
-            .room-card-info__block {
-              display: flex;
-              align-items: baseline;
-              justify-content: space-between;
-              width: 233px;
-              position: relative;
-              top: 3px;
-              right: 5px;
-            }
-
-            .room-card-info__price {
-              position: relative;
-              top: 3px;
-              left: 6px;
-            }
-
-            .room-card-sign-number {
-              font-weight: 700;
-              color: #1f2041;
-            }
-          </style>
           <div class="room-card">
             <div class="room-card-img">
               <img
@@ -4098,62 +4066,6 @@
               </div>
               <div class="room-card-rating">
                 <div class="stars-block">
-                  <style>
-                    .rating {
-                      position: relative;
-                      font-size: 29px;
-                      display: inline-block;
-                    }
-
-                    .rating::before {
-                      content: '★★★★★';
-                      display: block;
-                    }
-
-                    .rating-stars {
-                      position: absolute;
-                      width: 100%;
-                      height: 100%;
-                      top: 0;
-                      left: 0;
-                      display: flex;
-                      flex-direction: row-reverse;
-                      overflow: hidden;
-                    }
-
-                    .rating__star {
-                      position: absolute;
-                      visibility: hidden;
-                    }
-
-                    .rating__label {
-                      cursor: pointer;
-                      color: #ceced4;
-                    }
-
-                    .rating__label::before {
-                      content: '★';
-                      display: block;
-                      transition: color 0.3s ease 0s;
-                    }
-
-                    .rating__star:checked,
-                    .rating__star:checked ~ .rating__label {
-                      color: #bc9cff;
-                    }
-
-                    .rating__label:hover,
-                    .rating__label:hover ~ .rating__label,
-                    .rating__label:checked ~ .rating__label:hover {
-                      color: #bc9cff;
-                    }
-
-                    .material-icons {
-                      font-family: 'Material Icons';
-                      font-weight: normal;
-                      text-transform: none;
-                    }
-                  </style>
                   <div class="rating">
                     <div class="rating-stars">
                       <input
